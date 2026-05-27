@@ -2,6 +2,7 @@
 
 ## 2026-05-27
 
+- Added reviewed entries for SpinTheNamePicker, WheelPlay, PickerKit, DecideHub, PartyPlay, DiceGameHub, TurboToolkit, Wheel of Decision, RandomGenerator.com.au, and ConverterPanda.
 - Added reviewed entries for TA Easy, TextGround, FateFactory, AI225, JarvisBox, Toolita, UtilityKit, AgentCalc, SoulATools, and Thunderbit.
 - Added reviewed entries for the remaining discovered candidates: Grouper, digtools, afreetools, BasedLabs, UtilityNestAI, Teacher Toolset, RandomGroup.online, and Randly.
 - Added reviewed entries for CodersTool, RandomLists.top, Betext, RandomTeamBuilder, RapidWebApp, Kordu, Begoodtool, GroupEng, ClassInteractives, and Writing in the Stream.
