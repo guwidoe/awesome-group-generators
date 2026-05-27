@@ -2,6 +2,7 @@
 
 ## 2026-05-27
 
+- Added reviewed entries for the remaining discovered candidates: Grouper, digtools, afreetools, BasedLabs, UtilityNestAI, Teacher Toolset, RandomGroup.online, and Randly.
 - Added reviewed entries for CodersTool, RandomLists.top, Betext, RandomTeamBuilder, RapidWebApp, Kordu, Begoodtool, GroupEng, ClassInteractives, and Writing in the Stream.
 - Added reviewed entries for the next ten discovered tools, including UTEKAR, Flipiffy, UD5, Icebreaker Games, Microapp, and RandomTools.app.
 - Added reviewed entries for Webby, RandomGroup.org, RandomHub, Lekktura, and VisualTimer group tools.
