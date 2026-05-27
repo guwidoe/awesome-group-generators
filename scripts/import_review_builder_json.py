@@ -269,9 +269,15 @@ This repository publishes a review dataset, scoring methodology, correction work
 - [`data/tools.json`](./data/tools.json) — full structured dataset
 - [`data/tools.csv`](./data/tools.csv) — spreadsheet-friendly summary
 - [`data/tools.schema.json`](./data/tools.schema.json) — JSON schema
+- [`data/related-commercial-platforms.json`](./data/related-commercial-platforms.json) — non-ranked related commercial/sales-gated platforms
+- [`data/related-commercial-platforms.schema.json`](./data/related-commercial-platforms.schema.json) — schema for the non-ranked related-platform list
 - [`METHODOLOGY.md`](./METHODOLOGY.md) — scoring rubric and review rules
 
 Current export: **{meta['toolCount']} tools**, source revision **{meta.get('sourceRevisionId')}**, exported **{meta['exportedAt']}**.
+
+## Related commercial platforms
+
+Sales-gated event platforms, enterprise matchmaking suites, coffee-chat apps, and app-store-only products are not mixed into the ranked list unless a self-serve generator, open demo, or runnable implementation can be reviewed. We track those adjacent products separately in [`data/related-commercial-platforms.json`](./data/related-commercial-platforms.json) so the main rankings stay limited to verifiable tools.
 
 ## Use-case shortlists
 
@@ -310,7 +316,7 @@ Included tools may be:
 - social-golfer / repeat-minimization schedulers
 - spreadsheet or AI workarounds when people realistically use them for grouping
 
-Tools that do not generate groups at all may be rejected or kept only as low-rated workaround entries.
+Tools that do not generate groups at all may be rejected or kept only as low-rated workaround entries. Sales-gated commercial platforms and adjacent event-networking products are tracked separately and are not star-rated unless a self-serve generator, open demo, or runnable implementation can be reviewed.
 
 ## License
 

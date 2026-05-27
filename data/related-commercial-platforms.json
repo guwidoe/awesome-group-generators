@@ -1,0 +1,460 @@
+{
+  "metadata": {
+    "title": "Related commercial and sales-gated platforms",
+    "description": "Related event-networking, speed-networking, golf scheduling, coffee-chat, and matchmaking platforms that are not part of the ranked Awesome Group Generators dataset because a self-serve group-generation workflow was not publicly verifiable, the product is primarily sales-gated, or the fit is adjacent rather than a classical group generator.",
+    "exportedAt": "2026-05-27T00:00:00+00:00",
+    "itemCount": 44,
+    "ratingPolicy": "These entries are intentionally not star-rated and must not be merged into data/tools.json unless a publicly testable generator, open demo, or runnable implementation is reviewed.",
+    "accessStatuses": [
+      "sales-gated",
+      "commercial-platform",
+      "account-gated",
+      "app-store-only",
+      "documentation-only",
+      "adjacent-commercial",
+      "unverified"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "whos-on-the-tee",
+      "name": "Who's on the Tee?",
+      "url": "https://whosonthetee.app/",
+      "category": "golf tee-sheet / group scheduling",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Public page describes a golf society tee-sheet product, but no self-serve generator workflow was verified.",
+      "publicEvidence": "Claims pasted players, rules, fair groups, handicap spreading, and repeat avoidance for golf societies.",
+      "notes": "Potentially relevant to social-golfer-style scheduling if a testable demo becomes available."
+    },
+    {
+      "id": "sports-scheduler-pro-golf",
+      "name": "Sport Scheduler Pro Golf Schedule Generator",
+      "url": "https://sportschedulerpro.com/golf-schedule-generator",
+      "category": "golf league scheduling",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Appears to be a broader league scheduling product rather than a directly reviewed group generator.",
+      "publicEvidence": "Markets balanced round-robin golf league schedules and updateable league links.",
+      "notes": "Adjacent to pairings/schedules, but not yet reviewed as a group-generation workflow."
+    },
+    {
+      "id": "playpass-golf-schedule-maker",
+      "name": "Playpass Golf Schedule Maker",
+      "url": "https://playpass.com/sports-software/golf-schedule-maker",
+      "category": "sports league scheduling",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Broader sports schedule maker; no group-generation-specific public workflow was reviewed.",
+      "publicEvidence": "Search result describes golf league schedule generation.",
+      "notes": "Could be reconsidered if golf pairings/group rotations are publicly testable."
+    },
+    {
+      "id": "teams-golf",
+      "name": "Teams.Golf",
+      "url": "https://www.teams.golf/index.cfm",
+      "category": "golf team generation",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Product page describes automated golf team generation, but the generator was not publicly tested.",
+      "publicEvidence": "Claims automated team generation based on group handicaps and match-up algorithms.",
+      "notes": "Likely relevant to golf-team balancing, not a normal paste-and-generate web tool."
+    },
+    {
+      "id": "golf-team-generator-app",
+      "name": "Golf Team - Generator App",
+      "url": "https://apps.apple.com/us/app/golf-team-generator/id1540446156",
+      "category": "mobile golf team generation",
+      "accessStatus": "app-store-only",
+      "whyNotRanked": "Native app listing only; no live app workflow was tested.",
+      "publicEvidence": "App Store listing claims fair and balanced teams from golfers and handicap/average score.",
+      "notes": "Could be reviewed separately with device/app testing."
+    },
+    {
+      "id": "probable-golf-optimized-groups",
+      "name": "Probable Golf Optimized Golf Group Generator",
+      "url": "https://probablegolfinstruction.com/tournament_group.htm",
+      "category": "golf group optimization",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Marketing/information page for an optimized golf grouping product; no public generator was verified.",
+      "publicEvidence": "Claims optimized group combinations that reduce repeat pairings.",
+      "notes": "Relevant to social-golfer scheduling, but not directly comparable without a testable tool."
+    },
+    {
+      "id": "fastrounds",
+      "name": "FastRounds",
+      "url": "https://fastrounds.com/",
+      "category": "speed networking / team-building event software",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial event platform; no public self-serve scheduling generator was reviewed.",
+      "publicEvidence": "Claims automatic rounds, attendee pairing, timers, and speed-networking/team-building event support.",
+      "notes": "Track as a related platform, not a ranked generator."
+    },
+    {
+      "id": "speedmatchapp",
+      "name": "SpeedMatchApp",
+      "url": "https://speedmatchapp.com/",
+      "category": "speed networking / matchmaking events",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial matchmaking/event platform; no open generator workflow was verified.",
+      "publicEvidence": "Markets speed dating, speed networking, speed mentoring, and event matchmaking.",
+      "notes": "Relevant as a commercial platform if users need full event operations."
+    },
+    {
+      "id": "pairconnex-roundtable-networking",
+      "name": "PairConnex Roundtable / B2B Express",
+      "url": "https://www.pairconnex.com/events/roundtable-networking-b2b-express",
+      "category": "B2B express networking / meeting generation",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Sales-oriented commercial platform; no independently testable generator was reviewed.",
+      "publicEvidence": "Claims algorithmic meeting generation with matchmaking rules and constraints.",
+      "notes": "Strong conceptual fit for speed-networking rotations, but not comparable without access."
+    },
+    {
+      "id": "networks-events",
+      "name": "NetWorks Events",
+      "url": "https://networksevents.com/",
+      "category": "AI speed networking platform",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial platform with no public self-serve generator review.",
+      "publicEvidence": "Claims intelligent matching, walk-in speed networking, and structured connection sessions.",
+      "notes": "Related to speed networking rather than simple group generation."
+    },
+    {
+      "id": "speednetworking-com",
+      "name": "SpeedNetworking.com",
+      "url": "https://speednetworking.com/",
+      "category": "speed networking platform",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial virtual/in-person speed-networking platform; no public generator was tested.",
+      "publicEvidence": "Claims targeted matching algorithms and one-on-one meeting workflows.",
+      "notes": "Track as related enterprise/event software."
+    },
+    {
+      "id": "mixerseater",
+      "name": "MixerSeater",
+      "url": "https://www.mixerseater.com/how_it_works",
+      "category": "speed networking seating rotations",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial platform with setup and registration workflow; no open generator output was reviewed.",
+      "publicEvidence": "Claims seating rotation planning, participant upload, preferences, table/room parameters, and printable agendas.",
+      "notes": "Strongly related to multi-round table rotations."
+    },
+    {
+      "id": "perfecttableplan-speed-networking",
+      "name": "PerfectTablePlan Speed Networking Seating Rotation Generator",
+      "url": "https://www.perfecttableplan.com/html/networking_events_seating.html",
+      "category": "speed networking seating rotations",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial desktop/product page; no public generator flow was reviewed.",
+      "publicEvidence": "Claims generation of multiple seating arrangements with no repeated table companions.",
+      "notes": "Relevant to seating/table rotation, not a normal web generator."
+    },
+    {
+      "id": "fotify-speed-dating-event-planner",
+      "name": "Fotify Speed Dating Event Planner",
+      "url": "https://fotify.app/tools/speed-dating-event-planner/",
+      "category": "speed dating / speed networking schedule planning",
+      "accessStatus": "unverified",
+      "whyNotRanked": "Search result suggests a public planner, but the workflow has not been live-reviewed for group-generation quality.",
+      "publicEvidence": "Claims instant rotation schedule, timing, venue setup, and support for speed networking/conference matchmaking.",
+      "notes": "Candidate for future review if the public planner is testable."
+    },
+    {
+      "id": "daterounds",
+      "name": "DateRounds",
+      "url": "https://daterounds.com/",
+      "category": "speed dating rotations",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial speed-dating host platform; no self-serve generator workflow was reviewed.",
+      "publicEvidence": "Claims rounds, timers, matching modes, browser join, and automatic rotations.",
+      "notes": "Adjacent to speed networking, but dating-event-specific."
+    },
+    {
+      "id": "fanciful",
+      "name": "Fanciful",
+      "url": "https://fanciful.app/",
+      "category": "speed dating event software",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Event management platform rather than a verified public group generator.",
+      "publicEvidence": "Markets speed dating event management software.",
+      "notes": "Adjacent if dating rotations are treated as networking schedules."
+    },
+    {
+      "id": "chati-speed-networking",
+      "name": "Chati Speed Networking",
+      "url": "https://chati.com/features/speed-networking/",
+      "category": "virtual event speed networking",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Feature page for a commercial event platform; no public generator was tested.",
+      "publicEvidence": "Claims virtual speed networking, session time limits, notes, and ratings.",
+      "notes": "Related event-platform feature."
+    },
+    {
+      "id": "apps4meetings-speed-networking",
+      "name": "Apps4Meetings Speed Networking",
+      "url": "https://apps4meetings.com/products/speed-networking",
+      "category": "speed networking / hosted buyer / peer matching",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial platform page; no public self-serve generator workflow was reviewed.",
+      "publicEvidence": "Claims speed networking, hosted buyer, peer-to-peer matches, mentor matches, and reports.",
+      "notes": "Related to event matchmaking, not a ranked generator."
+    },
+    {
+      "id": "leet",
+      "name": "Leet",
+      "url": "https://leet.se/",
+      "category": "AI interactive session design",
+      "accessStatus": "adjacent-commercial",
+      "whyNotRanked": "Broader AI session-building product; not a classical group generator and no generator workflow was reviewed.",
+      "publicEvidence": "Claims AI-built speed networking structures and matching logic from natural-language prompts.",
+      "notes": "Adjacent to event design rather than directly comparable."
+    },
+    {
+      "id": "brella-event-matchmaking",
+      "name": "Brella Event Matchmaking",
+      "url": "https://www.brella.io/event-matchmaking",
+      "category": "event matchmaking",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Enterprise event matchmaking platform; no public generator workflow was tested.",
+      "publicEvidence": "Claims AI-powered attendee/sponsor matchmaking and smart networking.",
+      "notes": "Related B2B/event matchmaking platform."
+    },
+    {
+      "id": "eventdex-business-matchmaking",
+      "name": "Eventdex Business Matchmaking App",
+      "url": "https://www.eventdex.com/business-matchmaking-app/",
+      "category": "B2B matchmaking / hosted buyer meetings",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial hosted-buyer/event platform; not publicly reviewed as a generator.",
+      "publicEvidence": "Claims AI-powered B2B matchmaking and meeting scheduling.",
+      "notes": "Related, but outside the self-serve generator dataset."
+    },
+    {
+      "id": "b2match-event-matchmaking",
+      "name": "b2match Event Matchmaking",
+      "url": "https://www.b2match.com/value-adds/event-matchmaking",
+      "category": "B2B event matchmaking",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "All-in-one commercial event platform; no public generator workflow was reviewed.",
+      "publicEvidence": "Claims participant profiles, agendas, networking filters, and one-on-one meeting setup.",
+      "notes": "Related event matchmaking product."
+    },
+    {
+      "id": "vfairs-ai-event-matchmaking",
+      "name": "vFairs AI Event Matchmaking",
+      "url": "https://www.vfairs.com/features/ai-event-matchmaking/",
+      "category": "AI event matchmaking",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial event platform feature page; no public generator was tested.",
+      "publicEvidence": "Claims organizer-controlled AI matching criteria for attendee/exhibitor connections.",
+      "notes": "Related matchmaking platform."
+    },
+    {
+      "id": "gevme-business-matchmaking",
+      "name": "Gevme Business Matchmaking Software",
+      "url": "https://web.gevme.com/business-matchmaking-software/",
+      "category": "business matchmaking",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial business matching engine; no public generator workflow was reviewed.",
+      "publicEvidence": "Claims AI-powered matching based on predefined criteria.",
+      "notes": "Related event platform, not a public group generator."
+    },
+    {
+      "id": "grip-event-matchmaking",
+      "name": "Grip Event Matchmaking / MustMeet",
+      "url": "https://www.grip.events/products/event-matchmaking",
+      "category": "event matchmaking / pre-scheduled meetings",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial platform; public pages describe matching but do not expose a self-serve generator for review.",
+      "publicEvidence": "Claims AI event matchmaking and pre-scheduled meetings for structured events.",
+      "notes": "Related to hosted-buyer and B2B meeting scheduling."
+    },
+    {
+      "id": "map-d-ai-business-matchmaking",
+      "name": "Map D AI Business Matchmaking",
+      "url": "https://mapdevents.com/ai-business-matchmaking/",
+      "category": "AI business matchmaking",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial event software feature; no public generator workflow was reviewed.",
+      "publicEvidence": "Claims AI attendee/exhibitor profile matching and qualified meetings.",
+      "notes": "Related but sales/platform oriented."
+    },
+    {
+      "id": "deal-room-event-matchmaking",
+      "name": "Deal Room Event Matchmaking",
+      "url": "https://www.dealroomevents.com/platform/event-matchmaking/",
+      "category": "event matchmaking / meeting scheduling",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial matchmaking platform; no self-serve generator was reviewed.",
+      "publicEvidence": "Claims AI meeting recommendations, table/area assignment, group networking, and roundtables.",
+      "notes": "Related B2B/event matching platform."
+    },
+    {
+      "id": "eventtia-b2b-matchmaking",
+      "name": "Eventtia B2B Matchmaking and Networking",
+      "url": "https://www.eventtia.com/b2b-matchmaking-networking-platform/",
+      "category": "B2B matchmaking / event networking",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial event networking platform; no public generator workflow was reviewed.",
+      "publicEvidence": "Claims participant profiles, personalized agendas, networking filters, and one-on-one meetings.",
+      "notes": "Related event platform."
+    },
+    {
+      "id": "bdotsquare",
+      "name": "b.square",
+      "url": "https://www.bdotsquare.com/",
+      "category": "one-on-one meeting management",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial meeting-management platform; no public generator was tested.",
+      "publicEvidence": "Claims an optimization algorithm for one-to-one meeting schedules based on requests and availability.",
+      "notes": "Relevant to event meeting scheduling but not a self-serve group generator."
+    },
+    {
+      "id": "bizzabo-networking",
+      "name": "Bizzabo Event Networking",
+      "url": "https://www.bizzabo.com/event-management-software/event-networking-platform",
+      "category": "event networking platform",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial event platform; no public generator workflow was reviewed.",
+      "publicEvidence": "Claims AI-enhanced event networking, matchmaking, and scheduling.",
+      "notes": "Related platform only."
+    },
+    {
+      "id": "accelevents-hosted-buyer",
+      "name": "Accelevents Hosted Buyer Software",
+      "url": "https://wf.accelevents.com/platform/hosted-buyer-software",
+      "category": "hosted buyer / meeting scheduling",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial hosted-buyer product; no public generator was reviewed.",
+      "publicEvidence": "Claims AI matchmaking and meeting scheduling for buyer/seller events.",
+      "notes": "Related B2B scheduling platform."
+    },
+    {
+      "id": "exponaut-matchmaking",
+      "name": "Exponaut Matchmaking",
+      "url": "https://www.exponaut.com/exponaut-matchmaking",
+      "category": "B2B networking app",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial B2B networking product; no public generator workflow was reviewed.",
+      "publicEvidence": "Claims pre-made attendee accounts, matching, chat, and collaboration workflows.",
+      "notes": "Related event networking platform."
+    },
+    {
+      "id": "rapidsync",
+      "name": "RapidSync",
+      "url": "https://www.rapidsync.co/",
+      "category": "conference networking platform",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial networking platform; no self-serve grouping or matching workflow was reviewed.",
+      "publicEvidence": "Claims AI-powered conference networking, real-time chat, and meeting booking.",
+      "notes": "Related but not a ranked generator."
+    },
+    {
+      "id": "myexpopro-match-meet",
+      "name": "MyExpoPro Match & Meet App",
+      "url": "https://www.myexpopro.com/b2b-matchmaking.html",
+      "category": "B2B matchmaking",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial B2B matchmaking platform; no public generator workflow was reviewed.",
+      "publicEvidence": "Claims visitor/exhibitor match-and-meet portal for event leads.",
+      "notes": "Related event product."
+    },
+    {
+      "id": "animo-meeting-marketplace",
+      "name": "Animo Meeting Marketplace",
+      "url": "https://animo.co/meeting-marketplace",
+      "category": "meeting marketplace / event networking",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial meeting marketplace; no public generator was reviewed.",
+      "publicEvidence": "Claims attendee/partner meeting marketplace setup and exhibitor ROI workflows.",
+      "notes": "Related B2B event platform."
+    },
+    {
+      "id": "teatime-chat",
+      "name": "TeaTime.Chat",
+      "url": "https://teatime.chat/",
+      "category": "coffee chat pairing",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Slack coffee-chat product, adjacent to recurring pair generation but not a classical group generator.",
+      "publicEvidence": "Claims automated Slack coffee-chat pairing with frequency setup and conversation starters.",
+      "notes": "Could be relevant if the dataset scope expands to recurring workplace pairings."
+    },
+    {
+      "id": "randomcoffee",
+      "name": "RandomCoffee",
+      "url": "https://www.random-coffee.com/",
+      "category": "employee matching / coffee chats",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial employee engagement/matching platform; adjacent to grouping but not directly comparable.",
+      "publicEvidence": "Claims automated matching programs and customizable algorithms for employee connections.",
+      "notes": "Track as related recurring matching software."
+    },
+    {
+      "id": "coffeechats-ai",
+      "name": "CoffeeChats.ai",
+      "url": "https://coffeechats.ai/",
+      "category": "AI coffee chat matching",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial/hosted coffee-chat matching product; no public generator workflow was reviewed.",
+      "publicEvidence": "Claims AI-matched 1:1 member introductions via Slack or email.",
+      "notes": "Adjacent to speed networking/recurring pairing."
+    },
+    {
+      "id": "hoppier-lunch-roulette",
+      "name": "Lunch Roulette",
+      "url": "https://www.hoppier.com/lunch-roulette",
+      "category": "Slack lunch / coffee roulette",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Slack app/product page; no public grouping workflow was reviewed and scope is adjacent.",
+      "publicEvidence": "Claims weekly/monthly random team-member connections.",
+      "notes": "Related workplace pairing product."
+    },
+    {
+      "id": "coffee-roulette",
+      "name": "Coffee Roulette",
+      "url": "https://coffee-roulette.com/",
+      "category": "employee coffee matching",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial employee coffee-matching product; no public generator workflow was reviewed.",
+      "publicEvidence": "Claims employee coffee matching based on days in common and more than one million matches.",
+      "notes": "Adjacent recurring pair scheduler."
+    },
+    {
+      "id": "random-meets",
+      "name": "Random Meets",
+      "url": "https://randommeets.com/",
+      "category": "random one-on-one meeting automation",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial/hosted random meeting product; adjacent and not tested as a generator.",
+      "publicEvidence": "Claims weekly paired video calls within a group.",
+      "notes": "Related workplace/community pairing product."
+    },
+    {
+      "id": "coffeeroulette-made-with-love",
+      "name": "CoffeeRoulette by Made With Love",
+      "url": "https://coffeeroulette.madewithlove.com/",
+      "category": "Slack coffee roulette",
+      "accessStatus": "adjacent-commercial",
+      "whyNotRanked": "Slack command workflow for random Zoom coffee spots; adjacent and not a normal group generator.",
+      "publicEvidence": "Claims a /coffeeroulette slash command for random colleagues joining Zoom calls.",
+      "notes": "Related but narrow Slack/Zoom workflow."
+    },
+    {
+      "id": "alfy-coffee-donut-chat",
+      "name": "Alfy Coffee & Donut Chat",
+      "url": "https://buddieshr.com/alfy",
+      "category": "Slack coffee matching",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial Slack HR bot; adjacent to recurring pair matching rather than group generation.",
+      "publicEvidence": "Claims Slack coffee matching for team bonding.",
+      "notes": "Related workplace pairing product."
+    },
+    {
+      "id": "donut-virtual-coffee",
+      "name": "Donut Virtual Coffee Program",
+      "url": "https://www.donut.com/templates/virtual-coffee-program/",
+      "category": "Slack coffee matching",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial Slack intro program; adjacent and not a public group-generator workflow.",
+      "publicEvidence": "Claims recurring Donut channels for virtual coffees and groups of two.",
+      "notes": "Related recurring pairing platform."
+    }
+  ]
+}

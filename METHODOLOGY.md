@@ -69,6 +69,8 @@ Unknowns are resolved before public export. If a feature value is wrong, open a 
 - Preset-only or workaround grouping ranks below normal random splitters.
 - Non-group-generator tools may be omitted or rated as low-scoring workarounds.
 - Spreadsheet and AI tools are judged as realistic grouping workflows, not as general-purpose platforms.
+- Sales-gated commercial platforms, enterprise event suites, app-store-only products, and adjacent coffee-chat or matchmaking products are not star-rated unless a self-serve generator, open demo, or runnable implementation can be reviewed.
+- Related but unranked commercial/sales-gated products are tracked separately in [`data/related-commercial-platforms.json`](./data/related-commercial-platforms.json), not mixed into the ranked `data/tools.json` dataset.
 
 ## Update policy
 

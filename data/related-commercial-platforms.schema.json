@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://guwidoe.github.io/awesome-group-generators/data/related-commercial-platforms.schema.json",
+  "title": "Related commercial and sales-gated platforms",
+  "type": "object",
+  "required": ["metadata", "platforms"],
+  "additionalProperties": false,
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["title", "description", "exportedAt", "itemCount", "ratingPolicy", "accessStatuses"],
+      "additionalProperties": false,
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "exportedAt": { "type": "string" },
+        "itemCount": { "type": "integer", "minimum": 0 },
+        "ratingPolicy": { "type": "string" },
+        "accessStatuses": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        }
+      }
+    },
+    "platforms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "url", "category", "accessStatus", "whyNotRanked", "publicEvidence", "notes"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "name": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "category": { "type": "string" },
+          "accessStatus": {
+            "type": "string",
+            "enum": [
+              "sales-gated",
+              "commercial-platform",
+              "account-gated",
+              "app-store-only",
+              "documentation-only",
+              "adjacent-commercial",
+              "unverified"
+            ]
+          },
+          "whyNotRanked": { "type": "string" },
+          "publicEvidence": { "type": "string" },
+          "notes": { "type": "string" }
+        }
+      }
+    }
+  }
+}
