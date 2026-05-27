@@ -296,9 +296,57 @@ button { cursor: pointer; }
   font-size: 1.08rem;
   line-height: 1.65;
 }
-.controls, .quick-filters, .tag-panel, .feature-panel {
+.controls, .filter-levels {
   border-top: 1px solid var(--line);
   padding: 24px 0;
+}
+.filter-levels {
+  display: grid;
+  gap: 12px;
+}
+.filter-level, .nested-filter {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(255,255,255,.50);
+}
+.filter-level summary, .nested-filter summary {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 18px;
+  font-weight: 900;
+  list-style: none;
+}
+.filter-level summary::-webkit-details-marker, .nested-filter summary::-webkit-details-marker { display: none; }
+.filter-level summary::after, .nested-filter summary::after {
+  content: "+";
+  display: inline-grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  flex: 0 0 auto;
+}
+.filter-level[open] > summary::after, .nested-filter[open] > summary::after { content: "−"; }
+.filter-level summary small, .nested-filter summary small {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: .9rem;
+  font-weight: 600;
+}
+.filter-level > .pill-row, .nested-filter > .pill-row, .feature-tools, .nested-filter > .feature-grid {
+  margin: 0 18px 18px;
+}
+.advanced-filters[open] {
+  padding-bottom: 12px;
+}
+.nested-filter {
+  margin: 0 12px 10px;
+  background: rgba(255,255,255,.62);
 }
 .control-row {
   display: grid;

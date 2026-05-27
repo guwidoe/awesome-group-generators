@@ -144,34 +144,43 @@
           </div>
         </form>
 
-        <section class="quick-filters" aria-labelledby="quick-filters-title">
-          <div class="filter-header">
-            <h3 id="quick-filters-title">Quick filters</h3>
-            <p>Use one or combine several.</p>
-          </div>
-          <div id="preset-list" class="pill-row" aria-label="Preset filters"></div>
-        </section>
+        <section class="filter-levels" aria-label="Filter levels">
+          <details class="filter-level quick-filters" open>
+            <summary>
+              <span>Quick filters</span>
+              <small>Common presets</small>
+            </summary>
+            <div id="preset-list" class="pill-row" aria-label="Preset filters"></div>
+          </details>
 
-        <section class="tag-panel" aria-labelledby="tag-title">
-          <div class="filter-header">
-            <h3 id="tag-title">Dataset tags</h3>
-            <p>Structured labels derived from reviewed capabilities.</p>
-          </div>
-          <div id="tag-list" class="pill-row" aria-label="Tag filters"></div>
-        </section>
+          <details class="filter-level advanced-filters">
+            <summary>
+              <span>Advanced filters</span>
+              <small>Dataset tags and exact feature support</small>
+            </summary>
 
-        <section class="feature-panel" aria-labelledby="feature-title">
-          <div class="filter-header">
-            <div>
-              <h3 id="feature-title">Feature filters</h3>
-              <p>Require tools to support specific capabilities.</p>
-            </div>
-            <label class="compact-search" for="feature-search">
-              <span class="sr-only">Search features</span>
-              <input id="feature-search" type="search" placeholder="Find a feature…" autocomplete="off" />
-            </label>
-          </div>
-          <div id="feature-list" class="feature-grid" aria-label="Feature filters"></div>
+            <details class="nested-filter tag-panel">
+              <summary>
+                <span>Dataset tags</span>
+                <small>Structured labels derived from reviewed capabilities</small>
+              </summary>
+              <div id="tag-list" class="pill-row" aria-label="Tag filters"></div>
+            </details>
+
+            <details class="nested-filter feature-panel">
+              <summary>
+                <span>Feature filters</span>
+                <small>Require specific capabilities</small>
+              </summary>
+              <div class="feature-tools">
+                <label class="compact-search" for="feature-search">
+                  <span class="sr-only">Search features</span>
+                  <input id="feature-search" type="search" placeholder="Find a feature…" autocomplete="off" />
+                </label>
+              </div>
+              <div id="feature-list" class="feature-grid" aria-label="Feature filters"></div>
+            </details>
+          </details>
         </section>
 
         <div id="active-filters" class="active-filters" aria-live="polite"></div>
