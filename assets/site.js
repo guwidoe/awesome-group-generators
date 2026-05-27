@@ -381,8 +381,9 @@
 
   function renderRatingRow(label, value, comment) {
     const width = Math.max(0, Math.min(100, (Number(value) / 5) * 100));
-    const commentHtml = comment ? `<button class="rating-note-toggle" type="button" aria-expanded="false" title="Toggle note" onclick="var c=this.nextElementSibling;var open=c.hidden;c.hidden=!open;this.setAttribute('aria-expanded',String(open));this.textContent=open?'\u25b4':'\u25be'">\u25be</button><span class="rating-comment" hidden>${escapeHtml(comment)}</span>` : '';
-    return `<div class="rating-row"><span>${escapeHtml(label)}</span><span class="rating-track"><span class="rating-fill" style="width:${width}%"></span></span><span>${formatScore(value)}★</span>${commentHtml}</div>`;
+    const toggleBtn = comment ? `<button class="rating-note-toggle" type="button" aria-expanded="false" title="Toggle note" onclick="var c=this.parentNode.nextElementSibling;var open=!c.hidden;c.hidden=open;this.setAttribute('aria-expanded',String(!open));this.textContent=open?'\u25be':'\u25b4'">\u25be</button>` : '';
+    const commentEl = comment ? `<div class="rating-comment" hidden>${escapeHtml(comment)}</div>` : '';
+    return `<div class="rating-row"><span>${escapeHtml(label)}</span><span class="rating-track"><span class="rating-fill" style="width:${width}%"></span></span><span>${formatScore(value)}\u2605</span>${toggleBtn}</div>${commentEl}`;
   }
 
   function renderTags(tags) {

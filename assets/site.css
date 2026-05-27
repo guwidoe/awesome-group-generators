@@ -532,10 +532,10 @@ button { cursor: pointer; }
   border: 1px solid var(--line);
   border-radius: var(--radius);
   overflow: hidden;
-  contain: layout style;
 }
 .tool-card {
-  contain: layout style;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 280px;
   background: rgba(255,255,255,.86);
   padding: clamp(18px, 3vw, 28px);
   display: grid;
@@ -597,7 +597,6 @@ button { cursor: pointer; }
   font-size: .8rem;
   color: var(--muted);
   font-weight: 800;
-  contain: layout style;
 }
 .rating-note-toggle {
   grid-column: 4;
@@ -619,7 +618,6 @@ button { cursor: pointer; }
   background: rgba(249, 115, 22, .10);
 }
 .rating-comment {
-  grid-column: 1 / -1;
   font-weight: 500;
   font-size: .76rem;
   line-height: 1.45;
