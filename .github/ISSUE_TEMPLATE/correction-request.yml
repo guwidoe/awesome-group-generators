@@ -1,0 +1,40 @@
+name: Correction request
+description: Report stale or factually incorrect review data
+title: "Correction: <tool name>"
+labels: [correction]
+body:
+  - type: input
+    id: tool
+    attributes:
+      label: Tool name
+      placeholder: "Example: Wooclap Team Picker"
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Tool URL
+      placeholder: "https://..."
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: What does the dataset currently say?
+      description: Quote the relevant rating, feature value, summary sentence, or pricing note.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What should be corrected?
+      description: Describe the factual change.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Include reproduction steps, screenshots, docs links, or notes about account/payment requirements.
+    validations:
+      required: true

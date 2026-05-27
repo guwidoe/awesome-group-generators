@@ -1,0 +1,30 @@
+name: New tool suggestion
+description: Suggest a group generator or realistic grouping workflow to review
+title: "New tool: <tool name>"
+labels: [new-tool]
+body:
+  - type: input
+    id: tool
+    attributes:
+      label: Tool name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Tool URL
+      placeholder: "https://..."
+    validations:
+      required: true
+  - type: textarea
+    id: capability
+    attributes:
+      label: What group-generation workflow does it support?
+      description: Explain how it creates groups, teams, breakout rooms, pairings, or repeated schedules.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Mention account requirements, pricing, privacy concerns, exports, or comparable tools.

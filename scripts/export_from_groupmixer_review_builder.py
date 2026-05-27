@@ -1,0 +1,295 @@
+#!/usr/bin/env python3
+"""Export the GroupMixer review-builder draft into public awesome-list data files.
+
+This script intentionally publishes a cleaned review dataset, not the internal
+review-builder state/history. It reads the current internal JSON draft and writes:
+
+- data/tools.json
+- data/tools.csv
+- README.md
+"""
+
+from __future__ import annotations
+
+import csv
+import json
+import re
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+
+ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_SOURCE = ROOT.parent / "GroupMixer" / "webapp" / ".review-builder" / "current.json"
+RATING_KEYS = [
+    "easeOfUse",
+    "design",
+    "features",
+    "outputs",
+    "privacy",
+    "accountFriction",
+    "resultQuality",
+]
+FEATURE_VALUES = {"yes", "partial", "no", "na"}
+
+CATEGORY_PICKS = [
+    ("Best overall group generator", "GroupMixer"),
+    ("Best AI-assisted custom workflow", "ChatGPT Pro Extended Reasoning"),
+    ("Best social-golfer / repeat-minimization niche tool", "Social Golfer Online"),
+    ("Best preference-based group matching", "Clever Groups"),
+    ("Best lightweight classroom competitor", "Educatarea Random Group Generator"),
+    ("Best mobile team generator", "Team Shake"),
+    ("Best open/local social-golfer niche tool", "Good-Enough Golfers"),
+    ("Best polished simple random splitter", "Wooclap Team Picker"),
+    ("Best live visual team picker", "Picker Wheel Team Picker"),
+]
+
+
+def slugify(text: str) -> str:
+    text = text.lower().strip()
+    text = re.sub(r"[^a-z0-9]+", "-", text)
+    return text.strip("-") or "tool"
+
+
+def lines(value: Any) -> list[str]:
+    if isinstance(value, list):
+        return [str(item).strip() for item in value if str(item).strip()]
+    if not isinstance(value, str):
+        return []
+    return [line.strip(" -\t") for line in value.splitlines() if line.strip(" -\t")]
+
+
+def public_feature(value: Any) -> str:
+    if value is True:
+        return "yes"
+    if value is False:
+        return "no"
+    if value in FEATURE_VALUES:
+        return str(value)
+    # Public data should not contain unknowns. Missing/unknown values should be
+    # resolved in the review-builder before export.
+    raise ValueError(f"Unsupported feature value for public export: {value!r}")
+
+
+def derive_tags(tool: dict[str, Any]) -> list[str]:
+    features = tool.get("features", {})
+    ratings = tool.get("ratings", {})
+    tags: list[str] = []
+    if features.get("Multiple rounds/sessions") == "yes" or features.get("Repeat encounter limits") == "yes" or features.get("Unique-contact optimization") == "yes":
+        tags.append("multi-round")
+    if any(features.get(key) in {"yes", "partial"} for key in [
+        "Hard keep-together constraints",
+        "Hard keep-apart constraints",
+        "Attribute balance constraints",
+        "Soft prefer-together constraints",
+        "Soft prefer-apart constraints",
+        "Pair meeting count targets",
+    ]):
+        tags.append("constraints")
+    if features.get("Self-join participant link") == "yes":
+        tags.append("self-join")
+    if features.get("Runs in browser") == "yes" and ratings.get("privacy", 0) >= 4:
+        tags.append("privacy-friendly")
+    if features.get("Spreadsheet CSV export") == "yes" or ratings.get("outputs", 0) >= 4:
+        tags.append("strong-exports")
+    if ratings.get("features", 0) <= 1.8 and ratings.get("resultQuality", 0) <= 2.1:
+        tags.append("basic-randomizer")
+    if "ChatGPT" in tool.get("name", "") or "AI" in tool.get("summary", ""):
+        tags.append("ai-assisted")
+    return tags
+
+
+def load_tools(source: Path) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    raw = json.loads(source.read_text())
+    state = raw["state"]
+    tools = []
+    seen_ids: set[str] = set()
+    sorted_tools = sorted(
+        state["tools"],
+        key=lambda item: (-float(item["overallRating"]), item["name"].lower()),
+    )
+    for rank, item in enumerate(sorted_tools, start=1):
+        ratings = item.get("ratings", {})
+        missing = [key for key in RATING_KEYS if key not in ratings]
+        if missing:
+            raise ValueError(f"{item.get('name')} missing ratings: {missing}")
+        features = {key: public_feature(value) for key, value in sorted(item.get("features", {}).items())}
+        tool_id = slugify(item["name"])
+        if tool_id in seen_ids:
+            suffix = 2
+            while f"{tool_id}-{suffix}" in seen_ids:
+                suffix += 1
+            tool_id = f"{tool_id}-{suffix}"
+        seen_ids.add(tool_id)
+        public = {
+            "id": tool_id,
+            "rank": rank,
+            "name": item["name"],
+            "url": item.get("href") or item.get("url") or "",
+            "bestFor": item.get("bestFor", ""),
+            "summary": item.get("summary", ""),
+            "pricing": item.get("pricing", ""),
+            "overallRating": float(item["overallRating"]),
+            "overallComment": item.get("overallComment", ""),
+            "ratings": {key: float(ratings[key]) for key in RATING_KEYS},
+            "ratingComments": {key: item.get("ratingComments", {}).get(key, "") for key in RATING_KEYS},
+            "features": features,
+            "pros": lines(item.get("pros")),
+            "cons": lines(item.get("cons")),
+            "reviewNote": item.get("notes", ""),
+        }
+        public["tags"] = derive_tags(public)
+        tools.append(public)
+    meta = {
+        "title": "Awesome Group Generators",
+        "description": "A transparent, curated review dataset for group generators, team pickers, classroom grouping tools, breakout-room planners, and social-golfer schedulers.",
+        "sourceRevisionId": raw.get("revisionId"),
+        "sourceSavedAt": raw.get("savedAt"),
+        "exportedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "toolCount": len(tools),
+        "ratingScale": "0.0 to 5.0, higher is better",
+        "ratingCategories": RATING_KEYS,
+        "featureValues": sorted(FEATURE_VALUES),
+    }
+    return meta, tools
+
+
+def write_json(meta: dict[str, Any], tools: list[dict[str, Any]]) -> None:
+    payload = {"metadata": meta, "tools": tools}
+    path = ROOT / "data" / "tools.json"
+    path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n")
+
+
+def write_csv(tools: list[dict[str, Any]]) -> None:
+    path = ROOT / "data" / "tools.csv"
+    fieldnames = [
+        "rank",
+        "name",
+        "url",
+        "overallRating",
+        *RATING_KEYS,
+        "bestFor",
+        "pricing",
+        "tags",
+    ]
+    with path.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        for tool in tools:
+            row = {
+                "rank": tool["rank"],
+                "name": tool["name"],
+                "url": tool["url"],
+                "overallRating": tool["overallRating"],
+                **tool["ratings"],
+                "bestFor": tool["bestFor"],
+                "pricing": tool["pricing"],
+                "tags": ",".join(tool["tags"]),
+            }
+            writer.writerow(row)
+
+
+def fmt_score(value: float) -> str:
+    return f"{value:.1f}".rstrip("0").rstrip(".")
+
+
+def md_link(label: str, url: str) -> str:
+    if not url:
+        return label
+    return f"[{label}]({url})"
+
+
+def table_rows(tools: list[dict[str, Any]], limit: int | None = None) -> str:
+    rows = ["| Rank | Tool | Score | Best for | Tags |", "|---:|---|---:|---|---|"]
+    subset = tools if limit is None else tools[:limit]
+    for tool in subset:
+        tags = ", ".join(tool["tags"][:4]) or "—"
+        rows.append(
+            f"| {tool['rank']} | {md_link(tool['name'], tool['url'])} | {fmt_score(tool['overallRating'])} | {tool['bestFor']} | {tags} |"
+        )
+    return "\n".join(rows)
+
+
+def write_readme(meta: dict[str, Any], tools: list[dict[str, Any]]) -> None:
+    by_name = {tool["name"]: tool for tool in tools}
+    picks = []
+    for label, name in CATEGORY_PICKS:
+        tool = by_name.get(name)
+        if tool:
+            picks.append(
+                f"| {label} | {md_link(tool['name'], tool['url'])} | {fmt_score(tool['overallRating'])} | {tool['bestFor']} |"
+            )
+    readme = f"""# Awesome Group Generators
+
+A curated, transparent list of tools for generating groups, teams, classroom groups, workshop breakout rooms, speed-networking rotations, and social-golfer schedules.
+
+This repository backs the GroupMixer group-generator comparison. It publishes the review dataset, scoring methodology, and correction workflow so tool owners and users can point out stale data or unfair ratings.
+
+> Disclosure: this list is maintained by the creator of [GroupMixer](https://www.groupmixer.app/). Ratings are editorial, evidence-based, and open to correction requests, but they are not vendor-controlled.
+
+## Data files
+
+- [`data/tools.json`](./data/tools.json) — full structured dataset
+- [`data/tools.csv`](./data/tools.csv) — spreadsheet-friendly summary
+- [`data/tools.schema.json`](./data/tools.schema.json) — JSON schema
+- [`METHODOLOGY.md`](./METHODOLOGY.md) — scoring rubric and review rules
+
+Current export: **{meta['toolCount']} tools**, source revision **{meta.get('sourceRevisionId')}**, exported **{meta['exportedAt']}**.
+
+## Top picks by use case
+
+| Use case | Tool | Score | Best for |
+|---|---|---:|---|
+{chr(10).join(picks)}
+
+## Top 20 reviewed tools
+
+{table_rows(tools, limit=20)}
+
+## All reviewed tools
+
+{table_rows(tools)}
+
+## How to challenge a rating
+
+If a tool changed, a feature is missing, or a rating seems unfair, please open an issue:
+
+- **Correction request** — factual changes, broken links, feature updates
+- **Rating dispute** — explain which rating seems unfair and provide evidence
+- **New tool suggestion** — propose a group generator that should be reviewed
+
+Good reports include a URL, reproduction steps, screenshots if useful, and a short explanation of why the current data is wrong. Final ratings remain editorial, but well-supported corrections are welcome.
+
+## Scope
+
+Included tools may be:
+
+- random group generators
+- team pickers
+- classroom group makers
+- breakout-room assignment tools
+- social-golfer / repeat-minimization schedulers
+- spreadsheet or AI workarounds when people realistically use them for grouping
+
+Tools that do not generate groups at all may be rejected or kept only as low-rated workaround entries.
+
+## License
+
+See [`LICENSE.md`](./LICENSE.md). In short: scripts are MIT licensed; review data and written content are published under CC BY 4.0.
+"""
+    (ROOT / "README.md").write_text(readme)
+
+
+def main() -> None:
+    source = DEFAULT_SOURCE
+    if not source.exists():
+        raise SystemExit(f"Source review-builder file not found: {source}")
+    (ROOT / "data").mkdir(exist_ok=True)
+    meta, tools = load_tools(source)
+    write_json(meta, tools)
+    write_csv(tools)
+    write_readme(meta, tools)
+    print(f"Exported {len(tools)} tools from {source}")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,46 @@
+name: Rating dispute
+description: Explain why a score seems unfair
+title: "Rating dispute: <tool name>"
+labels: [rating-dispute]
+body:
+  - type: input
+    id: tool
+    attributes:
+      label: Tool name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Tool URL
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Rating category
+      options:
+        - Overall
+        - Ease of use
+        - Design
+        - Features
+        - Outputs
+        - Privacy
+        - Account friction
+        - Result quality
+    validations:
+      required: true
+  - type: textarea
+    id: dispute
+    attributes:
+      label: Why is the current rating unfair?
+      description: Please be specific and tie your argument to the methodology.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Include reproduction steps, screenshots, docs links, or examples of comparable tools.
+    validations:
+      required: true

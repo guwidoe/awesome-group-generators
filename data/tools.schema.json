@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/groupmixer/awesome-group-generators/data/tools.schema.json",
+  "title": "Awesome Group Generators review dataset",
+  "type": "object",
+  "required": ["metadata", "tools"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["title", "toolCount", "ratingScale", "ratingCategories", "featureValues"],
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "sourceRevisionId": { "type": ["integer", "null"] },
+        "sourceSavedAt": { "type": ["string", "null"] },
+        "exportedAt": { "type": "string" },
+        "toolCount": { "type": "integer", "minimum": 0 },
+        "ratingScale": { "type": "string" },
+        "ratingCategories": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "featureValues": {
+          "type": "array",
+          "items": { "enum": ["yes", "partial", "no", "na"] }
+        }
+      },
+      "additionalProperties": true
+    },
+    "tools": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/tool" }
+    }
+  },
+  "$defs": {
+    "rating": { "type": "number", "minimum": 0, "maximum": 5 },
+    "featureSupport": { "enum": ["yes", "partial", "no", "na"] },
+    "tool": {
+      "type": "object",
+      "required": [
+        "id",
+        "rank",
+        "name",
+        "url",
+        "bestFor",
+        "summary",
+        "pricing",
+        "overallRating",
+        "ratings",
+        "features",
+        "pros",
+        "cons"
+      ],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "rank": { "type": "integer", "minimum": 1 },
+        "name": { "type": "string" },
+        "url": { "type": "string" },
+        "bestFor": { "type": "string" },
+        "summary": { "type": "string" },
+        "pricing": { "type": "string" },
+        "overallRating": { "$ref": "#/$defs/rating" },
+        "overallComment": { "type": "string" },
+        "ratings": {
+          "type": "object",
+          "required": ["easeOfUse", "design", "features", "outputs", "privacy", "accountFriction", "resultQuality"],
+          "properties": {
+            "easeOfUse": { "$ref": "#/$defs/rating" },
+            "design": { "$ref": "#/$defs/rating" },
+            "features": { "$ref": "#/$defs/rating" },
+            "outputs": { "$ref": "#/$defs/rating" },
+            "privacy": { "$ref": "#/$defs/rating" },
+            "accountFriction": { "$ref": "#/$defs/rating" },
+            "resultQuality": { "$ref": "#/$defs/rating" }
+          },
+          "additionalProperties": false
+        },
+        "ratingComments": { "type": "object", "additionalProperties": { "type": "string" } },
+        "features": { "type": "object", "additionalProperties": { "$ref": "#/$defs/featureSupport" } },
+        "pros": { "type": "array", "items": { "type": "string" } },
+        "cons": { "type": "array", "items": { "type": "string" } },
+        "reviewNote": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    }
+  }
+}
