@@ -168,7 +168,7 @@ button { cursor: pointer; }
   align-items: center;
   gap: 12px;
 }
-.hero-actions { margin-top: 34px; }
+.hero-actions { margin-top: 58px; }
 .primary-action, .secondary-action, .ghost-link, .ghost-button {
   display: inline-flex;
   align-items: center;
@@ -251,7 +251,7 @@ button { cursor: pointer; }
 }
 .dataset-strip {
   width: var(--content);
-  margin: -52px auto 0;
+  margin: 32px auto 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1px;
@@ -276,7 +276,14 @@ button { cursor: pointer; }
   width: var(--content);
   margin-inline: auto;
 }
-.explorer { padding: 110px 0 48px; }
+.explorer { padding: 70px 0 48px; }
+.explorer-note {
+  max-width: 760px;
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
 .section-heading {
   display: grid;
   grid-template-columns: 0.82fr 1fr;
