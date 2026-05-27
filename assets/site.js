@@ -169,7 +169,7 @@
   function hydrateStats(data) {
     const topScore = Math.max(...state.tools.map((tool) => tool.overallRating || 0));
     el.statToolCount.textContent = String(data.metadata?.toolCount ?? state.tools.length);
-    el.statTopScore.textContent = formatScore(topScore);
+    el.statTopScore.textContent = `${formatScore(topScore)}★`;
     el.statRevision.textContent = String(data.metadata?.sourceRevisionId ?? '—');
     el.statExported.textContent = formatDate(data.metadata?.exportedAt);
   }
@@ -330,7 +330,7 @@
     return `<article class="tool-card" id="${escapeHtml(tool.id)}">
       <div class="rank-score">
         <span class="rank">#${escapeHtml(String(tool.rank))}</span>
-        <span class="score" aria-label="Overall rating ${formatScore(tool.overallRating)} out of 5">${formatScore(tool.overallRating)}</span>
+        <span class="score" aria-label="Overall rating ${formatScore(tool.overallRating)} out of 5 stars">${formatScore(tool.overallRating)}★</span>
       </div>
       <div class="tool-main">
         <h3><a href="${escapeAttribute(tool.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(tool.name)}</a></h3>
