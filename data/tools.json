@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Awesome Group Generators",
     "description": "A transparent, curated review dataset for group generators, team pickers, classroom grouping tools, breakout-room planners, and social-golfer schedulers.",
-    "sourceRevisionId": 471,
-    "sourceSavedAt": "2026-05-27T14:32:13.460Z",
-    "exportedAt": "2026-05-27T14:32:29+00:00",
+    "sourceRevisionId": 472,
+    "sourceSavedAt": "2026-05-27T15:33:04.869Z",
+    "exportedAt": "2026-05-27T15:34:15+00:00",
     "toolCount": 78,
     "ratingScale": "0.0 to 5.0 stars, higher is better",
     "ratingCategories": [
@@ -6175,7 +6175,7 @@
         "No useful export formats",
         "Bad privacy/ad-consent setup",
         "Shared URLs expose entered names",
-        "Ranks better than it deserves"
+        "Ranks better in search engines than it deserves"
       ],
       "reviewNote": "Like ClassTools, it undeservedly ranks extremely high for many related searches. The search visibility is much stronger than the actual tool. Generated share URLs include roster names in the query string.",
       "tags": [

@@ -2,6 +2,7 @@
 
 ## 2026-05-27
 
+- Clarified RandomLists' con about ranking better in search engines than its tool quality deserves.
 - Corrected GroupMixer visual/theme customization support to partial for dark/light mode.
 - Aligned Randomizer.uk and Zufallsgenerator reviews after confirming they use the same localized grouping engine/template.
 - Moved sorting into the results header and reduced vertical whitespace between filters and results.
