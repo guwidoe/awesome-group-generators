@@ -2,6 +2,7 @@
 
 ## 2026-05-27
 
+- Added reviewed entry for Gynzy Group Maker.
 - Added reviewed entries for ClassroomGroupGenerator.com, TeachQuill Classroom Group Generator, and Grouper.school.
 - Updated Randomizer.uk and Zufallsgenerator reviews to better credit their nicer utility interface.
 - Clarified RandomLists' con about ranking better in search engines than its tool quality deserves.
