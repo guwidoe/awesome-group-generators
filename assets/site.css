@@ -72,6 +72,7 @@ button { cursor: pointer; }
 }
 .site-hero {
   min-height: 680px;
+  padding-bottom: 64px;
   color: white;
   background:
     linear-gradient(135deg, rgba(17, 24, 39, 0.96), rgba(28, 37, 54, 0.92)),
