@@ -97,21 +97,6 @@
               <input id="search-input" type="search" placeholder="Try “repeat”, “classroom”, “privacy”, “Zoom”…" autocomplete="off" />
             </label>
 
-            <label class="select-field" for="sort-select">
-              <span>Sort by</span>
-              <select id="sort-select">
-                <option value="rank">Rank</option>
-                <option value="overallRating">Overall star rating</option>
-                <option value="resultQuality">Result quality</option>
-                <option value="features">Feature depth</option>
-                <option value="privacy">Privacy</option>
-                <option value="outputs">Exports</option>
-                <option value="easeOfUse">Ease of use</option>
-                <option value="name">Name</option>
-              </select>
-            </label>
-
-            <button id="direction-button" class="ghost-button" type="button" aria-pressed="false">Ascending</button>
           </div>
 
           <div class="control-row secondary-controls">
@@ -179,7 +164,16 @@
           </details>
         </section>
 
-        <div id="active-filters" class="active-filters" aria-live="polite"></div>
+        <div class="filter-footer">
+          <div id="active-filters" class="active-filters" aria-live="polite"></div>
+          <details class="data-export-details">
+            <summary>Data export</summary>
+            <div class="data-export-actions">
+              <button id="copy-json-button" class="text-button" type="button">Copy filtered JSON</button>
+              <a class="text-link" href="data/tools.csv">Download CSV</a>
+            </div>
+          </details>
+        </div>
       </section>
 
       <section id="results" class="results-section" aria-labelledby="results-title">
@@ -188,9 +182,21 @@
             <p class="eyebrow">Results</p>
             <h2 id="results-title"><span id="result-count">0</span> matching tools</h2>
           </div>
-          <div class="results-actions">
-            <button id="copy-json-button" class="ghost-button" type="button">Copy filtered JSON</button>
-            <a class="ghost-link" href="data/tools.csv">Download CSV</a>
+          <div class="results-actions sort-actions">
+            <label class="select-field sort-field" for="sort-select">
+              <span>Sort by</span>
+              <select id="sort-select">
+                <option value="rank">Rank</option>
+                <option value="overallRating">Overall star rating</option>
+                <option value="resultQuality">Result quality</option>
+                <option value="features">Feature depth</option>
+                <option value="privacy">Privacy</option>
+                <option value="outputs">Exports</option>
+                <option value="easeOfUse">Ease of use</option>
+                <option value="name">Name</option>
+              </select>
+            </label>
+            <button id="direction-button" class="ghost-button" type="button" aria-pressed="false">Ascending</button>
           </div>
         </div>
 

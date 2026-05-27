@@ -2,6 +2,7 @@
 
 ## 2026-05-27
 
+- Moved sorting into the results header and reduced vertical whitespace between filters and results.
 - Collapsed advanced tag/feature filters so the GitHub Pages explorer opens with a smaller filter surface.
 - Split quick filters from dataset tag filters and added a pricing filter to the GitHub Pages explorer.
 - Added PickJa Random Group Generator, bringing the dataset to 78 reviewed tools.

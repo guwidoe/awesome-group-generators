@@ -277,7 +277,7 @@ button { cursor: pointer; }
   width: var(--content);
   margin-inline: auto;
 }
-.explorer { padding: 70px 0 48px; }
+.explorer { padding: 70px 0 6px; }
 .explorer-note {
   max-width: 760px;
   margin: 0 0 18px;
@@ -361,7 +361,7 @@ button { cursor: pointer; }
   gap: 16px;
   align-items: end;
 }
-.primary-controls { grid-template-columns: minmax(280px, 1fr) minmax(180px, 240px) auto; }
+.primary-controls { grid-template-columns: 1fr; }
 .secondary-controls { grid-template-columns: minmax(260px, 0.7fr) minmax(190px, 240px) minmax(240px, 1fr) auto; margin-top: 16px; }
 .search-field, .select-field, .range-field, .compact-search {
   display: grid;
@@ -452,7 +452,41 @@ button { cursor: pointer; }
 }
 .feature-button strong { display: block; font-size: .92rem; }
 .feature-button span { display: block; margin-top: 3px; color: var(--muted); font-size: .78rem; }
-.active-filters { min-height: 40px; padding-top: 10px; }
+.filter-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 34px;
+  padding-top: 8px;
+}
+.active-filters { display: flex; flex-wrap: wrap; gap: 10px; min-height: 0; padding-top: 0; }
+.data-export-details {
+  color: var(--muted);
+  font-size: .9rem;
+  font-weight: 750;
+}
+.data-export-details summary {
+  cursor: pointer;
+  list-style: none;
+}
+.data-export-details summary::-webkit-details-marker { display: none; }
+.data-export-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+  justify-content: flex-end;
+}
+.text-button, .text-link {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  padding: 0;
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.text-button:hover, .text-link:hover { color: var(--accent-dark); }
 .filter-chip button {
   border: 0;
   margin-left: 5px;
@@ -460,7 +494,7 @@ button { cursor: pointer; }
   color: inherit;
   font-weight: 900;
 }
-.results-section { padding: 32px 0 92px; }
+.results-section { padding: 4px 0 92px; }
 .results-bar {
   position: sticky;
   top: 0;
@@ -469,11 +503,20 @@ button { cursor: pointer; }
   justify-content: space-between;
   align-items: end;
   gap: 24px;
-  padding: 22px 0;
+  padding: 14px 0 18px;
   background: transparent;
   border-bottom: 1px solid var(--line);
 }
 .results-bar h2 { font-size: clamp(1.85rem, 4vw, 3.3rem); }
+.sort-actions {
+  align-items: end;
+}
+.sort-field {
+  min-width: 230px;
+}
+.sort-actions .ghost-button {
+  min-height: 52px;
+}
 .tool-list {
   display: grid;
   gap: 1px;
