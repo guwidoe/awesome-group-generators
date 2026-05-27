@@ -2,6 +2,7 @@
 
 ## 2026-05-27
 
+- Split quick filters from dataset tag filters and added a pricing filter to the GitHub Pages explorer.
 - Added PickJa Random Group Generator, bringing the dataset to 78 reviewed tools.
 - Added a GitHub Pages interactive explorer with search, sorting, rating thresholds, tag filters, feature filters, and filtered JSON copy.
 - Initial public dataset export.

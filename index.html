@@ -124,6 +124,17 @@
               <input id="min-rating" type="range" min="0" max="5" step="0.1" value="0" />
             </label>
 
+            <label class="select-field" for="pricing-filter">
+              <span>Pricing</span>
+              <select id="pricing-filter">
+                <option value="any">Any pricing</option>
+                <option value="free-no-account">Free, no account</option>
+                <option value="free-caveats">Free with ads/upsells</option>
+                <option value="paid">Paid or subscription</option>
+                <option value="unclear">Unclear pricing</option>
+              </select>
+            </label>
+
             <label class="checkbox-field" for="include-partial">
               <input id="include-partial" type="checkbox" checked />
               <span>Feature filters include partial support</span>
@@ -139,6 +150,13 @@
             <p>Use one or combine several.</p>
           </div>
           <div id="preset-list" class="pill-row" aria-label="Preset filters"></div>
+        </section>
+
+        <section class="tag-panel" aria-labelledby="tag-title">
+          <div class="filter-header">
+            <h3 id="tag-title">Dataset tags</h3>
+            <p>Structured labels derived from reviewed capabilities.</p>
+          </div>
           <div id="tag-list" class="pill-row" aria-label="Tag filters"></div>
         </section>
 

@@ -296,7 +296,7 @@ button { cursor: pointer; }
   font-size: 1.08rem;
   line-height: 1.65;
 }
-.controls, .quick-filters, .feature-panel {
+.controls, .quick-filters, .tag-panel, .feature-panel {
   border-top: 1px solid var(--line);
   padding: 24px 0;
 }
@@ -306,7 +306,7 @@ button { cursor: pointer; }
   align-items: end;
 }
 .primary-controls { grid-template-columns: minmax(280px, 1fr) minmax(180px, 240px) auto; }
-.secondary-controls { grid-template-columns: minmax(260px, 0.7fr) minmax(240px, 1fr) auto; margin-top: 16px; }
+.secondary-controls { grid-template-columns: minmax(260px, 0.7fr) minmax(190px, 240px) minmax(240px, 1fr) auto; margin-top: 16px; }
 .search-field, .select-field, .range-field, .compact-search {
   display: grid;
   gap: 8px;

@@ -10,6 +10,13 @@
     accountFriction: 'No account',
     resultQuality: 'Quality',
   };
+  const PRICING_FILTERS = {
+    any: 'Any pricing',
+    'free-no-account': 'Free, no account',
+    'free-caveats': 'Free with ads/upsells',
+    paid: 'Paid or subscription',
+    unclear: 'Unclear pricing',
+  };
   const PRESETS = [
     {
       id: 'serious',
@@ -80,6 +87,7 @@
     sort: 'rank',
     direction: 'asc',
     minRating: 0,
+    pricing: 'any',
     includePartial: true,
     tags: new Set(),
     features: new Set(),
@@ -110,7 +118,7 @@
   function bindElements() {
     const ids = [
       'search-input', 'sort-select', 'direction-button', 'min-rating', 'min-rating-output',
-      'include-partial', 'reset-button', 'preset-list', 'tag-list', 'feature-search',
+      'pricing-filter', 'include-partial', 'reset-button', 'preset-list', 'tag-list', 'feature-search',
       'feature-list', 'active-filters', 'result-count', 'tool-list', 'empty-state',
       'copy-json-button', 'stat-tool-count', 'stat-top-score', 'stat-revision', 'stat-exported',
     ];
@@ -136,6 +144,10 @@
     el.minRating.addEventListener('input', () => {
       state.minRating = Number(el.minRating.value);
       el.minRatingOutput.value = state.minRating.toFixed(1);
+      applyFilters();
+    });
+    el.pricingFilter.addEventListener('change', () => {
+      state.pricing = el.pricingFilter.value;
       applyFilters();
     });
     el.includePartial.addEventListener('change', () => {
@@ -249,6 +261,7 @@
   function applyFilters() {
     const filtered = state.tools.filter((tool) => {
       if ((tool.overallRating || 0) < state.minRating) return false;
+      if (state.pricing !== 'any' && pricingTier(tool) !== state.pricing) return false;
       if (state.query && !searchText(tool).includes(state.query)) return false;
       if (![...state.tags].every((tag) => (tool.tags || []).includes(tag))) return false;
       if (![...state.features].every((feature) => hasFeature(tool, feature))) return false;
@@ -285,6 +298,7 @@
     const chips = [];
     if (state.query) chips.push({ label: `Search: ${state.query}`, onRemove: () => { state.query = ''; el.searchInput.value = ''; } });
     if (state.minRating > 0) chips.push({ label: `Rating ≥ ${state.minRating.toFixed(1)}`, onRemove: () => { state.minRating = 0; el.minRating.value = '0'; el.minRatingOutput.value = '0.0'; } });
+    if (state.pricing !== 'any') chips.push({ label: `Pricing: ${PRICING_FILTERS[state.pricing] || state.pricing}`, onRemove: () => { state.pricing = 'any'; el.pricingFilter.value = 'any'; } });
     [...state.tags].forEach((tag) => chips.push({ label: `Tag: ${tag}`, onRemove: () => state.tags.delete(tag) }));
     [...state.features].forEach((feature) => chips.push({ label: `Feature: ${feature}`, onRemove: () => state.features.delete(feature) }));
 
@@ -321,7 +335,7 @@
       <div class="tool-main">
         <h3><a href="${escapeAttribute(tool.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(tool.name)}</a></h3>
         <p class="best-for">${escapeHtml(tool.bestFor || 'No best-fit summary available.')}</p>
-        <div class="tag-row" aria-label="Tags">${renderTags(tool.tags || [])}</div>
+        <div class="tag-row" aria-label="Tags">${renderTags([...new Set([pricingLabel(tool), ...(tool.tags || [])])])}</div>
         <div class="feature-row" aria-label="Feature support">${highlightFeatures.map((feature) => renderSupport(feature, tool.features?.[feature])).join('')}</div>
       </div>
       <div class="rating-stack" aria-label="Selected ratings">${ratings}</div>
@@ -379,6 +393,7 @@
     state.sort = 'rank';
     state.direction = 'asc';
     state.minRating = 0;
+    state.pricing = 'any';
     state.includePartial = true;
     state.tags.clear();
     state.features.clear();
@@ -387,6 +402,7 @@
     el.sortSelect.value = 'rank';
     el.minRating.value = '0';
     el.minRatingOutput.value = '0.0';
+    el.pricingFilter.value = 'any';
     el.includePartial.checked = true;
     el.featureSearch.value = '';
     updateDirectionButton();
@@ -422,9 +438,30 @@
     else set.add(value);
   }
 
+  function pricingTier(tool) {
+    const text = String(tool.pricing || '').toLowerCase();
+    const normalized = text
+      .replace(/no account, subscription, or paywall/g, 'no account')
+      .replace(/no (separate )?[^.]{0,50}subscription/g, '')
+      .replace(/no (account or )?payment/g, '')
+      .replace(/no paid [^.]{0,80}/g, '')
+      .replace(/not clearly priced/g, '');
+    const hasFree = /\bfree\b|no account required|no account/.test(normalized);
+    const hasCaveat = /\bad-supported\b|\bads?\b|\bpremium\b|paid tier|paid plan|\bupgrade\b|\bfreemium\b|\bpaywall\b|\blimited\b|\blogin\b|sign-in|sign in|google account|microsoft account/.test(normalized);
+    const hasPaid = /\bpaid\b|\bsubscription\b|\bpurchase\b|app-store|app store|pro plan|per month|per year|monthly|yearly|\blicense\b|starts at|\bcosts\b|chatgpt pro|microsoft 365/.test(normalized);
+    if (hasFree && !hasCaveat && !hasPaid) return 'free-no-account';
+    if (hasFree) return 'free-caveats';
+    if (hasPaid) return 'paid';
+    return 'unclear';
+  }
+
+  function pricingLabel(tool) {
+    return PRICING_FILTERS[pricingTier(tool)] || 'Unclear pricing';
+  }
+
   function searchText(tool) {
     return [
-      tool.name, tool.url, tool.bestFor, tool.summary, tool.pricing, tool.overallComment,
+      tool.name, tool.url, tool.bestFor, tool.summary, tool.pricing, pricingLabel(tool), tool.overallComment,
       tool.reviewNote, ...(tool.tags || []), ...(tool.pros || []), ...(tool.cons || []),
     ].join(' ').toLowerCase();
   }
