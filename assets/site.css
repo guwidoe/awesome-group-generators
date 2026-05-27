@@ -71,8 +71,8 @@ button { cursor: pointer; }
   border: 0;
 }
 .site-hero {
-  min-height: 680px;
-  padding-bottom: 64px;
+  min-height: auto;
+  padding-bottom: 28px;
   color: white;
   background:
     linear-gradient(135deg, rgba(17, 24, 39, 0.96), rgba(28, 37, 54, 0.92)),
@@ -128,7 +128,7 @@ button { cursor: pointer; }
 .hero-inner {
   width: var(--content);
   margin: 0 auto;
-  min-height: 610px;
+  min-height: 520px;
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.85fr);
   align-items: center;

@@ -29,11 +29,11 @@
       "rank": 1,
       "name": "GroupMixer",
       "url": "https://www.groupmixer.app",
-      "bestFor": "Almost every group generation usecase",
+      "bestFor": "Great for almost every group generation usecase",
       "summary": "GroupMixer is much more capable than the simple randomizers on this list. It can still do a quick random split, but its real value is constraints, repeated sessions, partial attendance, imports/exports, repeat-pairing reduction, diagnostics, and local-first scenario workflows. The tradeoff is that the full workspace is more complex than a toy picker.",
       "pricing": "Free browser-based tool. No account, subscription, or paywall for the solver, imports, exports, scenario storage, or result diagnostics.",
       "overallRating": 4.7,
-      "overallComment": "Still the strongest all-around group generator here if the user needs more than a one-off random split, but the advanced workspace is naturally denser than toy randomizers.",
+      "overallComment": "The strongest all-around group generator available. Covers simple usecases as well as very advanced grouping optimisation and the optimisation engine is world-class. The advanced workspace is naturally denser than toy randomizers.",
       "ratings": {
         "easeOfUse": 4.6,
         "design": 4.1,
