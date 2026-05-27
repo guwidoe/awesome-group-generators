@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Export the GroupMixer review-builder draft into public awesome-list data files.
+"""Import a review-builder JSON draft into public awesome-list data files.
 
-This script intentionally publishes a cleaned review dataset, not the internal
-review-builder state/history. It reads the current internal JSON draft and writes:
+This script intentionally publishes a cleaned review dataset, not internal
+review-builder state/history. It reads a source JSON draft and writes:
 
 - data/tools.json
 - data/tools.csv
@@ -19,7 +19,7 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_SOURCE = ROOT.parent / "GroupMixer" / "webapp" / ".review-builder" / "current.json"
+DEFAULT_SOURCE = Path.cwd() / "review-builder-current.json"
 RATING_KEYS = [
     "easeOfUse",
     "design",
@@ -258,9 +258,7 @@ def write_readme(meta: dict[str, Any], tools: list[dict[str, Any]]) -> None:
 
 A curated, transparent list of tools for generating groups, teams, classroom groups, workshop breakout rooms, speed-networking rotations, and social-golfer schedules.
 
-This repository backs the GroupMixer group-generator comparison. It publishes the review dataset, scoring methodology, and correction workflow so tool owners and users can point out stale data or unfair ratings.
-
-> Disclosure: this list is maintained by the creator of [GroupMixer](https://www.groupmixer.app/). Ratings are editorial, evidence-based, and open to correction requests, but they are not vendor-controlled.
+This repository publishes a review dataset, scoring methodology, and correction workflow so tool owners and users can point out stale data or unfair ratings. Ratings are editorial, evidence-based, and open to correction requests.
 
 ## Data files
 
@@ -318,9 +316,14 @@ See [`LICENSE.md`](./LICENSE.md). In short: scripts are MIT licensed; review dat
 
 
 def main() -> None:
-    source = DEFAULT_SOURCE
+    import sys
+
+    source = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else DEFAULT_SOURCE
     if not source.exists():
-        raise SystemExit(f"Source review-builder file not found: {source}")
+        raise SystemExit(
+            f"Source review-builder file not found: {source}\n"
+            "Pass a source path, e.g. python3 scripts/import_review_builder_json.py ../path/to/current.json"
+        )
     (ROOT / "data").mkdir(exist_ok=True)
     meta, tools = load_tools(source)
     write_json(meta, tools)

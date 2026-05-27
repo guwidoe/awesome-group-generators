@@ -2,9 +2,7 @@
 
 A curated, transparent list of tools for generating groups, teams, classroom groups, workshop breakout rooms, speed-networking rotations, and social-golfer schedules.
 
-This repository backs the GroupMixer group-generator comparison. It publishes the review dataset, scoring methodology, and correction workflow so tool owners and users can point out stale data or unfair ratings.
-
-> Disclosure: this list is maintained by the creator of [GroupMixer](https://www.groupmixer.app/). Ratings are editorial, evidence-based, and open to correction requests, but they are not vendor-controlled.
+This repository publishes a review dataset, scoring methodology, and correction workflow so tool owners and users can point out stale data or unfair ratings. Ratings are editorial, evidence-based, and open to correction requests.
 
 ## Data files
 
@@ -13,7 +11,7 @@ This repository backs the GroupMixer group-generator comparison. It publishes th
 - [`data/tools.schema.json`](./data/tools.schema.json) — JSON schema
 - [`METHODOLOGY.md`](./METHODOLOGY.md) — scoring rubric and review rules
 
-Current export: **77 tools**, source revision **454**, exported **2026-05-27T10:43:31+00:00**.
+Current export: **77 tools**, source revision **454**, exported **2026-05-27T10:51:59+00:00**.
 
 ## Use-case shortlists
 

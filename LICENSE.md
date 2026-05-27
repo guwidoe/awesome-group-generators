@@ -17,6 +17,6 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 ## CC BY 4.0 for data and content
 
-You may share and adapt the review data and written content if you provide appropriate attribution to **Awesome Group Generators / GroupMixer** and indicate if changes were made.
+You may share and adapt the review data and written content if you provide appropriate attribution to **Awesome Group Generators** and indicate if changes were made.
 
 See: https://creativecommons.org/licenses/by/4.0/
