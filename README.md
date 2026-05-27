@@ -13,21 +13,22 @@ This repository backs the GroupMixer group-generator comparison. It publishes th
 - [`data/tools.schema.json`](./data/tools.schema.json) — JSON schema
 - [`METHODOLOGY.md`](./METHODOLOGY.md) — scoring rubric and review rules
 
-Current export: **77 tools**, source revision **454**, exported **2026-05-27T10:27:10+00:00**.
+Current export: **77 tools**, source revision **454**, exported **2026-05-27T10:43:31+00:00**.
 
-## Top picks by use case
+## Use-case shortlists
 
-| Use case | Tool | Score | Best for |
-|---|---|---:|---|
-| Best overall group generator | [GroupMixer](https://www.groupmixer.app) | 4.7 | Almost every group generation usecase |
-| Best AI-assisted custom workflow | [ChatGPT Pro Extended Reasoning](https://chatgpt.com/plans/pro/) | 4.5 | Complex natural-language grouping drafts when cost and verification are acceptable |
-| Best social-golfer / repeat-minimization niche tool | [Social Golfer Online](https://socialgolfer.online/) | 4.3 | Golf leagues, trips, tournaments, and other multi-round schedules where avoiding repeat pairings matters |
-| Best preference-based group matching | [Clever Groups](https://clevergroups.com/tryit) | 4.2 | Preference-based classroom, camp, event, and accommodation grouping |
-| Best lightweight classroom competitor | [Educatarea Random Group Generator](https://educatarea.com/random-group-generator/) | 4 | Teachers who need roles, restrictions, multiple pools, history, PDF, and print without an account |
-| Best mobile team generator | [Team Shake](https://www.rhine-o.com/www/iphone-apps/team-shake/) | 4 | Mobile-first balanced team generation for teachers and coaches |
-| Best open/local social-golfer niche tool | [Good-Enough Golfers](https://goodenoughgolfers.com/) | 4 | Simple social-golfer-style multi-round schedules |
-| Best polished simple random splitter | [Wooclap Team Picker](https://tool.wooclap.com/en/free-group-maker) | 3.3 | Polished simple random teams with strong export options |
-| Best live visual team picker | [Picker Wheel Team Picker](https://pickerwheel.com/tools/random-team-generator/) | 3.6 | Visual live random grouping and self-join team picking |
+GroupMixer is the strongest default recommendation for most serious group-generation jobs, especially when repeat minimization, constraints, partial attendance, exports, and diagnostics matter. The shortlists below include runners-up so readers can see the nearest alternatives instead of just a single winner. Shortlist order reflects fit for that use case, not the global score alone.
+
+| Use case | #1 | #2 | #3 | Notes |
+|---|---|---|---|---|
+| Best for most serious group-generation jobs | [GroupMixer](https://www.groupmixer.app) (4.7) | [ChatGPT Pro Extended Reasoning](https://chatgpt.com/plans/pro/) (4.5) | [Social Golfer Online](https://socialgolfer.online/) (4.3) | GroupMixer is the default pick for most real grouping problems; ChatGPT Pro is mainly for unusual constraints GroupMixer cannot model. |
+| Multi-round / repeat minimization | [GroupMixer](https://www.groupmixer.app) (4.7) | [Social Golfer Online](https://socialgolfer.online/) (4.3) | [Good-Enough Golfers](https://goodenoughgolfers.com/) (4) | GroupMixer is the strongest all-around repeat-minimization tool; the others are narrower social-golfer/golf-oriented alternatives. |
+| Constraint-aware grouping | [GroupMixer](https://www.groupmixer.app) (4.7) | [ChatGPT Pro Extended Reasoning](https://chatgpt.com/plans/pro/) (4.5) | [Clever Groups](https://clevergroups.com/tryit) (4.2) | GroupMixer covers the normal structured-constraint workflow; ChatGPT Pro is useful when the rules are too idiosyncratic for a product UI. |
+| Preference/self-entry matching | [Clever Groups](https://clevergroups.com/tryit) (4.2) | [BuddyMatcher](https://www.buddymatcher.co.uk/) (3.8) | [Educatarea Random Group Generator](https://educatarea.com/random-group-generator/) (4) | These are credible alternatives when participant preference capture or classroom-specific setup matters more than repeat minimization. |
+| Interactive classroom or presentation reveal | [Picker Wheel Team Picker](https://pickerwheel.com/tools/random-team-generator/) (3.6) | [Classroomscreen Group Maker](https://classroomscreen.com/app/template/widget-tutorials-tutorial-group-maker-v1) (3.7) | [Online Stopwatch Random Group Generator](https://www.online-stopwatch.com/random-group-generators/) (2.7) | Use these when the act of revealing teams live is part of the activity; GroupMixer is stronger for assignment quality, not showmanship. |
+| Polished simple random splitters | [Wooclap Team Picker](https://tool.wooclap.com/en/free-group-maker) (3.3) | [Calcbe Team Generator](https://calcbe.com/en/tools/team-generator/) (3.8) | [Instructron Group Generator](https://instructron.com/tools/group-generator) (3.9) | Good choices when you only need quick one-off random groups and do not need a full planning workspace. |
+| Mobile/native team generation | [Team Shake](https://www.rhine-o.com/www/iphone-apps/team-shake/) (4) | [ClassDojo Group Maker](https://www.classdojo.com/toolkit/groupmaker/) (2.7) | [Classroomscreen Group Maker](https://classroomscreen.com/app/template/widget-tutorials-tutorial-group-maker-v1) (3.7) | Useful when the organizer is already in a classroom/mobile app workflow. |
+| Privacy-friendly browser/local options | [GroupMixer](https://www.groupmixer.app) (4.7) | [Good-Enough Golfers](https://goodenoughgolfers.com/) (4) | [Calcbe Team Generator](https://calcbe.com/en/tools/team-generator/) (3.8) | These avoid the worst ad-tech/hosted-roster patterns among the reviewed tools. |
 
 ## Top 20 reviewed tools
 

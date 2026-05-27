@@ -31,16 +31,47 @@ RATING_KEYS = [
 ]
 FEATURE_VALUES = {"yes", "partial", "no", "na"}
 
-CATEGORY_PICKS = [
-    ("Best overall group generator", "GroupMixer"),
-    ("Best AI-assisted custom workflow", "ChatGPT Pro Extended Reasoning"),
-    ("Best social-golfer / repeat-minimization niche tool", "Social Golfer Online"),
-    ("Best preference-based group matching", "Clever Groups"),
-    ("Best lightweight classroom competitor", "Educatarea Random Group Generator"),
-    ("Best mobile team generator", "Team Shake"),
-    ("Best open/local social-golfer niche tool", "Good-Enough Golfers"),
-    ("Best polished simple random splitter", "Wooclap Team Picker"),
-    ("Best live visual team picker", "Picker Wheel Team Picker"),
+USE_CASE_SHORTLISTS = [
+    (
+        "Best for most serious group-generation jobs",
+        ["GroupMixer", "ChatGPT Pro Extended Reasoning", "Social Golfer Online"],
+        "GroupMixer is the default pick for most real grouping problems; ChatGPT Pro is mainly for unusual constraints GroupMixer cannot model.",
+    ),
+    (
+        "Multi-round / repeat minimization",
+        ["GroupMixer", "Social Golfer Online", "Good-Enough Golfers"],
+        "GroupMixer is the strongest all-around repeat-minimization tool; the others are narrower social-golfer/golf-oriented alternatives.",
+    ),
+    (
+        "Constraint-aware grouping",
+        ["GroupMixer", "ChatGPT Pro Extended Reasoning", "Clever Groups"],
+        "GroupMixer covers the normal structured-constraint workflow; ChatGPT Pro is useful when the rules are too idiosyncratic for a product UI.",
+    ),
+    (
+        "Preference/self-entry matching",
+        ["Clever Groups", "BuddyMatcher", "Educatarea Random Group Generator"],
+        "These are credible alternatives when participant preference capture or classroom-specific setup matters more than repeat minimization.",
+    ),
+    (
+        "Interactive classroom or presentation reveal",
+        ["Picker Wheel Team Picker", "Classroomscreen Group Maker", "Online Stopwatch Random Group Generator"],
+        "Use these when the act of revealing teams live is part of the activity; GroupMixer is stronger for assignment quality, not showmanship.",
+    ),
+    (
+        "Polished simple random splitters",
+        ["Wooclap Team Picker", "Calcbe Team Generator", "Instructron Group Generator"],
+        "Good choices when you only need quick one-off random groups and do not need a full planning workspace.",
+    ),
+    (
+        "Mobile/native team generation",
+        ["Team Shake", "ClassDojo Group Maker", "Classroomscreen Group Maker"],
+        "Useful when the organizer is already in a classroom/mobile app workflow.",
+    ),
+    (
+        "Privacy-friendly browser/local options",
+        ["GroupMixer", "Good-Enough Golfers", "Calcbe Team Generator"],
+        "These avoid the worst ad-tech/hosted-roster patterns among the reviewed tools.",
+    ),
 ]
 
 
@@ -209,15 +240,20 @@ def table_rows(tools: list[dict[str, Any]], limit: int | None = None) -> str:
     return "\n".join(rows)
 
 
+def shortlist_cell(tool: dict[str, Any] | None) -> str:
+    if not tool:
+        return "—"
+    return f"{md_link(tool['name'], tool['url'])} ({fmt_score(tool['overallRating'])})"
+
+
 def write_readme(meta: dict[str, Any], tools: list[dict[str, Any]]) -> None:
     by_name = {tool["name"]: tool for tool in tools}
-    picks = []
-    for label, name in CATEGORY_PICKS:
-        tool = by_name.get(name)
-        if tool:
-            picks.append(
-                f"| {label} | {md_link(tool['name'], tool['url'])} | {fmt_score(tool['overallRating'])} | {tool['bestFor']} |"
-            )
+    shortlist_rows = []
+    for label, names, note in USE_CASE_SHORTLISTS:
+        picked = [by_name.get(name) for name in names]
+        shortlist_rows.append(
+            f"| {label} | {shortlist_cell(picked[0])} | {shortlist_cell(picked[1])} | {shortlist_cell(picked[2])} | {note} |"
+        )
     readme = f"""# Awesome Group Generators
 
 A curated, transparent list of tools for generating groups, teams, classroom groups, workshop breakout rooms, speed-networking rotations, and social-golfer schedules.
@@ -235,11 +271,13 @@ This repository backs the GroupMixer group-generator comparison. It publishes th
 
 Current export: **{meta['toolCount']} tools**, source revision **{meta.get('sourceRevisionId')}**, exported **{meta['exportedAt']}**.
 
-## Top picks by use case
+## Use-case shortlists
 
-| Use case | Tool | Score | Best for |
-|---|---|---:|---|
-{chr(10).join(picks)}
+GroupMixer is the strongest default recommendation for most serious group-generation jobs, especially when repeat minimization, constraints, partial attendance, exports, and diagnostics matter. The shortlists below include runners-up so readers can see the nearest alternatives instead of just a single winner. Shortlist order reflects fit for that use case, not the global score alone.
+
+| Use case | #1 | #2 | #3 | Notes |
+|---|---|---|---|---|
+{chr(10).join(shortlist_rows)}
 
 ## Top 20 reviewed tools
 
