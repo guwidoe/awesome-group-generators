@@ -581,7 +581,7 @@ button { cursor: pointer; }
 .rating-stack { display: grid; gap: 9px; }
 .rating-row {
   display: grid;
-  grid-template-columns: 94px 1fr 32px;
+  grid-template-columns: 112px 1fr 38px;
   gap: 10px;
   align-items: center;
   font-size: .8rem;

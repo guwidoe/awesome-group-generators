@@ -7,9 +7,10 @@
     features: 'Features',
     outputs: 'Exports',
     privacy: 'Privacy',
-    accountFriction: 'No account',
+    accountFriction: 'Account friction',
     resultQuality: 'Quality',
   };
+  const CARD_RATING_KEYS = ['resultQuality', 'features', 'outputs', 'privacy', 'easeOfUse', 'design', 'accountFriction'];
   const PRICING_FILTERS = {
     any: 'Any pricing',
     'free-no-account': 'Free, no account',
@@ -326,7 +327,7 @@
   function renderToolCard(tool) {
     const highlightedFeatures = selectedOrImportantFeatures(tool).slice(0, 8);
     const allFeatureRows = Object.entries(tool.features || {}).sort(([left], [right]) => left.localeCompare(right));
-    const ratings = ['resultQuality', 'features', 'outputs', 'privacy'].map((key) => renderRatingRow(RATING_LABELS[key], tool.ratings?.[key] ?? 0)).join('');
+    const ratings = CARD_RATING_KEYS.map((key) => renderRatingRow(RATING_LABELS[key], tool.ratings?.[key] ?? 0)).join('');
     const summary = tool.overallComment || tool.summary || tool.reviewNote || '';
     return `<article class="tool-card" id="${escapeHtml(tool.id)}">
       <div class="rank-score">
