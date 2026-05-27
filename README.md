@@ -15,7 +15,7 @@ This repository publishes a review dataset, scoring methodology, correction work
 - [`data/tools.schema.json`](./data/tools.schema.json) — JSON schema
 - [`METHODOLOGY.md`](./METHODOLOGY.md) — scoring rubric and review rules
 
-Current export: **82 tools**, source revision **475**, exported **2026-05-27T17:30:09+00:00**.
+Current export: **83 tools**, source revision **476**, exported **2026-05-27T17:37:19+00:00**.
 
 ## Use-case shortlists
 
@@ -142,7 +142,8 @@ The shortlists below show three candidates per use case so readers can compare l
 | 79 | [Schule Dietmannsried Gruppen Generator](https://www.schule-dietmannsried.de/gruppen/) | 1.8 | Bare-bones German classroom group splitting | privacy-friendly, basic-randomizer |
 | 80 | [Wheel of Names](https://wheelofnames.com/) | 1.8 | Random picking, raffles, and manual group-building workarounds | basic-randomizer |
 | 81 | [AhaSlides Random Team Generator](https://ahaslides.com/features/random-team-generator/) | 1.7 | AhaSlides users who already want random-team generation inside an interactive presentation workflow | basic-randomizer |
-| 82 | [Teach Starter Random Name Picker](https://www.teachstarter.com/us/widget/random-name-picker-us/) | 1.1 | Picking one student at a time, not generating groups | basic-randomizer |
+| 82 | [TCEA Grouping Tools](https://blog.tcea.org/grouping-tools/) | 1.2 | Teachers looking for an old roundup of classroom grouping links | basic-randomizer |
+| 83 | [Teach Starter Random Name Picker](https://www.teachstarter.com/us/widget/random-name-picker-us/) | 1.1 | Picking one student at a time, not generating groups | basic-randomizer |
 
 ## How to challenge a rating
 
