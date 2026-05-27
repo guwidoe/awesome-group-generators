@@ -2,6 +2,7 @@
 
 ## 2026-05-27
 
+- Added reviewed entries for 14 newly discovered group-generator candidates and excluded Yo Motherboard because its generator shortcode did not render.
 - Updated Randly after confirming it works in-browser and supports multiple generated draws.
 - Retested SpinnChoose, updated its rating after confirming generation works in-browser, and removed TCEA Grouping Tools because it is a blog roundup rather than a generator.
 - Added reviewed entries for RemagineAI, Mate.tools, WebRandom, FindUtils, PiliApp, Wanglitou, Cojoro, RandomTeams.net, The Decider, and FreeRandomTools.
