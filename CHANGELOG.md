@@ -2,6 +2,7 @@
 
 ## 2026-05-27
 
+- Corrected GroupMixer visual/theme customization support to partial for dark/light mode.
 - Aligned Randomizer.uk and Zufallsgenerator reviews after confirming they use the same localized grouping engine/template.
 - Moved sorting into the results header and reduced vertical whitespace between filters and results.
 - Collapsed advanced tag/feature filters so the GitHub Pages explorer opens with a smaller filter surface.
