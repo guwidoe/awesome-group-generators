@@ -2,6 +2,7 @@
 
 ## 2026-05-27
 
+- Added reviewed entry for Super Teacher Tools Classroom Seating / Groups.
 - Added reviewed entry for TCEA Grouping Tools.
 - Added reviewed entry for Gynzy Group Maker.
 - Added reviewed entries for ClassroomGroupGenerator.com, TeachQuill Classroom Group Generator, and Grouper.school.

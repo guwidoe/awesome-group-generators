@@ -197,9 +197,14 @@ button { cursor: pointer; }
   background: var(--dark);
 }
 .secondary-action.dark {
-  color: var(--dark);
-  border-color: var(--line-strong);
-  background: transparent;
+  color: white;
+  border-color: rgba(255,255,255,.62);
+  background: rgba(255,255,255,.10);
+}
+.secondary-action.dark:hover {
+  color: white;
+  border-color: rgba(255,255,255,.86);
+  background: rgba(255,255,255,.18);
 }
 .ghost-button, .ghost-link {
   color: var(--ink);
