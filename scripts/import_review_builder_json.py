@@ -14,6 +14,7 @@ from __future__ import annotations
 import csv
 import json
 import re
+import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -260,6 +261,8 @@ A curated, transparent list of tools for generating groups, teams, classroom gro
 
 This repository publishes a review dataset, scoring methodology, correction workflow, and GitHub Pages explorer so tool owners and users can point out stale data or unfair ratings. Ratings are editorial, evidence-based, and open to correction requests.
 
+![A confused person overwhelmed by spreadsheets, browser windows, sticky notes, and group-generation chaos.](./assets/confused-group-generator-hero.png)
+
 ## Website
 
 - Interactive explorer: https://guwidoe.github.io/awesome-group-generators/
@@ -339,6 +342,7 @@ def main() -> None:
     write_json(meta, tools)
     write_csv(tools)
     write_readme(meta, tools)
+    subprocess.run(["node", str(ROOT / "scripts" / "build_static_site.mjs")], check=True)
     print(f"Exported {len(tools)} tools from {source}")
 
 
