@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Awesome Group Generators",
     "description": "A transparent, curated review dataset for group generators, team pickers, classroom grouping tools, breakout-room planners, and social-golfer schedulers.",
-    "sourceRevisionId": 479,
-    "sourceSavedAt": "2026-05-27T18:20:24.649Z",
-    "exportedAt": "2026-05-27T18:20:40+00:00",
+    "sourceRevisionId": 481,
+    "sourceSavedAt": "2026-05-27T18:25:29.619Z",
+    "exportedAt": "2026-05-27T18:25:46+00:00",
     "toolCount": 89,
     "ratingScale": "0.0 to 5.0 stars, higher is better",
     "ratingCategories": [
@@ -30,10 +30,10 @@
       "name": "GroupMixer",
       "url": "https://www.groupmixer.app",
       "bestFor": "Almost every group generation usecase",
-      "summary": "GroupMixer is much more capable than the simple randomizers on this list. It can still do a quick random split, but its real value is constraints, repeated sessions, partial attendance, imports/exports, repeat-pairing reduction, diagnostics, and local-first scenario workflows. The tradeoff is that the full workspace is more complex than a toy picker.",
+      "summary": "GroupMixer is much more capable than the simple randomizers on this list. It can also do a quick random split, but its real value is constraints, repeated sessions, partial attendance, imports/exports, repeat-pairing reduction, diagnostics, and local-first scenario workflows. The tradeoff is that the full workspace is more complex than a toy picker.",
       "pricing": "Free browser-based tool. No account, subscription, or paywall for the solver, imports, exports, scenario storage, or result diagnostics.",
       "overallRating": 4.7,
-      "overallComment": "Still the strongest all-around group generator here if the user needs more than a one-off random split, but the advanced workspace is naturally denser than toy randomizers.",
+      "overallComment": "The strongest all-around group generator here if the user needs more than a one-off random split, but the advanced workspace is naturally denser than toy randomizers.",
       "ratings": {
         "easeOfUse": 4.6,
         "design": 4.1,
@@ -45,10 +45,10 @@
       },
       "ratingComments": {
         "easeOfUse": "The basic landing-page flow is easy: paste names, choose groups or group size, and generate. The advanced grid/workspace is necessarily denser than one-click splitters because it exposes sessions, capacities, constraints, imports, diagnostics, and saved scenarios.",
-        "design": "Modern and much more polished than most utility sites. Some screens are naturally dense because the tool exposes advanced setup, and parts of the expert workspace/mobile experience could still be smoother.",
+        "design": "Modern and much more polished than most utility sites. Some screens are naturally dense because the tool exposes advanced setup, and parts of the expert workspace/mobile experience could be smoother.",
         "features": "Extremely deep for a group generator: multi-session scheduling, participant availability, editable groups, custom capacities and minimums, per-session capacity overrides, hard/soft constraints, weighted objectives, repeat reduction, imports, exports, saved scenarios/workspaces, saved result history, scenario import/export bundles, solver telemetry/result metadata, diagnostics, pair matrices, and API access. The main missing areas are presentation gimmicks, self-join links, and arbitrary non-group-generator customization.",
         "outputs": "Excellent output coverage: CSV-style exports, copy/print/share workflows, Zoom breakout CSV export, scenario bundles, result diagnostics, and API output. Not a literal 5/5 because it does not cover every presentation/export format such as polished image/PDF result exports or embeddable result widgets.",
-        "privacy": "Very strong for a web-based group generator, mainly because normal solving runs in the browser and does not upload participant names, group assignments, or full scenario contents to GroupMixer servers. Drafts, saved scenarios, saved results, and UI state are stored locally in the browser via IndexedDB/localStorage/sessionStorage/service-worker cache. It does not deserve a perfect score because Vercel hosting sees normal technical request logs, Vercel Web Analytics / Convex telemetry may receive page views and coarse product events using a sessionStorage-based session id, solver failures may send anonymized scenario structure, and feedback can transmit whatever the user submits. Still far ahead of ad-tech-heavy competitors: no account is required, no participant roster upload is needed for normal use, and there is no mass third-party vendor consent stack.",
+        "privacy": "Very strong for a web-based group generator, mainly because normal solving runs in the browser and does not upload participant names, group assignments, or full scenario contents to GroupMixer servers. Drafts, saved scenarios, saved results, and UI state are stored locally in the browser via IndexedDB/localStorage/sessionStorage/service-worker cache. It does not deserve a perfect score because Vercel hosting sees normal technical request logs, Vercel Web Analytics / Convex telemetry may receive page views and coarse product events using a sessionStorage-based session id, solver failures may send anonymized scenario structure, and feedback can transmit whatever the user submits. Far ahead of ad-tech-heavy competitors: no account is required, no participant roster upload is needed for normal use, and there is no mass third-party vendor consent stack.",
         "accountFriction": "No account required.",
         "resultQuality": "This is the result-quality outlier in the comparison. GroupMixer goes above and beyond: it uses a custom-built solver engine designed specifically for social-golfer-like, multi-session group assignment cases. For this problem class, that domain-specific machinery can outperform general tools such as OR-Tools and enterprise constraint solvers such as Gurobi or Hexaly by a huge margin, because the solver encodes extensive SGP-specific theory, construction logic, local search, repeat minimization, constraints, capacities, partial attendance, and diagnostics directly into the search. It is plausibly at or beyond the level a user can expect from current academic SGP literature for many practical cases."
       },
@@ -149,10 +149,10 @@
       },
       "ratingComments": {
         "easeOfUse": "Its about as easy as it gets for basically arbitrary features/any feature you can imagine. You just describe whatever you want in natural language.",
-        "design": "Same polished ChatGPT interface as the free version, with better model/tool access. It is still chat-first rather than a group-generator UI.",
+        "design": "Same polished ChatGPT interface as the free version, with better model/tool access. It is chat-first rather than a group-generator UI.",
         "features": "Very flexible in natural language: arbitrary group sizes, multi-round schedules, balancing requests, keep-together/keep-apart rules, pinned people, custom output formats, and iterative revisions. It can basically do whatever you ask for. The limitation is validation: these are model-generated plans, not hard solver features with guaranteed feasibility.",
         "outputs": "Can produce the output in whatever format the user asks for.",
-        "privacy": "Still a poor default fit for sensitive rosters. Pro is a consumer plan, not the same as Business/Enterprise no-training defaults; data use depends on settings and policies. Users should not paste student/personnel data unless their account and consent setup supports it.",
+        "privacy": "A poor default fit for sensitive rosters. Pro is a consumer plan, not the same as Business/Enterprise no-training defaults; data use depends on settings and policies. Users should not paste student/personnel data unless their account and consent setup supports it.",
         "accountFriction": "Requires a paid Pro subscription and account. The cost and plan management are real friction compared with free web group generators.",
         "resultQuality": "Extremely strong result quality because the model can perform highly advanced reasoning and implement advanced algorithms matching the exact problem ad-hoc, leading to almost always extremely high quality results."
       },
@@ -224,7 +224,7 @@
         "Requires an account and paid subscription",
         "Not a purpose-built group-generator UI",
         "Can be extremely slow, 10 min - 1 hour for generations with more complex constraints",
-        "Quality still depends on prompting and verification"
+        "Quality depends on prompting and verification"
       ],
       "reviewNote": "Review consumer ChatGPT Pro extended/pro reasoning, not ChatGPT Business/Enterprise, the API, or a custom solver. It deserves higher capability than free ChatGPT, but privacy/cost/validation keep it below purpose-built solvers.",
       "tags": [
@@ -367,7 +367,7 @@
         "outputs": "Good output surface: CSV export, displayed groups, group history, satisfaction metrics, and registered workflows for importing/exporting student and preference lists. No Zoom-specific export, print/PDF focus, or public share result page in the try-it flow.",
         "privacy": "Mixed. The site has detailed GDPR/CCPA/COPPA-style policy language and says it does not sell/share personal information, but the full workflow stores names/preferences in a hosted service with accounts, cookies, Fathom/Cookiebot/Cloudflare, Zoho/Backblaze/Hostgator-style subprocessors, and child-consent complexity. Not local/private like browser-only tools.",
         "accountFriction": "Try-it mode works without registration, which is good. Real use strongly pushes account creation for saving, spreadsheet import, multiple teams, and student self-entry; students/guests may also join via links/cookies.",
-        "resultQuality": "Strong for single-session preference/category grouping. Satisfaction scoring and category/blocking-preference handling make it far better than random splitters. It still is not a multi-round social-golfer optimizer and may need manual tweaking for hard real-world allocations."
+        "resultQuality": "Strong for single-session preference/category grouping. Satisfaction scoring and category/blocking-preference handling make it far better than random splitters. It is not a multi-round social-golfer optimizer and may need manual tweaking for hard real-world allocations."
       },
       "features": {
         "API/programmatic access": "no",
@@ -470,9 +470,9 @@
         "design": "Modern, readable classroom-tool interface with a good whiteboard/presentation feel. It is busier than a single-purpose generator because it is part of a whole classroom tools suite.",
         "features": "Strong classroom feature depth: saved rosters, CSV/TXT import, group size/count, gender modes, always-together and do-not-group-with rules, absent handling via roster state, task assignment, presentation mode, reshuffle, and saved boards.",
         "outputs": "Good output surface for teachers: generated group cards, reshuffle, download, presentation/whiteboard use, saved local class state, and share/import/export claims. It is not a spreadsheet-first or Zoom-specific exporter.",
-        "privacy": "Better than ad-heavy utilities and the free mode can keep class data in browser storage. Still, the live page loaded Google Analytics, Microsoft Clarity, Crisp, and related scripts; the privacy policy also describes account/cloud storage of student names and classroom data.",
+        "privacy": "Better than ad-heavy utilities and the free mode can keep class data in browser storage. The live page loaded Google Analytics, Microsoft Clarity, Crisp, and related scripts; the privacy policy also describes account/cloud storage of student names and classroom data.",
         "accountFriction": "The reviewed workflow works in guest mode without signup. Account/pro upgrade is mainly for cloud sync, multi-device use, and paid classroom-suite features.",
-        "resultQuality": "Much better than basic random splitters because it supports keep-together, keep-apart, gender modes, group size/count, and balancing strategy. It is still a single-session classroom generator rather than a multi-round optimizer."
+        "resultQuality": "Much better than basic random splitters because it supports keep-together, keep-apart, gender modes, group size/count, and balancing strategy. It is a single-session classroom generator rather than a multi-round optimizer."
       },
       "features": {
         "API/programmatic access": "no",
@@ -575,7 +575,7 @@
         "outputs": "Excellent for a free tool: copy, PDF, print, and history are visible in the result workflow.",
         "privacy": "No account required and state is stored locally, but the page loads Google Tag Manager and has no obvious dedicated privacy page for the tool.",
         "accountFriction": "No account required.",
-        "resultQuality": "Above simple random splitters because multiple pools, restrictions, and roles can materially improve classroom groups. Still not a solver-grade repeat/balance optimizer."
+        "resultQuality": "Above simple random splitters because multiple pools, restrictions, and roles can materially improve classroom groups. Not a solver-grade repeat/balance optimizer."
       },
       "features": {
         "API/programmatic access": "no",
@@ -785,7 +785,7 @@
         "design": "Very polished, classroom-specific interface and landing page. The attribute demos and Live Mode positioning are clear.",
         "features": "Strong classroom feature set: Google Classroom/Clever rosters, custom attributes, gender/proficiency/leader/conflict examples, do-not-group-with, absent marking, recent grouping reuse, Live Mode, and paid expansion to unlimited attributes/roles.",
         "outputs": "Good classroom presentation and saved/recent grouping workflow, but no obvious spreadsheet/Zoom/export-first output surface from the public materials.",
-        "privacy": "Good for a hosted education product: no advertising, no sale of personal data, student records not used for targeted advertising, COPPA/FERPA language, encryption, and vendor list. Still hosted/account-based with analytics, Intercom, Google, Posthog, and roster integrations.",
+        "privacy": "Good for a hosted education product: no advertising, no sale of personal data, student records not used for targeted advertising, COPPA/FERPA language, encryption, and vendor list. Hosted/account-based with analytics, Intercom, Google, Posthog, and roster integrations.",
         "accountFriction": "Account is required. Email signup sends a magic link; Google/Clever are also offered.",
         "resultQuality": "Strong single-session classroom grouping quality because groups are built around student attributes and teacher knowledge rather than pure randomization. Not a multi-round repeat minimizer."
       },
@@ -886,9 +886,9 @@
         "easeOfUse": "Basic use is simple once the app is installed: add names, choose number of teams or people per team, and generate. The advanced controls add setup work, and the app-store/mobile-only workflow is more friction than a browser tool.",
         "design": "Functional but dated. The app is clearly built around utility rather than polish. The mobile workflow is practical for teachers/coaches, but it does not feel modern.",
         "features": "Strong for group generation. It supports 1–64 teams, selection by team count or team size, balanced or random teams, strength balancing, gender balancing, separate male/female teams, equal-ability groups, absences, keep-together subteams, keep-apart oppose teams, saved rosters, configurable team names/colors, and list import/export. Missing the higher-end stuff: multi-session scheduling, repeat minimization, diagnostics, and arbitrary weighted constraints.",
-        "outputs": "Very good output surface for a mobile app: share teams as text, image, CSV, or Excel; email/social sharing; print support; saved lists; backups for moving lists/settings between devices. It still lacks web-native share pages, Zoom breakout export, and schedule-style outputs.",
+        "outputs": "Very good output surface for a mobile app: share teams as text, image, CSV, or Excel; email/social sharing; print support; saved lists; backups for moving lists/settings between devices. It lacks web-native share pages, Zoom breakout export, and schedule-style outputs.",
         "privacy": "Strong. The app privacy policy says Rhine-o does not collect, store, or process user information; entered names are not shared with the developer; App Store privacy says data is not collected; and COPPA compliance is stated. Caveats are normal platform backup/sync services and user-triggered sharing through email/social apps.",
-        "accountFriction": "No Team Shake account is needed, which is good. But it is not an instant web tool: users need an app-store account/device, installation, and usually a paid app purchase.",
+        "accountFriction": "No Team Shake account is needed, which is good. It is not an instant web tool: users need an app-store account/device, installation, and usually a paid app purchase.",
         "resultQuality": "Good single-session team quality. It can balance by strength/gender and honor keep-together/keep-apart rules where possible, which is far above plain random splitters. It does not optimize repeated sessions or provide solver diagnostics, so it is not in the same class as a multi-round optimizer."
       },
       "features": {
@@ -973,7 +973,7 @@
       "name": "TeamMaker App",
       "url": "https://teammakerapp.vercel.app/",
       "bestFor": "Local, no-account team making with strong classroom presentation and exports",
-      "summary": "TeamMaker App is a surprisingly capable browser-based team maker. Paste names or import a CSV, generate by members per team or number of teams, add together/apart constraints, manually drag people between teams, use projector mode, build seating plans, and export JPG/PDF or JSON backups. It stores data in the browser rather than requiring an account. It is still not a repeat-minimizing or attribute-balancing optimizer, but for practical classroom/team setup it is one of the stronger no-account tools.",
+      "summary": "TeamMaker App is a surprisingly capable browser-based team maker. Paste names or import a CSV, generate by members per team or number of teams, add together/apart constraints, manually drag people between teams, use projector mode, build seating plans, and export JPG/PDF or JSON backups. It stores data in the browser rather than requiring an account. It is not a repeat-minimizing or attribute-balancing optimizer, but for practical classroom/team setup it is one of the stronger no-account tools.",
       "pricing": "Free, with a Ko-fi tip link. No account is required.",
       "overallRating": 4.0,
       "overallComment": "A strong practical team maker: local storage, constraints, projector mode, seating plans, and PDF/JPG/JSON exports. It lacks attribute balancing and repeat optimization, but it is far above normal random splitters.",
@@ -991,7 +991,7 @@
         "design": "Modern, responsive, and practical. The interface is busier than tiny randomizers because it includes rosters, teams, seating, export, projector mode, and saved teams.",
         "features": "Excellent practical feature depth for a free browser tool: CSV import, random picker, together/apart constraints, manual drag editing, staging, projector mode, seating plans, multiple saved teams, JSON backup/restore, and export. Missing advanced optimization like attributes and repeat minimization.",
         "outputs": "Very strong output surface: JPG, PDF, JSON backups, team JSON import/export, seating-plan JSON, and projector mode. It lacks spreadsheet/Zoom CSV export and a copy button.",
-        "privacy": "Good for a hosted free tool because roster/team data is stored in the browser and no account is required. The page still loads Google Analytics/Tag Manager, external CDNs, and Ko-fi resources, so it is not a fully private/offline tool.",
+        "privacy": "Good for a hosted free tool because roster/team data is stored in the browser and no account is required. The page loads Google Analytics/Tag Manager, external CDNs, and Ko-fi resources, so it is not a fully private/offline tool.",
         "accountFriction": "No signup or login is needed.",
         "resultQuality": "Together/apart constraints and manual editing make results more usable than random splitters. It does not balance attributes or optimize repeated pairings across sessions."
       },
@@ -1065,7 +1065,7 @@
         "More complex than a tiny one-shot randomizer",
         "Uses external analytics/CDN resources"
       ],
-      "reviewNote": "This is a strong no-account app and should not be grouped with weak one-page randomizers. Keep result-quality capped because the generation logic is still random-with-constraints, not attribute balancing or repeat minimization.",
+      "reviewNote": "This is a strong no-account app and should not be grouped with weak one-page randomizers. Keep result-quality capped because the generation logic is random-with-constraints, not attribute balancing or repeat minimization.",
       "tags": [
         "constraints",
         "strong-exports"
@@ -1095,9 +1095,9 @@
         "design": "Modern, readable, and teacher-oriented. The page is much more polished than most utility randomizers, with sensible controls and result cards. The upgrade prompts are visible but not overwhelming.",
         "features": "Strong for a classroom grouping tool: group size/count modes, performance-level strategy, keep-apart rules, keep-together preferences, drag-and-drop edits, locked groups, manual add/remove groups, CSV export, print/PDF, initials-only and neutral-color display. Advanced profile signals and classroom import are gated behind account/upgrade paths. No multi-session repeat minimization or pair matrix.",
         "outputs": "Good output surface: CSV export, print/PDF, editable result cards, initials-only display, neutral-color display, and local/account plan saving in the broader workflow. No Zoom breakout export or public share link.",
-        "privacy": "Better than most free web tools. The policy says no selling, no targeted advertising, no student-data model training, minimal student identifiers, encryption, subprocessors, and teacher controls. The page still uses analytics.instructron.com and Cloudflare, and account/classroom use stores roster/profile/activity data, so it is not a local-only privacy story.",
+        "privacy": "Better than most free web tools. The policy says no selling, no targeted advertising, no student-data model training, minimal student identifiers, encryption, subprocessors, and teacher controls. The page uses analytics.instructron.com and Cloudflare, and account/classroom use stores roster/profile/activity data, so it is not a local-only privacy story.",
         "accountFriction": "The quick group generator works without an account, which is good. Classroom import, saved plans, and richer profile-based grouping push users toward signup and paid plans.",
-        "resultQuality": "Clearly above plain random splitting because it can balance or cluster by performance level, honor keep-apart rules, prefer keep-together pairs, and use profile signals in upgraded workflows. Still not a social-golfer-style repeat optimizer and likely heuristic rather than a transparent solver."
+        "resultQuality": "Clearly above plain random splitting because it can balance or cluster by performance level, honor keep-apart rules, prefer keep-together pairs, and use profile signals in upgraded workflows. Not a social-golfer-style repeat optimizer and likely heuristic rather than a transparent solver."
       },
       "features": {
         "API/programmatic access": "no",
@@ -1183,7 +1183,7 @@
       "name": "BuddyMatcher",
       "url": "https://www.buddymatcher.co.uk/",
       "bestFor": "Teachers who need pairs/trios, local saved lists, and optional paid control features",
-      "summary": "Buddy Matcher is one of the stronger tools in this part of the list. The free tool supports pasted names, pairs/trios, avoiding the last grouping where possible, random picking, locally saved lists, copy, download, share tool, and print. Pro adds larger/custom group sizes, do-not-group pairs, leader spreading, saved lists, CSV export, and print clean layouts for a one-off £3.99. It is still not a full multi-session solver, but it has real group-making controls and a refreshingly low tracker footprint.",
+      "summary": "Buddy Matcher is one of the stronger tools in this part of the list. The free tool supports pasted names, pairs/trios, avoiding the last grouping where possible, random picking, locally saved lists, copy, download, share tool, and print. Pro adds larger/custom group sizes, do-not-group pairs, leader spreading, saved lists, CSV export, and print clean layouts for a one-off £3.99. It is not a full multi-session solver, but it has real group-making controls and a refreshingly low tracker footprint.",
       "pricing": "Free basic tool. Buddy Matcher Pro is advertised as a £3.99 one-off upgrade for larger/custom groups, keep-apart pairs, leaders, saved lists, export, and print layouts.",
       "overallRating": 3.8,
       "overallComment": "A genuinely good lightweight group maker. The free tier is limited, but privacy, output controls, and paid constraint features are better than most random splitters.",
@@ -1203,7 +1203,7 @@
         "outputs": "Strong for this tier: copy, download, print, and Pro CSV/clean layouts.",
         "privacy": "Strong. The page claims local browser storage for names and no account for free use; no obvious third-party scripts were loaded on the tested page.",
         "accountFriction": "Free use needs no account. Pro/payment is required for almost anything, even creating groups of 4 or more people.",
-        "resultQuality": "Above normal random splitters because it can avoid recent repeats where possible and Pro adds keep-apart/leaders. Still not a full optimizer."
+        "resultQuality": "Above normal random splitters because it can avoid recent repeats where possible and Pro adds keep-apart/leaders. Not a full optimizer."
       },
       "features": {
         "API/programmatic access": "no",
@@ -1289,10 +1289,10 @@
       "name": "Calcbe Team Generator",
       "url": "https://calcbe.com/en/tools/team-generator/",
       "bestFor": "Privacy-conscious one-session random teams with simple constraints and strong exports",
-      "summary": "CalcBE Team Generator is one of the better simple random team tools. It runs locally in the browser, uses crypto.getRandomValues in secure mode, supports split-by-team-count or team-size, deduplication, seeded reproducible mode, keep-together and avoid-pair constraints, custom team naming, copy, TXT/CSV/JSON downloads, per-team copy, and settings-only share URLs. It is still a one-session random team generator, not a balancing or repeat-optimization solver.",
+      "summary": "CalcBE Team Generator is one of the better simple random team tools. It runs locally in the browser, uses crypto.getRandomValues in secure mode, supports split-by-team-count or team-size, deduplication, seeded reproducible mode, keep-together and avoid-pair constraints, custom team naming, copy, TXT/CSV/JSON downloads, per-team copy, and settings-only share URLs. It is a one-session random team generator, not a balancing or repeat-optimization solver.",
       "pricing": "Free web tool. No account required.",
       "overallRating": 3.8,
-      "overallComment": "Strong for a simple random team generator: local processing, real constraint options, reproducible mode, and excellent exports. It still does not solve multi-session or attribute-balancing problems.",
+      "overallComment": "Strong for a simple random team generator: local processing, real constraint options, reproducible mode, and excellent exports. It does not solve multi-session or attribute-balancing problems.",
       "ratings": {
         "easeOfUse": 4.2,
         "design": 4.0,
@@ -1307,9 +1307,9 @@
         "design": "Clean, modern, and information-dense without being chaotic. The cookie banner exists, but the actual tool UI is solid.",
         "features": "Very good for a one-session random team tool: secure CSPRNG mode, seeded reproducibility, deduplication, team count/size modes, keep-together and avoid-pair constraints, custom team names, and settings-only share URLs. No multi-round repeat optimization, attendance by session, attribute balancing, or pair matrix.",
         "outputs": "Excellent output surface for this tier: copy all, copy each team, download TXT/CSV/JSON, clear results, and copy a settings URL that excludes names by default.",
-        "privacy": "Good for roster privacy because names/results run locally and are not uploaded. The site still has consent-based analytics/advertising cookies, Google tags, and an ad/cookie policy, so it is not completely tracker-free.",
+        "privacy": "Good for roster privacy because names/results run locally and are not uploaded. The site has consent-based analytics/advertising cookies, Google tags, and an ad/cookie policy, so it is not completely tracker-free.",
         "accountFriction": "No account required.",
-        "resultQuality": "Above plain random splitting because avoid/keep constraints and seeded/security modes are real. But it is still a bounded-retry random assignment, not a full optimizer for balance or repeats."
+        "resultQuality": "Above plain random splitting because avoid/keep constraints and seeded/security modes are real. It is a bounded-retry random assignment, not a full optimizer for balance or repeats."
       },
       "features": {
         "API/programmatic access": "no",
@@ -1415,7 +1415,7 @@
         "outputs": "Good visual display and screen-saving workflow, but not a strong export tool. No clear CSV/spreadsheet/PDF group export surface for results.",
         "privacy": "Much better than ad-funded utilities: no ads, explicit no-sale language, EU company, and clear processor/security disclosures. Student names can be stored when using accounts, so it is not local-only.",
         "accountFriction": "A no-account app flow exists, but saved name lists and practical reuse require Basic/Pro account features; Pro is needed for saving/sharing screens beyond the free limits.",
-        "resultQuality": "Above random splitters because teacher exclusions/priorities and manual drag/drop adjustment materially improve classroom assignments. Still not solver-grade repeat minimization."
+        "resultQuality": "Above random splitters because teacher exclusions/priorities and manual drag/drop adjustment materially improve classroom assignments. Not solver-grade repeat minimization."
       },
       "features": {
         "API/programmatic access": "no",
@@ -1499,10 +1499,10 @@
       "name": "Randomizer.uk Create Groups",
       "url": "https://randomizer.uk/multicriteria-team",
       "bestFor": "Multi-criteria random groups with proof/share/export options",
-      "summary": "Randomizer.uk Create Groups appears to use the same underlying multicriteria grouping engine and page template as Zufallsgenerator Gruppen bilden. It supports pots for category/level distribution, bracket syntax for keeping participants apart, curly-brace syntax for fixed group placement, repeated random draws until criteria match, result links, copy, and CSV/TXT/HTML-style downloads. The interface is nicer and more structured than many utility randomizers, though the advanced rules still take some learning.",
+      "summary": "Randomizer.uk Create Groups appears to use the same underlying multicriteria grouping engine and page template as Zufallsgenerator Gruppen bilden. It supports pots for category/level distribution, bracket syntax for keeping participants apart, curly-brace syntax for fixed group placement, repeated random draws until criteria match, result links, copy, and CSV/TXT/HTML-style downloads. The interface is nicer and more structured than many utility randomizers, though the advanced rules take some learning.",
       "pricing": "Free basic group/team generation with no registration required. Paid/dedicated publication options appear for sharing, layout customization, proof/certification, and GDPR/publication settings.",
       "overallRating": 3.7,
-      "overallComment": "The same capable multicriteria random grouping engine as Zufallsgenerator, localized in English. Pleasant for a utility randomizer and much stronger than basic splitters, but still not a full planning optimizer.",
+      "overallComment": "The same capable multicriteria random grouping engine as Zufallsgenerator, localized in English. Pleasant for a utility randomizer and much stronger than basic splitters, but not a full planning optimizer.",
       "ratings": {
         "easeOfUse": 2.9,
         "design": 3.4,
@@ -1513,13 +1513,13 @@
         "resultQuality": 3.4
       },
       "ratingComments": {
-        "easeOfUse": "The interface is more pleasant and structured than many old randomizer pages, but the powerful parts still depend on learning pots, bracket separation syntax, and curly-brace fixed-placement syntax.",
+        "easeOfUse": "The interface is more pleasant and structured than many old randomizer pages, but the powerful parts depend on learning pots, bracket separation syntax, and curly-brace fixed-placement syntax.",
         "design": "Nicer than the initial score implied: the page is plain, compact, and reasonably well organized for a utility tool. It is not a polished planning workspace, but the controls are clearer than many random-group generators.",
         "features": "Strong for a random group generator: multiple pots, separation rules, imposed group placement, group-leader-style placement, and repeated random draws until criteria match. Missing multi-session repeat minimization, pair matrix, soft weighted preferences, and polished diagnostics.",
         "outputs": "Strong output surface: result display, copy, CSV/TXT/HTML-style downloads, draw links, and proof/publication language. Some sharing/proof/customization features are account or paid-adjacent, and there is no Zoom-specific export.",
-        "privacy": "Better than ad-tech-heavy tools in the tested page because no obvious third-party requests were loaded. Still not local-only: form/share/proof/account flows imply server-side handling, and the legal/privacy posture is not as transparent as the best local/browser-only tools.",
+        "privacy": "Better than ad-tech-heavy tools in the tested page because no obvious third-party requests were loaded. Not local-only: form/share/proof/account flows imply server-side handling, and the legal/privacy posture is not as transparent as the best local/browser-only tools.",
         "accountFriction": "Basic group creation can be used without registration. Account or paid flows are pushed for sharing, layout customization, proof/certification, and GDPR/publication settings.",
-        "resultQuality": "Better than basic random splitters because pots, separation, and fixed placement materially shape assignments. Still randomized retries, not solver-grade optimization or multi-round repeat minimization."
+        "resultQuality": "Better than basic random splitters because pots, separation, and fixed placement materially shape assignments. Randomized retries, not solver-grade optimization or multi-round repeat minimization."
       },
       "features": {
         "API/programmatic access": "no",
@@ -1602,10 +1602,10 @@
       "name": "Zufallsgenerator Gruppen bilden",
       "url": "https://zufallsgenerator.de/gruppen-bilden",
       "bestFor": "German-speaking users who need random groups with pots, separation rules, fixed placements, and exports",
-      "summary": "Zufallsgenerator Gruppen bilden appears to be the German-localized version of the same underlying multicriteria grouping engine used by Randomizer.uk Create Groups. It supports pots for category/level distribution, bracket syntax for keeping participants apart, curly-brace syntax for fixed group placement, repeated random draws until criteria match, result links, copy, and CSV/TXT/HTML-style downloads. The interface is nicer and more structured than many utility randomizers, though it is German-only and the advanced rules still take some learning.",
+      "summary": "Zufallsgenerator Gruppen bilden appears to be the German-localized version of the same underlying multicriteria grouping engine used by Randomizer.uk Create Groups. It supports pots for category/level distribution, bracket syntax for keeping participants apart, curly-brace syntax for fixed group placement, repeated random draws until criteria match, result links, copy, and CSV/TXT/HTML-style downloads. The interface is nicer and more structured than many utility randomizers, though it is German-only and the advanced rules take some learning.",
       "pricing": "Free basic tool. Account/promoted paid options appear for sharing, layout customization, proof/certification, and full GDPR/publication settings.",
       "overallRating": 3.7,
-      "overallComment": "The same capable multicriteria random grouping engine as Randomizer.uk, localized for German-speaking users. Pleasant for a utility randomizer and much stronger than basic splitters, but still not a full planning optimizer.",
+      "overallComment": "The same capable multicriteria random grouping engine as Randomizer.uk, localized for German-speaking users. Pleasant for a utility randomizer and much stronger than basic splitters, but not a full planning optimizer.",
       "ratings": {
         "easeOfUse": 2.9,
         "design": 3.4,
@@ -1616,13 +1616,13 @@
         "resultQuality": 3.4
       },
       "ratingComments": {
-        "easeOfUse": "The interface is more pleasant and structured than many old randomizer pages, but the powerful parts still depend on learning pots, bracket separation syntax, and curly-brace fixed-placement syntax.",
+        "easeOfUse": "The interface is more pleasant and structured than many old randomizer pages, but the powerful parts depend on learning pots, bracket separation syntax, and curly-brace fixed-placement syntax.",
         "design": "Nicer than the initial score implied: the page is plain, compact, and reasonably well organized for a utility tool. It is not a polished planning workspace, but the controls are clearer than many random-group generators.",
         "features": "Strong for a random group generator: multiple pots, separation rules, imposed group placement, group-leader-style placement, and repeated random draws until criteria match. Missing multi-session repeat minimization, pair matrix, soft weighted preferences, and polished diagnostics.",
         "outputs": "Strong output surface: result display, copy, CSV/TXT/HTML-style downloads, draw links, and proof/publication language. Some sharing/proof/customization features are account or paid-adjacent, and there is no Zoom-specific export.",
-        "privacy": "Better than ad-tech-heavy tools in the tested page because no obvious third-party requests were loaded. Still not local-only: form/share/proof/account flows imply server-side handling, and the legal/privacy posture is not as transparent as the best local/browser-only tools.",
+        "privacy": "Better than ad-tech-heavy tools in the tested page because no obvious third-party requests were loaded. Not local-only: form/share/proof/account flows imply server-side handling, and the legal/privacy posture is not as transparent as the best local/browser-only tools.",
         "accountFriction": "Basic group creation can be used without registration. Account or paid flows are pushed for sharing, layout customization, proof/certification, and GDPR/publication settings.",
-        "resultQuality": "Better than basic random splitters because pots, separation, and fixed placement materially shape assignments. Still randomized retries, not solver-grade optimization or multi-round repeat minimization."
+        "resultQuality": "Better than basic random splitters because pots, separation, and fixed placement materially shape assignments. Randomized retries, not solver-grade optimization or multi-round repeat minimization."
       },
       "features": {
         "API/programmatic access": "no",
@@ -1706,7 +1706,7 @@
       "name": "Picker Wheel Team Picker",
       "url": "https://pickerwheel.com/tools/random-team-generator/",
       "bestFor": "Visual live random grouping and self-join team picking",
-      "summary": "Picker Wheel Team Picker is one of the stronger random-team tools if presentation matters. It can split names into equal groups, import CSV-style inputs, run a visual reveal, balance by gender or labels, support simple preset together/separate rules, pick representatives, create self-join links, and export/share results. It is still a single-session randomizer, not a repeat-minimizing scheduler.",
+      "summary": "Picker Wheel Team Picker is one of the stronger random-team tools if presentation matters. It can split names into equal groups, import CSV-style inputs, run a visual reveal, balance by gender or labels, support simple preset together/separate rules, pick representatives, create self-join links, and export/share results. It is a single-session randomizer, not a repeat-minimizing scheduler.",
       "pricing": "Free basic team picker with ads. Account/subscriber storage is relevant for persistent cloud files and larger quotas, but the basic team-picking workflow is free.",
       "overallRating": 3.6,
       "overallComment": "A capable presentation-focused random team picker with more features than most randomizers, but the busy UI and ad-tech-heavy privacy keep it below the serious planning tools.",
@@ -1722,11 +1722,11 @@
       "ratingComments": {
         "easeOfUse": "The basic flow works, but it is not as simple as the best plain splitters. The wheel UI, menus, file/storage controls, self-join mode, ads, and settings create a lot of surface area before you get to the group result.",
         "design": "Visually more engaging than most utility randomizers, especially for live reveals. The downside is that the interface is busy, ad-supported, and cluttered compared with focused group-planning tools.",
-        "features": "Strong for a random team picker: pasted names, CSV import, gender/label balancing, custom team names, simple preset together/separate grouping, representatives, self-join links, saved files, presentation settings, and visual customization. It still is not a serious multi-session optimizer.",
+        "features": "Strong for a random team picker: pasted names, CSV import, gender/label balancing, custom team names, simple preset together/separate grouping, representatives, self-join links, saved files, presentation settings, and visual customization. It is not a serious multi-session optimizer.",
         "outputs": "Very strong output options for this category: CSV download, result image export/share, result links, share links, and browser/cloud file storage. No Zoom-specific export, Excel-native export, or true solver diagnostics.",
         "privacy": "Bad for sensitive rosters. The tool uses Google Analytics plus AdThrive/CafeMedia advertising infrastructure and a consent-manager stack. The privacy policy says user content/inputs, IP address, device/software identifiers, analytics data, advertising data, and share-link data may be collected; share links include entries and are stored in an online database.",
         "accountFriction": "Basic host grouping works without an account. Persistent cloud file storage, subscriber storage, and some self-join/file workflows push users toward login/subscriber storage, so it is not frictionless.",
-        "resultQuality": "Better than pure random-only splitters because it supports equal groups, gender/label balancing, simple preset together/separate rules, and representative picking. Still fundamentally a single-session randomizer, not a repeat-minimizing or constraint-optimizing scheduler."
+        "resultQuality": "Better than pure random-only splitters because it supports equal groups, gender/label balancing, simple preset together/separate rules, and representative picking. Fundamentally a single-session randomizer, not a repeat-minimizing or constraint-optimizing scheduler."
       },
       "features": {
         "API/programmatic access": "no",
@@ -1808,7 +1808,7 @@
       "name": "GroupMixes",
       "url": "https://groupmixes.com/group-generator",
       "bestFor": "Teachers who want quick mixed-ability classroom groups",
-      "summary": "GroupMixes is a surprisingly capable classroom group generator. It supports pasted student lists, number-of-groups or students-per-group modes, skill and gender labels, keep-together and keep-apart rules, drag-and-drop result editing, local autosave, copy, print, and CSV export. It is still single-session classroom grouping, not a multi-round optimizer.",
+      "summary": "GroupMixes is a surprisingly capable classroom group generator. It supports pasted student lists, number-of-groups or students-per-group modes, skill and gender labels, keep-together and keep-apart rules, drag-and-drop result editing, local autosave, copy, print, and CSV export. It is single-session classroom grouping, not a multi-round optimizer.",
       "pricing": "Free, ad-supported web tool. No sign-up required for the group generator.",
       "overallRating": 3.5,
       "overallComment": "One of the better simple classroom group generators: real grouping controls and exports, but no multi-session/repeat optimization and privacy is weakened by ads/analytics.",
@@ -1822,13 +1822,13 @@
         "resultQuality": 3.4
       },
       "ratingComments": {
-        "easeOfUse": "The workflow is approachable: paste names, choose number of groups or students per group, optionally set skill/gender and rules, generate, then drag students between groups. More setup than a basic splitter, but still teacher-friendly.",
+        "easeOfUse": "The workflow is approachable: paste names, choose number of groups or students per group, optionally set skill/gender and rules, generate, then drag students between groups. More setup than a basic splitter, but teacher-friendly.",
         "design": "Modern, readable, and clearly built around classroom grouping. The step-based layout and group cards are much better than most generic randomizer sites.",
         "features": "Good feature depth for a simple group generator: arbitrary group count up to 12, students per group up to 10, skill levels, gender labels, keep-together and keep-apart rules, best-effort warnings, drag-and-drop edits, local autosave, copy, print, and CSV export. Missing custom per-group capacities, multi-session repeat minimization, pair matrix, and advanced constraint weighting.",
         "outputs": "Strong for this tier: copy, print, and CSV export with group/student/skill/gender columns. No Zoom-specific export, share link, PDF download, or saved result history beyond local browser state.",
-        "privacy": "Mixed. The app autosaves rosters in browser local storage and does not require an account, which is good. But the page loads Google AdSense, Google Tag Manager/Analytics, Ahrefs analytics, and ad scripts, so it is not a clean privacy environment for student names.",
+        "privacy": "Mixed. The app autosaves rosters in browser local storage and does not require an account, which is good. The page loads Google AdSense, Google Tag Manager/Analytics, Ahrefs analytics, and ad scripts, so it is not a clean privacy environment for student names.",
         "accountFriction": "No account or sign-up required for the generator. This is frictionless compared with spreadsheet/account-based workflows.",
-        "resultQuality": "Better than plain random splitters because it can balance skill/gender labels and respect keep-together/keep-apart rules with warnings. Still best-effort single-session grouping, not a real solver for hard constraints or repeated sessions."
+        "resultQuality": "Better than plain random splitters because it can balance skill/gender labels and respect keep-together/keep-apart rules with warnings. Best-effort single-session grouping, not a real solver for hard constraints or repeated sessions."
       },
       "features": {
         "API/programmatic access": "no",
@@ -2018,7 +2018,7 @@
       "name": "MultiPicker Team Picker",
       "url": "https://multipicker.com/team-picker",
       "bestFor": "Simple teams where gender distribution, representatives, and custom team names matter",
-      "summary": "MultiPicker Team Picker is a polished browser tool with more group-specific controls than most randomizers. It supports member entry, bulk import, gender labels, gender distribution strategies, auto-selected representatives, custom team names, team count, and auto-calculated members per team. The animated formation flow is slick, though slower than a plain results table. It is still a one-round team picker, not a repeat optimizer.",
+      "summary": "MultiPicker Team Picker is a polished browser tool with more group-specific controls than most randomizers. It supports member entry, bulk import, gender labels, gender distribution strategies, auto-selected representatives, custom team names, team count, and auto-calculated members per team. The animated formation flow is slick, though slower than a plain results table. It is a one-round team picker, not a repeat optimizer.",
       "pricing": "Free web tool. No account required.",
       "overallRating": 3.4,
       "overallComment": "A genuinely good lightweight team picker. Gender balancing and representative selection make it more useful than most basic splitters.",
@@ -2036,9 +2036,9 @@
         "design": "Polished, modern, and pleasant. One of the better-looking lightweight pickers.",
         "features": "Strong for a single-round picker: bulk import, gender distribution, representatives, custom team names, team count, and auto members per team. No multi-session history or hard constraints.",
         "outputs": "Weak compared with its feature depth. Results are visual; no clear CSV, PDF, spreadsheet, or share/export workflow was visible.",
-        "privacy": "The policy claims no personal data storage and local-only tool data, but the page still loads Google Analytics and an ad-network script. Better than content-farm ad pages, not perfect.",
+        "privacy": "The policy claims no personal data storage and local-only tool data, but the page loads Google Analytics and an ad-network script. Better than content-farm ad pages, not perfect.",
         "accountFriction": "No account required.",
-        "resultQuality": "Above random splitters because gender distribution and representatives materially affect assignments. Still no repeat minimization or constraint solver."
+        "resultQuality": "Above random splitters because gender distribution and representatives materially affect assignments. No repeat minimization or constraint solver."
       },
       "features": {
         "API/programmatic access": "no",
@@ -2108,7 +2108,7 @@
         "No hard keep-apart/keep-together constraints",
         "No visible CSV/PDF export",
         "Animated result flow can be slow",
-        "Analytics/ad script still present",
+        "Analytics/ad script present",
         "No saved roster/history workflow"
       ],
       "reviewNote": "Review the Team Picker page, not MultiPicker’s wheel/number/yes-no tools.",
@@ -2142,7 +2142,7 @@
         "outputs": "Strong output surface: copy result, export, share, and login-gated saving/history are available from the result panel. Not a verified Zoom-specific CSV workflow despite the marketing copy.",
         "privacy": "Mixed to bad. The tool says names are processed locally and the privacy policy says saved/account data is handled for sync, but the page also loads Google Ads, Funding Choices, Google Tag Manager, and Microsoft Clarity.",
         "accountFriction": "Basic generation works without login. Saving/history and some reuse workflows are account-gated.",
-        "resultQuality": "Better than plain random splitting because balance modes, auto-balance, drag-and-drop refinement, and analysis exist. Still not comparable to a repeat-optimization or hard-constraint solver."
+        "resultQuality": "Better than plain random splitting because balance modes, auto-balance, drag-and-drop refinement, and analysis exist. Not comparable to a repeat-optimization or hard-constraint solver."
       },
       "features": {
         "API/programmatic access": "no",
@@ -2226,10 +2226,10 @@
       "name": "Wooclap Team Picker",
       "url": "https://tool.wooclap.com/en/free-group-maker",
       "bestFor": "Polished simple random teams with strong export options",
-      "summary": "This review is only about Wooclap's free group generator, not Wooclap's main audience-engagement product. As a standalone group maker it is one of the best simple random splitters: polished, no-account, and unusually strong on exports. The grouping logic itself is still basic random balanced teams, not real optimization.",
+      "summary": "This review is only about Wooclap's free group generator, not Wooclap's main audience-engagement product. As a standalone group maker it is one of the best simple random splitters: polished, no-account, and unusually strong on exports. The grouping logic itself uses basic random balanced teams, not real optimization.",
       "pricing": "Free standalone group-generator page. No account is required for this specific free team picker; do not confuse it with Wooclap’s broader paid audience-engagement product.",
       "overallRating": 3.3,
-      "overallComment": "One of the best simple random group makers: polished, no-account, and excellent exports. But the assignment logic is still basic random grouping, not real group optimization.",
+      "overallComment": "One of the best simple random group makers: polished, no-account, and excellent exports. The assignment logic uses basic random grouping, not real group optimization.",
       "ratings": {
         "easeOfUse": 4.8,
         "design": 4.4,
@@ -2242,9 +2242,9 @@
       "ratingComments": {
         "easeOfUse": "Very easy to use: paste names, choose number of teams or participants per team, and generate. Visible login/signup/product-marketing buttons keep it just shy of the cleanest tiny utilities.",
         "design": "One of the best-designed simple tools in this list. Clean, modern, readable, and much nicer than the older utility pages, though some Wooclap marketing remains.",
-        "features": "Better than a bare random splitter: team leaders, random/editable team names, two split modes, shuffle/regenerate, and local session restore. Still no constraints, repeat avoidance, balancing rules, or multi-round planning.",
-        "outputs": "Excellent output options for this category: CSV, JPG, PNG, PDF, and copy to clipboard. Not full marks because it is still a simple export menu, not integration-grade output.",
-        "privacy": "Much better than the ad-heavy tools. In testing the free group-generator page was light, and Wooclap has a serious GDPR/ISO 27001 privacy posture. Not 5/5 because participant names are stored in browser localStorage and Wooclap is still a hosted product with broader analytics, marketing, and cookie policies.",
+        "features": "Better than a bare random splitter: team leaders, random/editable team names, two split modes, shuffle/regenerate, and local session restore. No constraints, repeat avoidance, balancing rules, or multi-round planning.",
+        "outputs": "Excellent output options for this category: CSV, JPG, PNG, PDF, and copy to clipboard. Not full marks because it is a simple export menu, not integration-grade output.",
+        "privacy": "Much better than the ad-heavy tools. In testing the free group-generator page was light, and Wooclap has a serious GDPR/ISO 27001 privacy posture. Not 5/5 because participant names are stored in browser localStorage and Wooclap is a hosted product with broader analytics, marketing, and cookie policies.",
         "accountFriction": "No account required. Login and signup are visible, but the group maker works without them.",
         "resultQuality": "Random balanced groups only, with a small practical lift from leader and team-name handling. Fine for one-off splits, but no constraints, repeat reduction, or quality diagnostics."
       },
@@ -2308,7 +2308,7 @@
         "No account required"
       ],
       "cons": [
-        "Still random only",
+        "Random only",
         "No advanced rules or repeat reduction",
         "Surrounded by Wooclap product marketing",
         "Names are kept in browser localStorage"
@@ -2345,7 +2345,7 @@
         "outputs": "Strong output options for this category: public share link, private admin link, Excel export, embed code, social sharing, and comments. Not Zoom-friendly and not as polished as Wooclap.",
         "privacy": "Bad. The privacy policy says IP addresses are stored when you make a draw or post a comment, Google Analytics is used, and data is hosted in Canada. The page also uses a heavy Google ad-consent setup with many vendor/device-storage options.",
         "accountFriction": "No account is required for a basic draw, but several useful persistence and management features push account or email workflows, including saved lists, draw history, and administration links.",
-        "resultQuality": "Better than pure random because it can balance by gender or skill level. Still no advanced constraints, repeat reduction, capacity modeling, or diagnostics."
+        "resultQuality": "Better than pure random because it can balance by gender or skill level. No advanced constraints, repeat reduction, capacity modeling, or diagnostics."
       },
       "features": {
         "API/programmatic access": "no",
@@ -2533,10 +2533,10 @@
       "name": "Raugen Random Team Generator",
       "url": "https://raugen.com/toolbox/random-team-generator",
       "bestFor": "Quick random teams with custom team names, copy-all output, basic stats, and local generation history",
-      "summary": "Raugen Random Team Generator is a surprisingly competent simple splitter inside a broader AI-tools site. It accepts pasted names, lets you add/remove players, choose 2–12 teams, toggle balanced distribution, edit team names, generate, copy all teams, and view/clear generation history and statistics. It still is not a constraint solver or repeat optimizer, but it is more complete than most basic random splitters.",
+      "summary": "Raugen Random Team Generator is a surprisingly competent simple splitter inside a broader AI-tools site. It accepts pasted names, lets you add/remove players, choose 2–12 teams, toggle balanced distribution, edit team names, generate, copy all teams, and view/clear generation history and statistics. It is not a constraint solver or repeat optimizer, but it is more complete than most basic random splitters.",
       "pricing": "Free web tool. No account required for team generation; sign-in exists for the broader RauGen site.",
       "overallRating": 3.2,
-      "overallComment": "One of the better basic random splitters: useful controls and output, but still random-only and attached to a broader tracking/sign-in site.",
+      "overallComment": "One of the better basic random splitters: useful controls and output, but random-only and attached to a broader tracking/sign-in site.",
       "ratings": {
         "easeOfUse": 4.0,
         "design": 3.7,
@@ -2553,7 +2553,7 @@
         "outputs": "Copy All Teams, visible team cards, statistics, and local history are better than most simple tools. No CSV, PDF, image, or shareable result link.",
         "privacy": "Mixed. No account is needed and it appears browser-based, but the page loads GTM/Google scripts, Cloudflare analytics, and Google sign-in state cookies.",
         "accountFriction": "Generation works without signing in. Sign-in is only for the wider platform.",
-        "resultQuality": "Slightly above bare random because balanced distribution and team counts are explicit, but assignments are still random-only."
+        "resultQuality": "Slightly above bare random because balanced distribution and team counts are explicit, but assignments are random-only."
       },
       "features": {
         "API/programmatic access": "no",
@@ -2639,7 +2639,7 @@
       "summary": "AppSorteos Random Teams Generator is a polished simple team splitter. Paste one name per line, choose either number of teams or participants per team, optionally mark team leaders with an asterisk, add a title, and generate equal random teams. Results include download, save, share, print, copy, and copy-for-Excel actions, although save/share push users into an AppSorteos account.",
       "pricing": "The random team generator is free and works without an account. AppSorteos also has paid plans for its broader giveaway/promotion platform; saving or sharing results directly from the app requires login/account creation.",
       "overallRating": 3.1,
-      "overallComment": "A good simple random team generator with better output tools than most. Still random-only, with no balancing or repeat optimization, and the privacy/ad-tech/social-platform footprint is not great.",
+      "overallComment": "A good simple random team generator with better output tools than most. Random-only, with no balancing or repeat optimization, and the privacy/ad-tech/social-platform footprint is not great.",
       "ratings": {
         "easeOfUse": 4.6,
         "design": 3.9,
@@ -2651,7 +2651,7 @@
       },
       "ratingComments": {
         "easeOfUse": "Very easy. Paste names, choose number of teams or participants per team, optionally add a title/leaders, then generate. The leader convention using * is simple once explained.",
-        "design": "Clean and modern compared with many randomizer pages. It is still surrounded by giveaway-platform navigation, share widgets, and marketing content, but the actual tool is readable and straightforward.",
+        "design": "Clean and modern compared with many randomizer pages. It is surrounded by giveaway-platform navigation, share widgets, and marketing content, but the actual tool is readable and straightforward.",
         "features": "Good for a basic splitter: number-of-teams mode, participants-per-team mode, automatic equal distribution, optional group leaders, title editing, and regenerate. No constraints, balancing, repeats, attributes, or diagnostics.",
         "outputs": "Strong for a simple tool. Generated results have download, print, copy, copy-for-Excel, save, and share actions. Save/share require account creation, and there is no Zoom-specific export or true spreadsheet import.",
         "privacy": "Weak for classroom/personnel rosters. The broader AppSorteos platform collects account, payment, social-media, log, cookie, web beacon, and third-party-button data; the page loads Google/analytics, AddThis/ShareThis-style sharing, Stripe, and social integrations. Better than the worst ad farms, but not privacy-first.",
@@ -2840,7 +2840,7 @@
       "name": "Chirag Mehta Team Maker",
       "url": "https://chir.ag/projects/team-maker/",
       "bestFor": "Lightweight random teams with editable team names and CSV output",
-      "summary": "Chirag Mehta Team Maker is a classic lightweight random team generator. Paste names, choose a number of teams with a slider, optionally use preset or custom team names, then generate HTML output. It also offers a new-window HTML output and a CSV export labeled “Save as Excel.” For a small old web tool, that is a solid output surface. The limitation is that it is still just random teams: no group-size mode, constraints, balancing, repeat handling, saved rosters, or diagnostics.",
+      "summary": "Chirag Mehta Team Maker is a classic lightweight random team generator. Paste names, choose a number of teams with a slider, optionally use preset or custom team names, then generate HTML output. It also offers a new-window HTML output and a CSV export labeled “Save as Excel.” For a small old web tool, that is a solid output surface. The limitation is that it is just random teams: no group-size mode, constraints, balancing, repeat handling, saved rosters, or diagnostics.",
       "pricing": "Free. No account is required.",
       "overallRating": 3.0,
       "overallComment": "One of the better old-school simple team makers because it has custom/random team names and CSV export, but it remains a basic random splitter.",
@@ -2855,10 +2855,10 @@
       },
       "ratingComments": {
         "easeOfUse": "Paste names, set the number of teams, optionally edit team names, and generate. The slider-only team count is a little awkward, but the workflow is mostly obvious.",
-        "design": "Old but compact and readable. It is far less noisy than many ad-heavy randomizer pages, though still visually dated.",
+        "design": "Old but compact and readable. It is far less noisy than many ad-heavy randomizer pages, though visually dated.",
         "features": "Good conveniences for a simple randomizer: preset team-name themes, editable team names, HTML preview/new-window output, and CSV export. It has no constraints, balancing, repeat avoidance, saved rosters, or multi-round planning.",
         "outputs": "Stronger than most basic splitters because it can show HTML output in the page, open a new-window HTML result, and export CSV for Excel. There is no dedicated copy button or Zoom breakout export.",
-        "privacy": "No account and no giant consent/ad wall, but the page still loaded Google Tag Manager/Analytics/DoubleClick and generation appears to post names to the site for output, so it is not ideal for sensitive rosters.",
+        "privacy": "No account and no giant consent/ad wall, but the page loaded Google Tag Manager/Analytics/DoubleClick and generation appears to post names to the site for output, so it is not ideal for sensitive rosters.",
         "accountFriction": "No signup or login is needed.",
         "resultQuality": "Fine random teams, with custom labels. It does not optimize membership quality or manage repeat pairings."
       },
@@ -2942,10 +2942,10 @@
       "name": "CinderGPT Random Team Generator",
       "url": "https://www.cindergpt.com/tools/random-team",
       "bestFor": "Quick random teams with copy/download/share and local browser processing claims",
-      "summary": "CinderGPT Random Team Generator is a competent simple splitter. Paste one name per line, choose either number of teams or team size, generate, then copy, download, or share the result. The page claims local browser processing and cryptographically secure random numbers via the Web Crypto API. It is still random-only: no constraints, roles, balancing, saved rosters, repeat reduction, or diagnostics.",
+      "summary": "CinderGPT Random Team Generator is a competent simple splitter. Paste one name per line, choose either number of teams or team size, generate, then copy, download, or share the result. The page claims local browser processing and cryptographically secure random numbers via the Web Crypto API. It is random-only: no constraints, roles, balancing, saved rosters, repeat reduction, or diagnostics.",
       "pricing": "Free web tool. No registration required.",
       "overallRating": 3.0,
-      "overallComment": "A solid simple random team tool with better outputs than many. Feature depth is still basic, and the site has analytics/tracking surface despite local-processing claims.",
+      "overallComment": "A solid simple random team tool with better outputs than many. Feature depth uses basic, and the site has analytics/tracking surface despite local-processing claims.",
       "ratings": {
         "easeOfUse": 4.3,
         "design": 3.6,
@@ -3062,7 +3062,7 @@
         "outputs": "Results are shown as tables of member IDs and attribute distributions. There is no obvious CSV, copy, PDF/image, share link, or structured export.",
         "privacy": "No account is required and the app appears lightweight, but the page loads Google advertising infrastructure and Vercel analytics. There is no strong privacy posture for roster data.",
         "accountFriction": "No signup or login is needed.",
-        "resultQuality": "For attribute-balanced grouping, the assignment logic is more serious than random splitting. It still only optimizes the simple attribute table it is given and offers no constraints or repeat history."
+        "resultQuality": "For attribute-balanced grouping, the assignment logic is more serious than random splitting. It only optimizes the simple attribute table it is given and offers no constraints or repeat history."
       },
       "features": {
         "API/programmatic access": "no",
@@ -3143,7 +3143,7 @@
       "name": "LetsRandomize Random Team Generator",
       "url": "https://letsrandomize.org/tools/random-team-generator/",
       "bestFor": "Fast browser-side team splits with copy/share, recent history, and random-captain mode",
-      "summary": "LetsRandomize Random Team Generator is a good simple splitter. Paste names, choose 2, 3, 4, 5, 6, or 8 teams, choose Equal Teams or Random Captains, generate, regenerate, copy all teams, share, and keep recent results in local storage. It uses cryptographic randomness and runs client-side, but it is still random-only: no constraints, attributes, repeat avoidance, imports, or solver diagnostics.",
+      "summary": "LetsRandomize Random Team Generator is a good simple splitter. Paste names, choose 2, 3, 4, 5, 6, or 8 teams, choose Equal Teams or Random Captains, generate, regenerate, copy all teams, share, and keep recent results in local storage. It uses cryptographic randomness and runs client-side, but it is random-only: no constraints, attributes, repeat avoidance, imports, or solver diagnostics.",
       "pricing": "Free web tool. No account required.",
       "overallRating": 3.0,
       "overallComment": "A strong basic random team generator with nice copy/share/history touches. It is not a solver, but it does the simple job well.",
@@ -3159,11 +3159,11 @@
       "ratingComments": {
         "easeOfUse": "Very straightforward: paste names, pick team count, generate. Preset team-count buttons are quick but less flexible than arbitrary counts.",
         "design": "Clean and readable, with useful guidance below the tool. Ads add some noise.",
-        "features": "Better than the bare minimum thanks to random captains, regenerate, share, copy, and recent history. Still no constraints, balancing attributes, saved rosters, or repeat planning.",
+        "features": "Better than the bare minimum thanks to random captains, regenerate, share, copy, and recent history. No constraints, balancing attributes, saved rosters, or repeat planning.",
         "outputs": "Copy All Teams, Share, and local recent results are useful. No CSV, PDF, spreadsheet, or Zoom-specific export.",
-        "privacy": "The tool says randomization is client-side and stores history locally, which is good. The page still loads Google AdSense, Funding Choices, and Google Analytics.",
+        "privacy": "The tool says randomization is client-side and stores history locally, which is good. The page loads Google AdSense, Funding Choices, and Google Analytics.",
         "accountFriction": "No account required.",
-        "resultQuality": "Slightly above bare random because captains mode can nominate leaders, but it is still random-only assignment."
+        "resultQuality": "Slightly above bare random because captains mode can nominate leaders, but it is random-only assignment."
       },
       "features": {
         "API/programmatic access": "no",
@@ -3264,9 +3264,9 @@
         "design": "Clean, teacher-friendly, and uncluttered. Much better than generic ad-heavy randomizer pages.",
         "features": "The web tool has group size/count and previous groups. Avoided peers, gender balancing, classes, bulk import, export/print, and sync are app features, not web features.",
         "outputs": "Weak on the web: visible results and previous groups, but no clear copy, CSV, PDF, print, or share workflow. The native app has export and print.",
-        "privacy": "Good for the web tool because generation and names are described as local. The site still uses Google Analytics, and the app privacy policy lists Firebase/Crashlytics/TelemetryDeck usage and diagnostics.",
+        "privacy": "Good for the web tool because generation and names are described as local. The site uses Google Analytics, and the app privacy policy lists Firebase/Crashlytics/TelemetryDeck usage and diagnostics.",
         "accountFriction": "The web generator does not require an account. Advanced app features require installing the app and some features are Pro/in-app purchase.",
-        "resultQuality": "Slightly above a bare splitter because it avoids impossible/singleton group outputs and keeps previous groups, but the web tool is still random-only."
+        "resultQuality": "Slightly above a bare splitter because it avoids impossible/singleton group outputs and keeps previous groups, but the web tool is random-only."
       },
       "features": {
         "API/programmatic access": "no",
@@ -3349,7 +3349,7 @@
       "summary": "Microsoft Excel can be used as a DIY random group generator with RAND/RANDBETWEEN formulas, random sorting, templates, or macros. It is powerful for rosters, exports, and offline/organization-controlled workflows, but like Google Sheets it is not a purpose-built group generator unless the user builds or downloads a template.",
       "pricing": "Included in Microsoft 365 plans or standalone Office licenses; Excel for the web is available with a Microsoft account, and organization/education pricing varies.",
       "overallRating": 2.9,
-      "overallComment": "Slightly better than Google Sheets for privacy/offline control, but still a DIY spreadsheet workflow rather than a real group-generator product.",
+      "overallComment": "Slightly better than Google Sheets for privacy/offline control, but a DIY spreadsheet workflow rather than a real group-generator product.",
       "ratings": {
         "easeOfUse": 2.0,
         "design": 3.7,
@@ -3364,7 +3364,7 @@
         "design": "Excellent spreadsheet UI for people who know Excel, but no purpose-built grouping interface unless you build one with a template, macro, or workbook design.",
         "features": "Flexible but DIY. Excel can handle arbitrary team counts, group sizes, saved rosters, notes, formulas, filters, imports, exports, macros, Power Query, and custom templates. Constraints, balancing, and repeat handling are only partial because users must design the logic themselves.",
         "outputs": "Excellent output surface: copy/paste, XLSX, CSV, PDF/print, local files, OneDrive/SharePoint sharing, versioning, and organization workflows. Stronger than most dedicated simple randomizers on export alone.",
-        "privacy": "Better than many web tools because workbooks can stay local/offline or inside an organization-controlled Microsoft 365 tenant. Still not automatically private: cloud storage, connected experiences, diagnostic/service data, links, macros, and sharing permissions all need care.",
+        "privacy": "Better than many web tools because workbooks can stay local/offline or inside an organization-controlled Microsoft 365 tenant. Not automatically private: cloud storage, connected experiences, diagnostic/service data, links, macros, and sharing permissions all need care.",
         "accountFriction": "Desktop Excel requires a license or Microsoft 365 access, and Excel for the web requires a Microsoft account. Organizations may already have it, but it is not a no-account web tool.",
         "resultQuality": "Basic formula-based random groups are normal random-splitter quality. Better logic is possible with formulas/macros, but Excel has no built-in group solver, repeat minimizer, validation, or diagnostics."
       },
@@ -3668,7 +3668,7 @@
         "design": "The in-meeting breakout UI is functional and integrated into the meeting experience. It is not a dedicated planning interface, but it is much better than exporting from a randomizer and then manually recreating rooms.",
         "features": "Moderate for Zoom-specific grouping: automatic even assignment, manual assignment, participant self-select, room renaming, moving/swapping, up to 100 rooms, CSV pre-assignment, saved assignments for recurring meetings, timers, broadcast, and activity status. Missing general group-generator features: constraints, balancing attributes, repeat optimization, multi-session planning outside recurring-room saves, and diagnostics.",
         "outputs": "The output is directly actionable inside Zoom, which is valuable. Outside Zoom it is weak: pre-assignment CSV import exists, but there is no normal roster export, spreadsheet/report output, or shareable assignment page for other tools.",
-        "privacy": "Zoom has serious enterprise/security documentation, DPAs, and education compliance materials, but this is still a hosted meeting platform processing participant identities, room names, telemetry/service data, chats/recordings depending on settings, and account/admin data. Better than ad-tech utilities, not private like a local tool.",
+        "privacy": "Zoom has serious enterprise/security documentation, DPAs, and education compliance materials, but this is a hosted meeting platform processing participant identities, room names, telemetry/service data, chats/recordings depending on settings, and account/admin data. Better than ad-tech utilities, not private like a local tool.",
         "accountFriction": "High friction for a “group generator”: the host needs a Zoom account/meeting, breakout settings enabled, and pre-assigned participants need matching Zoom accounts/emails for assignments to apply reliably.",
         "resultQuality": "Automatic assignment creates evenly sized rooms, which is fine for live one-off breakouts. It does not balance attributes, satisfy constraints, reduce repeats across varied sessions, or explain quality."
       },
@@ -3770,7 +3770,7 @@
         "design": "The spreadsheet interface is mature, readable, collaborative, and reliable. It is not tailored to group generation, so the UX depends entirely on the sheet/template you build.",
         "features": "Flexible but DIY. Sheets can handle arbitrary team counts, group sizes, saved rosters, notes, formulas, filters, imports, exports, and custom scripts. Attribute balancing, keep-apart rules, fixed placement, or repeats are only partial because users must design formulas/scripts themselves; none of it is a built-in group-generator workflow.",
         "outputs": "Excellent export and sharing surface: copy/paste, CSV, XLSX, PDF/print, share links, collaboration, version history, and integration with the broader Google ecosystem. Output is where Sheets is much stronger than most simple web randomizers.",
-        "privacy": "Mixed. There is no ad-tech utility-page mess inside Sheets, and Workspace for Education has serious privacy terms. But rosters live in Google cloud under an account, sharing permissions can leak data if misconfigured, and consumer Google account data handling is not the same as a local/browser-only tool.",
+        "privacy": "Mixed. There is no ad-tech utility-page mess inside Sheets, and Workspace for Education has serious privacy terms. Rosters live in Google cloud under an account, sharing permissions can leak data if misconfigured, and consumer Google account data handling is not the same as a local/browser-only tool.",
         "accountFriction": "A Google account is required for the normal workflow, and organizational users may need Workspace permissions. Not a no-account web splitter.",
         "resultQuality": "Basic formula-based random groups are roughly normal random-splitter quality. Better results are possible with custom formulas/scripts, but there is no built-in solver, repeat minimization, constraint validation, or diagnostics."
       },
@@ -3853,7 +3853,7 @@
       "name": "GoOnlineTools Random Group Generator",
       "url": "https://goonlinetools.com/random-group-generator/",
       "bestFor": "Simple random groups with a modern UI, regenerate, statistics, and possible copy/download/share icons",
-      "summary": "GoOnlineTools Random Group Generator is a polished basic web splitter. Paste names, choose by groups or by members, generate, regenerate, and see simple statistics such as total groups, total members, average per group, and size range. The page advertises advanced options like custom team names, exclusions, representative selection, and export/share, but the visible tested workflow is still much closer to a simple random splitter than a serious constraint tool. Privacy is the main weakness because the page carries ads, Funding Choices, Google sign-in scripts, Microsoft Clarity, and other tracking/storage surface.",
+      "summary": "GoOnlineTools Random Group Generator is a polished basic web splitter. Paste names, choose by groups or by members, generate, regenerate, and see simple statistics such as total groups, total members, average per group, and size range. The page advertises advanced options like custom team names, exclusions, representative selection, and export/share, but the visible tested workflow is much closer to a simple random splitter than a serious constraint tool. Privacy is the main weakness because the page carries ads, Funding Choices, Google sign-in scripts, Microsoft Clarity, and other tracking/storage surface.",
       "pricing": "Free web tool. No account required for generation; sign-in exists for the broader GoOnlineTools site.",
       "overallRating": 2.8,
       "overallComment": "A decent modern simple splitter, but the privacy/ad-tech load is bad and the advertised advanced controls are not enough to make it a solver.",
@@ -3869,11 +3869,11 @@
       "ratingComments": {
         "easeOfUse": "Easy paste-and-generate flow with by-groups/by-members modes and a clear regenerate button.",
         "design": "Modern and readable, though ads and surrounding tool-site chrome add clutter.",
-        "features": "Better than the bare minimum: by groups/by members, regenerate, statistics, and advertised advanced options. Still no proven hard constraints, repeat optimization, or real diagnostics.",
+        "features": "Better than the bare minimum: by groups/by members, regenerate, statistics, and advertised advanced options. No proven hard constraints, repeat optimization, or real diagnostics.",
         "outputs": "Result action icons and page copy indicate copy/download/share, but output formats are not as clear or strong as CSV/PDF-focused tools.",
         "privacy": "Poor. The page runs ads/Funding Choices, Google account/sign-in scripts, Microsoft Clarity, and stores ad/recent/favorite/color-mode data. The policy also allows ad cookies and IP collection.",
         "accountFriction": "Generation works without sign-in. Sign-in is visible for site features such as favorites.",
-        "resultQuality": "Slightly above bare random because by-members mode and stats help, but assignments are still random-only unless the advanced options prove more substantial."
+        "resultQuality": "Slightly above bare random because by-members mode and stats help, but assignments are random-only unless the advanced options prove more substantial."
       },
       "features": {
         "API/programmatic access": "no",
@@ -4056,7 +4056,7 @@
       "name": "Vertex42 Random Group Generator Template",
       "url": "https://www.vertex42.com/ExcelTemplates/random-group-generator.html",
       "bestFor": "Spreadsheet users who want a downloadable Excel/Google Sheets random grouping template",
-      "summary": "Vertex42 is a spreadsheet template rather than a normal web app. It gives you an Excel or Google Sheets random group generator with a names worksheet, group names, RAND-column sorting, two grouping orders, and no macros. That makes it more reusable than many throwaway web splitters, and the page is unusually honest that it does not solve the social golfer/repeat-minimization problem. It is still just a spreadsheet workaround, not a dedicated optimizer.",
+      "summary": "Vertex42 is a spreadsheet template rather than a normal web app. It gives you an Excel or Google Sheets random group generator with a names worksheet, group names, RAND-column sorting, two grouping orders, and no macros. That makes it more reusable than many throwaway web splitters, and the page is unusually honest that it does not solve the social golfer/repeat-minimization problem. It is just a spreadsheet workaround, not a dedicated optimizer.",
       "pricing": "Free template for private use. Downloadable Excel file and Google Sheets option; no account required for the template page.",
       "overallRating": 2.8,
       "overallComment": "A useful spreadsheet workaround with honest documentation. Better than many web toys for people already in Excel, but not a serious group-generation product.",
@@ -4074,9 +4074,9 @@
         "design": "The template page is dated but clear, and the spreadsheet screenshot explains the workflow well.",
         "features": "Useful spreadsheet basics: editable roster, group names, random sorting, two grouping layouts, and custom sorting. No constraints, attributes, repeat optimization, or diagnostics.",
         "outputs": "Strong because the result lives in Excel or Google Sheets and can be copied, printed, saved, or exported through spreadsheet tools.",
-        "privacy": "Roster data can stay in your own spreadsheet after download, which is good. The website page itself still runs ads and Google tags.",
+        "privacy": "Roster data can stay in your own spreadsheet after download, which is good. The website page itself runs ads and Google tags.",
         "accountFriction": "No account required for the template page. Google Sheets use may involve a Google account.",
-        "resultQuality": "Slightly above plain web randomizers because spreadsheet sorting gives manual control, but still random-only and explicitly not social-golfer solving."
+        "resultQuality": "Slightly above plain web randomizers because spreadsheet sorting gives manual control, but random-only and explicitly not social-golfer solving."
       },
       "features": {
         "API/programmatic access": "no",
@@ -4174,11 +4174,11 @@
       "ratingComments": {
         "easeOfUse": "For an existing ClassDojo teacher with a roster, group generation is probably very easy. For anyone else, it starts with downloading/signing into ClassDojo and setting up a class, which is a lot of friction for one random split.",
         "design": "ClassDojo is polished, classroom-friendly, and much nicer than most randomizer pages. The public Group Maker page is clear, but it mostly advertises the app rather than exposing the tool directly.",
-        "features": "Better than the weakest random splitters because it uses a saved class roster and supports keep-apart sets. Still limited: random groups only, group size choices, no attribute balancing, no multi-session repeat minimization, no solver diagnostics, and no serious planning controls.",
+        "features": "Better than the weakest random splitters because it uses a saved class roster and supports keep-apart sets. Limited: random groups only, group size choices, no attribute balancing, no multi-session repeat minimization, no solver diagnostics, and no serious planning controls.",
         "outputs": "Very weak for export. The visible product positioning is in-app classroom display/use, not CSV, Excel, Zoom breakout export, share links, PDFs, or reusable result reports.",
-        "privacy": "ClassDojo has a much more serious student-privacy posture than ad-heavy utility sites: COPPA/FERPA/GDPR language, iKeepSafe certifications, Student Privacy Pledge, no selling/renting, and no student behaviorally targeted advertising. But it is still a hosted classroom platform collecting rosters, account data, device/usage data, and service-provider analytics, so it is not comparable to local/no-account tools.",
+        "privacy": "ClassDojo has a much more serious student-privacy posture than ad-heavy utility sites: COPPA/FERPA/GDPR language, iKeepSafe certifications, Student Privacy Pledge, no selling/renting, and no student behaviorally targeted advertising. It is a hosted classroom platform collecting rosters, account data, device/usage data, and service-provider analytics, so it is not comparable to local/no-account tools.",
         "accountFriction": "High. The Group Maker is part of the ClassDojo app, not a no-login webpage. You need the ClassDojo ecosystem and likely a teacher account/class roster for real use.",
-        "resultQuality": "Slightly above a plain random splitter because keep-apart sets can prevent bad pairings. It still does not optimize balance, preferences, repeated encounters, or multi-session coverage."
+        "resultQuality": "Slightly above a plain random splitter because keep-apart sets can prevent bad pairings. It does not optimize balance, preferences, repeated encounters, or multi-session coverage."
       },
       "features": {
         "API/programmatic access": "no",
@@ -4260,7 +4260,7 @@
       "name": "Fun Group Names Random Team Generator",
       "url": "https://fungroupnames.com/random-team-generator/",
       "bestFor": "A content-site group randomizer if the embedded script works in your browser",
-      "summary": "Fun Group Names Random Team Generator is a working content-site group randomizer with more controls than the weakest random splitters. Paste a list, process it, choose 1–20 groups, randomize groups, re-randomize members, edit the list, randomize themed group names, and use the advertised TXT/PDF download workflow. It is still basic random splitting and the page is wrapped in heavy ad/consent tracking, but the tool itself should not be treated as broken.",
+      "summary": "Fun Group Names Random Team Generator is a working content-site group randomizer with more controls than the weakest random splitters. Paste a list, process it, choose 1–20 groups, randomize groups, re-randomize members, edit the list, randomize themed group names, and use the advertised TXT/PDF download workflow. It uses basic random splitting and the page is wrapped in heavy ad/consent tracking, but the tool itself should not be treated as broken.",
       "pricing": "Free web tool. No account required.",
       "overallRating": 2.7,
       "overallComment": "A useful basic splitter with fun group names and advertised downloads, dragged down hard by a noisy ad-tech wrapper and lack of real balancing.",
@@ -4365,7 +4365,7 @@
       "summary": "Group Assigner is a simple free random team generator with a nicer interface than most bare utilities. Paste names, choose Auto-Optimize or a specific group count, assign groups, shuffle, use Focus Mode, and it gives the teams random names. It stores names/results/preferences in the browser for the next visit. The weak spots are output/export and privacy: there is no serious export workflow, and the page runs Google ads/Funding Choices.",
       "pricing": "Free web tool. No account required.",
       "overallRating": 2.7,
-      "overallComment": "A good simple splitter with better UX than average, but still random-only and ad-supported.",
+      "overallComment": "A good simple splitter with better UX than average, but random-only and ad-supported.",
       "ratings": {
         "easeOfUse": 4.4,
         "design": 3.7,
@@ -4382,7 +4382,7 @@
         "outputs": "Mostly screen presentation. Focus mode helps display, but there is no strong copy/download/CSV workflow.",
         "privacy": "Names are said to stay in the browser and local storage confirms that. The downside is Google ads/Funding Choices and ad cookies on the page.",
         "accountFriction": "No account required.",
-        "resultQuality": "Slightly above the weakest splitters because auto-optimize picks sensible group counts, but assignments are still random-only."
+        "resultQuality": "Slightly above the weakest splitters because auto-optimize picks sensible group counts, but assignments are random-only."
       },
       "features": {
         "API/programmatic access": "no",
@@ -4463,7 +4463,7 @@
       "name": "Online Stopwatch Random Group Generator",
       "url": "https://www.online-stopwatch.com/random-group-generators/",
       "bestFor": "Classroom presentation-style random groups with animated reveals",
-      "summary": "Online Stopwatch offers a collection of themed random group generators. The core workflow is basic: paste comma- or newline-separated names, choose either maximum number of groups or maximum group size, generate random groups, reveal them with animations, then view all groups. It has useful presentation/export extras like fullscreen mode, copy-to-clipboard, CSV download, jump-to-group, sound/transition toggles, and premium saved lists, but the grouping logic is still random-only.",
+      "summary": "Online Stopwatch offers a collection of themed random group generators. The core workflow is basic: paste comma- or newline-separated names, choose either maximum number of groups or maximum group size, generate random groups, reveal them with animations, then view all groups. It has useful presentation/export extras like fullscreen mode, copy-to-clipboard, CSV download, jump-to-group, sound/transition toggles, and premium saved lists, but the grouping logic is random-only.",
       "pricing": "Free with ads. Premium removes ads and adds account features such as saved lists/My Page; the premium page advertises one-off access options and group accounts, with cookies required for premium login.",
       "overallRating": 2.7,
       "overallComment": "Good classroom showmanship around a basic random splitter. The exports and fullscreen presentation are useful, but the tool has no real grouping intelligence and the ad/tracking/privacy story is weak.",
@@ -4567,7 +4567,7 @@
       "name": "Super Teacher Tools Classroom Seating / Groups",
       "url": "https://www.superteachertools.us/instantclassroom/group-maker.php",
       "bestFor": "Teachers who want saved class rosters plus simple random classroom groups",
-      "summary": "Super Teacher Tools Instant Classroom / Group Maker is an old-school but working classroom roster system. You create an Instant Classroom account with a group name, email, display name, and password, then create or import a class list of up to 100 students. The Group Maker can split a saved roster by students per group or by number of groups, with options from 2 to 10 and a remainder-distribution workflow. It also sits beside seating-chart and random-name tools. For group generation specifically, it is still basic random splitting: no constraints, no attribute balancing, no repeat avoidance, no diagnostics, and no clean export format.",
+      "summary": "Super Teacher Tools Instant Classroom / Group Maker is an old-school but working classroom roster system. You create an Instant Classroom account with a group name, email, display name, and password, then create or import a class list of up to 100 students. The Group Maker can split a saved roster by students per group or by number of groups, with options from 2 to 10 and a remainder-distribution workflow. It also sits beside seating-chart and random-name tools. For group generation specifically, it uses basic random splitting: no constraints, no attribute balancing, no repeat avoidance, no diagnostics, and no clean export format.",
       "pricing": "Free. The product page says “100% Free forever,” but actual custom class use requires creating a Super Teacher Tools / Instant Classroom group account.",
       "overallRating": 2.7,
       "overallComment": "A functional saved-roster classroom randomizer with useful group-size/group-count controls, held back by account friction, a dated interface, ad/consent load, and no optimization beyond random grouping.",
@@ -4667,7 +4667,7 @@
       "name": "WordMint Random Group Generator",
       "url": "https://wordmint.com/random-group-generator",
       "bestFor": "Simple classroom groups with a copy-to-clipboard button",
-      "summary": "WordMint Random Group Generator is a basic but functional classroom splitter. Paste names, choose number of groups or count per group, generate, and copy the results to the clipboard. That is enough for quick classroom use, and the UI is cleaner than many randomizer pages. It is still random-only and the surrounding WordMint site has account, pricing, analytics, Facebook pixel, and PostHog tracking surface.",
+      "summary": "WordMint Random Group Generator is a basic but functional classroom splitter. Paste names, choose number of groups or count per group, generate, and copy the results to the clipboard. That is enough for quick classroom use, and the UI is cleaner than many randomizer pages. It is random-only and the surrounding WordMint site has account, pricing, analytics, Facebook pixel, and PostHog tracking surface.",
       "pricing": "Free web tool. No account required for the group generator; the broader WordMint product has accounts and paid plans.",
       "overallRating": 2.7,
       "overallComment": "A decent simple splitter with copy output. Nothing advanced, but less painful than many tools in this tier.",
@@ -4766,7 +4766,7 @@
       "name": "Games4esl Random Group Generator",
       "url": "https://games4esl.com/teacher-tools/random-group-generator/",
       "bestFor": "Teachers who want quick random classroom groups and a printable PDF",
-      "summary": "Games4esl Random Group Generator is a classroom-focused random splitter. Paste names, choose a group size from 2 to 10, generate groups, and download a PDF. It also describes a leftover-handling choice for uneven splits. The actual grouping is still basic random assignment, but PDF output gives it a practical classroom advantage over many bare page-only splitters.",
+      "summary": "Games4esl Random Group Generator is a classroom-focused random splitter. Paste names, choose a group size from 2 to 10, generate groups, and download a PDF. It also describes a leftover-handling choice for uneven splits. The actual grouping uses basic random assignment, but PDF output gives it a practical classroom advantage over many bare page-only splitters.",
       "pricing": "Free web tool. No account required.",
       "overallRating": 2.6,
       "overallComment": "A good teacher-friendly basic splitter with PDF output. The ad/consent stack is the big downside.",
@@ -4781,7 +4781,7 @@
       },
       "ratingComments": {
         "easeOfUse": "Easy classroom flow: paste names, choose group size, generate. The cookie/consent overlay gets in the way.",
-        "design": "Readable and teacher-focused, with less chaos than many old randomizer pages. Still embedded in a busy content site.",
+        "design": "Readable and teacher-focused, with less chaos than many old randomizer pages. Embedded in a busy content site.",
         "features": "Group-size mode, 2–10 size choices, and uneven-leftover handling are useful basics. No constraints, balancing, saved lists, or repeat planning.",
         "outputs": "Better than most simple splitters because it has a PDF download. No CSV/spreadsheet export or share link.",
         "privacy": "Poor. The page loads Google ads/AdSense, Google Analytics, Ezoic/gatekeeper consent scripts, and Cloudflare analytics, and the policy names Google, Amazon, and Ezoic advertising partners.",
@@ -4869,10 +4869,10 @@
       "name": "RakkoTools Random Group Generator",
       "url": "https://en.rakko.tools/tools/59/",
       "bestFor": "Basic random groups with CSV export",
-      "summary": "RakkoTools is a better-than-average basic random group generator. It can divide by number of teams or members per team, select organizers/representatives, and export CSV. That makes it more useful than the pure toy randomizers, but it is still random-only and the page has a bad consent/ad-tech environment.",
+      "summary": "RakkoTools is a better-than-average basic random group generator. It can divide by number of teams or members per team, select organizers/representatives, and export CSV. That makes it more useful than the pure toy randomizers, but it is random-only and the page has a bad consent/ad-tech environment.",
       "pricing": "Free, ad-supported web tool. No account or payment is needed for the basic generator; pricing is not the issue, the weak privacy/ad-tech environment is.",
       "overallRating": 2.6,
-      "overallComment": "A better-than-average basic randomizer because it has CSV export, two split modes, and representatives. Still not a real group-planning tool, and the privacy/ad-tech setup is bad.",
+      "overallComment": "A better-than-average basic randomizer because it has CSV export, two split modes, and representatives. Not a real group-planning tool, and the privacy/ad-tech setup is bad.",
       "ratings": {
         "easeOfUse": 4.3,
         "design": 2.2,
@@ -4885,11 +4885,11 @@
       "ratingComments": {
         "easeOfUse": "The form is simple, but the page is cluttered and consent/ad friction prevents a clean 5/5.",
         "design": "Cluttered Rakko network utility page, but the actual tool area is usable.",
-        "features": "Better than the weakest randomizers: number-of-teams mode, members-per-team mode, representative selection, and CSV export. Still no constraints, balancing attributes, repeat avoidance, or diagnostics.",
-        "outputs": "CSV export is real and worked in testing. Still no spreadsheet import, Zoom export, shareable result link, or richer result workflow.",
+        "features": "Better than the weakest randomizers: number-of-teams mode, members-per-team mode, representative selection, and CSV export. No constraints, balancing attributes, repeat avoidance, or diagnostics.",
+        "outputs": "CSV export is real and worked in testing. No spreadsheet import, Zoom export, shareable result link, or richer result workflow.",
         "privacy": "Bad privacy setup. The consent banner mentions personal data sharing with 210 partners, precise geolocation, ad personalization, and device storage. The privacy policy is generic and includes marketing/newsletter use.",
         "accountFriction": "No account required.",
-        "resultQuality": "Mostly random-only, but representative selection adds a tiny bit of assignment usefulness. There is still no real balancing, constraints, repeat reduction, or quality explanation."
+        "resultQuality": "Mostly random-only, but representative selection adds a tiny bit of assignment usefulness. There is no real balancing, constraints, repeat reduction, or quality explanation."
       },
       "features": {
         "API/programmatic access": "no",
@@ -4959,7 +4959,7 @@
         "No repeat avoidance",
         "No shareable result link"
       ],
-      "reviewNote": "It does not have the same obvious search dominance as ClassTools or RandomLists, but it is still mostly a generic utility page. Its CSV export and representative selection make it stronger than the weakest random splitters.",
+      "reviewNote": "It does not have the same obvious search dominance as ClassTools or RandomLists, but it is mostly a generic utility page. Its CSV export and representative selection make it stronger than the weakest random splitters.",
       "tags": [
         "strong-exports"
       ]
@@ -5073,7 +5073,7 @@
       "summary": "VersaKit Group Generator is a clean basic random group splitter. Paste one name per line, choose number of groups or people per group, choose random/alphabetical/reverse sorting inside groups, generate evenly sized groups, then copy all groups or download a text file. It runs client-side with no account, but it has no constraints, balancing, leaders, repeats, or spreadsheet-oriented export.",
       "pricing": "Free. No account or payment required.",
       "overallRating": 2.6,
-      "overallComment": "A clean and privacy-friendly basic splitter. Better than many junk randomizers as a utility page, but still not a serious group generator.",
+      "overallComment": "A clean and privacy-friendly basic splitter. Better than many junk randomizers as a utility page, but not a serious group generator.",
       "ratings": {
         "easeOfUse": 4.7,
         "design": 3.8,
@@ -5085,10 +5085,10 @@
       },
       "ratingComments": {
         "easeOfUse": "Very easy. Paste names, choose number of groups or people per group, and generate. The controls are obvious and there is a sample-name button.",
-        "design": "Clean, readable, and much less cluttered than ad-heavy randomizer sites. It still feels like a generic toolkit page rather than a dedicated group-planning product.",
+        "design": "Clean, readable, and much less cluttered than ad-heavy randomizer sites. It feels like a generic toolkit page rather than a dedicated group-planning product.",
         "features": "Basic feature depth only: two split modes, even size distribution, random/alphabetical/reverse ordering, sample names, live count, and stats. No leaders, constraints, balancing, repeats, imports, saved rosters, or diagnostics.",
         "outputs": "Usable but limited. It provides copy-to-clipboard and text-file download with a simple generated summary. No CSV/Excel structure, no Zoom export, no share link, no PDF/image output, and no saved history.",
-        "privacy": "Better than most free randomizer pages. The policy says most tools process locally in the browser and input data is not retained, and the tested grouping code is client-side. There is still automatic device/usage data, cookies/analytics language, and Cloudflare Insights.",
+        "privacy": "Better than most free randomizer pages. The policy says most tools process locally in the browser and input data is not retained, and the tested grouping code is client-side. There is automatic device/usage data, cookies/analytics language, and Cloudflare Insights.",
         "accountFriction": "No account required.",
         "resultQuality": "Plain random grouping with even-ish sizes. Fine for one-off random teams, but no assignment quality beyond random distribution."
       },
@@ -5191,9 +5191,9 @@
         "easeOfUse": "Straightforward basic workflow: paste names, choose number of teams or participants per team, generate. For simple random teams, it is easy.",
         "design": "The tool itself is understandable, but the surrounding Comment Picker page is a generic ad-supported utility site with consent/ad infrastructure. Usable, not polished.",
         "features": "Basic group-generation feature depth. It supports arbitrary team count or members-per-team and even distribution, but no attributes, no custom per-team capacities, no constraints, no multi-session planning, no repeat optimization, and no diagnostics.",
-        "outputs": "Strong for a basic splitter: copy, print, and Excel/Numbers export are all useful. It still lacks Zoom breakout export, shareable result links, saved result history, and richer schedule-style output.",
+        "outputs": "Strong for a basic splitter: copy, print, and Excel/Numbers export are all useful. It lacks Zoom breakout export, shareable result links, saved result history, and richer schedule-style output.",
         "privacy": "Poor. The tool FAQ says entered names/teams are not saved on Comment Picker servers, which helps, but the page uses Ezoic ad services, Google Analytics, Google Tag Manager, AdSense/DoubleClick-style ad infrastructure, consent tooling, cookies, pixels, geolocation/device/ad IDs, and targeted advertising partners. Bad environment for student names.",
-        "accountFriction": "No account is needed for the random team generator. There is still some friction from the ad/consent-heavy free site and Premium upsell context, but it does not block basic use.",
+        "accountFriction": "No account is needed for the random team generator. There is some friction from the ad/consent-heavy free site and Premium upsell context, but it does not block basic use.",
         "resultQuality": "Standard one-off random grouping with even-ish group sizes. Good enough for a quick split, but no balancing, constraints, repeat reduction, or quality diagnostics."
       },
       "features": {
@@ -5275,7 +5275,7 @@
       "name": "IOTools Random Team Generator",
       "url": "https://iotools.cloud/tool/random-generator/random-team-generator/",
       "bestFor": "Basic random teams with duplicate removal, file import, copy buttons, and a client-side workflow",
-      "summary": "IOTools Random Team Generator is a functional but ad-heavy utility. It accepts pasted names or a text-file upload, lets you set the number of teams, optionally removes duplicate names, randomizes client-side, and provides copy buttons for each generated team. It is useful for basic one-off splits, but the grouping logic is still plain random distribution and the privacy/ad-tech surface is ugly.",
+      "summary": "IOTools Random Team Generator is a functional but ad-heavy utility. It accepts pasted names or a text-file upload, lets you set the number of teams, optionally removes duplicate names, randomizes client-side, and provides copy buttons for each generated team. It is useful for basic one-off splits, but the grouping logic is plain random distribution and the privacy/ad-tech surface is ugly.",
       "pricing": "Free web tool. No account required for generation; sign-in exists for site features.",
       "overallRating": 2.5,
       "overallComment": "A usable basic splitter with better-than-minimal output controls, but privacy is bad and there is no real group-planning intelligence.",
@@ -5479,7 +5479,7 @@
       "name": "RandomGroupGenerator.co",
       "url": "https://randomgroupgenerator.co/",
       "bestFor": "A clean, private, one-screen random split when exports do not matter",
-      "summary": "RandomGroupGenerator.co is a clean basic random group generator. Paste names, choose the number of groups, generate, and reshuffle. It gives groups random/fun names and claims to use Fisher-Yates locally in the browser with names never sent to a server. It is pleasant and privacy-friendly, but it is still just a one-session random splitter with no copy/export button, no group-size mode, no constraints, no saved roster, and no diagnostics.",
+      "summary": "RandomGroupGenerator.co is a clean basic random group generator. Paste names, choose the number of groups, generate, and reshuffle. It gives groups random/fun names and claims to use Fisher-Yates locally in the browser with names never sent to a server. It is pleasant and privacy-friendly, but it is just a one-session random splitter with no copy/export button, no group-size mode, no constraints, no saved roster, and no diagnostics.",
       "pricing": "Free web tool. No account required.",
       "overallRating": 2.5,
       "overallComment": "A nice private-feeling basic splitter, but the lack of copy/download/export and group-size mode keeps it below stronger basic utilities.",
@@ -5570,7 +5570,7 @@
         "No leaders or roles",
         "Random-only result quality"
       ],
-      "reviewNote": "Do not confuse this with RandomGroupGenerator.pro, which was a parked/non-working domain. This .co tool is clean and working, but weaker than basic splitters that include copy/download or group-size mode.",
+      "reviewNote": "Do not confuse this with RandomGroupGenerator.pro, which was a parked/non-working domain. This.co tool is clean and working, but weaker than basic splitters that include copy/download or group-size mode.",
       "tags": [
         "privacy-friendly",
         "basic-randomizer"
@@ -5783,7 +5783,7 @@
       "summary": "ClassTools24 Random Group Generator is a basic classroom-style splitter. Paste names, choose the number of groups, generate, and it displays numbered groups. The page says you can click a group to copy participants, and there is a fullscreen button. That is a little nicer than page-only tools, but there are no constraints, no group-size mode, no saved lists, no exports, and no repeat handling.",
       "pricing": "Free web tool. No account required.",
       "overallRating": 2.4,
-      "overallComment": "A decent basic splitter with fullscreen and some copy affordance. Still very thin.",
+      "overallComment": "A decent basic splitter with fullscreen and some copy affordance. Very thin.",
       "ratings": {
         "easeOfUse": 4.4,
         "design": 2.8,
@@ -5899,7 +5899,7 @@
         "easeOfUse": "Simple paste-list, choose team count, generate workflow. The page clutter is the main usability drag.",
         "design": "Functional calculator-site layout, but visually busy and ad-heavy.",
         "features": "Only pasted names and number of teams. No group-size mode, constraints, balancing, saved rosters, repeats, or diagnostics.",
-        "outputs": "Better than page-only because each team has a copy icon. Still no CSV, spreadsheet export, print, share link, or Zoom format.",
+        "outputs": "Better than page-only because each team has a copy icon. No CSV, spreadsheet export, print, share link, or Zoom format.",
         "privacy": "Bad. The site has a large advertising stack, consent tooling, Google/DoubleClick, Amazon ads, and many local-storage ad identifiers.",
         "accountFriction": "No account required.",
         "resultQuality": "Plain random team assignment with even-ish group sizes. Fisher-Yates is fine, but there are no real assignment-quality controls."
@@ -6188,7 +6188,7 @@
       "name": "Flippity Random Name Picker",
       "url": "https://www.flippity.net/v2/RandomNamePicker.htm",
       "bestFor": "Spreadsheet-backed classroom grouping and quick random teams",
-      "summary": "Flippity Random Name Picker is a classroom utility that can create groups of 2–5 or 2–5 teams from names entered directly or from a Google Sheets template. It is more group-capable than Wheel of Names, but still mostly a simple random classroom tool rather than a serious optimizer.",
+      "summary": "Flippity Random Name Picker is a classroom utility that can create groups of 2–5 or 2–5 teams from names entered directly or from a Google Sheets template. It is more group-capable than Wheel of Names, but mostly a simple random classroom tool rather than a serious optimizer.",
       "pricing": "Free, ad-supported Flippity tool. Quick-entry use is free without a Flippity account; the spreadsheet-template workflow requires a Google account and Google Sheets setup.",
       "overallRating": 2.3,
       "overallComment": "A useful classroom randomizer, but feature depth is thin for group generation because group/team sizes are limited to preset tabs.",
@@ -6206,7 +6206,7 @@
         "design": "Functional but dated. The tabs for spinner, lineup, groups, teams, chart, timer, and fullscreen are useful, but the visual design feels old-school classroom-web rather than polished.",
         "features": "Low for group generation. It directly offers groups of 2–5 and teams of 2–5, which is better than a pure picker workaround, but the limits are glaring: no arbitrary number of teams, no arbitrary group size beyond the preset tabs, no custom capacities, no constraints, no balancing, no multi-session planning, and no repeat optimization.",
         "outputs": "Useful classroom display modes and bookmark/share links, but weak export surface. It does not provide proper CSV group assignment export, Zoom export, result diagnostics, or schedule-style output.",
-        "privacy": "Better than many ad-heavy randomizers because Flippity says it has no user accounts, does not store tool data on Flippity servers, and reads public Google Sheet data in the browser. But it still uses Google Analytics and Google AdSense, and Google-Sheets-based rosters are effectively published/accessible to anyone with the long link. Not ideal for sensitive student names.",
+        "privacy": "Better than many ad-heavy randomizers because Flippity says it has no user accounts, does not store tool data on Flippity servers, and reads public Google Sheet data in the browser. It uses Google Analytics and Google AdSense, and Google-Sheets-based rosters are effectively published/accessible to anyone with the long link. Not ideal for sensitive student names.",
         "accountFriction": "No Flippity account is needed and quick-entry works directly. The spreadsheet workflow requires a Google account and template copying, which is friction if you just want groups now.",
         "resultQuality": "Basic random grouping with hard preset limits. It can make simple classroom groups, but inability to choose arbitrary team counts/group sizes plus no balancing or constraints keeps quality low."
       },
@@ -6409,7 +6409,7 @@
         "design": "Plain blog-page design. Not polished, but readable and much less annoying than ad-heavy randomizer pages.",
         "features": "Only a number-of-teams random split. No group-size mode, constraints, balancing, leaders, imports, saved lists, or diagnostics.",
         "outputs": "Results are displayed on the page only. No copy button, CSV, PDF, print layout, or share link.",
-        "privacy": "Better than most generic utilities: no account, no observed ad stack, and only Plausible plus first-party scripts on the tool page. The site privacy page still describes analytics cookies and Google Analytics language.",
+        "privacy": "Better than most generic utilities: no account, no observed ad stack, and only Plausible plus first-party scripts on the tool page. The site privacy page describes analytics cookies and Google Analytics language.",
         "accountFriction": "No signup, no login, no install.",
         "resultQuality": "Plain random grouping with even distribution. Fine for trivial one-off splits, nothing more."
       },
@@ -6611,7 +6611,7 @@
         "easeOfUse": "The UI is simple and the random matching mode is easy to use. The AI mode is less clear because it can ignore the grouping instructions.",
         "design": "Modern and clean visually.",
         "features": "Has basic random matching plus an interesting AI smart-grouping concept and fullscreen/export controls. The AI instructions are not reliable enough to count as real constraint support.",
-        "outputs": "Fullscreen/export controls exist, but the output surface is still light compared with tools that provide CSV, copy, share links, or structured exports.",
+        "outputs": "Fullscreen/export controls exist, but the output surface is light compared with tools that provide CSV, copy, share links, or structured exports.",
         "privacy": "Poor. It appears to include an AI grouping workflow, loads Google Tag Manager, and gives no clear roster-specific data handling explanation.",
         "accountFriction": "No account required was visible.",
         "resultQuality": "Random group generation worked like a normal basic splitter. The AI smart grouper is the weak point: it generated groups but ignored the instructions given to it."
@@ -6698,7 +6698,7 @@
       "summary": "MiniWebTool Random Team Generator is a simple browser-based group splitter. It can create groups either by members per group or by number of groups, saves the entered list locally, and has one-click copy. That makes it a real basic group generator, but not a serious optimizer.",
       "pricing": "Free, ad-supported web tool with an anti-adblock/premium upsell popup. Premium is positioned as ad-free and faster; the related developer API starts free with credits and paid tiers.",
       "overallRating": 2.2,
-      "overallComment": "A decent simple splitter, but the ad-supported/anti-adblock page environment drags it down. It is still only in the basic-random-generator tier because it has no real grouping rules.",
+      "overallComment": "A decent simple splitter, but the ad-supported/anti-adblock page environment drags it down. It is only in the basic-random-generator tier because it has no real grouping rules.",
       "ratings": {
         "easeOfUse": 5.0,
         "design": 2.7,
@@ -6710,11 +6710,11 @@
       },
       "ratingComments": {
         "easeOfUse": "Very easy: paste one name per line, choose group size or number of groups, generate, copy. This deserves the same easy-workflow score as other obvious basic splitters.",
-        "design": "The generated group cards are readable, but the page is still a generic ad-supported utility page and the anti-adblock premium popup is intrusive. Not terrible, but clearly worse than the clean basic tools.",
-        "features": "Basic group-generation feature depth. It supports arbitrary members-per-group or number-of-groups modes, balanced size distribution, local saved input, copy buttons, and an API. That is better than preset-only tools, but still only earns about a 2 because there are no constraints, attributes, custom per-group capacities, multi-session planning, repeat optimization, or diagnostics.",
-        "outputs": "Copy buttons are useful, but this is still a basic output surface. The consumer page does not provide CSV, Excel, Zoom export, share links, printable/PDF output, or persistent result history.",
+        "design": "The generated group cards are readable, but the page is a generic ad-supported utility page and the anti-adblock premium popup is intrusive. Not terrible, but clearly worse than the clean basic tools.",
+        "features": "Basic group-generation feature depth. It supports arbitrary members-per-group or number-of-groups modes, balanced size distribution, local saved input, copy buttons, and an API. That is better than preset-only tools, but only earns about a 2 because there are no constraints, attributes, custom per-group capacities, multi-session planning, repeat optimization, or diagnostics.",
+        "outputs": "Copy buttons are useful, but this is a basic output surface. The consumer page does not provide CSV, Excel, Zoom export, share links, printable/PDF output, or persistent result history.",
         "privacy": "The tool page says names are stored only in browser local storage, which is good for roster privacy. The surrounding site is much less clean: ads, Google Analytics/Tag Manager, DoubleClick/AdSense-style advertising, Cloudflare analytics, and an anti-adblock popup pushing allowlisting or Premium.",
-        "accountFriction": "No account is needed for the web tool, which is good. But the anti-adblock popup adds real access friction by asking users to allowlist the site or upgrade to Premium before continuing.",
+        "accountFriction": "No account is needed for the web tool, which is good. The anti-adblock popup adds real access friction by asking users to allowlist the site or upgrade to Premium before continuing.",
         "resultQuality": "Standard one-off random grouping with even-ish group sizes. Consistent with the other plain random splitters: useful for a quick split, but no balancing, constraints, repeat reduction, or quality diagnostics."
       },
       "features": {
@@ -6898,7 +6898,7 @@
       "summary": "PickJa Random Group Generator is a clean, basic splitter on PickJa’s randomizer site. Paste one name per line, choose either number of groups or members per group, and it displays balanced random groups with member counts. The tool itself is easy and useful for one-off grouping, but there are no copy/export controls, no constraints, no saved rosters, no repeat planning, and the page is wrapped in heavy advertising/consent infrastructure.",
       "pricing": "Free web tool. No account required for the generator; sign-in exists for the broader PickJa site.",
       "overallRating": 2.2,
-      "overallComment": "A pleasant basic splitter, but still shallow. It gains points for dual mode and readable output, then loses them on missing exports and severe ad-tech privacy posture.",
+      "overallComment": "A pleasant basic splitter, but shallow. It gains points for dual mode and readable output, then loses them on missing exports and severe ad-tech privacy posture.",
       "ratings": {
         "easeOfUse": 4.4,
         "design": 3.4,
@@ -7011,7 +7011,7 @@
         "design": "Only the Chrome Web Store listing and screenshots were available here. It appears to be a small functional popup, not a polished planning interface.",
         "features": "Very basic: one-name-per-line input, number of groups, random generation, clear, and local-storage persistence. No group-size mode, constraints, balancing, imports, exports, repeats, or diagnostics.",
         "outputs": "Weak. The listing mentions on-screen labeled groups only. No copy, CSV, print, share, or spreadsheet export is advertised.",
-        "privacy": "Strong on paper for a simple tool: the Chrome Web Store disclosure says the developer does not collect or use data, and names are saved locally in browser storage. Still, this is a small extension from a non-trader developer, so trust depends on installing extension code.",
+        "privacy": "Strong on paper for a simple tool: the Chrome Web Store disclosure says the developer does not collect or use data, and names are saved locally in browser storage. This is a small extension from a non-trader developer, so trust depends on installing extension code.",
         "accountFriction": "No account advertised, but extension installation is a real barrier compared with no-install web tools.",
         "resultQuality": "Plain random grouping only. Local storage and extension packaging do not improve assignment quality."
       },
@@ -7095,10 +7095,10 @@
       "name": "RandomLists Random Team Generator",
       "url": "https://www.randomlists.com/team-generator",
       "bestFor": "Simple random teams from a pasted list",
-      "summary": "RandomLists is a straightforward random team splitter. It looks much cleaner than ClassTools and does the basic job quickly: paste names, choose group count, randomize, edit, rerun, and share URL state. It is still only a randomizer with very little control, and shared links put the entered names directly in the URL.",
+      "summary": "RandomLists is a straightforward random team splitter. It looks much cleaner than ClassTools and does the basic job quickly: paste names, choose group count, randomize, edit, rerun, and share URL state. It is only a randomizer with very little control, and shared links put the entered names directly in the URL.",
       "pricing": "Free, ad-supported web tool. No paid group-generation tier is needed, but the cost is heavy ad/consent friction and a very basic feature set.",
       "overallRating": 2.2,
-      "overallComment": "Better than ClassTools, but still just a basic random splitter with bad privacy. Its search visibility is much stronger than the product deserves.",
+      "overallComment": "Better than ClassTools, but just a basic random splitter with bad privacy. Its search visibility is much stronger than the product deserves.",
       "ratings": {
         "easeOfUse": 4.6,
         "design": 3.2,
@@ -7110,8 +7110,8 @@
       },
       "ratingComments": {
         "easeOfUse": "Simple enough, but the Edit Settings flow plus consent/ad clutter keeps it from being a true 5/5.",
-        "design": "Fairly clean and modern compared with ClassTools, though still a generic ad-supported utility site.",
-        "features": "It has paste names, arbitrary group count, rerun, edit settings, and URL state. Still no real grouping intelligence.",
+        "design": "Fairly clean and modern compared with ClassTools, though a generic ad-supported utility site.",
+        "features": "It has paste names, arbitrary group count, rerun, edit settings, and URL state. No real grouping intelligence.",
         "outputs": "Shareable URL state is useful, but it exposes entered names in the query string and there is no CSV, PDF, print, spreadsheet, or Zoom-friendly export.",
         "privacy": "Bad for anything sensitive. The consent banner mentions personal data sharing with 210 partners, precise geolocation, ad personalization, and device storage. The privacy policy also says information may be shared or sold for marketing. Shared links include the entered names directly in the URL.",
         "accountFriction": "No account required.",
@@ -7201,7 +7201,7 @@
       "summary": "UltimateSolver Random Groups is a basic random group generator. It lets users enter names, choose number of groups or people per group, optionally avoid incomplete groups, save name lists in cookies, use fullscreen/animation display, and print/copy the result. The randomization is server-side using PHP random_int(), so names are sent to the server even though the site says input/output data is not stored or shared.",
       "pricing": "Free web tool. No account or payment required.",
       "overallRating": 2.2,
-      "overallComment": "A decent basic splitter with unusually explicit randomness documentation and privacy claims, but still only basic random grouping and server-side processing.",
+      "overallComment": "A decent basic splitter with unusually explicit randomness documentation and privacy claims, but only basic random grouping and server-side processing.",
       "ratings": {
         "easeOfUse": 4.0,
         "design": 2.8,
@@ -7216,7 +7216,7 @@
         "design": "Functional but dated and busy. It feels like an old calculator/randomizer site, not a focused classroom/grouping product.",
         "features": "Low feature depth. It supports number-of-groups, people-per-group, no-incomplete-groups options, sorting/display options, saved name lists in cookies, fullscreen, and a puzzle/expert-group mode. No balancing, constraints, multi-session planning, repeats, attributes, or diagnostics.",
         "outputs": "Basic output only: on-page result, copy-style output, print-friendly behavior, fullscreen display, and cookie-saved name lists. No CSV/Excel export, share links, Zoom export, or result history.",
-        "privacy": "Mixed. The page says SSL is used and input/output data is not stored or shared, and there is a clear GDPR privacy policy. But the generator posts names to a server endpoint for random_int() grouping, stores saved name lists in cookies if used, and the broader site privacy policy includes Google Analytics, AdSense, YouTube, VG WORT pixels, and affiliate tracking.",
+        "privacy": "Mixed. The page says SSL is used and input/output data is not stored or shared, and there is a clear GDPR privacy policy. The generator posts names to a server endpoint for random_int() grouping, stores saved name lists in cookies if used, and the broader site privacy policy includes Google Analytics, AdSense, YouTube, VG WORT pixels, and affiliate tracking.",
         "accountFriction": "No account or payment required.",
         "resultQuality": "Standard one-off random grouping. Cryptographically secure random selection is nice, but it does not improve group assignment quality beyond random even-ish splitting."
       },
@@ -7289,7 +7289,7 @@
         "Dated busy UI",
         "Broader site includes Analytics/AdSense/tracking components"
       ],
-      "reviewNote": "Review the random-groups page specifically. Do not over-credit cryptographic randomness; for group generation quality, it is still just a random splitter.",
+      "reviewNote": "Review the random-groups page specifically. Do not over-credit cryptographic randomness; for group generation quality, it is just a random splitter.",
       "tags": [
         "basic-randomizer"
       ]
@@ -7516,11 +7516,11 @@
       "ratingComments": {
         "easeOfUse": "Not terrible, but clunky. Instead of pasting a normal list, you enter names into separate fields and manually add more participant rows. Weighted mode adds another level-selection step.",
         "design": "Old Bootstrap-style page with ads and awkward layout. The cookie/ad consent layer is intrusive and parts of the surrounding page/content are in French even on the English page.",
-        "features": "Above the weakest random splitters because it supports random or weighted grouping by participant level. But that is basically it: number of groups, participant names, optional levels. No group-size mode, constraints, leaders, imports, exports, repeats, or diagnostics.",
+        "features": "Above the weakest random splitters because it supports random or weighted grouping by participant level. That is basically it: number of groups, participant names, optional levels. No group-size mode, constraints, leaders, imports, exports, repeats, or diagnostics.",
         "outputs": "Very poor. Results are displayed on the page only. No copy button, CSV/text download, print view, share link, saved history, or spreadsheet-friendly output was visible in testing.",
-        "privacy": "Poor. The legal page says data submitted through tools is not tracked, stored, or archived after processing, which is good. But the page shows a Google-managed consent dialog mentioning 210 partners, personalized ads/content, audience measurement, device storage/access, and possible precise geolocation, plus multiple Google AdSense/Tag scripts.",
+        "privacy": "Poor. The legal page says data submitted through tools is not tracked, stored, or archived after processing, which is good. The page shows a Google-managed consent dialog mentioning 210 partners, personalized ads/content, audience measurement, device storage/access, and possible precise geolocation, plus multiple Google AdSense/Tag scripts.",
         "accountFriction": "No account required.",
-        "resultQuality": "Better than a plain random splitter when weighted-by-level mode is used, because it can spread participant levels. Still a simple heuristic/form tool with no broader constraints or repeat optimization."
+        "resultQuality": "Better than a plain random splitter when weighted-by-level mode is used, because it can spread participant levels. A simple heuristic/form tool with no broader constraints or repeat optimization."
       },
       "features": {
         "API/programmatic access": "no",
@@ -7602,7 +7602,7 @@
       "name": "Repixify Random Team Generator",
       "url": "https://www.repixify.com/tools/random-team-generator",
       "bestFor": "Users who specifically want leader markers and custom team names and do not care about ad-tech",
-      "summary": "Repixify Random Team Generator promises more than a bare splitter: number-of-teams or participants-per-team modes, custom team names, a $ prefix to mark leaders, and a Copy All Teams button. On the actual page, the form is more brittle than it should be and can get stuck in the configuration state instead of showing results. Even if the promised controls work reliably for some users, this is still a random splitter with no hard constraints, no balancing logic beyond team sizes/leaders, and no serious export surface.",
+      "summary": "Repixify Random Team Generator promises more than a bare splitter: number-of-teams or participants-per-team modes, custom team names, a $ prefix to mark leaders, and a Copy All Teams button. On the actual page, the form is more brittle than it should be and can get stuck in the configuration state instead of showing results. Even if the promised controls work reliably for some users, this is a random splitter with no hard constraints, no balancing logic beyond team sizes/leaders, and no serious export surface.",
       "pricing": "Free web tool. No account required.",
       "overallRating": 2.1,
       "overallComment": "Interesting leader/team-name ideas, but the tool is clunky and the privacy footprint is ugly. Not a strong recommendation.",
@@ -7618,8 +7618,8 @@
       "ratingComments": {
         "easeOfUse": "The visible flow is more fragile than a simple random team generator should be. The number/team-name controls add friction instead of clarity.",
         "design": "Modern enough visually, but surrounded by a generic tool-site layout, cookie prompt, and lots of related-tool clutter.",
-        "features": "Leader markers, custom team names, and two split modes are real features. There are still no constraints, balancing categories, imports, history, or repeat optimization.",
-        "outputs": "The page describes a Copy All Teams button, but no CSV, PDF, image, or spreadsheet export. Output depth is still low.",
+        "features": "Leader markers, custom team names, and two split modes are real features. There are no constraints, balancing categories, imports, history, or repeat optimization.",
+        "outputs": "The page describes a Copy All Teams button, but no CSV, PDF, image, or spreadsheet export. Output depth is low.",
         "privacy": "Very poor. The page uses a CMP/ad stack with Mediavine/Journey-style scripts, consent storage, cookies, and a policy that explicitly discusses Google ad cookies and third-party ad servers.",
         "accountFriction": "No account required for the generator.",
         "resultQuality": "Random-only. Leader markers may distribute marked leaders, but there is no evidence of broader assignment quality."
@@ -8023,9 +8023,9 @@
       "ratingComments": {
         "easeOfUse": "The tool is usable, but individual member rows are a bad fit for a class or workshop roster. A simple textarea would be faster.",
         "design": "The actual form is readable, but the repeated launch banner, account/comment widgets, and enormous unrelated-tool grid make the page feel bloated.",
-        "features": "Slightly above the weakest splitters: group title, members-per-group, dummy names, balance/remainder toggles, and dynamic members. Still no constraints, attributes, multi-round planning, saved rosters, or diagnostics.",
+        "features": "Slightly above the weakest splitters: group title, members-per-group, dummy names, balance/remainder toggles, and dynamic members. No constraints, attributes, multi-round planning, saved rosters, or diagnostics.",
         "outputs": "The page advertises copying groups to the clipboard, but there is no spreadsheet, CSV, image, PDF, Zoom, or share workflow visible in the basic form.",
-        "privacy": "The site says tools process data in the browser, which is good for names. But the privacy policy also discloses Google Analytics and Mediavine interest-based advertising, and the page sets CMP/ad-consent storage.",
+        "privacy": "The site says tools process data in the browser, which is good for names. The privacy policy also discloses Google Analytics and Mediavine interest-based advertising, and the page sets CMP/ad-consent storage.",
         "accountFriction": "Generation itself is free and no-login. The account UI is mainly for ratings, comments, and bookmarks.",
         "resultQuality": "Basic random grouping only. Balance/remainder toggles help group sizes, not assignment quality."
       },
@@ -8510,7 +8510,7 @@
       "name": "ClassTools Random Group Generator",
       "url": "https://www.classtools.net/random-group-generator/",
       "bestFor": "Very quick classroom group splits",
-      "summary": "ClassTools is an extremely weak group generator with unusually high search-engine visibility. It technically works for a quick random classroom split: paste names, choose the number of groups, generate, then save/link or print. But the UI is dated, the page is cluttered and ad-heavy, the feature set is shallow, and the privacy/ad-tech footprint is bad.",
+      "summary": "ClassTools is an extremely weak group generator with unusually high search-engine visibility. It technically works for a quick random classroom split: paste names, choose the number of groups, generate, then save/link or print. The UI is dated, the page is cluttered and ad-heavy, the feature set is shallow, and the privacy/ad-tech footprint is bad.",
       "pricing": "Free, ad-supported web tool. No account or payment is needed for the random group generator. Premium removes ads and adds broader ClassTools workspace/history benefits, but the reviewed free group-generator workflow is surrounded by monetized site clutter.",
       "overallRating": 1.8,
       "overallComment": "Generally, one of the weakest group generators on this list. It works, but it is a dated, ad-heavy, shallow random splitter whose search-engine visibility is far higher than its product quality deserves.",
@@ -8527,7 +8527,7 @@
         "easeOfUse": "The core workflow is easy because there is almost nothing to configure: paste names, choose group count, generate. Ads, consent prompts, premium nudges, and old UI clutter keep it from being a clean 5/5.",
         "design": "Terrible, dated, and cluttered. The tool is usable, but the surrounding page feels like an old ad-heavy template site rather than a modern group generator.",
         "features": "Very shallow. It has paste names, arbitrary group count, save/link, and print, but no balancing, constraints, repeat avoidance, imports, roster management, or diagnostics.",
-        "outputs": "Save/link and print are genuinely useful and better than display-only tools. There is still no proper CSV, spreadsheet, PDF, image, or Zoom-friendly export workflow.",
+        "outputs": "Save/link and print are genuinely useful and better than display-only tools. There is no proper CSV, spreadsheet, PDF, image, or Zoom-friendly export workflow.",
         "privacy": "Bad. The page shows a large consent/ad stack, including language about personal data being stored/accessed/shared with 1147 partners, plus Ezoic/Gatekeeper/Google/Funding Choices and multiple tracking identifiers. I would not enter sensitive classroom rosters here.",
         "accountFriction": "No account is required, but a premium login exists. For the basic group generator workflow, there is basically no signup friction.",
         "resultQuality": "Random only. This is what is advertised, but nothing more: no balancing, no constraints, no repeat reduction, and no quality diagnostics."
@@ -8734,7 +8734,7 @@
         "design": "Polished, familiar, and good for live presentation. The wheel, sounds, themes, fullscreen/streaming support, and customization are much stronger than most plain utility sites.",
         "features": "For group generation specifically, feature depth is very low. Multi-wheel, weighted entries, themes, embedding, API access, and audio customization are useful spinner features, but they do not create balanced groups. There is no real team splitter, no group capacities, no grouping constraints, no multi-session planning, and no repeat optimization.",
         "outputs": "Strong output/sharing options for a wheel: short links, embeddable iframes, streaming support, local/cloud saved wheels, and API access. Weak as a group-generator output surface because it does not produce proper team rosters, CSV group assignments, Zoom exports, or schedule-style results.",
-        "privacy": "Mixed. Better than the worst ad-tech utilities because it has local-file saving, automatic device-local state, explicit privacy/security documentation, and an option to close ads for the session. Still not great for sensitive classroom names: the site uses ads and Google Analytics, cloud-saved/shared wheels can put entries in Firestore/Google infrastructure, account login is needed for cloud access, and shared URL examples can include entries directly in the URL.",
+        "privacy": "Mixed. Better than the worst ad-tech utilities because it has local-file saving, automatic device-local state, explicit privacy/security documentation, and an option to close ads for the session. Not great for sensitive classroom names: the site uses ads and Google Analytics, cloud-saved/shared wheels can put entries in Firestore/Google infrastructure, account login is needed for cloud access, and shared URL examples can include entries directly in the URL.",
         "accountFriction": "No account is needed for basic spinning, local use, or local file saving. Cloud-saved wheels and cross-device access require login, so it is not completely account-free.",
         "resultQuality": "As a random picker, the randomness is strong. As a group generator, result quality is barely applicable: teams have to be built manually, so there is no balancing, no constraint handling, and no repeat minimization."
       },
@@ -9034,7 +9034,7 @@
         "design": "Polished and classroom-friendly compared with many utility sites. The issue is not presentation quality; it is that the relevant tool is a name picker, not a group maker.",
         "features": "Almost no group-generation feature depth. It can pick random names and use saved word lists, but it does not choose team count, group size, capacities, balancing, constraints, exports, or repeat avoidance.",
         "outputs": "No useful group output. At best it displays one selected name or spinner result. No team roster, copy/export surface, CSV, print groups, or shareable generated assignment.",
-        "privacy": "Better than ad-tech-heavy utilities: no obvious AdSense mess on the widget page and Teach Starter has detailed education/privacy language including COPPA/PRIVO posture. Still a hosted education platform with accounts, cookies, server logs, location/IP/device data, marketing uses, analytics/customer tooling, and saved word-list/account behavior.",
+        "privacy": "Better than ad-tech-heavy utilities: no obvious AdSense mess on the widget page and Teach Starter has detailed education/privacy language including COPPA/PRIVO posture. A hosted education platform with accounts, cookies, server logs, location/IP/device data, marketing uses, analytics/customer tooling, and saved word-list/account behavior.",
         "accountFriction": "The random name picker is presented as free, but the broader Teach Starter ecosystem pushes account/resource workflows, and saved class lists depend on Teach Starter account features. No account is needed for the basic idea, but it is not as frictionless as a tiny standalone splitter.",
         "resultQuality": "No group result quality to credit. Random single-name selection may be fair, but it does not create balanced teams or group assignments."
       },

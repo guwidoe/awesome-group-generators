@@ -2,6 +2,7 @@
 
 ## 2026-05-27
 
+- Cleaned review prose to remove relative carry-over wording from published reviews.
 - Added reviewed entries for Diverse Group Generation and TeamMaker App.
 - Added reviewed entries for A School Random Pair Generator, Chirag Mehta Team Maker, and OpenEduCat AI Group Generator.
 - Added reviewed entry for Super Teacher Tools Classroom Seating / Groups.

@@ -4,6 +4,8 @@ A curated, transparent list of tools for generating groups, teams, classroom gro
 
 This repository publishes a review dataset, scoring methodology, correction workflow, and GitHub Pages explorer so tool owners and users can point out stale data or unfair ratings. Ratings are editorial, evidence-based, and open to correction requests.
 
+![A confused person overwhelmed by spreadsheets, browser windows, sticky notes, and group-generation chaos.](./assets/confused-group-generator-hero.png)
+
 ## Website
 
 - Interactive explorer: https://guwidoe.github.io/awesome-group-generators/
@@ -15,7 +17,7 @@ This repository publishes a review dataset, scoring methodology, correction work
 - [`data/tools.schema.json`](./data/tools.schema.json) — JSON schema
 - [`METHODOLOGY.md`](./METHODOLOGY.md) — scoring rubric and review rules
 
-Current export: **89 tools**, source revision **479**, exported **2026-05-27T18:20:40+00:00**.
+Current export: **89 tools**, source revision **481**, exported **2026-05-27T18:25:46+00:00**.
 
 ## Use-case shortlists
 
