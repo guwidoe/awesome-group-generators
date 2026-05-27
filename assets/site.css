@@ -81,12 +81,7 @@ button { cursor: pointer; }
   overflow: hidden;
 }
 .site-hero::after {
-  content: "";
-  position: absolute;
-  inset: auto -10% -22% -10%;
-  height: 32%;
-  background: var(--paper);
-  border-radius: 50% 50% 0 0 / 36% 36% 0 0;
+  display: none;
 }
 .top-nav {
   width: var(--content);
@@ -644,10 +639,10 @@ button { cursor: pointer; }
   .site-hero { min-height: auto; }
   .top-nav { align-items: flex-start; }
   .nav-links { gap: 12px; font-size: .86rem; }
-  .hero-inner { grid-template-columns: 1fr; min-height: auto; padding: 48px 0 140px; }
+  .hero-inner { grid-template-columns: 1fr; min-height: auto; padding: 48px 0 34px; }
   .hero-visual { min-height: 280px; order: -1; }
   .node-map { inset: 0; border-radius: 30px; }
-  .dataset-strip { grid-template-columns: repeat(2, 1fr); margin-top: -40px; }
+  .dataset-strip { grid-template-columns: repeat(2, 1fr); margin-top: 18px; }
   .section-heading { grid-template-columns: 1fr; align-items: start; }
   .primary-controls, .secondary-controls { grid-template-columns: 1fr; }
   .feature-grid { grid-template-columns: 1fr 1fr; max-height: 430px; }
