@@ -143,7 +143,7 @@
     });
     el.minRating.addEventListener('input', () => {
       state.minRating = Number(el.minRating.value);
-      el.minRatingOutput.value = state.minRating.toFixed(1);
+      updateMinRatingOutput();
       applyFilters();
     });
     el.pricingFilter.addEventListener('change', () => {
@@ -297,7 +297,7 @@
   function renderActiveFilters() {
     const chips = [];
     if (state.query) chips.push({ label: `Search: ${state.query}`, onRemove: () => { state.query = ''; el.searchInput.value = ''; } });
-    if (state.minRating > 0) chips.push({ label: `Rating ≥ ${state.minRating.toFixed(1)}`, onRemove: () => { state.minRating = 0; el.minRating.value = '0'; el.minRatingOutput.value = '0.0'; } });
+    if (state.minRating > 0) chips.push({ label: `Rating ≥ ${state.minRating.toFixed(1)}★`, onRemove: () => { state.minRating = 0; el.minRating.value = '0'; updateMinRatingOutput(); } });
     if (state.pricing !== 'any') chips.push({ label: `Pricing: ${PRICING_FILTERS[state.pricing] || state.pricing}`, onRemove: () => { state.pricing = 'any'; el.pricingFilter.value = 'any'; } });
     [...state.tags].forEach((tag) => chips.push({ label: `Tag: ${tag}`, onRemove: () => state.tags.delete(tag) }));
     [...state.features].forEach((feature) => chips.push({ label: `Feature: ${feature}`, onRemove: () => state.features.delete(feature) }));
@@ -358,7 +358,7 @@
 
   function renderRatingRow(label, value) {
     const width = Math.max(0, Math.min(100, (Number(value) / 5) * 100));
-    return `<div class="rating-row"><span>${escapeHtml(label)}</span><span class="rating-track"><span class="rating-fill" style="width:${width}%"></span></span><span>${formatScore(value)}</span></div>`;
+    return `<div class="rating-row"><span>${escapeHtml(label)}</span><span class="rating-track"><span class="rating-fill" style="width:${width}%"></span></span><span>${formatScore(value)}★</span></div>`;
   }
 
   function renderTags(tags) {
@@ -401,7 +401,7 @@
     el.searchInput.value = '';
     el.sortSelect.value = 'rank';
     el.minRating.value = '0';
-    el.minRatingOutput.value = '0.0';
+    updateMinRatingOutput();
     el.pricingFilter.value = 'any';
     el.includePartial.checked = true;
     el.featureSearch.value = '';
@@ -474,6 +474,10 @@
     const asc = state.direction === 'asc';
     el.directionButton.textContent = asc ? 'Ascending' : 'Descending';
     el.directionButton.setAttribute('aria-pressed', asc ? 'false' : 'true');
+  }
+
+  function updateMinRatingOutput() {
+    el.minRatingOutput.textContent = `${Number(state.minRating || 0).toFixed(1)}★`;
   }
 
   function formatScore(value) {

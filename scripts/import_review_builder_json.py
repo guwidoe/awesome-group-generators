@@ -177,7 +177,7 @@ def load_tools(source: Path) -> tuple[dict[str, Any], list[dict[str, Any]]]:
         "sourceSavedAt": raw.get("savedAt"),
         "exportedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "toolCount": len(tools),
-        "ratingScale": "0.0 to 5.0, higher is better",
+        "ratingScale": "0.0 to 5.0 stars, higher is better",
         "ratingCategories": RATING_KEYS,
         "featureValues": sorted(FEATURE_VALUES),
     }

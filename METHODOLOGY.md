@@ -4,7 +4,7 @@ This dataset rates tools for **group-generation capability specifically**. A too
 
 ## Rating scale
 
-Scores use a 0.0–5.0 scale, where higher is better.
+Scores use a 0.0–5.0 star scale, where higher is better.
 
 - **5.0** — exceptional for the category; rare
 - **4.0–4.9** — strong, serious, or best-in-class for a clear use case
