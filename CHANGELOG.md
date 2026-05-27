@@ -2,6 +2,7 @@
 
 ## 2026-05-27
 
+- Added reviewed entries for Webby, RandomGroup.org, RandomHub, Lekktura, and VisualTimer group tools.
 - Cleaned review prose to remove relative carry-over wording from published reviews.
 - Added reviewed entries for Diverse Group Generation and TeamMaker App.
 - Added reviewed entries for A School Random Pair Generator, Chirag Mehta Team Maker, and OpenEduCat AI Group Generator.
