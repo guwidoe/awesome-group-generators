@@ -350,7 +350,7 @@
         <span class="score" aria-label="Overall rating ${formatScore(tool.overallRating)} out of 5 stars">${formatScore(tool.overallRating)}★</span>
       </div>
       <div class="tool-main">
-        <h3><a href="${escapeAttribute(tool.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(tool.name)}</a></h3>
+        <h3><a class="tool-title-link" href="${escapeAttribute(tool.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(tool.name)}<span class="external-link-icon" aria-hidden="true">↗</span><span class="sr-only"> opens tool website</span></a></h3>
         <p class="best-for">${escapeHtml(tool.bestFor || 'No best-fit summary available.')}</p>
         <div class="tag-row" aria-label="Tags">${renderTags([...new Set([pricingLabel(tool), ...(tool.tags || [])])])}</div>
         <div class="feature-row" aria-label="Feature support">${highlightedFeatures.map((feature) => renderSupport(feature, tool.features?.[feature])).join('')}</div>
@@ -398,7 +398,7 @@
 
   function renderList(title, items) {
     if (!items || !items.length) return '';
-    return `<h4>${escapeHtml(title)}</h4><ul>${items.slice(0, 4).map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`;
+    return `<h4>${escapeHtml(title)}</h4><ul>${items.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`;
   }
 
   function selectedOrImportantFeatures(tool) {
