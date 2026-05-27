@@ -324,7 +324,8 @@
   }
 
   function renderToolCard(tool) {
-    const highlightFeatures = selectedOrImportantFeatures(tool).slice(0, 8);
+    const highlightedFeatures = selectedOrImportantFeatures(tool).slice(0, 8);
+    const allFeatureRows = Object.entries(tool.features || {}).sort(([left], [right]) => left.localeCompare(right));
     const ratings = ['resultQuality', 'features', 'outputs', 'privacy'].map((key) => renderRatingRow(RATING_LABELS[key], tool.ratings?.[key] ?? 0)).join('');
     const summary = tool.overallComment || tool.summary || tool.reviewNote || '';
     return `<article class="tool-card" id="${escapeHtml(tool.id)}">
@@ -336,7 +337,13 @@
         <h3><a href="${escapeAttribute(tool.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(tool.name)}</a></h3>
         <p class="best-for">${escapeHtml(tool.bestFor || 'No best-fit summary available.')}</p>
         <div class="tag-row" aria-label="Tags">${renderTags([...new Set([pricingLabel(tool), ...(tool.tags || [])])])}</div>
-        <div class="feature-row" aria-label="Feature support">${highlightFeatures.map((feature) => renderSupport(feature, tool.features?.[feature])).join('')}</div>
+        <div class="feature-row" aria-label="Feature support">${highlightedFeatures.map((feature) => renderSupport(feature, tool.features?.[feature])).join('')}</div>
+        <details class="features-details">
+          <summary>Show all features</summary>
+          <div class="all-feature-grid" aria-label="All feature support for ${escapeAttribute(tool.name)}">
+            ${allFeatureRows.map(([feature, support]) => renderSupport(feature, support)).join('')}
+          </div>
+        </details>
       </div>
       <div class="rating-stack" aria-label="Selected ratings">${ratings}</div>
       <details class="tool-details">

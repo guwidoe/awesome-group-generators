@@ -557,15 +557,24 @@ button { cursor: pointer; }
   border-radius: inherit;
   background: linear-gradient(90deg, var(--accent), #fbbf24);
 }
-.tool-details {
-  grid-column: 2 / -1;
-  margin-top: -8px;
+.features-details {
+  margin-top: 12px;
 }
-.tool-details summary {
+.features-details summary, .tool-details summary {
   color: var(--accent-dark);
   font-weight: 900;
   cursor: pointer;
   width: max-content;
+}
+.all-feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 10px;
+}
+.tool-details {
+  grid-column: 2 / -1;
+  margin-top: -8px;
 }
 .detail-body {
   display: grid;
