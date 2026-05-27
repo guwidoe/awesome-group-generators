@@ -2,6 +2,7 @@
 
 ## 2026-05-27
 
+- Updated Randly after confirming it works in-browser and supports multiple generated draws.
 - Retested SpinnChoose, updated its rating after confirming generation works in-browser, and removed TCEA Grouping Tools because it is a blog roundup rather than a generator.
 - Added reviewed entries for RemagineAI, Mate.tools, WebRandom, FindUtils, PiliApp, Wanglitou, Cojoro, RandomTeams.net, The Decider, and FreeRandomTools.
 - Added reviewed entries for SpinTheNamePicker, WheelPlay, PickerKit, DecideHub, PartyPlay, DiceGameHub, TurboToolkit, Wheel of Decision, RandomGenerator.com.au, and ConverterPanda.
