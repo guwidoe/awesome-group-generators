@@ -34,7 +34,7 @@ FEATURE_VALUES = {"yes", "partial", "no", "na"}
 
 USE_CASE_SHORTLISTS = [
     (
-        "Best for most serious group-generation jobs",
+        "Useful for serious group-generation jobs",
         ["GroupMixer", "ChatGPT Pro Extended Reasoning", "Social Golfer Online"],
         "For broad, real-world grouping problems, compare a purpose-built solver against AI-assisted custom workflows and niche schedulers.",
     ),
@@ -46,7 +46,7 @@ USE_CASE_SHORTLISTS = [
     (
         "Constraint-aware grouping",
         ["GroupMixer", "ChatGPT Pro Extended Reasoning", "Clever Groups"],
-        "Purpose-built constraint tools are best for structured rules; AI-assisted workflows can help when requirements are too idiosyncratic for a product UI.",
+        "Purpose-built constraint tools fit structured rules; AI-assisted workflows can help when requirements are too idiosyncratic for a product UI.",
     ),
     (
         "Preference/self-entry matching",
@@ -231,7 +231,7 @@ def md_link(label: str, url: str) -> str:
 
 
 def table_rows(tools: list[dict[str, Any]], limit: int | None = None) -> str:
-    rows = ["| Rank | Tool | Score | Best for | Tags |", "|---:|---|---:|---|---|"]
+    rows = ["| Rank | Tool | Score | Useful for | Tags |", "|---:|---|---:|---|---|"]
     subset = tools if limit is None else tools[:limit]
     for tool in subset:
         tags = ", ".join(tool["tags"][:4]) or "—"

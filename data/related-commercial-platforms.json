@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Related commercial and sales-gated platforms",
     "description": "Related event-networking, speed-networking, golf scheduling, coffee-chat, and matchmaking platforms that are not part of the ranked Awesome Group Generators dataset because a self-serve group-generation workflow was not publicly verifiable, the product is primarily sales-gated, or the fit is adjacent rather than a classical group generator.",
-    "exportedAt": "2026-05-27T00:00:00+00:00",
-    "itemCount": 44,
-    "ratingPolicy": "These entries are intentionally not star-rated and must not be merged into data/tools.json unless a publicly testable generator, open demo, or runnable implementation is reviewed.",
+    "exportedAt": "2026-05-27T21:31:45.389272+00:00",
+    "itemCount": 39,
+    "ratingPolicy": "These entries are intentionally not star-rated and must not be merged into data/tools.json unless a publicly testable generator, open demo, or runnable implementation is reviewed. Entries promoted after live review are removed from this related-only file.",
     "accessStatuses": [
       "sales-gated",
       "commercial-platform",
@@ -25,26 +25,6 @@
       "whyNotRanked": "Public page describes a golf society tee-sheet product, but no self-serve generator workflow was verified.",
       "publicEvidence": "Claims pasted players, rules, fair groups, handicap spreading, and repeat avoidance for golf societies.",
       "notes": "Potentially relevant to social-golfer-style scheduling if a testable demo becomes available."
-    },
-    {
-      "id": "sports-scheduler-pro-golf",
-      "name": "Sport Scheduler Pro Golf Schedule Generator",
-      "url": "https://sportschedulerpro.com/golf-schedule-generator",
-      "category": "golf league scheduling",
-      "accessStatus": "commercial-platform",
-      "whyNotRanked": "Appears to be a broader league scheduling product rather than a directly reviewed group generator.",
-      "publicEvidence": "Markets balanced round-robin golf league schedules and updateable league links.",
-      "notes": "Adjacent to pairings/schedules, but not yet reviewed as a group-generation workflow."
-    },
-    {
-      "id": "playpass-golf-schedule-maker",
-      "name": "Playpass Golf Schedule Maker",
-      "url": "https://playpass.com/sports-software/golf-schedule-maker",
-      "category": "sports league scheduling",
-      "accessStatus": "commercial-platform",
-      "whyNotRanked": "Broader sports schedule maker; no group-generation-specific public workflow was reviewed.",
-      "publicEvidence": "Search result describes golf league schedule generation.",
-      "notes": "Could be reconsidered if golf pairings/group rotations are publicly testable."
     },
     {
       "id": "teams-golf",
@@ -75,16 +55,6 @@
       "whyNotRanked": "Marketing/information page for an optimized golf grouping product; no public generator was verified.",
       "publicEvidence": "Claims optimized group combinations that reduce repeat pairings.",
       "notes": "Relevant to social-golfer scheduling, but not directly comparable without a testable tool."
-    },
-    {
-      "id": "fastrounds",
-      "name": "FastRounds",
-      "url": "https://fastrounds.com/",
-      "category": "speed networking / team-building event software",
-      "accessStatus": "commercial-platform",
-      "whyNotRanked": "Commercial event platform; no public self-serve scheduling generator was reviewed.",
-      "publicEvidence": "Claims automatic rounds, attendee pairing, timers, and speed-networking/team-building event support.",
-      "notes": "Track as a related platform, not a ranked generator."
     },
     {
       "id": "speedmatchapp",
@@ -145,26 +115,6 @@
       "whyNotRanked": "Commercial desktop/product page; no public generator flow was reviewed.",
       "publicEvidence": "Claims generation of multiple seating arrangements with no repeated table companions.",
       "notes": "Relevant to seating/table rotation, not a normal web generator."
-    },
-    {
-      "id": "fotify-speed-dating-event-planner",
-      "name": "Fotify Speed Dating Event Planner",
-      "url": "https://fotify.app/tools/speed-dating-event-planner/",
-      "category": "speed dating / speed networking schedule planning",
-      "accessStatus": "unverified",
-      "whyNotRanked": "Search result suggests a public planner, but the workflow has not been live-reviewed for group-generation quality.",
-      "publicEvidence": "Claims instant rotation schedule, timing, venue setup, and support for speed networking/conference matchmaking.",
-      "notes": "Candidate for future review if the public planner is testable."
-    },
-    {
-      "id": "daterounds",
-      "name": "DateRounds",
-      "url": "https://daterounds.com/",
-      "category": "speed dating rotations",
-      "accessStatus": "commercial-platform",
-      "whyNotRanked": "Commercial speed-dating host platform; no self-serve generator workflow was reviewed.",
-      "publicEvidence": "Claims rounds, timers, matching modes, browser join, and automatic rotations.",
-      "notes": "Adjacent to speed networking, but dating-event-specific."
     },
     {
       "id": "fanciful",

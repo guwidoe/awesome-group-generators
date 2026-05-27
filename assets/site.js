@@ -352,7 +352,7 @@ const DATA_URL = './data/tools.json';
   function renderLoadError(error) {
     el.resultCount.textContent = '0';
     el.emptyState.hidden = false;
-    el.emptyState.innerHTML = `<h3>Could not load the review dataset.</h3><p>${escapeHtml(error.message)}. You can still open <a href="data/tools.json">the JSON file</a>.</p>`;
+    el.emptyState.innerHTML = `<h3>Could not load the review dataset.</h3><p>${escapeHtml(error.message)}. You can open <a href="data/tools.json">the JSON file</a> directly.</p>`;
   }
 
   function toggleSetValue(set, value) {
