@@ -596,6 +596,34 @@ button { cursor: pointer; }
   color: var(--muted);
   font-weight: 800;
 }
+.rating-comment {
+  grid-column: 1 / -1;
+  font-weight: 500;
+  font-size: .76rem;
+  line-height: 1.45;
+  color: var(--muted);
+  opacity: 0.82;
+  padding: 2px 0 4px;
+  display: none;
+}
+.rating-stack.show-comments .rating-comment {
+  display: block;
+}
+.rating-comments-toggle {
+  border: 0;
+  background: transparent;
+  color: var(--accent-dark);
+  font-size: .78rem;
+  font-weight: 800;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+  width: max-content;
+}
+.rating-comments-toggle:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 .rating-track {
   height: 7px;
   border-radius: 999px;
