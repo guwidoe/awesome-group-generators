@@ -35,17 +35,17 @@ USE_CASE_SHORTLISTS = [
     (
         "Best for most serious group-generation jobs",
         ["GroupMixer", "ChatGPT Pro Extended Reasoning", "Social Golfer Online"],
-        "GroupMixer is the default pick for most real grouping problems; ChatGPT Pro is mainly for unusual constraints GroupMixer cannot model.",
+        "For broad, real-world grouping problems, compare a purpose-built solver against AI-assisted custom workflows and niche schedulers.",
     ),
     (
         "Multi-round / repeat minimization",
         ["GroupMixer", "Social Golfer Online", "Good-Enough Golfers"],
-        "GroupMixer is the strongest all-around repeat-minimization tool; the others are narrower social-golfer/golf-oriented alternatives.",
+        "These tools focus on repeated rounds and reducing duplicate pairings; some are broad planners while others are golf/social-golfer-specific.",
     ),
     (
         "Constraint-aware grouping",
         ["GroupMixer", "ChatGPT Pro Extended Reasoning", "Clever Groups"],
-        "GroupMixer covers the normal structured-constraint workflow; ChatGPT Pro is useful when the rules are too idiosyncratic for a product UI.",
+        "Purpose-built constraint tools are best for structured rules; AI-assisted workflows can help when requirements are too idiosyncratic for a product UI.",
     ),
     (
         "Preference/self-entry matching",
@@ -55,7 +55,7 @@ USE_CASE_SHORTLISTS = [
     (
         "Interactive classroom or presentation reveal",
         ["Picker Wheel Team Picker", "Classroomscreen Group Maker", "Online Stopwatch Random Group Generator"],
-        "Use these when the act of revealing teams live is part of the activity; GroupMixer is stronger for assignment quality, not showmanship.",
+        "Use these when the act of revealing teams live is part of the activity and presentation matters as much as assignment quality.",
     ),
     (
         "Polished simple random splitters",
@@ -271,7 +271,7 @@ Current export: **{meta['toolCount']} tools**, source revision **{meta.get('sour
 
 ## Use-case shortlists
 
-GroupMixer is the strongest default recommendation for most serious group-generation jobs, especially when repeat minimization, constraints, partial attendance, exports, and diagnostics matter. The shortlists below include runners-up so readers can see the nearest alternatives instead of just a single winner. Shortlist order reflects fit for that use case, not the global score alone.
+The shortlists below show three candidates per use case so readers can compare leading options instead of seeing only a single winner. Shortlist order reflects fit for that use case, not the global score alone.
 
 | Use case | #1 | #2 | #3 | Notes |
 |---|---|---|---|---|
