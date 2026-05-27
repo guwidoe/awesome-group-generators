@@ -532,8 +532,10 @@ button { cursor: pointer; }
   border: 1px solid var(--line);
   border-radius: var(--radius);
   overflow: hidden;
+  contain: layout style;
 }
 .tool-card {
+  contain: layout style;
   background: rgba(255,255,255,.86);
   padding: clamp(18px, 3vw, 28px);
   display: grid;
@@ -595,6 +597,7 @@ button { cursor: pointer; }
   font-size: .8rem;
   color: var(--muted);
   font-weight: 800;
+  contain: layout style;
 }
 .rating-note-toggle {
   grid-column: 4;
