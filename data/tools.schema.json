@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/groupmixer/awesome-group-generators/data/tools.schema.json",
+  "$id": "https://github.com/guwidoe/awesome-group-generators/data/tools.schema.json",
   "title": "Awesome Group Generators review dataset",
   "type": "object",
   "required": ["metadata", "tools"],

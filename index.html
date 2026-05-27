@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Awesome Group Generators — searchable review dataset</title>
+    <meta
+      name="description"
+      content="Filter and sort reviewed group generators, team pickers, classroom grouping tools, breakout-room planners, and social-golfer schedulers."
+    />
+    <meta name="theme-color" content="#111827" />
+    <meta property="og:title" content="Awesome Group Generators" />
+    <meta
+      property="og:description"
+      content="A transparent, filterable review dataset for group generators and team picker tools."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/site.css" />
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#results">Skip to results</a>
+
+    <header class="site-hero">
+      <nav class="top-nav" aria-label="Primary">
+        <a class="brand" href="./" aria-label="Awesome Group Generators home">
+          <span class="brand-mark" aria-hidden="true">AGG</span>
+          <span>Awesome Group Generators</span>
+        </a>
+        <div class="nav-links">
+          <a href="METHODOLOGY.md">Methodology</a>
+          <a href="data/tools.json">JSON</a>
+          <a href="data/tools.csv">CSV</a>
+          <a href="https://github.com/guwidoe/awesome-group-generators">GitHub</a>
+        </div>
+      </nav>
+
+      <section class="hero-inner" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Open review dataset</p>
+          <h1 id="page-title">Find the right group generator for the job.</h1>
+          <p class="hero-text">
+            Search, filter, and sort reviewed tools for teams, classrooms, workshop breakout rooms,
+            repeated rounds, social-golfer schedules, and quick random splits.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#explorer">Open explorer</a>
+            <a class="secondary-action" href="https://github.com/guwidoe/awesome-group-generators/issues/new/choose">Suggest a correction</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orbit orbit-a"></div>
+          <div class="orbit orbit-b"></div>
+          <div class="node-map">
+            <span style="--x: 12%; --y: 22%; --s: 0.9"></span>
+            <span style="--x: 36%; --y: 12%; --s: 0.7"></span>
+            <span style="--x: 72%; --y: 20%; --s: 1.05"></span>
+            <span style="--x: 22%; --y: 58%; --s: 1.2"></span>
+            <span style="--x: 54%; --y: 46%; --s: 0.85"></span>
+            <span style="--x: 80%; --y: 66%; --s: 0.72"></span>
+            <span style="--x: 44%; --y: 82%; --s: 1"></span>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="dataset-strip" aria-label="Dataset summary">
+        <div>
+          <strong id="stat-tool-count">77</strong>
+          <span>reviewed tools</span>
+        </div>
+        <div>
+          <strong id="stat-top-score">4.7</strong>
+          <span>top rating</span>
+        </div>
+        <div>
+          <strong id="stat-revision">455</strong>
+          <span>source revision</span>
+        </div>
+        <div>
+          <strong id="stat-exported">Loading…</strong>
+          <span>last export</span>
+        </div>
+      </section>
+
+      <section id="explorer" class="explorer" aria-labelledby="explorer-title">
+        <div class="section-heading">
+          <p class="eyebrow">Interactive explorer</p>
+          <h2 id="explorer-title">Filter by fit, not by hype.</h2>
+          <p>
+            Ratings use a 0–5 editorial scale for group-generation capability. Feature filters require support across the reviewed dataset.
+          </p>
+        </div>
+
+        <form class="controls" role="search" aria-label="Tool search and filters">
+          <div class="control-row primary-controls">
+            <label class="search-field" for="search-input">
+              <span>Search tools, use cases, notes, and tags</span>
+              <input id="search-input" type="search" placeholder="Try “repeat”, “classroom”, “privacy”, “Zoom”…" autocomplete="off" />
+            </label>
+
+            <label class="select-field" for="sort-select">
+              <span>Sort by</span>
+              <select id="sort-select">
+                <option value="rank">Rank</option>
+                <option value="overallRating">Overall rating</option>
+                <option value="resultQuality">Result quality</option>
+                <option value="features">Feature depth</option>
+                <option value="privacy">Privacy</option>
+                <option value="outputs">Exports</option>
+                <option value="easeOfUse">Ease of use</option>
+                <option value="name">Name</option>
+              </select>
+            </label>
+
+            <button id="direction-button" class="ghost-button" type="button" aria-pressed="false">Ascending</button>
+          </div>
+
+          <div class="control-row secondary-controls">
+            <label class="range-field" for="min-rating">
+              <span>Minimum overall rating: <output id="min-rating-output" for="min-rating">0.0</output></span>
+              <input id="min-rating" type="range" min="0" max="5" step="0.1" value="0" />
+            </label>
+
+            <label class="checkbox-field" for="include-partial">
+              <input id="include-partial" type="checkbox" checked />
+              <span>Feature filters include partial support</span>
+            </label>
+
+            <button id="reset-button" class="ghost-button" type="reset">Reset filters</button>
+          </div>
+        </form>
+
+        <section class="quick-filters" aria-labelledby="quick-filters-title">
+          <div class="filter-header">
+            <h3 id="quick-filters-title">Quick filters</h3>
+            <p>Use one or combine several.</p>
+          </div>
+          <div id="preset-list" class="pill-row" aria-label="Preset filters"></div>
+          <div id="tag-list" class="pill-row" aria-label="Tag filters"></div>
+        </section>
+
+        <section class="feature-panel" aria-labelledby="feature-title">
+          <div class="filter-header">
+            <div>
+              <h3 id="feature-title">Feature filters</h3>
+              <p>Require tools to support specific capabilities.</p>
+            </div>
+            <label class="compact-search" for="feature-search">
+              <span class="sr-only">Search features</span>
+              <input id="feature-search" type="search" placeholder="Find a feature…" autocomplete="off" />
+            </label>
+          </div>
+          <div id="feature-list" class="feature-grid" aria-label="Feature filters"></div>
+        </section>
+
+        <div id="active-filters" class="active-filters" aria-live="polite"></div>
+      </section>
+
+      <section id="results" class="results-section" aria-labelledby="results-title">
+        <div class="results-bar">
+          <div>
+            <p class="eyebrow">Results</p>
+            <h2 id="results-title"><span id="result-count">0</span> matching tools</h2>
+          </div>
+          <div class="results-actions">
+            <button id="copy-json-button" class="ghost-button" type="button">Copy filtered JSON</button>
+            <a class="ghost-link" href="data/tools.csv">Download CSV</a>
+          </div>
+        </div>
+
+        <div id="empty-state" class="empty-state" hidden>
+          <h3>No tools match those filters.</h3>
+          <p>Try lowering the rating threshold or removing a feature requirement.</p>
+        </div>
+
+        <div id="tool-list" class="tool-list" aria-live="polite"></div>
+      </section>
+
+      <section class="methodology-callout" aria-labelledby="methodology-title">
+        <div>
+          <p class="eyebrow">Transparent by design</p>
+          <h2 id="methodology-title">Challenge the data, not a black box.</h2>
+          <p>
+            The dataset includes the review rubric, structured JSON, spreadsheet-friendly CSV, and issue templates for corrections, rating disputes, and new tool suggestions.
+          </p>
+        </div>
+        <div class="callout-actions">
+          <a class="primary-action dark" href="METHODOLOGY.md">Read methodology</a>
+          <a class="secondary-action dark" href="https://github.com/guwidoe/awesome-group-generators/issues/new/choose">Open an issue</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Awesome Group Generators publishes editorial review data under CC BY 4.0. Site code is MIT licensed.</p>
+      <p><a href="LICENSE.md">License</a> · <a href="CONTRIBUTING.md">Contributing</a> · <a href="CHANGELOG.md">Changelog</a></p>
+    </footer>
+  </body>
+</html>

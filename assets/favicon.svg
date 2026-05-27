@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Awesome Group Generators">
+  <rect width="64" height="64" rx="16" fill="#111827"/>
+  <circle cx="21" cy="22" r="7" fill="#f97316"/>
+  <circle cx="43" cy="22" r="7" fill="#38bdf8"/>
+  <circle cx="32" cy="43" r="8" fill="#f8fafc"/>
+  <path d="M21 31c-8 0-13 4-13 10v2h18c.7-3.2 2.4-5.9 4.9-7.9C28.4 32.5 25 31 21 31Zm22 0c-4 0-7.4 1.5-9.9 4.1 2.5 2 4.2 4.7 4.9 7.9h18v-2c0-6-5-10-13-10Z" fill="#ffffff" opacity=".72"/>
+</svg>

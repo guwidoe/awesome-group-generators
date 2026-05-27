@@ -2,7 +2,11 @@
 
 A curated, transparent list of tools for generating groups, teams, classroom groups, workshop breakout rooms, speed-networking rotations, and social-golfer schedules.
 
-This repository publishes a review dataset, scoring methodology, and correction workflow so tool owners and users can point out stale data or unfair ratings. Ratings are editorial, evidence-based, and open to correction requests.
+This repository publishes a review dataset, scoring methodology, correction workflow, and GitHub Pages explorer so tool owners and users can point out stale data or unfair ratings. Ratings are editorial, evidence-based, and open to correction requests.
+
+## Website
+
+- Interactive explorer: https://guwidoe.github.io/awesome-group-generators/
 
 ## Data files
 
