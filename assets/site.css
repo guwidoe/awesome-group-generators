@@ -475,8 +475,7 @@ button { cursor: pointer; }
   align-items: end;
   gap: 24px;
   padding: 22px 0;
-  background: linear-gradient(180deg, rgba(255,253,248,.96), rgba(255,253,248,.86));
-  backdrop-filter: blur(18px);
+  background: transparent;
   border-bottom: 1px solid var(--line);
 }
 .results-bar h2 { font-size: clamp(1.85rem, 4vw, 3.3rem); }
