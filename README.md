@@ -15,7 +15,7 @@ This repository publishes a review dataset, scoring methodology, correction work
 - [`data/tools.schema.json`](./data/tools.schema.json) — JSON schema
 - [`METHODOLOGY.md`](./METHODOLOGY.md) — scoring rubric and review rules
 
-Current export: **78 tools**, source revision **456**, exported **2026-05-27T12:10:35+00:00**.
+Current export: **78 tools**, source revision **468**, exported **2026-05-27T12:28:38+00:00**.
 
 ## Use-case shortlists
 

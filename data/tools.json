@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Awesome Group Generators",
     "description": "A transparent, curated review dataset for group generators, team pickers, classroom grouping tools, breakout-room planners, and social-golfer schedulers.",
-    "sourceRevisionId": 456,
-    "sourceSavedAt": "2026-05-27T12:10:21.092Z",
-    "exportedAt": "2026-05-27T12:10:35+00:00",
+    "sourceRevisionId": 468,
+    "sourceSavedAt": "2026-05-27T12:19:22.302Z",
+    "exportedAt": "2026-05-27T12:28:38+00:00",
     "toolCount": 78,
     "ratingScale": "0.0 to 5.0, higher is better",
     "ratingCategories": [
@@ -223,9 +223,8 @@
         "Consumer Pro privacy caveats for sensitive rosters",
         "Requires an account and paid subscription",
         "Not a purpose-built group-generator UI",
-        "Quality still depends on prompting and verification",
-        "No native self-join roster collection",
-        "No public embeddable result widget or presentation mode"
+        "Can be extremely slow, 10 min - 1 hour for generations with more complex constraints",
+        "Quality still depends on prompting and verification"
       ],
       "reviewNote": "Review consumer ChatGPT Pro extended/pro reasoning, not ChatGPT Business/Enterprise, the API, or a custom solver. It deserves higher capability than free ChatGPT, but privacy/cost/validation keep it below purpose-built solvers.",
       "tags": [
