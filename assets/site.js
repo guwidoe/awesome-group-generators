@@ -102,6 +102,7 @@
   async function init() {
     bindElements();
     bindEvents();
+    bindSectionToggles();
     try {
       const response = await fetch(DATA_URL, { cache: 'no-cache' });
       if (!response.ok) throw new Error(`Dataset request failed with ${response.status}`);
@@ -165,6 +166,19 @@
       renderFeatureFilters();
     });
     el.copyJsonButton.addEventListener('click', copyFilteredJson);
+  }
+
+  function bindSectionToggles() {
+    document.querySelectorAll('.filter-section-toggle').forEach((button) => {
+      button.addEventListener('click', () => {
+        const panel = document.getElementById(button.getAttribute('aria-controls'));
+        if (!panel) return;
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!expanded));
+        panel.hidden = expanded;
+        button.querySelector('.toggle-hint').textContent = expanded ? 'Show' : 'Hide';
+      });
+    });
   }
 
   function hydrateStats(data) {

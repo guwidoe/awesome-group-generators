@@ -8,6 +8,7 @@
 *.log
 .tmp/
 tmp/
+.pi/
 
 # Node/Python caches
 node_modules/

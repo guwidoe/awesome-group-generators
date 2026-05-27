@@ -125,43 +125,35 @@
           </div>
         </form>
 
-        <section class="filter-levels" aria-label="Filter levels">
-          <details class="filter-level quick-filters" open>
-            <summary>
-              <span>Quick filters</span>
-              <small>Common presets</small>
-            </summary>
+        <section class="filter-sections" aria-label="Filter sections">
+          <div class="filter-section">
+            <div class="filter-section-label">Presets</div>
             <div id="preset-list" class="pill-row" aria-label="Preset filters"></div>
-          </details>
+          </div>
 
-          <details class="filter-level advanced-filters">
-            <summary>
-              <span>Advanced filters</span>
-              <small>Dataset tags and exact feature support</small>
-            </summary>
-
-            <details class="nested-filter tag-panel">
-              <summary>
-                <span>Dataset tags</span>
-                <small>Structured labels derived from reviewed capabilities</small>
-              </summary>
+          <div class="filter-section">
+            <button class="filter-section-toggle" type="button" aria-expanded="false" aria-controls="tags-panel">
+              <span class="filter-section-label">Tags</span>
+              <span class="toggle-hint">Show</span>
+            </button>
+            <div id="tags-panel" class="filter-panel" hidden>
               <div id="tag-list" class="pill-row" aria-label="Tag filters"></div>
-            </details>
+            </div>
+          </div>
 
-            <details class="nested-filter feature-panel">
-              <summary>
-                <span>Feature filters</span>
-                <small>Require specific capabilities</small>
-              </summary>
-              <div class="feature-tools">
-                <label class="compact-search" for="feature-search">
-                  <span class="sr-only">Search features</span>
-                  <input id="feature-search" type="search" placeholder="Find a feature…" autocomplete="off" />
-                </label>
-              </div>
+          <div class="filter-section">
+            <button class="filter-section-toggle" type="button" aria-expanded="false" aria-controls="features-panel">
+              <span class="filter-section-label">Features</span>
+              <span class="toggle-hint">Show</span>
+            </button>
+            <div id="features-panel" class="filter-panel" hidden>
+              <label class="compact-search" for="feature-search">
+                <span class="sr-only">Search features</span>
+                <input id="feature-search" type="search" placeholder="Find a feature…" autocomplete="off" />
+              </label>
               <div id="feature-list" class="feature-grid" aria-label="Feature filters"></div>
-            </details>
-          </details>
+            </div>
+          </div>
         </section>
 
         <div class="filter-footer">

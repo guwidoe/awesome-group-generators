@@ -304,57 +304,65 @@ button { cursor: pointer; }
   font-size: 1.08rem;
   line-height: 1.65;
 }
-.controls, .filter-levels {
+.controls {
   border-top: 1px solid var(--line);
   padding: 24px 0;
 }
-.filter-levels {
-  display: grid;
-  gap: 12px;
+.filter-sections {
+  border-top: 1px solid var(--line);
+  padding: 0;
 }
-.filter-level, .nested-filter {
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  background: rgba(255,255,255,.50);
+.filter-section {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
 }
-.filter-level summary, .nested-filter summary {
-  cursor: pointer;
+.filter-section:last-child {
+  border-bottom: none;
+}
+.filter-section-label {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.filter-section-toggle {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
-  padding: 16px 18px;
-  font-weight: 900;
-  list-style: none;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  color: var(--ink);
 }
-.filter-level summary::-webkit-details-marker, .nested-filter summary::-webkit-details-marker { display: none; }
-.filter-level summary::after, .nested-filter summary::after {
-  content: "+";
-  display: inline-grid;
-  place-items: center;
-  width: 26px;
-  height: 26px;
-  border-radius: 999px;
-  border: 1px solid var(--line);
+.filter-section-toggle .filter-section-label {
+  margin-bottom: 0;
+}
+.toggle-hint {
   color: var(--muted);
-  flex: 0 0 auto;
+  font-size: 0.82rem;
+  font-weight: 700;
+  transition: color 0.15s ease;
 }
-.filter-level[open] > summary::after, .nested-filter[open] > summary::after { content: "−"; }
-.filter-level summary small, .nested-filter summary small {
-  margin-left: auto;
-  color: var(--muted);
-  font-size: .9rem;
-  font-weight: 600;
+.filter-section-toggle:hover .toggle-hint {
+  color: var(--accent-dark);
 }
-.filter-level > .pill-row, .nested-filter > .pill-row, .feature-tools, .nested-filter > .feature-grid {
-  margin: 0 18px 18px;
+.filter-section-toggle[aria-expanded="true"] .toggle-hint::before {
+  content: "";
 }
-.advanced-filters[open] {
-  padding-bottom: 12px;
+.filter-panel {
+  margin-top: 14px;
 }
-.nested-filter {
-  margin: 0 12px 10px;
-  background: rgba(255,255,255,.62);
+.filter-panel .compact-search {
+  margin-bottom: 12px;
+}
+.filter-panel .compact-search input {
+  min-height: 42px;
+  border-radius: 12px;
+  font-size: 0.88rem;
 }
 .control-row {
   display: grid;
