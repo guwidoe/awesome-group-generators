@@ -342,8 +342,7 @@
     const highlightedFeatures = selectedOrImportantFeatures(tool).slice(0, 8);
     const allFeatureRows = Object.entries(tool.features || {}).sort(([left], [right]) => left.localeCompare(right));
     const ratings = CARD_RATING_KEYS.map((key) => renderRatingRow(RATING_LABELS[key], tool.ratings?.[key] ?? 0, tool.ratingComments?.[key])).join('');
-    const hasComments = CARD_RATING_KEYS.some((key) => tool.ratingComments?.[key]);
-    const commentsToggle = hasComments ? '<button class="rating-comments-toggle" type="button" onclick="this.parentNode.classList.toggle(\'show-comments\');this.textContent=this.parentNode.classList.contains(\'show-comments\')?\'\\u25b4 Hide rating notes\':\'\\u25be Show rating notes\'">\u25be Show rating notes</button>' : '';
+
     const summary = tool.overallComment || tool.summary || tool.reviewNote || '';
     return `<article class="tool-card" id="${escapeHtml(tool.id)}">
       <div class="rank-score">
@@ -362,7 +361,7 @@
           </div>
         </details>
       </div>
-      <div class="rating-stack" aria-label="Selected ratings">${ratings}${commentsToggle}</div>
+      <div class="rating-stack" aria-label="Selected ratings">${ratings}</div>
       <details class="tool-details">
         <summary>Review notes</summary>
         <div class="detail-body">
@@ -382,7 +381,7 @@
 
   function renderRatingRow(label, value, comment) {
     const width = Math.max(0, Math.min(100, (Number(value) / 5) * 100));
-    const commentHtml = comment ? `<span class="rating-comment">${escapeHtml(comment)}</span>` : '';
+    const commentHtml = comment ? `<button class="rating-note-toggle" type="button" aria-expanded="false" title="Toggle note" onclick="var c=this.nextElementSibling;var open=c.hidden;c.hidden=!open;this.setAttribute('aria-expanded',String(open));this.textContent=open?'\u25b4':'\u25be'">\u25be</button><span class="rating-comment" hidden>${escapeHtml(comment)}</span>` : '';
     return `<div class="rating-row"><span>${escapeHtml(label)}</span><span class="rating-track"><span class="rating-fill" style="width:${width}%"></span></span><span>${formatScore(value)}★</span>${commentHtml}</div>`;
   }
 
