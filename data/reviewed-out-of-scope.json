@@ -2,8 +2,8 @@
   "metadata": {
     "title": "Reviewed but out-of-scope group-generation-adjacent resources",
     "description": "Resources that were explicitly reviewed after the broader ecosystem pass, but not merged into the ranked Awesome Group Generators dataset because they are sales-gated, LMS-native documentation rather than a portable tool, app-store-only without a verified workflow, duplicate/fork variants, unavailable, or primarily research/reference material.",
-    "reviewedAt": "2026-06-03T15:37:22+00:00",
-    "itemCount": 84,
+    "reviewedAt": "2026-06-03T16:08:06+00:00",
+    "itemCount": 97,
     "policy": "These entries are evidence-tracked so future reviewers do not re-review the same adjacent resources. Promote an item into data/tools.json only after a directly usable generator, open demo, app workflow, or runnable implementation has been reviewed enough to assign the normal feature/rating fields.",
     "decisionStatuses": [
       "sales-gated",
@@ -860,6 +860,136 @@
       "whyOutOfScope": "App Store-only racket-sports matchup rotation generator; no installed app workflow was tested.",
       "publicEvidence": "Listing describes rating-based balanced matchup sequences for 5–20 players, singles/doubles, fair resting rotation, mid-session changes, invite codes, rating updates, and rankings.",
       "notes": "Relevant to sports rotations; keep out of ranked data until app-tested."
+    },
+    {
+      "id": "u2tool-team-generator",
+      "name": "U2Tool Team Generator",
+      "url": "https://www.u2tool.com/en/tools/team-generator/",
+      "category": "non-functional generated tool article",
+      "decisionStatus": "not-working",
+      "whyOutOfScope": "The page describes a team-generator concept but browser review found no actual generator form beyond site search/navigation controls.",
+      "publicEvidence": "Public text claims metrics, constraints, seeds, CSV/JSON export, and backend processing, but the DOM exposed no participant/team inputs or generate workflow.",
+      "notes": "Do not rank unless an actual working generator appears."
+    },
+    {
+      "id": "decidemaster-gruppengenerator-lead",
+      "name": "DecideMaster Gruppengenerator lead",
+      "url": "https://decidemaster.com/de/",
+      "category": "decision-tool suite without group generator",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "The reviewed page is a decision-tool suite with wheel, coin flip, and random draw links, not a group/team generator workflow.",
+      "publicEvidence": "Browser review found “Glücksrad,” “Münzwurf,” and “Auslosung,” with no grouping/team assignment tool on the German homepage.",
+      "notes": "If a direct group-generator route exists, review that exact URL separately."
+    },
+    {
+      "id": "commentpicker-groepenmaker-localized-route",
+      "name": "CommentPicker Groepenmaker localized route",
+      "url": "https://commentpicker.com/nl/groepjesmaker.php",
+      "category": "localized duplicate route",
+      "decisionStatus": "duplicate-or-variant",
+      "whyOutOfScope": "The Dutch route is the localized version of the already-ranked Comment Picker Random Team Generator rather than a distinct tool.",
+      "publicEvidence": "Browser review found a language link to the ranked English URL https://commentpicker.com/team-generator.php and matching group-maker copy/features.",
+      "notes": "Tracked to prevent re-adding a localized duplicate."
+    },
+    {
+      "id": "sorteador-de-nomes-sorteador-de-times",
+      "name": "Sorteador de Nomes Sorteador de Times",
+      "url": "https://www.sorteadordenomes.com.br/sorteador-times",
+      "category": "unavailable team sorter",
+      "decisionStatus": "unavailable",
+      "whyOutOfScope": "DNS lookup failed during browser review, so no live tool could be verified.",
+      "publicEvidence": "Playwright returned net::ERR_NAME_NOT_RESOLVED for the proposed URL.",
+      "notes": "Revisit if the domain resolves again."
+    },
+    {
+      "id": "playbetter",
+      "name": "PlayBetter",
+      "url": "https://www.tcsoftware.it/PlayBetter/",
+      "category": "unavailable sports formation app/platform",
+      "decisionStatus": "unavailable",
+      "whyOutOfScope": "DNS lookup failed during browser review, so the claimed sports formation workflow could not be verified.",
+      "publicEvidence": "Playwright returned net::ERR_NAME_NOT_RESOLVED for www.tcsoftware.it/PlayBetter/.",
+      "notes": "Could be related commercial/app software if a working public page is found."
+    },
+    {
+      "id": "randomgenerator-org-japanese-group-generator",
+      "name": "RandomGenerator.org Japanese Group Generator",
+      "url": "https://randomgenerator.org/ja/random-group-generator",
+      "category": "localized same-host variant",
+      "decisionStatus": "duplicate-or-variant",
+      "whyOutOfScope": "Localized Japanese route of the same simple randomgenerator.org group/team splitter family already covered by ranked RandomGenerator.org Random Team Generator.",
+      "publicEvidence": "Browser review found the same paste names + group count workflow and language links to the English random-group-generator route.",
+      "notes": "Do not rank localized route separately unless the English group route is intentionally split from the existing same-host team generator."
+    },
+    {
+      "id": "digtools-japanese-team-generator-route",
+      "name": "digtools Japanese Team Generator route",
+      "url": "https://tools.digrart.jp/team-gen",
+      "category": "localized same-host variant",
+      "decisionStatus": "duplicate-or-variant",
+      "whyOutOfScope": "Japanese route redirects/normalizes to the already-ranked digtools Team Generator family.",
+      "publicEvidence": "Browser review ended at https://tools.digrart.jp/en/team-gen/ with the ranked tool controls and language links including /team-gen/.",
+      "notes": "Existing ranked entry: digtools Team Generator."
+    },
+    {
+      "id": "randraw-jp-root",
+      "name": "randraw.jp root",
+      "url": "https://randraw.jp/",
+      "category": "localized Randraw root / lottery page",
+      "decisionStatus": "duplicate-or-variant",
+      "whyOutOfScope": "The reviewed root page is primarily Randraw’s Japanese lottery/draw landing page, while the relevant team workflow is tracked separately.",
+      "publicEvidence": "Browser review found lottery controls and links to team split routes; Randraw Multicriteria Team is already ranked and Randraw Asia Constitute Team was reviewed as the distinct pool-based team route.",
+      "notes": "Track root to avoid re-reviewing it as a new generator."
+    },
+    {
+      "id": "team-picker-apkgk-listing",
+      "name": "Team Picker APKGK listing",
+      "url": "https://apkgk.com/teampicker.teampicker",
+      "category": "indirect app directory listing",
+      "decisionStatus": "duplicate-or-variant",
+      "whyOutOfScope": "Third-party APK directory page; official Google Play listing is tracked in related platforms instead.",
+      "publicEvidence": "APKGK page links to https://play.google.com/store/apps/details?id=teampicker.teampicker and repeats app-store claims.",
+      "notes": "Related record: Team Picker by Lynx Magnus."
+    },
+    {
+      "id": "team-maker-random-squads-mwm-listing",
+      "name": "Team Maker - Random Squads MWM listing",
+      "url": "https://mwm.ai/apps/team-maker-random-squads/1385060630",
+      "category": "indirect app-intelligence listing",
+      "decisionStatus": "duplicate-or-variant",
+      "whyOutOfScope": "MWM app-intelligence page is an indirect listing; official App Store listing is tracked in related platforms instead.",
+      "publicEvidence": "Browser review found MWM market/profile data and a link to https://apps.apple.com/app/id1385060630.",
+      "notes": "Related record: Team Maker - Random Squads."
+    },
+    {
+      "id": "team-generator-android-myandroid-listing",
+      "name": "Team Generator Android MyAndroid listing",
+      "url": "https://www.myandroid.org/apps/com-guerriero-mario-teamgenerator",
+      "category": "third-party emulator/app listing",
+      "decisionStatus": "unavailable",
+      "whyOutOfScope": "Third-party MyAndroid/OffiDocs emulator page for an Android app; official Google Play URL returned 404 during review, so no current official app-store workflow was verified.",
+      "publicEvidence": "MyAndroid text describes player ratings and balanced teams, but play.google.com/store/apps/details?id=com.guerriero.mario.teamgenerator returned 404.",
+      "notes": "Do not rank or related-track unless an official/current listing or app test is available."
+    },
+    {
+      "id": "balanced-team-maker-apkcombo-listing",
+      "name": "Balanced Team Maker APKCombo listing",
+      "url": "https://apkcombo.com/balanced-team-maker/com.gildstudios.mister/",
+      "category": "unavailable third-party APK listing",
+      "decisionStatus": "unavailable",
+      "whyOutOfScope": "APKCombo page was blocked by Cloudflare and the corresponding Google Play ID returned 404, so the app could not be reviewed.",
+      "publicEvidence": "Browser review saw only Cloudflare “Just a moment”; play.google.com/store/apps/details?id=com.gildstudios.mister returned 404.",
+      "notes": "Revisit if an official store/listing becomes available."
+    },
+    {
+      "id": "team-maker-balanced-teams-gen-chrome-stats-listing",
+      "name": "Team Maker: Balanced Teams Gen Chrome-Stats listing",
+      "url": "https://chrome-stats.com/d/com.blackfrogweb.teammaker",
+      "category": "indirect extension/app stats listing",
+      "decisionStatus": "duplicate-or-variant",
+      "whyOutOfScope": "Chrome-Stats is an indirect statistics/listing site and was blocked by Cloudflare during review; no runnable extension/app page was verified.",
+      "publicEvidence": "Browser review saw only Cloudflare “Just a moment.” Prior policy keeps Chrome-Stats-only findings out of ranked tools.",
+      "notes": "Find a direct Chrome Web Store or runnable app URL before reconsidering."
     }
   ]
 }

@@ -2,8 +2,8 @@
   "metadata": {
     "title": "Related commercial and sales-gated platforms",
     "description": "Related event-networking, speed-networking, golf scheduling, coffee-chat, and matchmaking platforms that are not part of the ranked Awesome Group Generators dataset because a self-serve group-generation workflow was not publicly verifiable, the product is primarily sales-gated, or the fit is adjacent rather than a classical group generator.",
-    "exportedAt": "2026-05-27T21:31:45.389272+00:00",
-    "itemCount": 39,
+    "exportedAt": "2026-06-03T16:08:06+00:00",
+    "itemCount": 48,
     "ratingPolicy": "These entries are intentionally not star-rated and must not be merged into data/tools.json unless a publicly testable generator, open demo, or runnable implementation is reviewed. Entries promoted after live review are removed from this related-only file.",
     "accessStatuses": [
       "sales-gated",
@@ -405,6 +405,96 @@
       "whyNotRanked": "Commercial Slack intro program; adjacent and not a public group-generator workflow.",
       "publicEvidence": "Claims recurring Donut channels for virtual coffees and groups of two.",
       "notes": "Related recurring pairing platform."
+    },
+    {
+      "id": "roundboss",
+      "name": "RoundBoss",
+      "url": "https://roundboss.com/",
+      "category": "golf league / matchup management platform",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Public page is a hosted golf league and simulator-league platform; matchup/team generation is part of the platform rather than a public paste-and-generate tool.",
+      "publicEvidence": "Browser review found manager/solo login and signup flows, pricing, docs, no-app/no-player-signup claims, scoring/handicap/rankings, and league-management automation.",
+      "notes": "Promote only if a public self-serve matchup/team generator can be reviewed without platform setup."
+    },
+    {
+      "id": "golfsoftware-tournament-manager",
+      "name": "GolfSoftware Tournament Manager",
+      "url": "https://www.golfsoftware.com/products",
+      "category": "golf tournament / league management software",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Commercial golf league/club/tournament software product page; no public generator workflow comparable to ranked tools was available.",
+      "publicEvidence": "Public page describes League Manager and Club Manager with event pairings, schedules, team standings, flights/divisions, scorecards, tournament management, and handicap-oriented workflows.",
+      "notes": "Same vendor has a small public Play All Schedule Generator ranked separately; this record tracks the broader commercial product."
+    },
+    {
+      "id": "match-m8",
+      "name": "Match M8",
+      "url": "https://apps.apple.com/us/app/match-m8/id6746104912",
+      "category": "mobile skill-rating and balanced matchup app",
+      "accessStatus": "app-store-only",
+      "whyNotRanked": "App Store-only iPhone app; no installed app workflow was tested.",
+      "publicEvidence": "Listing describes Elo-style ratings, balanced matchmaking, generated teams, saved teams, match history, leaderboard, and predicted win percentages.",
+      "notes": "Relevant to balanced pickup/sports matching if mobile apps are tested later."
+    },
+    {
+      "id": "coach-forma-o",
+      "name": "Coach formação",
+      "url": "https://apps.apple.com/it/app/coach-formazione/id6757500480",
+      "category": "mobile football/futsal formation and team generator",
+      "accessStatus": "app-store-only",
+      "whyNotRanked": "App Store-only iOS/iPadOS app; no installed app workflow was tested.",
+      "publicEvidence": "Listing describes players with positions and skill levels, team-size selection, balanced team generation, together groups, rival pairs, drag-to-field adjustment, image sharing, offline data, and Pro options.",
+      "notes": "Relevant to sports-team formation if native app reviews are added."
+    },
+    {
+      "id": "fairdealpro",
+      "name": "FairDealPro",
+      "url": "https://play.google.com/store/apps/details?id=com.fairdeal.pro",
+      "category": "Android sports team management and balancing app",
+      "accessStatus": "app-store-only",
+      "whyNotRanked": "Google Play app listing only; no installed app workflow was tested.",
+      "publicEvidence": "Listing describes intelligent team generation, skill dimensions such as technique/speed/physics/statistics/scoring, event management, registration/reserve lists, player database, ranking system, admin tools, and reports.",
+      "notes": "Relevant for sports organizers; promote only after app testing or a public web workflow."
+    },
+    {
+      "id": "jogo",
+      "name": "JOGO",
+      "url": "https://www.thejogoapp.com/",
+      "category": "sports challenge / ELO / team and tournament platform",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "Public page is a beta sports platform with login/signup and app-store download flows; no self-serve team generator output was tested.",
+      "publicEvidence": "Browser review found ELO, court discovery, challenges, rankings, build teams, run tournaments, App Store/Google Play links, Supabase-backed signup/login, and beta positioning.",
+      "notes": "Related sports-platform ecosystem rather than a ranked generator for now."
+    },
+    {
+      "id": "random-generator-spin-wheel",
+      "name": "Random Generator - Spin Wheel",
+      "url": "https://apps.apple.com/us/app/random-generator-spin-wheel/id548006118",
+      "category": "iOS random utility with team generator",
+      "accessStatus": "app-store-only",
+      "whyNotRanked": "App Store-only iOS/iPadOS app; no installed workflow was tested.",
+      "publicEvidence": "Listing describes a team generator with weighting, gender balance options, skill levels, separated people, iCloud sync/groups, widgets, Siri shortcuts, pair generator, matching, and many other random tools.",
+      "notes": "Relevant app-only random/team generator; review with device/app testing if ranked app coverage expands."
+    },
+    {
+      "id": "team-picker-by-lynx-magnus",
+      "name": "Team Picker by Lynx Magnus",
+      "url": "https://play.google.com/store/apps/details?id=teampicker.teampicker",
+      "category": "Android balanced sports team picker",
+      "accessStatus": "app-store-only",
+      "whyNotRanked": "Google Play app listing only; no installed app workflow was tested.",
+      "publicEvidence": "Listing describes 2–8 balanced teams, saved players, goalkeeper separation, random mode, saved generations, scores, sharing, 10K+ downloads, and ads/data-safety details.",
+      "notes": "Candidate was found via APKGK, then verified on the official Google Play listing."
+    },
+    {
+      "id": "team-maker-random-squads",
+      "name": "Team Maker - Random Squads",
+      "url": "https://apps.apple.com/app/id1385060630",
+      "category": "iOS balanced soccer/football team generator",
+      "accessStatus": "app-store-only",
+      "whyNotRanked": "App Store-only iOS/iPadOS app; no installed app workflow was tested.",
+      "publicEvidence": "App Store listing describes a soccer/football team generator for balanced random teams; MWM intelligence page also summarizes balanced team generation.",
+      "notes": "Low-rated/old app, but relevant enough to track as app-only."
     }
   ]
 }
