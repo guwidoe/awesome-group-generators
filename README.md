@@ -21,7 +21,7 @@ This repository publishes a review dataset, scoring methodology, correction work
 - [`data/reviewed-out-of-scope.schema.json`](./data/reviewed-out-of-scope.schema.json) — schema for the reviewed out-of-scope list
 - [`METHODOLOGY.md`](./METHODOLOGY.md) — scoring rubric and review rules
 
-Current export: **501 tools**, source revision **549**, exported **2026-06-03T16:35:52+00:00**.
+Current export: **501 tools**, source revision **551**, exported **2026-06-03T16:44:09+00:00**.
 
 ## Related and out-of-scope resources
 

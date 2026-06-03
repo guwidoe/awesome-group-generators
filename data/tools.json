@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Awesome Group Generators",
     "description": "A transparent, curated review dataset for group generators, team pickers, classroom grouping tools, breakout-room planners, and social-golfer schedulers.",
-    "sourceRevisionId": 549,
-    "sourceSavedAt": "2026-06-03T16:35:52.271782+00:00",
-    "exportedAt": "2026-06-03T16:35:52+00:00",
+    "sourceRevisionId": 551,
+    "sourceSavedAt": "2026-06-03T16:44:08.761923+00:00",
+    "exportedAt": "2026-06-03T16:44:09+00:00",
     "toolCount": 501,
     "ratingScale": "0.0 to 5.0 stars, higher is better",
     "ratingCategories": [
@@ -361,7 +361,7 @@
         "resultQuality": 4.1
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and sample names where the page allowed it.",
+        "easeOfUse": "High ease score because the generator flow was quick to reach and low-friction overall, despite this caveat: golf-specific.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Multiple rounds, group size, iteration count, preferred/avoid partners, pairing matrix, and summary diagnostics.",
         "outputs": "Excel and Markdown outputs are available.",
@@ -1489,7 +1489,7 @@
         "resultQuality": 3.6
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "High ease score because the generator flow was quick to reach and low-friction overall, despite this caveat: repeat avoidance is local/best-effort.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Count/size modes, exclusions, seed, local repeat-pair avoidance, save, copy, edit, and fullscreen.",
         "outputs": "Copy, save, and fullscreen controls are available.",
@@ -1691,7 +1691,7 @@
         "resultQuality": 3.7
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible; supplemental content fetch used for blocked/product pages.",
+        "easeOfUse": "High ease score because the generator flow was quick to reach and low-friction overall, despite this caveat: tracking/product attribution cookies.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Pairs/groups of 3-5, browser history, save round, and avoid recent repeats.",
         "outputs": "Copy Text and Markdown outputs are available.",
@@ -1794,7 +1794,7 @@
         "resultQuality": 3.8
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but heavy ad/tracking footprint.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Count/size grouping, levels, random/level-balanced/stratified strategies, previous-pair avoidance, min/max size, seed, leader selection, keep-together/keep-apart rules, saved lists, history, and CSV/copy/print claims.",
         "outputs": "CSV/copy/print/history are described; generated output was not verified due accidental navigation during automated review.",
@@ -1898,7 +1898,7 @@
         "resultQuality": 3.3
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and sample names where the page allowed it.",
+        "easeOfUse": "High ease score because the generator flow was quick to reach and low-friction overall, despite this caveat: google tracking/sign-in option.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Paste/type names, random mode, not-random keep-together/keep-apart mode, Google Classroom import, formatting, and fullscreen.",
         "outputs": "Display/fullscreen output; no CSV/PDF export observed.",
@@ -1999,7 +1999,7 @@
         "resultQuality": 3.8
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and sample names where the page allowed it.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but no import/export verified.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Member management, previous records, optimized groups, manual drag/drop, and repeat-avoidance objective.",
         "outputs": "No file export verified; results are app views/records.",
@@ -2201,7 +2201,7 @@
         "resultQuality": 3.3
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and sample names where the page allowed it.",
+        "easeOfUse": "High ease score because the generator flow was quick to reach and low-friction overall, despite this caveat: analytics cookies.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Skill/gender tags, pre-assignment, locked reshuffle, and balanced/random creation.",
         "outputs": "Copy, CSV download, and share permalink controls are available.",
@@ -2407,7 +2407,7 @@
         "resultQuality": 3.2
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible; supplemental content fetch used for blocked/product pages.",
+        "easeOfUse": "High ease score because the generator flow was quick to reach and low-friction overall, despite this caveat: ad-supported.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Leader distribution, keep-together groups, count/size modes, creative names, and locales.",
         "outputs": "Share plus TXT and CSV export are available.",
@@ -3637,7 +3637,7 @@
         "resultQuality": 2.9
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible; supplemental content fetch used for blocked/product pages.",
+        "easeOfUse": "High ease score because the generator flow was quick to reach and low-friction overall, despite this caveat: some analytics.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Templates, count/size modes, naming styles, cryptographic-randomness claim, history, and saved configuration.",
         "outputs": "Text export, CSV export, print, and share are available.",
@@ -4251,7 +4251,7 @@
         "resultQuality": 3.0
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "High ease score because the generator flow was quick to reach and low-friction overall, despite this caveat: saved lists require account.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Pasted class lists, number-of-groups/count mode, optional leaders, saved lists when signed in, reshuffle, and share.",
         "outputs": "Share is visible; copy/export was not verified.",
@@ -4452,7 +4452,7 @@
         "resultQuality": 3.2
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "High ease score because the generator flow was quick to reach and low-friction overall, despite this caveat: analytics/Clarity tracking.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Team count/team size modes, participant textarea, strong-player marking, random names, reset, shuffle again, and classroom-specific guidance.",
         "outputs": "Generated teams plus Copy, Share, Excel download, and PDF download controls were observed.",
@@ -4757,7 +4757,7 @@
         "resultQuality": 2.8
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and sample names where the page allowed it.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but ad-supported.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Participant/team file upload, named teams, and optional random seed.",
         "outputs": "CSV, screenshot, and share controls are visible.",
@@ -5268,7 +5268,7 @@
         "resultQuality": 2.8
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible; supplemental content fetch used for blocked/product pages.",
+        "easeOfUse": "High ease score because the generator flow was quick to reach, required no account, and showed no major setup friction in review.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Smart roster parsing, count/size modes, subject/context labels, reshuffle, fullscreen, and roster save/download.",
         "outputs": "Roster download and fullscreen are available; group export not fully verified.",
@@ -5874,7 +5874,7 @@
         "resultQuality": 2.8
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "High ease score because the generator flow was quick to reach and low-friction overall, despite this caveat: analytics cookies.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Min size, max size, #groups modes, group shuffling, editable links, and app chaining.",
         "outputs": "Copy, print, share, and editable-link controls are available.",
@@ -6586,7 +6586,7 @@
         "resultQuality": 3.5
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but account needed for saved workflows.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Skill levels, optional gender balance, surname splitting, file imports, saved participants/groups/setups, and plan limits.",
         "outputs": "Export formats are documented; not fully verified in the quick review.",
@@ -6890,7 +6890,7 @@
         "resultQuality": 3.0
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "High ease score because the generator flow was quick to reach and low-friction overall, despite this caveat: generated output was not captured during review.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Class list paste/add, browser-local saved roster, random student picker, no-repeat mode, group maker, speaker order, projector mode, and dark mode.",
         "outputs": "Group copy/share is described; generated output was not captured in the quick automated run.",
@@ -7294,7 +7294,7 @@
         "resultQuality": 3.1
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but no keep-apart rules.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Manual add, pasted/imported list, fixed size or fixed number mode, keep-together constraint, Fisher-Yates description, and CSV export.",
         "outputs": "Generated groups and Export CSV control were observed.",
@@ -8410,7 +8410,7 @@
         "resultQuality": 2.6
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible; supplemental content fetch used for blocked/product pages.",
+        "easeOfUse": "High ease score because the generator flow was quick to reach and low-friction overall, despite this caveat: ad/consent UI added friction.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Text/CSV upload, team count, random team names, and reshuffle.",
         "outputs": "Share link, copy results, and print controls are available.",
@@ -8918,7 +8918,7 @@
         "resultQuality": 2.5
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "High ease score because the generator flow was quick to reach, required no account, and showed no major setup friction in review.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Name input plus number-of-teams/team-size modes and reshuffle.",
         "outputs": "Copy, image export, and share link controls are available.",
@@ -9017,7 +9017,7 @@
         "resultQuality": 3.2
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but generated output was not captured during review.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Student list with optional gender/level annotations, max/number-of-groups, gender mix, level balancing, heterogeneous/homogeneous mode, avatars, save/restore, and Scoregroupe.",
         "outputs": "Generated output/export was not verified in the quick review; save/restore controls are visible.",
@@ -9120,7 +9120,7 @@
         "resultQuality": 2.5
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and sample names where the page allowed it.",
+        "easeOfUse": "High ease score because the generator flow was quick to reach and low-friction overall, despite this caveat: ad/analytics footprint.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Count/size modes plus random/manual/no group leader options.",
         "outputs": "Download image and Download CSV controls are present.",
@@ -9520,7 +9520,7 @@
         "resultQuality": 2.8
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but key controls were not fully exercised; page clutter made the tool harder to scan.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Teams, pairs, roles, seating, captain highlighting, odd-number handling, history/settings, and sharing claims.",
         "outputs": "Sharing/history are described; exact export format was not fully verified.",
@@ -9719,7 +9719,7 @@
         "resultQuality": 2.5
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and sample names where the page allowed it.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but generated output was not fully exercised; key controls were not fully exercised.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Custom groups, member import, fair mode, and assignment animation.",
         "outputs": "Excel export is described; live export was not exercised.",
@@ -9820,7 +9820,7 @@
         "resultQuality": 2.7
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and sample names where the page allowed it.",
+        "easeOfUse": "High ease score because the generator flow was quick to reach, required no account, and showed no major setup friction in review.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Count/size modes, absent exclusions, reshuffle, and previous shuffles.",
         "outputs": "Copy to Clipboard and Print are available.",
@@ -9923,7 +9923,7 @@
         "resultQuality": 2.6
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "High ease score because the generator flow was quick to reach, required no account, and showed no major setup friction in review.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Balanced distribution toggle, optional seed, reroll, and keyboard shortcuts.",
         "outputs": "Copy All and Share controls are present.",
@@ -10226,7 +10226,7 @@
         "resultQuality": 2.6
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but tracking footprint conflicts with privacy-first claim.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Paste names, split by number of teams or by team size, Web Crypto randomness claim.",
         "outputs": "Generated teams plus Copy, Download, and Share controls were observed.",
@@ -11030,7 +11030,7 @@
         "resultQuality": 2.7
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "High ease score because the generator flow was quick to reach and low-friction overall, despite this caveat: no saved rosters.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Newline/comma input, 2-10 team selector, balanced distribution, Fisher-Yates/Web Crypto randomness claims, and up to 200 names.",
         "outputs": "Generated teams plus Copy All Teams and per-team Copy controls were observed.",
@@ -11228,7 +11228,7 @@
         "resultQuality": 2.8
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "High ease score because the generator flow was quick to reach and low-friction overall, despite this caveat: pairs only.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Pair generation, duplicate removal, newline/comma parsing, odd-person group-of-three or bye mode.",
         "outputs": "Copy and Share controls are visible and generated pairs were captured.",
@@ -11328,7 +11328,7 @@
         "resultQuality": 2.5
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible; supplemental content fetch used for blocked/product pages.",
+        "easeOfUse": "High ease score because the generator flow was quick to reach, required no account, and showed no major setup friction in review.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Pairs/groups mode, custom group size, leftover policies, and reshuffle.",
         "outputs": "Copy Results is available; no file export observed.",
@@ -11627,7 +11627,7 @@
         "resultQuality": 2.8
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but ad/analytics footprint.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Names textarea, number-of-teams mode, people-per-team mode, regenerate, clear, and Fisher-Yates/Math.random documentation.",
         "outputs": "Generated teams plus Copy All and sharing controls were observed.",
@@ -11832,7 +11832,7 @@
         "resultQuality": 2.6
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but account needed for saved lists.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Optional group heads, count/size split methods, reshuffle, and saved-list account flow.",
         "outputs": "Share control is visible; no CSV/PDF export observed.",
@@ -11931,7 +11931,7 @@
         "resultQuality": 2.4
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "High ease score because the generator flow was quick to reach, required no account, and showed no major setup friction in review.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Count/size modes and saved list controls.",
         "outputs": "Display-only results; no copy/download observed.",
@@ -12131,7 +12131,7 @@
         "resultQuality": 2.8
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but generated output was not captured during review; ad/consent UI added friction.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Saved lists, shuffle, min/max team sizes, seed, equal/flexible balance modes, and history are present or documented.",
         "outputs": "Copy and text export are documented; generated output/export was not fully verified in the automated run.",
@@ -12339,7 +12339,7 @@
         "resultQuality": 3.4
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible; supplemental content fetch used for blocked/product pages.",
+        "easeOfUse": "Lower ease score because review found meaningful setup/validation friction: the page was blocked or partially blocked, so the normal workflow could not be fully validated.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Repeated groups, gender constraints, group sizes, and host/visit rotation are described.",
         "outputs": "No export controls verified because browser review hit a security check.",
@@ -12436,7 +12436,7 @@
         "resultQuality": 3.0
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Very low ease score because the tool was hard to validate as a normal group-generator workflow: generated output was not verified.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Activity setup, team sizes, topics, participant availability/preferences, join codes, and criteria-based/optimized grouping are described.",
         "outputs": "No export or result format verified because organizer login is required.",
@@ -12636,7 +12636,7 @@
         "resultQuality": 2.7
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but sports-specific framing.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Player list, team size, full-name/abbreviated output format, reset, and copy teams.",
         "outputs": "Generated teams and Copy Teams control were observed.",
@@ -12841,7 +12841,7 @@
         "resultQuality": 2.6
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "High ease score because the generator flow was quick to reach and low-friction overall, despite this caveat: analytics cookies.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Names textarea, number-of-teams input, up-to-eight-teams limit, and Fisher-Yates shuffle documentation.",
         "outputs": "Generated teams plus Copy and fullscreen controls were observed.",
@@ -13241,7 +13241,7 @@
         "resultQuality": 2.5
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible; supplemental content fetch used for blocked/product pages.",
+        "easeOfUse": "Moderate-high ease score because the main workflow was usable, though not especially streamlined or polished.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Team-count presets, shuffle names, local processing, and recent-splits history.",
         "outputs": "Copy and Copy history controls are available.",
@@ -13747,7 +13747,7 @@
         "resultQuality": 3.2
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible; supplemental content fetch used for blocked/product pages.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but key controls were not fully exercised.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Skill levels, team count, role/skill balancing claims, and split control.",
         "outputs": "Copy/download are described generally by the site but not verified for this tool.",
@@ -13847,7 +13847,7 @@
         "resultQuality": 2.7
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but generated output was not captured during review.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Pasted list, TXT/CSV import, 2-20 teams, visual team cards, copy per team, duplicate cleanup, and Fisher-Yates documentation.",
         "outputs": "Copy controls are described; generated output was not captured before navigation to a related tool.",
@@ -14048,7 +14048,7 @@
         "resultQuality": 2.4
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible; supplemental content fetch used for blocked/product pages.",
+        "easeOfUse": "Moderate-high ease score because the main workflow was usable, though not especially streamlined or polished.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Participant count, group size, pasted/file names, placeholder generation, and group generation.",
         "outputs": "Download Excel (.xlsx) is available.",
@@ -14554,7 +14554,7 @@
         "resultQuality": 2.7
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and sample names where the page allowed it.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but ad-supported.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Input list, seed marking, group controls, pick mode, and apply/reset config.",
         "outputs": "On-page results; no export control verified.",
@@ -14754,7 +14754,7 @@
         "resultQuality": 2.4
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and sample names where the page allowed it.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but analytics cookies.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Count/size modes plus optional leader and vice-leader selection.",
         "outputs": "CSV export is documented; live export not clicked.",
@@ -15157,7 +15157,7 @@
         "resultQuality": 2.5
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the main workflow was usable, though not especially streamlined or polished.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Team-count presets, Fisher-Yates shuffle, and history.",
         "outputs": "Copy All is available; no file export observed.",
@@ -15255,7 +15255,7 @@
         "resultQuality": 2.4
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but tracking cookies.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Group title, names input, group count, find, autosave, and examples.",
         "outputs": "Save and Print are available; exact save format not verified.",
@@ -15355,7 +15355,7 @@
         "resultQuality": 2.4
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible; supplemental content fetch used for blocked/product pages.",
+        "easeOfUse": "Moderate-high ease score because the main workflow was usable, though not especially streamlined or polished.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Count/size modes, quick team-count buttons, and shuffle again.",
         "outputs": "Copy All is available; no file export observed.",
@@ -15659,7 +15659,7 @@
         "resultQuality": 2.4
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the main workflow was usable, though not especially streamlined or polished.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Team presets, sample names, auto members-in-team, split-by-space, and duplicate removal.",
         "outputs": "Download as text and copy controls are available.",
@@ -15760,7 +15760,7 @@
         "resultQuality": 2.4
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but no result copy/export observed.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Participant input, number-of-groups mode, max-size mode, and even distribution.",
         "outputs": "Copy Link is available; no direct copy/download of results observed.",
@@ -16757,7 +16757,7 @@
         "resultQuality": 2.2
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and sample names where the page allowed it.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but no generated output captured.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Name/group URL parameters, group count, shuffle control, settings, and embed.",
         "outputs": "No copy/download verified; embed control is available.",
@@ -16857,7 +16857,7 @@
         "resultQuality": 2.7
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Lower ease score because review found meaningful setup/validation friction: group output not verified.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Class setup, local class files, student import, seating arrangement, attendance, grouping navigation, and Generate Groups setup step.",
         "outputs": "No generated group result or export was verified because setup requires class data first.",
@@ -17061,7 +17061,7 @@
         "resultQuality": 2.6
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but ad/consent UI added friction.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Paste/add participants, fixed group-count or members-per-group mode, group naming, and optional group-leader selection.",
         "outputs": "Display output expected; no copy/export controls were verified.",
@@ -17160,7 +17160,7 @@
         "resultQuality": 2.3
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and sample names where the page allowed it.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but generated output not fully captured.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Paste names and choose number of groups or participants per group.",
         "outputs": "Sharing controls are visible; copy/email/share buttons are present around the page.",
@@ -17762,7 +17762,7 @@
         "resultQuality": 3.5
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible; supplemental content fetch used for blocked/product pages.",
+        "easeOfUse": "Lower ease score because review found meaningful setup/validation friction: not a public live tool.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Golf pairings, spreadsheet upload, random/manual/handicap/AB/ABCD pairing, and multi-round/repeat ambitions.",
         "outputs": "App outputs not tested; public page describes event pairing workflow.",
@@ -18075,7 +18075,7 @@
         "resultQuality": 2.5
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but key controls were not fully exercised.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Count/size modes, Fisher-Yates shuffle, animation, custom group names, local processing, and export claims.",
         "outputs": "Copy and download are described; not fully verified in live app.",
@@ -18174,7 +18174,7 @@
         "resultQuality": 2.3
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and sample names where the page allowed it.",
+        "easeOfUse": "High ease score because the generator flow was quick to reach, required no account, and showed no major setup friction in review.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Paste names, count/size modes, generate, and rebalance.",
         "outputs": "Copy teams is available; no CSV/PDF export observed.",
@@ -18578,7 +18578,7 @@
         "resultQuality": 2.3
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible; supplemental content fetch used for blocked/product pages.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but analytics/reCAPTCHA.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Player list, number-of-teams input, and reshuffle.",
         "outputs": "Display-only output; scoreboard/bracket links are adjacent but no export observed.",
@@ -19265,7 +19265,7 @@
         "resultQuality": 2.5
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but save/load appears Pro/account-adjacent.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Names textarea, group generation, related school tools, and Save/Load/Share actions.",
         "outputs": "Generated groups were verified; export/copy was not directly verified.",
@@ -19461,7 +19461,7 @@
         "resultQuality": 2.4
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible; supplemental content fetch used for blocked/product pages.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but heavy ads made the page much harder to use; the busy UI made the tool harder to scan.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Count/size modes plus optional team leader selection.",
         "outputs": "Export CSV is available.",
@@ -19561,7 +19561,7 @@
         "resultQuality": 2.4
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible; supplemental content fetch used for blocked/product pages.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but ad/tracking footprint.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "2–8 team selector, sample lists, shuffle names, and spin-for-first-turn.",
         "outputs": "Copy Results is available; no file export observed.",
@@ -19759,7 +19759,7 @@
         "resultQuality": 2.4
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and sample names where the page allowed it.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but generated output was not verified; ads made the page busier and harder to use.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Bulk participants, fixed team sizes, custom size, remainder handling, and mode choices.",
         "outputs": "Export Teams and history controls are visible; exact export format was not verified.",
@@ -20062,7 +20062,7 @@
         "resultQuality": 2.4
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but heavy ad/tracking footprint.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Names input, group-count and group-size modes, random/manual/no group leaders, and distribution settings.",
         "outputs": "No copy/export controls verified.",
@@ -20160,7 +20160,7 @@
         "resultQuality": 2.5
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but ad/consent UI added friction.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Comma-separated items, team-count setting, generate-again/reset, sample inputs, and related random group/team/pair tools.",
         "outputs": "Display-only generated team output was verified; no copy/export controls observed.",
@@ -20259,7 +20259,7 @@
         "resultQuality": 2.2
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but tracking scripts.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Number-of-teams and members-per-team modes plus generated sample list.",
         "outputs": "Copy and Download controls are available.",
@@ -20357,7 +20357,7 @@
         "resultQuality": 2.3
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and sample names where the page allowed it.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but generated output was not captured during review.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Group count, separator, empty-group, maintain-order, and prefix options.",
         "outputs": "Process output exists; no copy/download output was verified.",
@@ -20760,7 +20760,7 @@
         "resultQuality": 2.5
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but localized UI.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Names textarea, number-of-groups input, animated generation, theme toggle, and image-download result control.",
         "outputs": "Generated output and image-download control were observed.",
@@ -20961,7 +20961,7 @@
         "resultQuality": 2.2
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but some analytics.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Names textarea, plus/minus team count, reset, and live draw framing.",
         "outputs": "Display-only output; no copy/download observed.",
@@ -21257,7 +21257,7 @@
         "resultQuality": 2.2
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the main workflow was usable, though not especially streamlined or polished.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Items textarea and number-of-groups input.",
         "outputs": "Copy Results is available; no file export observed.",
@@ -22355,7 +22355,7 @@
         "resultQuality": 3.0
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible; supplemental content fetch used for blocked/product pages.",
+        "easeOfUse": "Lower ease score because review found meaningful setup/validation friction: not a hosted web tool.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "CSV roster input and student preference matching are described.",
         "outputs": "No export/output workflow was live-tested from GitHub.",
@@ -22553,7 +22553,7 @@
         "resultQuality": 2.1
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the main workflow was usable, though not especially streamlined or polished.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Textarea and plus/minus number-of-teams control.",
         "outputs": "Display-only output; no copy/download observed.",
@@ -23652,7 +23652,7 @@
         "resultQuality": 2.1
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and sample names where the page allowed it.",
+        "easeOfUse": "Moderate-high ease score because the main workflow was usable, though not especially streamlined or polished.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Textarea and number-of-teams control.",
         "outputs": "Display-only output; no copy/download observed.",
@@ -23953,7 +23953,7 @@
         "resultQuality": 2.1
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the main workflow was usable, though not especially streamlined or polished.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Names textarea, language selector, group count, and shuffle-again.",
         "outputs": "Display-only output; no copy/download observed.",
@@ -24455,7 +24455,7 @@
         "resultQuality": 2.4
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but heavy AI-product chrome.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Pair type selector, name list input, pair-count input, and specific-pairing/no-repeat rules field.",
         "outputs": "Generated pairs were verified; copy/export was described but not directly verified.",
@@ -24556,7 +24556,7 @@
         "resultQuality": 2.8
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Very low ease score because the tool was hard to validate as a normal group-generator workflow: account required.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Roster/member management, availability calendars, group play days, schedules, and pairing communication are described.",
         "outputs": "No export or generated pairings verified because login/registration is required.",
@@ -25157,7 +25157,7 @@
         "resultQuality": 2.3
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but abandonware notice.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Pasted/individual name entry, group composition presets, gender-mixing toggle, regenerate, short description, and saved-group/list behavior.",
         "outputs": "Result area and regenerate control were present; generated groups were not fully captured in the quick review.",
@@ -25356,7 +25356,7 @@
         "resultQuality": 3.4
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Very low ease score because the tool was hard to validate as a normal group-generator workflow: not a polished form UI.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Teacher count, student list, deterministic seed, multiple rounds, previous/used groups, pair counting, and repeat-distance ordering logic.",
         "outputs": "Notebook/code output is visible; no copy/export workflow verified beyond Observable notebook mechanics.",
@@ -26359,7 +26359,7 @@
         "resultQuality": 2.3
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but pairs only.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Names/items textarea, Create Pairs button, color-coded pair cards, and odd-number handling.",
         "outputs": "Display-only pair output was verified; no copy/export controls observed.",
@@ -26660,7 +26660,7 @@
         "resultQuality": 2.2
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the main workflow was usable, though not especially streamlined or polished.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Names textarea and number-of-groups input.",
         "outputs": "Copy control is visible; no file export observed.",
@@ -27160,7 +27160,7 @@
         "resultQuality": 2.1
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and sample names where the page allowed it.",
+        "easeOfUse": "High ease score because the generator flow was quick to reach and low-friction overall, despite this caveat: ad-supported.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Paste names and choose number of groups.",
         "outputs": "Print is available; no CSV/export or copy button observed.",
@@ -27260,7 +27260,7 @@
         "resultQuality": 3.0
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible; supplemental content fetch used for blocked/product pages.",
+        "easeOfUse": "Lower ease score because review found meaningful setup/validation friction: gated behind account/subscription.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Manual grouping, auto grouping, saved lists/configurations, point system, and adjustment workflow.",
         "outputs": "No export verified; tool dashboard not accessible in public review.",
@@ -27671,7 +27671,7 @@
         "resultQuality": 2.1
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but ads made the page busier and harder to use.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Textarea, 2–6 team selector, quick sample buttons, and shuffle-again.",
         "outputs": "Display-only results; no copy/download observed.",
@@ -28371,7 +28371,7 @@
         "resultQuality": 2.0
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but ad/consent UI added friction.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Names textarea and number-of-teams input.",
         "outputs": "Display-only output; no copy/export observed.",
@@ -28774,7 +28774,7 @@
         "resultQuality": 2.1
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but no result export observed.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Names textarea and number-of-groups input.",
         "outputs": "Copy Link is visible; no copy/download of results observed.",
@@ -28873,7 +28873,7 @@
         "resultQuality": 2.0
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and sample names where the page allowed it.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but partial live output capture.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Textarea, number of teams, generate button, and animated assignment.",
         "outputs": "No copy/download controls observed.",
@@ -29474,7 +29474,7 @@
         "resultQuality": 2.1
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but generated output was not captured during review.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Names textarea, by-number-of-groups mode, and by-members-per-group mode.",
         "outputs": "Display-only output expected; no copy/export verified in the quick review.",
@@ -30577,7 +30577,7 @@
         "resultQuality": 2.1
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but heavy ad footprint.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Names textarea and number-of-teams input.",
         "outputs": "Display-only team output was verified; no copy/export controls observed.",
@@ -30676,7 +30676,7 @@
         "resultQuality": 2.0
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but page clutter made the tool harder to scan.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Textarea, team/member modes, numeric input, and clear.",
         "outputs": "Result textarea exists; no rich export observed.",
@@ -30775,7 +30775,7 @@
         "resultQuality": 2.1
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and sample names where the page allowed it.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but ad-supported.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Name list, number of teams, and equal/unequal distribution toggle.",
         "outputs": "Display-only output; no copy/download control observed.",
@@ -31076,7 +31076,7 @@
         "resultQuality": 2.8
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Lower ease score because review found meaningful setup/validation friction: requires login/dashboard.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Auto-balance, drag/drop, saved configs, presentation order, PDF/copy, and roster sync are described.",
         "outputs": "PDF export and clipboard copy are claimed but not live-tested.",
@@ -31380,7 +31380,7 @@
         "resultQuality": 2.0
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible; supplemental content fetch used for blocked/product pages.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but generated output was not captured during review.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Participant names, team count, and optional team names.",
         "outputs": "Display-only output expected; no copy/export observed.",
@@ -31477,7 +31477,7 @@
         "resultQuality": 2.0
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible; supplemental content fetch used for blocked/product pages.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but no direct copy/export observed.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Names list, members-per-team, and number-of-teams inputs.",
         "outputs": "Display text results; sharing widgets present but no direct export verified.",
@@ -31577,7 +31577,7 @@
         "resultQuality": 2.0
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but generated output was not captured during review.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "File/list input, group count, configurable separator, random grouping, example data, and many language routes.",
         "outputs": "No copy/export or generated result was verified in the quick review.",
@@ -31880,7 +31880,7 @@
         "resultQuality": 2.1
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and sample interaction where possible.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but generated output was not fully verified; the generic UI gives limited task-specific guidance.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Generated members, file upload, manual entry, group by individuals/groups, random toggle, ungroup, clear, and Excel print/export claims.",
         "outputs": "Output not fully verified in quick review; Excel-style grouped output is described on page.",
@@ -32376,7 +32376,7 @@
         "resultQuality": 2.0
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but generated output was unclear during review.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Names textarea and number-of-groups input.",
         "outputs": "Copy/share controls are present; generated output was not clearly captured.",
@@ -32668,7 +32668,7 @@
         "resultQuality": 2.1
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but heavy ad footprint.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Names textarea and number-of-teams input.",
         "outputs": "Display-only generated team output was verified; no copy/export controls observed.",
@@ -33762,7 +33762,7 @@
         "resultQuality": 2.0
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Lower ease score because review found meaningful setup/validation friction: generated output was not fully verified; ad/consent UI added friction.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Team-generation mode, participant entry, history/session counters, multiple spin modes, and wheel/random picker features.",
         "outputs": "Import/export exists on the wheel mode; team results/export were not fully verified.",
@@ -33860,7 +33860,7 @@
         "resultQuality": 1.7
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but the generic UI gives limited task-specific guidance.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Name list, remove-winner mode, sound effects, result history, wheel duration/theme/background controls, and CSV export claims.",
         "outputs": "Results history is visible and CSV export is claimed; full export was not verified.",
@@ -34059,7 +34059,7 @@
         "resultQuality": 1.8
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but not a full balanced team generator.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Wheel entries, weights, remove-winner mode, history, themes, and import/export JSON.",
         "outputs": "Print history, copy, and JSON import/export are available.",
@@ -34159,7 +34159,7 @@
         "resultQuality": 2.1
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but generated teams not captured.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Saved lists, team size, and power-player marking.",
         "outputs": "No copy/export observed.",
@@ -34651,7 +34651,7 @@
         "resultQuality": 2.7
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and sample names where the page allowed it.",
+        "easeOfUse": "Lower ease score because review found meaningful setup/validation friction: requires purchase/account flow.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Listing claims data-driven grouping and adjustable group sizes.",
         "outputs": "Template outputs were not accessible without purchase; no export verified.",
@@ -34750,7 +34750,7 @@
         "resultQuality": 2.0
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Moderate-high ease score because the tool looked usable in browser review, but ad/consent UI added friction.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Textarea and number-of-teams input.",
         "outputs": "Display-only output; no copy/export observed.",
@@ -34948,7 +34948,7 @@
         "resultQuality": 2.0
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible; supplemental content fetch used for blocked/product pages.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but generated output was not captured during review; ad/consent UI added friction.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Names textarea, number-of-teams input, and creative team-name claims.",
         "outputs": "Visual cards are described; no copy/export observed.",
@@ -35147,7 +35147,7 @@
         "resultQuality": 2.0
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but consent UI added friction; page clutter made the tool harder to scan.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Roster textarea and squad-count control.",
         "outputs": "Display-only output expected; no copy/download observed.",
@@ -36347,7 +36347,7 @@
         "resultQuality": 2.0
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but the barebones UI provides little guidance.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Names textarea, number-of-people-per-group, and number-of-groups options.",
         "outputs": "Display-only output verified; no copy/export controls observed.",
@@ -36650,7 +36650,7 @@
         "resultQuality": 1.8
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but ad/consent UI added friction.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Names textarea and members-per-group mode.",
         "outputs": "No copy/export and no generated groups verified in the quick review.",
@@ -37049,7 +37049,7 @@
         "resultQuality": 2.1
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and sample names where the page allowed it.",
+        "easeOfUse": "Lower ease score because review found meaningful setup/validation friction: requires class list saved elsewhere.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Saved class list, group-count arrangement links, names-in-hat, manual arrange, numeric pairs.",
         "outputs": "Print-related classroom tools exist; export not verified.",
@@ -37550,7 +37550,7 @@
         "resultQuality": 1.9
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but generated output was not captured during review; ad/consent UI added friction.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Names input plus number-of-groups and people-per-group options.",
         "outputs": "Copy Link is visible; no result copy/export verified.",
@@ -38142,7 +38142,7 @@
         "resultQuality": 1.9
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but ads made the page busier and harder to use; page clutter made the tool harder to scan.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Names textarea and number-of-teams input.",
         "outputs": "Display-only result; no copy/download observed.",
@@ -38845,7 +38845,7 @@
         "resultQuality": 1.9
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible; supplemental content fetch used for blocked/product pages.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but generated output was not captured during review; ads made the page busier and harder to use.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Names textarea and number-of-teams input.",
         "outputs": "No copy/export verified.",
@@ -38944,7 +38944,7 @@
         "resultQuality": 1.9
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but generated output was not captured during review; ad/consent UI added friction.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Names textarea and number-of-teams input.",
         "outputs": "No copy/export controls and no generated output captured in the quick review.",
@@ -39144,7 +39144,7 @@
         "resultQuality": 2.1
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible; supplemental content fetch used for blocked/product pages.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but no names/rosters.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Range, number of groups, group size, and uniqueness/replacement options.",
         "outputs": "On-page results only; no rich export observed.",
@@ -40339,7 +40339,7 @@
         "resultQuality": 2.2
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and sample names where the page allowed it.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but no names/rosters.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Choose subject count, treatment groups, repetitions, or shuffle subjects within groups.",
         "outputs": "Calculator results can be viewed after submission; no direct CSV export observed in review.",
@@ -40537,7 +40537,7 @@
         "resultQuality": 2.0
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Lower ease score because review found meaningful setup/validation friction: ads made the page busier and harder to use.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Member list, number of groups, delimiter settings, and extra split results.",
         "outputs": "Display text result; no modern copy/download controls observed.",
@@ -41248,7 +41248,7 @@
         "resultQuality": 2.2
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Very low ease score because the tool was hard to validate as a normal group-generator workflow: requires Discord account/server.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Discord bot command-based random team creation is described by page metadata.",
         "outputs": "No export controls; output would be Discord messages.",
@@ -41642,7 +41642,7 @@
         "resultQuality": 1.9
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Mid ease score because the basic workflow was understandable, but generated output was not captured during review; ads made the page busier and harder to use.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Names textarea, number-of-teams input, and local history.",
         "outputs": "No copy/download observed.",
@@ -41841,7 +41841,7 @@
         "resultQuality": 1.9
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Very low ease score because the tool was hard to validate as a normal group-generator workflow: no paste/bulk entry.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "One-by-one name entry and people-per-group setting.",
         "outputs": "Display-only generated output was verified; no copy/export controls observed.",
@@ -42543,7 +42543,7 @@
         "resultQuality": 1.8
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible; supplemental content fetch used for blocked/product pages.",
+        "easeOfUse": "Very low ease score because the tool was hard to validate as a normal group-generator workflow: early-stage.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Offline random group generator concept; feature-packed plans are noted.",
         "outputs": "No usable output/export verified; no release published.",
@@ -42640,7 +42640,7 @@
         "resultQuality": 1.6
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Lower ease score because review found meaningful setup/validation friction: generated output was not captured during review; the barebones UI provides little guidance.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Comma-separated names and people-per-group input.",
         "outputs": "No copy/export and no generated output captured in the quick review.",
@@ -42939,7 +42939,7 @@
         "resultQuality": 1.8
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and sample interaction where possible.",
+        "easeOfUse": "Lower ease score because review found meaningful setup/validation friction: the barebones UI provides little guidance; input is limited to a comma-separated format.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Comma-separated names plus fixed/manual group-size controls.",
         "outputs": "Display-only generated output was verified; no copy/export controls observed.",
@@ -43641,7 +43641,7 @@
         "resultQuality": 1.7
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Very low ease score because the tool was hard to validate as a normal group-generator workflow: rough UX.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Single random pick and team randomizer controls.",
         "outputs": "No copy/download observed.",
@@ -44147,7 +44147,7 @@
         "resultQuality": 1.8
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and sample interaction where possible.",
+        "easeOfUse": "Very low ease score because the tool was hard to validate as a normal group-generator workflow: it requires a file-upload workflow rather than a quick paste-list flow; there was no sample/template to make the required input format obvious.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Uploaded student list workflow and field-trip group generation are indicated; group-count controls are described by the project but not visible before upload.",
         "outputs": "Generated output/export not verified because the reviewed flow requires an expected upload file.",
@@ -45749,7 +45749,7 @@
         "resultQuality": 1.8
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and an eight-name sample where possible.",
+        "easeOfUse": "Very low ease score because the tool was hard to validate as a normal group-generator workflow: requires local setup.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Desktop GUI for names input and number-of-groups random assignment.",
         "outputs": "Display output in a local Tkinter window; no export described.",
@@ -46757,7 +46757,7 @@
         "resultQuality": 1.6
       },
       "ratingComments": {
-        "easeOfUse": "Reviewed with a live browser pass and sample interaction where possible.",
+        "easeOfUse": "Very low ease score because the tool was hard to validate as a normal group-generator workflow: it depends on a specific spreadsheet format; no output was verified.",
         "design": "Reflects observed page clarity, workflow, and surrounding clutter.",
         "features": "Excel-style upload/input workflow, group/day settings, add/generate controls, and multi-day randomization described by project documentation.",
         "outputs": "Generated output not verified because the app appears to require a specific .xlsx input format.",
