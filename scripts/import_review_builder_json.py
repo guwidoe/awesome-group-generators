@@ -274,13 +274,17 @@ This repository publishes a review dataset, scoring methodology, correction work
 - [`data/tools.schema.json`](./data/tools.schema.json) — JSON schema
 - [`data/related-commercial-platforms.json`](./data/related-commercial-platforms.json) — non-ranked related commercial/sales-gated platforms
 - [`data/related-commercial-platforms.schema.json`](./data/related-commercial-platforms.schema.json) — schema for the non-ranked related-platform list
+- [`data/reviewed-out-of-scope.json`](./data/reviewed-out-of-scope.json) — reviewed adjacent resources that were deliberately not ranked
+- [`data/reviewed-out-of-scope.schema.json`](./data/reviewed-out-of-scope.schema.json) — schema for the reviewed out-of-scope list
 - [`METHODOLOGY.md`](./METHODOLOGY.md) — scoring rubric and review rules
 
 Current export: **{meta['toolCount']} tools**, source revision **{meta.get('sourceRevisionId')}**, exported **{meta['exportedAt']}**.
 
-## Related commercial platforms
+## Related and out-of-scope resources
 
 Sales-gated event platforms, enterprise matchmaking suites, coffee-chat apps, and app-store-only products are not mixed into the ranked list unless a self-serve generator, open demo, or runnable implementation can be reviewed. We track those adjacent products separately in [`data/related-commercial-platforms.json`](./data/related-commercial-platforms.json) so the main rankings stay limited to verifiable tools.
+
+We also keep a reviewed-but-out-of-scope record in [`data/reviewed-out-of-scope.json`](./data/reviewed-out-of-scope.json) for LMS-native documentation, research/model references, unavailable repos, duplicate/fork variants, and adjacent products that were checked but not ranked.
 
 ## Use-case shortlists
 
@@ -319,7 +323,7 @@ Included tools may be:
 - social-golfer / repeat-minimization schedulers
 - spreadsheet or AI workarounds when people realistically use them for grouping
 
-Tools that do not generate groups at all may be rejected or kept only as low-rated workaround entries. Sales-gated commercial platforms and adjacent event-networking products are tracked separately and are not star-rated unless a self-serve generator, open demo, or runnable implementation can be reviewed.
+Tools that do not generate groups at all may be rejected or kept only as low-rated workaround entries. Sales-gated commercial platforms and adjacent event-networking products are tracked separately and are not star-rated unless a self-serve generator, open demo, or runnable implementation can be reviewed. Resources explicitly checked and rejected from the ranked dataset may also be recorded in the reviewed out-of-scope list.
 
 ## License
 

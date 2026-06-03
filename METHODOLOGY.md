@@ -71,6 +71,7 @@ Unknowns are resolved before public export. If a feature value is wrong, open a 
 - Spreadsheet and AI tools are judged as realistic grouping workflows, not as general-purpose platforms.
 - Sales-gated commercial platforms, enterprise event suites, app-store-only products, and adjacent coffee-chat or matchmaking products are not star-rated unless a self-serve generator, open demo, or runnable implementation can be reviewed.
 - Related but unranked commercial/sales-gated products are tracked separately in [`data/related-commercial-platforms.json`](./data/related-commercial-platforms.json), not mixed into the ranked `data/tools.json` dataset.
+- Resources that were explicitly reviewed but rejected from the ranked dataset may be recorded in [`data/reviewed-out-of-scope.json`](./data/reviewed-out-of-scope.json) so future reviewers can see why LMS-native docs, research references, unavailable repos, duplicate/fork variants, or adjacent products were not ranked.
 
 ## Update policy
 

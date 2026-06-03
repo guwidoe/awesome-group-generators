@@ -1,0 +1,825 @@
+{
+  "metadata": {
+    "title": "Reviewed but out-of-scope group-generation-adjacent resources",
+    "description": "Resources that were explicitly reviewed after the broader ecosystem pass, but not merged into the ranked Awesome Group Generators dataset because they are sales-gated, LMS-native documentation rather than a portable tool, app-store-only without a verified workflow, duplicate/fork variants, unavailable, or primarily research/reference material.",
+    "reviewedAt": "2026-06-03T15:17:46+00:00",
+    "itemCount": 80,
+    "policy": "These entries are evidence-tracked so future reviewers do not re-review the same adjacent resources. Promote an item into data/tools.json only after a directly usable generator, open demo, app workflow, or runnable implementation has been reviewed enough to assign the normal feature/rating fields.",
+    "decisionStatuses": [
+      "sales-gated",
+      "platform-native",
+      "documentation-only",
+      "research-reference",
+      "app-store-only",
+      "duplicate-or-variant",
+      "unavailable",
+      "parked-or-dead",
+      "broken-or-nonfunctional",
+      "spam-or-redirect",
+      "not-a-group-generator",
+      "adjacent-commercial"
+    ]
+  },
+  "items": [
+    {
+      "id": "feedbackfruits-group-formation",
+      "name": "FeedbackFruits Group Formation",
+      "url": "https://feedbackfruits.com/solutions/group-formation",
+      "category": "education platform / group formation",
+      "decisionStatus": "sales-gated",
+      "whyOutOfScope": "The public page is a commercial/LMS solution with Book a demo/get-started sales flow and no independently reviewable generator workflow.",
+      "publicEvidence": "The page claims balanced, diverse, high-performing student teams using smart/customizable criteria and positions Group Formation as one FeedbackFruits learning tool.",
+      "notes": "Strong conceptual fit, but keep unranked unless a public demo or institution-account workflow can be reviewed."
+    },
+    {
+      "id": "moodle-group-formation-plugin",
+      "name": "Moodle Group Formation plugin",
+      "url": "https://moodle.org/plugins/mod_groupformation",
+      "category": "LMS plugin / education group formation",
+      "decisionStatus": "platform-native",
+      "whyOutOfScope": "Installable Moodle plugin rather than a standalone reviewed generator; requires a Moodle site/course context.",
+      "publicEvidence": "The plugin directory describes automated group formation in Moodle using questionnaire/preference-style data.",
+      "notes": "Useful LMS-native lead; revisit if testing a Moodle plugin environment becomes part of the methodology."
+    },
+    {
+      "id": "moodle-auto-create-groups",
+      "name": "Moodle Auto-create groups",
+      "url": "https://docs.moodle.org/19/en/Auto-create_groups",
+      "category": "LMS-native grouping workflow",
+      "decisionStatus": "documentation-only",
+      "whyOutOfScope": "Native Moodle documentation, not an independently reviewable tool entry; no standalone generator URL or runnable workflow outside Moodle.",
+      "publicEvidence": "Moodle docs cover automatic group creation and member allocation workflows inside a Moodle course.",
+      "notes": "Mention as ecosystem coverage rather than ranked public tool."
+    },
+    {
+      "id": "canvas-random-group-assignment",
+      "name": "Canvas random group assignment",
+      "url": "https://community.instructure.com/en/kb/articles/660880-how-do-i-bulk-assign-students-to-groups",
+      "category": "LMS-native grouping workflow",
+      "decisionStatus": "platform-native",
+      "whyOutOfScope": "Canvas/Instructure documentation for a built-in LMS workflow; requires Canvas course/admin context and is not a portable group generator.",
+      "publicEvidence": "Documentation describes randomly assigning students to groups/group sets, including course-section handling.",
+      "notes": "Important classroom ecosystem capability, but not comparable to ranked self-serve tools."
+    },
+    {
+      "id": "optassign",
+      "name": "OptAssign",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0360131509001328",
+      "category": "research / education assignment tool",
+      "decisionStatus": "research-reference",
+      "whyOutOfScope": "The reviewed source is a ScienceDirect article/abstract, not a live or runnable tool that can be rated.",
+      "publicEvidence": "The paper describes a web-based tool for assigning students to groups based on project/topic preferences and constraints.",
+      "notes": "Good reference for assignment-method coverage; not enough public tool access for data/tools.json."
+    },
+    {
+      "id": "ovoslackrandomcoffee",
+      "name": "OVO Slack RandomCoffee",
+      "url": "https://github.com/ovotech/ovoslackrandomcoffee",
+      "category": "open-source Slack coffee matcher",
+      "decisionStatus": "duplicate-or-variant",
+      "whyOutOfScope": "Reviewed as an AWS Lambda/API Gateway fork of pyslackrandomcoffee; functionality substantially duplicates the ranked pyslackrandomcoffee entry.",
+      "publicEvidence": "README states it is a fork of tjansson60/pyslackrandomcoffee, matches Slack channel members for coffee, posts results to Slack, and avoids recent repeats via channel history.",
+      "notes": "Keep as a known deployment variant; do not rank separately unless it diverges materially."
+    },
+    {
+      "id": "coffee-roulette-pairs",
+      "name": "coffee_roulette_pairs",
+      "url": "https://github.com/moj-analytical-services/coffee_roulette_pairs",
+      "category": "open-source coffee-roulette pair generator",
+      "decisionStatus": "unavailable",
+      "whyOutOfScope": "Direct GitHub/API review returned 404 during this pass, so the implementation could not be verified from source.",
+      "publicEvidence": "Search snippets describe an R package that generates random coffee-roulette pairs from CSV input and can exclude unwanted/recent pairs.",
+      "notes": "Promote only if the repository becomes publicly accessible again or an archived package source is found."
+    },
+    {
+      "id": "macarons-for-slack",
+      "name": "Macarons for Slack",
+      "url": "https://slack.com/marketplace/A035WK8FN0L-macarons",
+      "category": "Slack marketplace coffee matcher",
+      "decisionStatus": "adjacent-commercial",
+      "whyOutOfScope": "Commercial Slack Marketplace app requiring Slack installation/sign-in; no self-serve generator or workspace workflow was tested.",
+      "publicEvidence": "Marketplace page says it automatically pairs random channel members for coffee/video calls and lets admins control timing, odds, and channel lotteries.",
+      "notes": "Relevant coffee-chat product, but track outside ranked list until an install/workspace review is available."
+    },
+    {
+      "id": "leadbot-virtual-coffee-chat",
+      "name": "LEAD.bot Virtual Coffee Chat",
+      "url": "https://www.lead.app/virtual-coffee-chat/",
+      "category": "Slack/Teams coffee-chat platform",
+      "decisionStatus": "adjacent-commercial",
+      "whyOutOfScope": "Commercial Slack/Teams employee-connection platform; public page is marketing/install flow rather than a reviewed generator.",
+      "publicEvidence": "The page claims automated virtual coffee matching, introductions, scheduling, feedback, smart matching, and cross-team programs for Slack and Teams.",
+      "notes": "Strong adjacent product; keep unranked like other enterprise coffee-chat platforms."
+    },
+    {
+      "id": "perfecttableplan-speed-networking",
+      "name": "PerfectTablePlan speed networking",
+      "url": "https://www.perfecttableplan.com/html/networking_events_seating.html",
+      "category": "commercial speed-networking seating rotation",
+      "decisionStatus": "duplicate-or-variant",
+      "whyOutOfScope": "Already tracked in data/related-commercial-platforms.json as a non-ranked commercial speed-networking seating rotation product.",
+      "publicEvidence": "Public page claims generation of multiple seating arrangements/rotations with no repeated companions.",
+      "notes": "No additional ranked action needed unless a public generator/demo is reviewed."
+    },
+    {
+      "id": "sportsvybe-team-generator",
+      "name": "SportsVybe Team Generator",
+      "url": "https://apps.apple.com/us/app/sportsvybe-team-generator/id6752683156",
+      "category": "mobile sports team balancer",
+      "decisionStatus": "app-store-only",
+      "whyOutOfScope": "App Store listing only; no installed app workflow was reviewed in this pass.",
+      "publicEvidence": "Listing describes sports team generation with skill ratings and team-balancing/captain-style workflows.",
+      "notes": "Potential future mobile-app review candidate."
+    },
+    {
+      "id": "csplib-social-golfers-problem",
+      "name": "CSPLib Social Golfers Problem models",
+      "url": "https://www.csplib.org/Problems/prob010/models/",
+      "category": "research/reference model",
+      "decisionStatus": "research-reference",
+      "whyOutOfScope": "Canonical problem/model reference, not an end-user group generator.",
+      "publicEvidence": "CSPLib provides the Social Golfers Problem definition and MiniZinc/model resources for no-repeat group scheduling.",
+      "notes": "Useful background for social-golfer/repeat-minimization methods."
+    },
+    {
+      "id": "minizinc-social-golfers-example",
+      "name": "MiniZinc social golfers example",
+      "url": "https://docs.minizinc.dev/en/stable/modelling2.html",
+      "category": "optimization modelling reference",
+      "decisionStatus": "research-reference",
+      "whyOutOfScope": "Documentation/example model for MiniZinc, not a ready group-generation product.",
+      "publicEvidence": "MiniZinc handbook uses the social golfers problem as a set-constraint modelling example.",
+      "notes": "Reference for people building solvers; not a ranked tool."
+    },
+    {
+      "id": "hexaly-social-golfer-template",
+      "name": "Hexaly Social Golfer template",
+      "url": "https://www.hexaly.com/templates/social-golfer-problem",
+      "category": "optimization template/reference",
+      "decisionStatus": "research-reference",
+      "whyOutOfScope": "Optimization vendor template/reference rather than an organizer-facing generator reviewed with sample data.",
+      "publicEvidence": "Template describes modelling the Social Golfer Problem to maximize socialization/minimize repeated meetings across weeks.",
+      "notes": "Relevant algorithm reference; keep separate from end-user tools."
+    },
+    {
+      "id": "metalevel-social-golfer-resources",
+      "name": "metalevel Social Golfer resources",
+      "url": "https://www.metalevel.at/sgp/",
+      "category": "research/reference resource",
+      "decisionStatus": "research-reference",
+      "whyOutOfScope": "Reference/resource page for the formal Social Golfer Problem, not a generator workflow.",
+      "publicEvidence": "The page collects background and methods for the Social Golfer Problem.",
+      "notes": "Useful as a bibliography/reference candidate if the site grows a research section."
+    },
+    {
+      "id": "drawteams-com",
+      "name": "DrawTeams.com",
+      "url": "https://drawteams.com/",
+      "category": "dead/parked random team generator",
+      "decisionStatus": "parked-or-dead",
+      "whyOutOfScope": "Expired/parked lander rather than a working generator.",
+      "publicEvidence": "Session review recorded that the domain redirected to parked/lander HTML despite search snippets for an old team generator.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "randompicker-io-team-generator",
+      "name": "RandomPicker.io Team Generator",
+      "url": "https://randompicker.io/tools/team-generator.html",
+      "category": "dead/unavailable random team generator",
+      "decisionStatus": "unavailable",
+      "whyOutOfScope": "DNS did not resolve during review.",
+      "publicEvidence": "Search snippet looked like a random team generator, but live review failed with DNS resolution errors.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "yo-motherboard-random-group-generator",
+      "name": "Yo Motherboard Random Group Generator",
+      "url": "https://yomotherboard.com/random-group-generator/",
+      "category": "broken article/tool page",
+      "decisionStatus": "broken-or-nonfunctional",
+      "whyOutOfScope": "Shortcode/article page did not render a working generator.",
+      "publicEvidence": "Reviewed page rendered literal shortcode/article content rather than a usable group generator.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "teamgenerator-aptoide-listing",
+      "name": "TeamGenerator Aptoide listing",
+      "url": "https://teamgenerator.en.aptoide.com/app",
+      "category": "duplicate app-store listing",
+      "decisionStatus": "duplicate-or-variant",
+      "whyOutOfScope": "Third-party APK listing duplicated the already reviewed Google Play Android app entry.",
+      "publicEvidence": "Aptoide page described the same simple Random Team Generator Android app workflow.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "fantasy-cricket-team-generator",
+      "name": "Fantasy Cricket Team Generator",
+      "url": "https://fantasycricketteamgenerator.in/",
+      "category": "fantasy sports lineup generator",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "Fantasy/Dream11 cricket lineup builder, not a real participant/team assignment tool.",
+      "publicEvidence": "Search result/page described AI fantasy cricket teams, captain picks, squads, and lineups.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "pickowheel-team-picker",
+      "name": "PickOWheel Team Picker",
+      "url": "https://pickowheel.com/teampicker",
+      "category": "spam/redirect page",
+      "decisionStatus": "spam-or-redirect",
+      "whyOutOfScope": "Live/fetched review looked like spam/toto content rather than a usable team picker.",
+      "publicEvidence": "Session summary recorded the page as spam/toto, not a working team picker.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "deltautils-team-generator",
+      "name": "DeltaUtils Team Generator",
+      "url": "https://deltautils.com/utils/team-generator.html",
+      "category": "dead/unavailable team generator",
+      "decisionStatus": "unavailable",
+      "whyOutOfScope": "DNS did not resolve during live review.",
+      "publicEvidence": "The candidate looked relevant from snippets, but page navigation failed with net::ERR_NAME_NOT_RESOLVED.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "more-than-a-calculators-random-team-generator",
+      "name": "More Than A Calculators Random Team Generator",
+      "url": "https://morethanacalculators.com/random-team-generator/",
+      "category": "broken random team generator",
+      "decisionStatus": "broken-or-nonfunctional",
+      "whyOutOfScope": "Form rendered, but generate produced no teams in review.",
+      "publicEvidence": "Session summary recorded a visible form with no usable generated output.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "toolgeny-random-team-generator",
+      "name": "Toolgeny Random Team Generator",
+      "url": "https://toolgeny.com/random-team-generator/",
+      "category": "broken random team generator",
+      "decisionStatus": "broken-or-nonfunctional",
+      "whyOutOfScope": "Form rendered, but names counter stayed at zero and generate produced no teams.",
+      "publicEvidence": "Reviewed page did not produce usable groups despite relevant controls.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "spin-the-crocodile-seating-chart",
+      "name": "Spin the Crocodile Seating Chart",
+      "url": "https://spinthecrocodile.com/seating-chart",
+      "category": "seating chart only",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "Seating-chart page, not the team picker workflow.",
+      "publicEvidence": "The actual Spin the Crocodile team picker was added separately; this seating-chart page was intentionally skipped.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "classseats-seating-chart",
+      "name": "ClassSeats Seating Chart",
+      "url": "https://www.classseats.com/",
+      "category": "seating chart only",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "Seating-chart product page rather than the reviewed ClassSeats app grouping workflow.",
+      "publicEvidence": "Session search/review treated seating-chart-only pages separately from actual team/group generators.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "seatsheet",
+      "name": "SeatSheet",
+      "url": "https://seatsheet.com/",
+      "category": "seating chart only",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "Classroom seating-chart generator, not a group/team assignment generator.",
+      "publicEvidence": "Public snippets described seating charts, desks, classroom layouts, and seat conditions.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "inclusive-seating",
+      "name": "Inclusive Seating",
+      "url": "https://inclusiveseating.com/",
+      "category": "seating chart only",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "Classroom seating-chart maker, not a group/team assignment generator.",
+      "publicEvidence": "Public snippets described randomized seating charts and seating accommodations.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "sekigae-sensei",
+      "name": "Sekigae Sensei",
+      "url": "https://sekigaesensei.com/en",
+      "category": "seating chart only",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "Random seating chart maker, not a group/team generator.",
+      "publicEvidence": "Public snippets described school/party seating layouts, teacher desk/table shapes, and OCR roster creation.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "seatsmart",
+      "name": "SeatSmart",
+      "url": "https://seatsmart.classivio.com/",
+      "category": "seating chart only",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "Seating-layout optimizer rather than a group/team generator.",
+      "publicEvidence": "Public snippets described desk/fixture placement and optimizing student seating by relationships, skill levels, and special needs.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "classroom-seating-chart-maker",
+      "name": "Classroom Seating Chart Maker",
+      "url": "https://classroomseatingchartmaker.com/",
+      "category": "seating chart only",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "Classroom seating chart editor rather than a group/team generator.",
+      "publicEvidence": "Public snippets described drag-and-drop seats, student roster, shuffle, and printable seating charts.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "easyclass-seating-chart-maker",
+      "name": "EasyClass Seating Chart Maker",
+      "url": "https://easyclass.ai/seating-chart-maker",
+      "category": "seating chart only",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "AI seating chart maker, not a participant grouping generator.",
+      "publicEvidence": "Public snippets described drag-and-drop desks, shuffle students, rows/groups/U-shape layouts, and seating-chart editing.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "achartmaker-seating-chart-maker",
+      "name": "AChartMaker Seating Chart Maker",
+      "url": "https://achartmaker.com/seating-chart-maker",
+      "category": "seating chart only",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "Generic seating chart maker, not a team/group generator.",
+      "publicEvidence": "Public snippets described arranging seats, tables, VIPs, and polished seating chart exports.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "educatarea-seating-chart-generator",
+      "name": "Educatarea Seating Chart Generator",
+      "url": "https://educatarea.com/seating-chart-generator/",
+      "category": "seating chart only",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "Seating chart generator, separate from Educatarea random group generator already ranked.",
+      "publicEvidence": "Public snippets described seating arrangement methods and classroom seating management.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "seatingplan-com-groupmaker",
+      "name": "SeatingPlan.com GroupMaker",
+      "url": "https://www.seatingplan.com/tools/groupmaker",
+      "category": "seating/table planning adjacent",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "Seating/table-planning tool was encountered in candidate batch but was not treated as a normal group/team assignment generator.",
+      "publicEvidence": "Candidate appeared among seating/groupmaker pages; no ranked generator review was kept.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "flat-social-group-randomizer",
+      "name": "Flat Social Group Randomizer",
+      "url": "https://flat.social/tools/group-randomizer",
+      "category": "broken/non-rendering generator",
+      "decisionStatus": "broken-or-nonfunctional",
+      "whyOutOfScope": "Generator never rendered beyond a Loading state in review.",
+      "publicEvidence": "Session summary recorded no usable generator output beyond “Loading…”.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "youware-random-team-generator",
+      "name": "YouWare Random Team Generator",
+      "url": "https://www.youware.com/features/random-team-generator",
+      "category": "product/app-builder landing page",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "Cloudflare/product landing page, not an actual generator workflow.",
+      "publicEvidence": "Review found product/app-builder marketing rather than a directly usable team generator.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "youware-student-group-generator",
+      "name": "YouWare Student Group Generator",
+      "url": "https://www.youware.com/features/student-group-generator",
+      "category": "product/app-builder landing page",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "Product/app-builder landing page, not a directly usable generator.",
+      "publicEvidence": "Session summary explicitly skipped YouWare Student Group Generator for this reason.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "schoolgpt-classroom-group-generator",
+      "name": "SchoolGPT Classroom Group Generator",
+      "url": "https://www.schoolgpt.app/resources/classroom-group-generator",
+      "category": "resource/template page",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "Resource/template page, not an actual working generator in the reviewed flow.",
+      "publicEvidence": "Encountered in candidate batch and skipped as not a direct generator.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "schoolgpt-random-group-maker",
+      "name": "SchoolGPT Random Group Maker",
+      "url": "https://www.schoolgpt.app/resources/random-group-maker",
+      "category": "missing/broken resource page",
+      "decisionStatus": "broken-or-nonfunctional",
+      "whyOutOfScope": "Rendered “Tool Not Found” instead of a usable generator.",
+      "publicEvidence": "Session review captured SchoolGPT page saying the tool does not exist or may have moved.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "bravowheel-random-team",
+      "name": "BravoWheel Random Team",
+      "url": "https://bravowheel.com/tools/random-team/7",
+      "category": "dead/404 generator page",
+      "decisionStatus": "parked-or-dead",
+      "whyOutOfScope": "Returned 404 Not Found.",
+      "publicEvidence": "Live review recorded HTTP 404 for the candidate URL.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "st-uriel-random-group-generators-for-teachers",
+      "name": "St. Uriel Random Group Generators for Teachers",
+      "url": "https://sturiel.com/2022/10/18/random-group-generators-for-teachers/",
+      "category": "article/listicle",
+      "decisionStatus": "documentation-only",
+      "whyOutOfScope": "Article about random group generators, not a direct generator.",
+      "publicEvidence": "Skipped in reviewed batch as St. Uriel article.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "scripped-roblox-group-generator",
+      "name": "Scripped Roblox Group Generator",
+      "url": "https://github.com/Scripped/Roblox-Group-Generator",
+      "category": "Roblox/source-code adjacent",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "Roblox group generator/source project, not a participant/team assignment generator.",
+      "publicEvidence": "Skipped in batch as Scripped Roblox-Group-Generator.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "ajakteman-random-team",
+      "name": "AjakTeman Random Team",
+      "url": "https://en.ajakteman.com/p/teamrandom.html",
+      "category": "broken/nonfunctional random team page",
+      "decisionStatus": "broken-or-nonfunctional",
+      "whyOutOfScope": "Reviewed/random team page was skipped rather than added due non-working/out-of-scope behavior.",
+      "publicEvidence": "Session summary recorded “AjakTeman Random Team page” among skipped items.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "perchance-group-generator",
+      "name": "Perchance Group Generator",
+      "url": "https://perchance.org/group-generator",
+      "category": "unavailable/security challenge",
+      "decisionStatus": "unavailable",
+      "whyOutOfScope": "Cloudflare/security challenge prevented capture of usable generator output.",
+      "publicEvidence": "Session summary recorded no usable generator output captured.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "flint-k12-ai-group-work-generator",
+      "name": "Flint K12 AI Group Work Generator",
+      "url": "https://flintk12.com/tools/ai-group-work-generator",
+      "category": "AI lesson/content generator",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "Marketing/content page for lesson prompts, not a roster/group generator.",
+      "publicEvidence": "Reviewed flow did not provide direct participant/team assignment.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "vondy-random-k-pop-group-generator",
+      "name": "Vondy Random K-pop Group Generator",
+      "url": "https://vondy.com/random-kpop-group-generator--wUImWNKq",
+      "category": "fictional/content generator",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "Fictional K-pop concept/member-profile generator, not people/team assignment.",
+      "publicEvidence": "Session summary explicitly skipped as not participant grouping.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "writecream-random-pairing-generator",
+      "name": "WriteCream Random Pairing Generator",
+      "url": "https://www.writecream.com/random-pairing-generator/",
+      "category": "broken AI/content generator",
+      "decisionStatus": "broken-or-nonfunctional",
+      "whyOutOfScope": "Relevant-looking page, but generation ended with an internal server error.",
+      "publicEvidence": "Reviewed flow did not produce usable pair output.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "7tools-groupgenerator",
+      "name": "7Tools GroupGenerator",
+      "url": "https://www.7tools.dev/groupgenerator",
+      "category": "fictional tabletop generator",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "Generates fictional tabletop RPG groups/factions, not real participant/team assignments.",
+      "publicEvidence": "Skipped in reviewed batch as fictional groups/factions.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "worldsmith-group-generator",
+      "name": "Worldsmith Group Generator",
+      "url": "https://www.worldsmith.io/generator/content/group",
+      "category": "fictional/content generator",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "Generates fictional/content organizations, not participant/team assignments.",
+      "publicEvidence": "Session summary explicitly skipped for this reason.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "tempo-structure-group-generators-docs",
+      "name": "Tempo Structure Group Generators docs",
+      "url": "https://help.tempo.io/structure-dc/latest/group-generators",
+      "category": "Jira/Structure documentation",
+      "decisionStatus": "documentation-only",
+      "whyOutOfScope": "Documentation for grouping Jira issues in Structure, not a people/team assignment generator.",
+      "publicEvidence": "Skipped as Tempo Structure docs.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "numbergenerator-combinations-generator",
+      "name": "NumberGenerator Combinations Generator",
+      "url": "https://numbergenerator.org/randomnumbergenerator/combinations-generator",
+      "category": "number combination generator",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "Number/lottery combinations tool, not a group/team assignment generator.",
+      "publicEvidence": "Skipped as number-combination tool.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "techbuzr-random-group-generator",
+      "name": "TechBuzr Random Group Generator",
+      "url": "https://www.techbuzr.com/random-group-generator/",
+      "category": "article/listicle",
+      "decisionStatus": "documentation-only",
+      "whyOutOfScope": "Article about random group generators, no direct working generator.",
+      "publicEvidence": "Session summary recorded no direct working generator.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "generatortools-random-group-generator",
+      "name": "GeneratorTools Random Group Generator",
+      "url": "https://generatortools.net/tools/random-group-generator",
+      "category": "AI/sample content generator",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "AI/sample content generator with no roster input, not direct participant grouping.",
+      "publicEvidence": "Skipped in reviewed batch.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "emints-random-group-generator",
+      "name": "eMINTS Random Group Generator",
+      "url": "https://portal.emints.org/store/p407/Random_Group_Generator.html4",
+      "category": "resource/link card",
+      "decisionStatus": "documentation-only",
+      "whyOutOfScope": "Resource/link card page rather than directly usable generator.",
+      "publicEvidence": "Session summary recorded it as skipped resource/link card page.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "devutl-random-group-generator",
+      "name": "DevUTL Random Group Generator",
+      "url": "https://devutl.com/random-group-generator/",
+      "category": "unavailable generator",
+      "decisionStatus": "unavailable",
+      "whyOutOfScope": "Cloudflare/origin 525 error during review.",
+      "publicEvidence": "Skipped due Cloudflare/origin SSL error.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "aibase-random-group-generator-listing",
+      "name": "AIbase Random Group Generator listing",
+      "url": "https://www.aibase.com/zh/tool/36142",
+      "category": "indirect directory/listing",
+      "decisionStatus": "duplicate-or-variant",
+      "whyOutOfScope": "Indirect directory page for randomgroupgenerator.pro, not a direct generator; likely duplicate/indirect listing.",
+      "publicEvidence": "Session summary recorded this as duplicate/indirect rather than directly usable generator.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "agri-care-hub-group-table-generator",
+      "name": "Agri Care Hub Group Table Generator",
+      "url": "https://agricarehub.com/group-table-generator/",
+      "category": "math/table generator",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "Abstract-algebra/Cayley group table generator, not people/team grouping.",
+      "publicEvidence": "Reviewed page focused on mathematical group tables.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "chrome-stats-random-group-generator-listing",
+      "name": "Chrome-Stats Random Group Generator listing",
+      "url": "https://chrome-stats.com/d/random-group-generator",
+      "category": "indirect extension stats listing",
+      "decisionStatus": "duplicate-or-variant",
+      "whyOutOfScope": "Extension stats/directory page, not a direct generator workflow.",
+      "publicEvidence": "Actual Chrome extension listing was considered separately; this stats page was skipped.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "wheelit-setup",
+      "name": "WheelIt setup",
+      "url": "https://wheelit.app/setup",
+      "category": "generic wheel/setup page",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "Generic one-item wheel/setup workflow, not a team/group generator.",
+      "publicEvidence": "Skipped as generic one-item wheel.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "calculator-all-random-group-generator",
+      "name": "Calculator-All Random Group Generator",
+      "url": "https://www.calculator-all.com/random-group-generator/",
+      "category": "spam/redirect page",
+      "decisionStatus": "spam-or-redirect",
+      "whyOutOfScope": "Redirected to Google with spam/ad-network behavior instead of a usable generator.",
+      "publicEvidence": "Live review observed Google redirect/spam behavior.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "dtbtela-golf-foursome-generator",
+      "name": "DTBTELA Golf Foursome Generator",
+      "url": "https://www.dtbtela.com/golf-foursome-generator/",
+      "category": "article/blog post",
+      "decisionStatus": "documentation-only",
+      "whyOutOfScope": "Article/blog post, not a usable generator.",
+      "publicEvidence": "Skipped in golf/team candidate batch.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "getrandomgenerator-topic-generator",
+      "name": "GetRandomGenerator Topic Generator",
+      "url": "https://getrandomgenerator.com/topic",
+      "category": "topic/content generator",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "Topic prompt generator, not group/team assignment.",
+      "publicEvidence": "Session summary recorded it as topic prompt generator.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "spin-de-wheel",
+      "name": "Spin De Wheel",
+      "url": "https://www.spindewheel.com/",
+      "category": "generic decision wheel",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "Generic decision wheel root page; no direct group/team workflow observed.",
+      "publicEvidence": "Skipped as generic decision wheel.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "quillbot-event-planning-generator",
+      "name": "QuillBot Event Planning Generator",
+      "url": "https://quillbot.com/ai-writing-tools/ai-event-planning-generator",
+      "category": "event-plan text generator",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "AI event-planning text generator, not a group/team assignment tool.",
+      "publicEvidence": "Skipped as event-plan text generator.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "denise-case-groupmaker-old-github-pages-url",
+      "name": "Denise Case Groupmaker old GitHub Pages URL",
+      "url": "http://denisecase.github.io/project/groupmaker/groupmaker.html",
+      "category": "dead/404 generator page",
+      "decisionStatus": "parked-or-dead",
+      "whyOutOfScope": "Old GitHub Pages URL returned 404 Not Found.",
+      "publicEvidence": "Reviewed during GitHub Pages/Netlify long-tail pass.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "formteamsforme-netlify-app",
+      "name": "formteamsforme Netlify app",
+      "url": "https://formteamsforme.netlify.app/",
+      "category": "dead Netlify app",
+      "decisionStatus": "parked-or-dead",
+      "whyOutOfScope": "Netlify site not found / broken link.",
+      "publicEvidence": "Reviewed during GitHub Pages/Netlify long-tail pass.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "team-maker-app-github-repo",
+      "name": "Team-Maker-App GitHub repo",
+      "url": "https://github.com/Team-Maker-App/team-maker",
+      "category": "dead/deployment variant",
+      "decisionStatus": "unavailable",
+      "whyOutOfScope": "Source/project was encountered via the dead formteamsforme Netlify app; no working deployed generator was available.",
+      "publicEvidence": "Homepage deployment returned Netlify Site not found.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "pradeepradyumna-iformteamshere",
+      "name": "pradeepradyumna iformteamshere",
+      "url": "https://github.com/pradeepradyumna/iformteamshere",
+      "category": "dead/deployment variant",
+      "decisionStatus": "unavailable",
+      "whyOutOfScope": "Source/project was encountered through the same dead Netlify app path; no live generator was reviewed.",
+      "publicEvidence": "Homepage deployment returned Netlify Site not found.",
+      "notes": "Found while reviewing session logs/compaction summaries for missed rejected candidates."
+    },
+    {
+      "id": "randomgroup-online-german-route",
+      "name": "randomgroup.online German route",
+      "url": "https://randomgroup.online/de/",
+      "category": "same-host/localized duplicate",
+      "decisionStatus": "duplicate-or-variant",
+      "whyOutOfScope": "Same-host localized route already covered by RandomGroup.online entry.",
+      "publicEvidence": "Recorded from session duplicate/same-host checks.",
+      "notes": "Duplicate/variant encountered in session history; retained here to avoid future re-review as a separate ranked tool."
+    },
+    {
+      "id": "randomtools-io-combination-generator",
+      "name": "randomtools.io Combination Generator",
+      "url": "https://randomtools.io/combination-generator/",
+      "category": "same-host non-team variant",
+      "decisionStatus": "duplicate-or-variant",
+      "whyOutOfScope": "Same host as reviewed RandomTools.io team generator but this URL is a combination generator, not a team generator.",
+      "publicEvidence": "Recorded from session duplicate/same-host checks.",
+      "notes": "Duplicate/variant encountered in session history; retained here to avoid future re-review as a separate ranked tool."
+    },
+    {
+      "id": "random-letter-generator-german-group-route",
+      "name": "Random Letter Generator German group route",
+      "url": "https://randomlettergenerator.app/de/group-generator",
+      "category": "same-host/localized duplicate",
+      "decisionStatus": "duplicate-or-variant",
+      "whyOutOfScope": "Localized same-host route already covered by Random Letter Generator group entry.",
+      "publicEvidence": "Recorded from session duplicate/same-host checks.",
+      "notes": "Duplicate/variant encountered in session history; retained here to avoid future re-review as a separate ranked tool."
+    },
+    {
+      "id": "educatarea-german-random-groups-route",
+      "name": "Educatarea German random groups route",
+      "url": "https://educatarea.com/de/zufallsgruppen-generator/",
+      "category": "same-host/localized duplicate",
+      "decisionStatus": "duplicate-or-variant",
+      "whyOutOfScope": "Localized same-host route already covered by Educatarea random group generator entry.",
+      "publicEvidence": "Recorded from session duplicate/same-host checks.",
+      "notes": "Duplicate/variant encountered in session history; retained here to avoid future re-review as a separate ranked tool."
+    },
+    {
+      "id": "team-randomizer-icebreaker-route",
+      "name": "Team Randomizer Icebreaker route",
+      "url": "https://team-randomizer.com/icebreaker-team-generator",
+      "category": "same-host variant",
+      "decisionStatus": "duplicate-or-variant",
+      "whyOutOfScope": "Same host/likely same app as ranked Team Randomizer Classroom Generator.",
+      "publicEvidence": "Recorded from session duplicate/same-host checks.",
+      "notes": "Duplicate/variant encountered in session history; retained here to avoid future re-review as a separate ranked tool."
+    },
+    {
+      "id": "classroom-toolkit-html-route",
+      "name": "Classroom Toolkit .html route",
+      "url": "https://classroomtoolkit.co.uk/group-generator.html",
+      "category": "same-host variant",
+      "decisionStatus": "duplicate-or-variant",
+      "whyOutOfScope": "Same tool as ranked Classroom Toolkit Group Generator without .html.",
+      "publicEvidence": "Recorded from session duplicate/same-host checks.",
+      "notes": "Duplicate/variant encountered in session history; retained here to avoid future re-review as a separate ranked tool."
+    },
+    {
+      "id": "freerandomtools-random-team-generator",
+      "name": "FreeRandomTools Random Team Generator",
+      "url": "https://freerandomtools.org/random-team-generator/",
+      "category": "exact/same-host duplicate",
+      "decisionStatus": "duplicate-or-variant",
+      "whyOutOfScope": "Encountered after it was already covered in the ranked dataset.",
+      "publicEvidence": "Recorded from session duplicate/same-host checks.",
+      "notes": "Duplicate/variant encountered in session history; retained here to avoid future re-review as a separate ranked tool."
+    },
+    {
+      "id": "peon-inc-random-team-generator-duplicate",
+      "name": "Peon Inc Random Team Generator duplicate",
+      "url": "https://www.peon-inc.net/community-tools/RandomTeamGenerator.html",
+      "category": "exact/same-host duplicate",
+      "decisionStatus": "duplicate-or-variant",
+      "whyOutOfScope": "Encountered after it was already covered in the ranked dataset.",
+      "publicEvidence": "Recorded from session duplicate/same-host checks.",
+      "notes": "Duplicate/variant encountered in session history; retained here to avoid future re-review as a separate ranked tool."
+    },
+    {
+      "id": "randomgenerator-one-group-page-duplicate",
+      "name": "RandomGenerator.one group page duplicate",
+      "url": "https://randomgenerator.one/random-generator-group/",
+      "category": "same-host duplicate",
+      "decisionStatus": "duplicate-or-variant",
+      "whyOutOfScope": "Same-host group page already covered by RandomGenerator.one group/pairs entries.",
+      "publicEvidence": "Recorded from session duplicate/same-host checks.",
+      "notes": "Duplicate/variant encountered in session history; retained here to avoid future re-review as a separate ranked tool."
+    },
+    {
+      "id": "teamgenerator-net-exact-url-duplicate",
+      "name": "TeamGenerator.net exact URL duplicate",
+      "url": "https://www.teamgenerator.net/team-generator",
+      "category": "exact duplicate",
+      "decisionStatus": "duplicate-or-variant",
+      "whyOutOfScope": "Exact URL was already present in the ranked dataset.",
+      "publicEvidence": "Recorded from session duplicate/same-host checks.",
+      "notes": "Duplicate/variant encountered in session history; retained here to avoid future re-review as a separate ranked tool."
+    },
+    {
+      "id": "smart-group-maker-app-url-duplicate",
+      "name": "Smart Group Maker app URL duplicate",
+      "url": "https://app.smartgroupmaker.com/",
+      "category": "same-product duplicate",
+      "decisionStatus": "duplicate-or-variant",
+      "whyOutOfScope": "Smart Group Maker app URL already covered by the ranked Smart Group Maker entry.",
+      "publicEvidence": "Recorded from session duplicate/same-host checks.",
+      "notes": "Duplicate/variant encountered in session history; retained here to avoid future re-review as a separate ranked tool."
+    }
+  ]
+}
