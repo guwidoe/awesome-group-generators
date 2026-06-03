@@ -2,8 +2,8 @@
   "metadata": {
     "title": "Related commercial and sales-gated platforms",
     "description": "Related event-networking, speed-networking, golf scheduling, coffee-chat, and matchmaking platforms that are not part of the ranked Awesome Group Generators dataset because a self-serve group-generation workflow was not publicly verifiable, the product is primarily sales-gated, or the fit is adjacent rather than a classical group generator.",
-    "exportedAt": "2026-06-03T16:08:06+00:00",
-    "itemCount": 48,
+    "exportedAt": "2026-06-03T16:21:22+00:00",
+    "itemCount": 56,
     "ratingPolicy": "These entries are intentionally not star-rated and must not be merged into data/tools.json unless a publicly testable generator, open demo, or runnable implementation is reviewed. Entries promoted after live review are removed from this related-only file.",
     "accessStatuses": [
       "sales-gated",
@@ -495,6 +495,86 @@
       "whyNotRanked": "App Store-only iOS/iPadOS app; no installed app workflow was tested.",
       "publicEvidence": "App Store listing describes a soccer/football team generator for balanced random teams; MWM intelligence page also summarizes balanced team generation.",
       "notes": "Low-rated/old app, but relevant enough to track as app-only."
+    },
+    {
+      "id": "random-team-generator-by-l-h-applications",
+      "name": "Random Team Generator by L&H Applications",
+      "url": "https://play.google.com/store/apps/details?hl=en_US&id=com.dir.norma.teamgenerator",
+      "category": "Android random/team generator app",
+      "accessStatus": "app-store-only",
+      "whyNotRanked": "Google Play listing only; no installed app workflow was tested.",
+      "publicEvidence": "Listing describes a 100K+ download Android app. Current notes mention tournaments, keep-together/keep-apart rules, hidden player levels, adjustable team names/colors, fairness display, and team leads.",
+      "notes": "Relevant enough for related app tracking; promote only after app testing."
+    },
+    {
+      "id": "voll-e-pickup-team-generator",
+      "name": "voll-e Pickup Team Generator",
+      "url": "https://apps.apple.com/us/app/voll-e-pickup-team-generator/id6751260723",
+      "category": "iOS pickup-game team generator",
+      "accessStatus": "app-store-only",
+      "whyNotRanked": "App Store-only app; no installed workflow was tested.",
+      "publicEvidence": "Listing describes saved regular players/groups, skill-balanced team generation, fast sessions, editable team names, swaps, rerolls, and team-average display.",
+      "notes": "Relevant sports app if native app reviews are added."
+    },
+    {
+      "id": "autoroster",
+      "name": "AutoRoster",
+      "url": "https://apps.apple.com/us/app/autoroster/id6755357494",
+      "category": "paid iPhone practice team generator",
+      "accessStatus": "app-store-only",
+      "whyNotRanked": "Paid App Store-only iPhone app; no installed workflow was tested.",
+      "publicEvidence": "Listing describes custom player ratings, optional positions/roles, smart balancing, two or three teams, local-only/no-account/no-ads/no-tracking claims.",
+      "notes": "Track as app-only balanced-practice tool."
+    },
+    {
+      "id": "random-team-generator-splitr",
+      "name": "Random Team Generator - Splitr",
+      "url": "https://apps.apple.com/us/app/random-team-generator-splitr/id6758931048",
+      "category": "iOS group/team picker app",
+      "accessStatus": "app-store-only",
+      "whyNotRanked": "App Store-only iOS/iPadOS app; no installed workflow was tested.",
+      "publicEvidence": "Listing describes paste/add names, split by team count or team size, odd-player handling, saved rosters/history/share, premium skill balancing, and captain mode.",
+      "notes": "Track as app-only random/team generator."
+    },
+    {
+      "id": "team-balancer-by-pashooo",
+      "name": "Team Balancer by pashooo",
+      "url": "https://play.google.com/store/apps/details?id=com.team_maker",
+      "category": "Android sports team balancer",
+      "accessStatus": "app-store-only",
+      "whyNotRanked": "Google Play app listing only; no installed workflow was tested.",
+      "publicEvidence": "Listing describes player groups, skill ratings, smart algorithm for balanced teams, soccer/pickup use, ratings profiles, and detailed result views.",
+      "notes": "Track as app-only sports balancer."
+    },
+    {
+      "id": "lil-soccer-team-maker",
+      "name": "Lil' Soccer: Team maker",
+      "url": "https://play.google.com/store/apps/details?hl=en_US&id=com.devix.fulbito",
+      "category": "Android soccer team maker",
+      "accessStatus": "app-store-only",
+      "whyNotRanked": "Google Play app listing only; no installed workflow was tested.",
+      "publicEvidence": "Listing describes random soccer/football team generation with skill levels, goalkeeper distribution, chosen team count, 50K+ downloads, and ads.",
+      "notes": "Track as app-only soccer balancer."
+    },
+    {
+      "id": "rastgele-tak-m-olu-turucu-pro-make-teams-pro",
+      "name": "Rastgele Takım Oluşturucu PRO / Make Teams PRO",
+      "url": "https://play.google.com/store/apps/details?hl=tr&id=com.alcales.maketeams",
+      "category": "Android random balanced team generator app",
+      "accessStatus": "app-store-only",
+      "whyNotRanked": "Google Play app listing only; no installed workflow was tested.",
+      "publicEvidence": "Listing describes saved player lists, text-file import, voice input, skill levels, unlimited team generation, sharing via WhatsApp/email, and Turkish/localized UI.",
+      "notes": "Track as app-only Turkish Make Teams PRO app."
+    },
+    {
+      "id": "schabi-schule-am-bildschirm",
+      "name": "SCHABI / Schule am Bildschirm",
+      "url": "https://navi.educa.ch/anwendung/schabi",
+      "category": "Swiss classroom platform with group generator",
+      "accessStatus": "commercial-platform",
+      "whyNotRanked": "SCHABI is a broader Swiss classroom/teaching platform; the group generator is one platform feature, not a public standalone generator workflow.",
+      "publicEvidence": "educa.ch listing describes classroom pages, tasks, AI services, and tools including a Gruppengenerator/random grouping with constraints; links to SCHABI information pages.",
+      "notes": "Related classroom platform; rank only if a public self-serve group generator is reviewed."
     }
   ]
 }

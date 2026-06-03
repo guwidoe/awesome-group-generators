@@ -2,8 +2,8 @@
   "metadata": {
     "title": "Reviewed but out-of-scope group-generation-adjacent resources",
     "description": "Resources that were explicitly reviewed after the broader ecosystem pass, but not merged into the ranked Awesome Group Generators dataset because they are sales-gated, LMS-native documentation rather than a portable tool, app-store-only without a verified workflow, duplicate/fork variants, unavailable, or primarily research/reference material.",
-    "reviewedAt": "2026-06-03T16:08:06+00:00",
-    "itemCount": 97,
+    "reviewedAt": "2026-06-03T16:21:22+00:00",
+    "itemCount": 103,
     "policy": "These entries are evidence-tracked so future reviewers do not re-review the same adjacent resources. Promote an item into data/tools.json only after a directly usable generator, open demo, app workflow, or runnable implementation has been reviewed enough to assign the normal feature/rating fields.",
     "decisionStatuses": [
       "sales-gated",
@@ -990,6 +990,66 @@
       "whyOutOfScope": "Chrome-Stats is an indirect statistics/listing site and was blocked by Cloudflare during review; no runnable extension/app page was verified.",
       "publicEvidence": "Browser review saw only Cloudflare “Just a moment.” Prior policy keeps Chrome-Stats-only findings out of ranked tools.",
       "notes": "Find a direct Chrome Web Store or runnable app URL before reconsidering."
+    },
+    {
+      "id": "moodle-teamup",
+      "name": "Moodle TeamUp",
+      "url": "https://moodle.org/plugins/mod_teamup",
+      "category": "Moodle-native group formation plugin",
+      "decisionStatus": "platform-native",
+      "whyOutOfScope": "Moodle-native plugin rather than a public standalone/self-serve generator in the ranked-list sense.",
+      "publicEvidence": "Plugin page describes questionnaire-based criteria, similar/disperse/avoid-minority/balance-level operators, simulation/preview, manual moving, and final creation of Moodle groups.",
+      "notes": "Relevant LMS-native tool; tracked to avoid rediscovery."
+    },
+    {
+      "id": "moodle-team-builder",
+      "name": "Moodle Team Builder",
+      "url": "https://moodle.org/plugins/mod_teambuilder",
+      "category": "Moodle-native group formation plugin",
+      "decisionStatus": "platform-native",
+      "whyOutOfScope": "Moodle-native plugin and older TeamUp predecessor; no public generator workflow outside Moodle was reviewed.",
+      "publicEvidence": "Plugin page describes UNSW Team Builder, criteria from student answers, predicates, and drag-and-drop group editing inside Moodle.",
+      "notes": "Relevant LMS-native tool; tracked to avoid rediscovery."
+    },
+    {
+      "id": "moodle-automatic-enrolment-in-groups",
+      "name": "Moodle Automatic enrolment in groups",
+      "url": "https://moodle.org/plugins/tool_groupautoenrol",
+      "category": "Moodle-native automatic group enrolment plugin",
+      "decisionStatus": "platform-native",
+      "whyOutOfScope": "Moodle administration/enrolment automation, not a standalone group generator for the ranked list.",
+      "publicEvidence": "Plugin page describes random assignment of enrolled students into Moodle course groups across enrolment methods, with balance/auto-enrol features.",
+      "notes": "Adjacent LMS-native automation; tracked to avoid rediscovery."
+    },
+    {
+      "id": "feedbackfruits-group-formation-page-variant",
+      "name": "FeedbackFruits Group Formation page variant",
+      "url": "https://feedbackfruits.com/group-formation",
+      "category": "sales-gated commercial/LMS platform duplicate",
+      "decisionStatus": "duplicate-or-variant",
+      "whyOutOfScope": "Redirects/normalizes to the already-reviewed FeedbackFruits sales-gated Group Formation page, not a new self-serve generator.",
+      "publicEvidence": "Browser review final URL was https://feedbackfruits.com/solutions/group-formation with demo booking, smart criteria, and commercial LMS product framing.",
+      "notes": "Existing out-of-scope record covers /solutions/group-formation."
+    },
+    {
+      "id": "gosorteios-gerador-de-equipes",
+      "name": "Gosorteios Gerador de Equipes",
+      "url": "https://gosorteios.com/gerador-de-equipes/",
+      "category": "unavailable team generator",
+      "decisionStatus": "unavailable",
+      "whyOutOfScope": "Live review returned Cloudflare 525 SSL handshake failed, so no generator could be verified.",
+      "publicEvidence": "Browser page showed only Cloudflare “SSL handshake failed” / origin host error.",
+      "notes": "Revisit if the SSL/origin issue is fixed."
+    },
+    {
+      "id": "realwheelpicker-team-generator",
+      "name": "RealWheelPicker Team Generator",
+      "url": "https://realwheelpicker.com/team-generator/",
+      "category": "unavailable redirecting team generator",
+      "decisionStatus": "unavailable",
+      "whyOutOfScope": "Browser review failed with net::ERR_TOO_MANY_REDIRECTS, so no generator workflow could be verified.",
+      "publicEvidence": "Playwright navigation to the candidate URL ended at about:blank with too many redirects.",
+      "notes": "Revisit if the site fixes redirect loop."
     }
   ]
 }
