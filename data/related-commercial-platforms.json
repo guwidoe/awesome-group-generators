@@ -2,8 +2,8 @@
   "metadata": {
     "title": "Related commercial and sales-gated platforms",
     "description": "Related event-networking, speed-networking, golf scheduling, coffee-chat, and matchmaking platforms that are not part of the ranked Awesome Group Generators dataset because a self-serve group-generation workflow was not publicly verifiable, the product is primarily sales-gated, or the fit is adjacent rather than a classical group generator.",
-    "exportedAt": "2026-06-03T16:21:22+00:00",
-    "itemCount": 56,
+    "exportedAt": "2026-06-03T16:35:52+00:00",
+    "itemCount": 58,
     "ratingPolicy": "These entries are intentionally not star-rated and must not be merged into data/tools.json unless a publicly testable generator, open demo, or runnable implementation is reviewed. Entries promoted after live review are removed from this related-only file.",
     "accessStatuses": [
       "sales-gated",
@@ -575,6 +575,26 @@
       "whyNotRanked": "SCHABI is a broader Swiss classroom/teaching platform; the group generator is one platform feature, not a public standalone generator workflow.",
       "publicEvidence": "educa.ch listing describes classroom pages, tasks, AI services, and tools including a Gruppengenerator/random grouping with constraints; links to SCHABI information pages.",
       "notes": "Related classroom platform; rank only if a public self-serve group generator is reviewed."
+    },
+    {
+      "id": "futzone",
+      "name": "FutZone",
+      "url": "http://futzone.app.br/",
+      "category": "Brazilian football team-balancing app/platform",
+      "accessStatus": "app-store-only",
+      "whyNotRanked": "Public site is primarily a landing page for mobile apps; no standalone web generator workflow was available to rank.",
+      "publicEvidence": "Browser review found app-store links and claims for player spaces, 1–5 skill levels, goalkeeper flags, 250-team-combination balancing, tactical view, and sharing.",
+      "notes": "Relevant sports app/platform; promote only after app testing or a public web generator is added."
+    },
+    {
+      "id": "sorteia-times-equilibrados",
+      "name": "Sorteia Times Equilibrados",
+      "url": "https://sorteioesportivo.github.io/",
+      "category": "Android balanced sports-team app landing page",
+      "accessStatus": "app-store-only",
+      "whyNotRanked": "Static landing page for an Android app; no live web generator was available to rank.",
+      "publicEvidence": "Page describes random and balanced team creation based on player evaluations and links to Google Play id=com.tfhlsolutions.sorteioesportivo.",
+      "notes": "Track as app-only sports-team balancer."
     }
   ]
 }
