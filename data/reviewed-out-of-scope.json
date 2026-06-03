@@ -2,8 +2,8 @@
   "metadata": {
     "title": "Reviewed but out-of-scope group-generation-adjacent resources",
     "description": "Resources that were explicitly reviewed after the broader ecosystem pass, but not merged into the ranked Awesome Group Generators dataset because they are sales-gated, LMS-native documentation rather than a portable tool, app-store-only without a verified workflow, duplicate/fork variants, unavailable, or primarily research/reference material.",
-    "reviewedAt": "2026-06-03T15:17:46+00:00",
-    "itemCount": 80,
+    "reviewedAt": "2026-06-03T15:37:22+00:00",
+    "itemCount": 84,
     "policy": "These entries are evidence-tracked so future reviewers do not re-review the same adjacent resources. Promote an item into data/tools.json only after a directly usable generator, open demo, app workflow, or runnable implementation has been reviewed enough to assign the normal feature/rating fields.",
     "decisionStatuses": [
       "sales-gated",
@@ -820,6 +820,46 @@
       "whyOutOfScope": "Smart Group Maker app URL already covered by the ranked Smart Group Maker entry.",
       "publicEvidence": "Recorded from session duplicate/same-host checks.",
       "notes": "Duplicate/variant encountered in session history; retained here to avoid future re-review as a separate ranked tool."
+    },
+    {
+      "id": "group-picker-team-mixer",
+      "name": "Group Picker Team Mixer",
+      "url": "https://www.grouppicker.com/team-mixer",
+      "category": "paused/unavailable team mixer",
+      "decisionStatus": "unavailable",
+      "whyOutOfScope": "The deployment returned HTTP 402 “Deployment Paused” during browser and fetch review, so no generator workflow could be verified.",
+      "publicEvidence": "Candidate was described as category-balanced team mixing with file upload/print/copy, but live page showed only “This deployment is temporarily paused.”",
+      "notes": "Revisit if the deployment comes back online."
+    },
+    {
+      "id": "group-picker-homepage",
+      "name": "Group Picker homepage",
+      "url": "https://www.grouppicker.com/",
+      "category": "paused/unavailable group picker",
+      "decisionStatus": "unavailable",
+      "whyOutOfScope": "The homepage also returned HTTP 402 “Deployment Paused,” so the simpler Group Picker workflow could not be reviewed.",
+      "publicEvidence": "Live page showed only a paused deployment message from the host.",
+      "notes": "Same unavailable product as Group Picker Team Mixer."
+    },
+    {
+      "id": "teammaker-hackathon-tool",
+      "name": "TeamMaker Hackathon Tool",
+      "url": "https://teammaker.netlify.app/",
+      "category": "stale demo / open-source hackathon team former",
+      "decisionStatus": "unavailable",
+      "whyOutOfScope": "The marketing page loads and describes score/rule-based hackathon team formation, but its live demo links point to a dead Heroku app returning “No such app.”",
+      "publicEvidence": "Public page describes user database, score analysis, autosort teams, rules such as max users/desirable frontend engineers, and warning when balanced teams are impossible.",
+      "notes": "Could be promoted if the frontend/backend source is run and reviewed or a live demo returns."
+    },
+    {
+      "id": "goodmatches",
+      "name": "goodMatches",
+      "url": "https://apps.apple.com/gb/app/goodmatches/id6737167753",
+      "category": "app-store-only racket-sports matchup generator",
+      "decisionStatus": "app-store-only",
+      "whyOutOfScope": "App Store-only racket-sports matchup rotation generator; no installed app workflow was tested.",
+      "publicEvidence": "Listing describes rating-based balanced matchup sequences for 5–20 players, singles/doubles, fair resting rotation, mid-session changes, invite codes, rating updates, and rankings.",
+      "notes": "Relevant to sports rotations; keep out of ranked data until app-tested."
     }
   ]
 }
