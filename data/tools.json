@@ -2,10 +2,10 @@
   "metadata": {
     "title": "Awesome Group Generators",
     "description": "A transparent, curated review dataset for group generators, team pickers, classroom grouping tools, breakout-room planners, and social-golfer schedulers.",
-    "sourceRevisionId": 524,
-    "sourceSavedAt": "2026-06-03T10:01:53.761900+00:00",
-    "exportedAt": "2026-06-03T10:01:54+00:00",
-    "toolCount": 257,
+    "sourceRevisionId": 525,
+    "sourceSavedAt": "2026-06-03T10:11:03.108377+00:00",
+    "exportedAt": "2026-06-03T10:11:03+00:00",
+    "toolCount": 261,
     "ratingScale": "0.0 to 5.0 stars, higher is better",
     "ratingCategories": [
       "easeOfUse",
@@ -11896,8 +11896,108 @@
       "tags": []
     },
     {
-      "id": "randomgroup-online",
+      "id": "random-letter-generator-group-generator",
       "rank": 117,
+      "name": "Random Letter Generator Group Generator",
+      "url": "https://randomlettergenerator.app/group-generator",
+      "bestFor": "Polished simple random groups with paste input, group count, copy, and basic stats",
+      "summary": "Random Letter Generator Group Generator is a clean one-off group splitter. It accepts pasted names, lets users choose the number of groups, generates evenly sized random groups, shows total-name/group statistics, and includes a Copy Groups button. It is pleasant for basic classroom or activity grouping, but it has no constraints, balancing, import/export files, or repeat controls.",
+      "pricing": "Free web tool. No account required.",
+      "overallRating": 2.9,
+      "overallComment": "A polished basic random group generator. Good UX and copy output, but still random-only.",
+      "ratings": {
+        "easeOfUse": 4.2,
+        "design": 3.8,
+        "features": 1.9,
+        "outputs": 2.2,
+        "privacy": 2.7,
+        "accountFriction": 5.0,
+        "resultQuality": 2.2
+      },
+      "ratingComments": {
+        "easeOfUse": "Textarea, group-count input, Start, Reset, and Copy Groups are straightforward.",
+        "design": "Cleaner and more polished than most generic randomizer pages.",
+        "features": "Group count, paste input, reset, copy, and simple stats only.",
+        "outputs": "Copy Groups is useful; no CSV, download, print, or share workflow.",
+        "privacy": "No account, but Google Analytics and Cloudflare-style scripts are present.",
+        "accountFriction": "No account required.",
+        "resultQuality": "Even random groups only, with no balancing or constraints."
+      },
+      "features": {
+        "API/programmatic access": "no",
+        "Attribute balance constraints": "no",
+        "Attribute total/sum constraints": "no",
+        "Copy results to clipboard": "yes",
+        "Custom group capacities": "partial",
+        "Deterministic seed / reproducibility": "no",
+        "Editable/random team names": "no",
+        "Embeddable results": "no",
+        "Excel export": "no",
+        "Fixed person placement": "no",
+        "Gender/label balancing": "no",
+        "Google Sheets import": "no",
+        "Hard keep-apart constraints": "no",
+        "Hard keep-together constraints": "no",
+        "Image/PDF export": "no",
+        "Minimum group sizes": "no",
+        "Multiple rounds/sessions": "no",
+        "No account required": "yes",
+        "Pair meeting count targets": "no",
+        "Pair meeting matrix": "no",
+        "Partial attendance by session": "no",
+        "Paste names": "yes",
+        "Per-session capacities": "no",
+        "Per-session constraints": "no",
+        "Person/group visit count constraints": "no",
+        "Pinned people / fixed placements": "no",
+        "Presentation/full-screen mode": "no",
+        "Repeat encounter limits": "no",
+        "Result comments": "no",
+        "Result quality diagnostics": "no",
+        "Runs in browser": "yes",
+        "Saved class roster import": "no",
+        "Saved participant/team lists": "no",
+        "Saved result history": "no",
+        "Saved scenarios/workspaces": "no",
+        "Scenario import/export bundle": "no",
+        "Self-join participant link": "no",
+        "Shareable result links": "no",
+        "Soft prefer-apart constraints": "no",
+        "Soft prefer-together constraints": "no",
+        "Solver telemetry/result metadata": "no",
+        "Solver tuning controls": "no",
+        "Spreadsheet CSV export": "no",
+        "Spreadsheet CSV import": "no",
+        "Storage management/cleanup": "no",
+        "Team leader / representative assignment": "no",
+        "Unique-contact optimization": "no",
+        "Visual/theme customization": "no",
+        "Weighted random entries": "no",
+        "Weighted soft constraints": "no",
+        "Zoom breakout CSV import/export": "no"
+      },
+      "pros": [
+        "No account required",
+        "Clean UI",
+        "Paste names",
+        "Choose number of groups",
+        "Copy results",
+        "Basic result stats"
+      ],
+      "cons": [
+        "Random only",
+        "No group-size mode",
+        "No CSV/export files",
+        "No constraints",
+        "No attribute balancing",
+        "No repeat avoidance"
+      ],
+      "reviewNote": "A reasonable simple randomizer for users who care about a clean interface more than advanced grouping logic.",
+      "tags": []
+    },
+    {
+      "id": "randomgroup-online",
+      "rank": 118,
       "name": "RandomGroup.online",
       "url": "https://randomgroup.online/",
       "bestFor": "Multilingual basic random groups with copy, TXT, and Excel export",
@@ -11997,7 +12097,7 @@
     },
     {
       "id": "randomgroup-org-random-group-generator",
-      "rank": 118,
+      "rank": 119,
       "name": "RandomGroup.org Random Group Generator",
       "url": "https://randomgroup.org/",
       "bestFor": "No-account random groups with TXT/CSV export",
@@ -12098,7 +12198,7 @@
     },
     {
       "id": "rapidwebapp-random-team-generator",
-      "rank": 119,
+      "rank": 120,
       "name": "RapidWebApp Random Team Generator",
       "url": "https://www.rapidwebapp.com/random-team-generator",
       "bestFor": "Iframe-based random teams with custom names, leaders, copy, and image export",
@@ -12198,7 +12298,7 @@
     },
     {
       "id": "spinwheely-random-team-generator",
-      "rank": 120,
+      "rank": 121,
       "name": "Spinwheely Random Team Generator",
       "url": "https://spinwheely.com/random-team-generator",
       "bestFor": "Visual browser-side random teams with PDF, CSV, and text export",
@@ -12298,7 +12398,7 @@
     },
     {
       "id": "teamshufflr",
-      "rank": 121,
+      "rank": 122,
       "name": "TeamShufflr",
       "url": "https://teamshufflr.com/de/",
       "bestFor": "In-person workshops that want printable team cards rather than a normal result table",
@@ -12398,7 +12498,7 @@
     },
     {
       "id": "trumpexcel-random-team-generator",
-      "rank": 122,
+      "rank": 123,
       "name": "TrumpExcel Random Team Generator",
       "url": "https://trumpexcel.com/tools/random-team-generator/",
       "bestFor": "Simple local random groups with spreadsheet-friendly output",
@@ -12501,7 +12601,7 @@
     },
     {
       "id": "wanglitou-list-randomizer-with-teams",
-      "rank": 123,
+      "rank": 124,
       "name": "Wanglitou List Randomizer with Teams",
       "url": "https://www.wanglitou.com/list-randomizer/",
       "bestFor": "Seedable list randomization and simple team output with copy/TXT download",
@@ -12602,7 +12702,7 @@
     },
     {
       "id": "wheelpick-team-generator",
-      "rank": 124,
+      "rank": 125,
       "name": "Wheelpick Team Generator",
       "url": "https://wheelpick.app/team-generator",
       "bestFor": "Polished no-account browser-side random teams from a saved roster",
@@ -12704,7 +12804,7 @@
     },
     {
       "id": "zoom-breakout-room-assignment",
-      "rank": 125,
+      "rank": 126,
       "name": "Zoom breakout room assignment",
       "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0062540",
       "bestFor": "Assigning live meeting participants directly into Zoom rooms",
@@ -12806,7 +12906,7 @@
     },
     {
       "id": "aionetools-random-team-generator",
-      "rank": 126,
+      "rank": 127,
       "name": "AIOneTools Random Team Generator",
       "url": "https://aionetools.com/tools/picker/team-generator-wheel",
       "bestFor": "Simple browser-side random groups with shuffle and clean team cards",
@@ -12906,7 +13006,7 @@
     },
     {
       "id": "cojoro-team-generator",
-      "rank": 127,
+      "rank": 128,
       "name": "Cojoro Team Generator",
       "url": "https://cojoro.dedyn.io/RandTeamGen/index.html",
       "bestFor": "Standalone team generation with custom team names, leader selection, and multiple export formats if certificate warnings are acceptable",
@@ -13008,7 +13108,7 @@
     },
     {
       "id": "dicegamehub-list-randomizer-team-generator",
-      "rank": 128,
+      "rank": 129,
       "name": "DiceGameHub List Randomizer & Team Generator",
       "url": "https://dicegamehub.com/tools/list-randomizer",
       "bestFor": "Simple team generation with copy-all and image download",
@@ -13108,7 +13208,7 @@
     },
     {
       "id": "games-by-marco-team-generator",
-      "rank": 129,
+      "rank": 130,
       "name": "Games by Marco Team Generator",
       "url": "https://teams.gamesbymarco.com/",
       "bestFor": "Minimal private-ish random teams with team-count or team-size mode",
@@ -13211,7 +13311,7 @@
     },
     {
       "id": "generate-random-org-random-team-generator",
-      "rank": 130,
+      "rank": 131,
       "name": "Generate-Random.org Random Team Generator",
       "url": "https://generate-random.org/teams",
       "bestFor": "Simple random teams with strong text/CSV/JSON exports if hosted processing is acceptable",
@@ -13313,7 +13413,7 @@
     },
     {
       "id": "google-sheets",
-      "rank": 131,
+      "rank": 132,
       "name": "Google Sheets",
       "url": "https://sheets.google.com/",
       "bestFor": "Spreadsheet users willing to build their own random grouping template",
@@ -13414,7 +13514,7 @@
     },
     {
       "id": "goonlinetools-random-group-generator",
-      "rank": 132,
+      "rank": 133,
       "name": "GoOnlineTools Random Group Generator",
       "url": "https://goonlinetools.com/random-group-generator/",
       "bestFor": "Simple random groups with a modern UI, regenerate, statistics, and possible copy/download/share icons",
@@ -13517,7 +13617,7 @@
     },
     {
       "id": "gynzy-group-maker",
-      "rank": 133,
+      "rank": 134,
       "name": "Gynzy Group Maker",
       "url": "https://www.gynzy.com/en/library/items/group-maker",
       "bestFor": "Interactive whiteboard random groups inside Gynzy",
@@ -13617,7 +13717,7 @@
     },
     {
       "id": "inkpx-random-group-generator",
-      "rank": 134,
+      "rank": 135,
       "name": "InkPx Random Group Generator",
       "url": "https://inkpx.com/random-group-generator",
       "bestFor": "Simple group-count splits with remembered local input history",
@@ -13714,7 +13814,7 @@
     },
     {
       "id": "kordu-team-randomizer",
-      "rank": 135,
+      "rank": 136,
       "name": "Kordu Team Randomizer",
       "url": "https://kordu.tools/tools/gaming/team-randomizer/",
       "bestFor": "Clean browser-side random teams with re-roll and copy",
@@ -13812,8 +13912,107 @@
       "tags": []
     },
     {
+      "id": "onltools-random-group-generator",
+      "rank": 137,
+      "name": "OnlTools Random Group Generator",
+      "url": "https://onltools.com/random-group-generator",
+      "bestFor": "Simple online random groups with by-size and by-number modes",
+      "summary": "OnlTools Random Group Generator is a basic random grouping utility. It accepts a pasted list, supports grouping by size or by number of groups, and displays generated Group1/Group2-style results. It is free and easy, but output is display-only and there are no balancing rules, constraints, saved rosters, or repeat controls.",
+      "pricing": "Free web tool. No account required.",
+      "overallRating": 2.8,
+      "overallComment": "A solid simple randomizer with both count and size modes. Nothing advanced, but it works.",
+      "ratings": {
+        "easeOfUse": 4.0,
+        "design": 3.0,
+        "features": 1.8,
+        "outputs": 1.0,
+        "privacy": 2.6,
+        "accountFriction": 5.0,
+        "resultQuality": 2.2
+      },
+      "ratingComments": {
+        "easeOfUse": "Paste names, choose by size or by number, and generate.",
+        "design": "Plain but readable utility-page layout.",
+        "features": "By-size and by-number modes are useful basics only.",
+        "outputs": "Display-only results; no copy, download, print, or CSV controls.",
+        "privacy": "No account and the page claims not to store input, but session cookies and Google Analytics are present.",
+        "accountFriction": "No account required.",
+        "resultQuality": "Random groups only, no constraints or quality diagnostics."
+      },
+      "features": {
+        "API/programmatic access": "no",
+        "Attribute balance constraints": "no",
+        "Attribute total/sum constraints": "no",
+        "Copy results to clipboard": "no",
+        "Custom group capacities": "partial",
+        "Deterministic seed / reproducibility": "no",
+        "Editable/random team names": "no",
+        "Embeddable results": "no",
+        "Excel export": "no",
+        "Fixed person placement": "no",
+        "Gender/label balancing": "no",
+        "Google Sheets import": "no",
+        "Hard keep-apart constraints": "no",
+        "Hard keep-together constraints": "no",
+        "Image/PDF export": "no",
+        "Minimum group sizes": "no",
+        "Multiple rounds/sessions": "no",
+        "No account required": "yes",
+        "Pair meeting count targets": "no",
+        "Pair meeting matrix": "no",
+        "Partial attendance by session": "no",
+        "Paste names": "yes",
+        "Per-session capacities": "no",
+        "Per-session constraints": "no",
+        "Person/group visit count constraints": "no",
+        "Pinned people / fixed placements": "no",
+        "Presentation/full-screen mode": "no",
+        "Repeat encounter limits": "no",
+        "Result comments": "no",
+        "Result quality diagnostics": "no",
+        "Runs in browser": "partial",
+        "Saved class roster import": "no",
+        "Saved participant/team lists": "no",
+        "Saved result history": "no",
+        "Saved scenarios/workspaces": "no",
+        "Scenario import/export bundle": "no",
+        "Self-join participant link": "no",
+        "Shareable result links": "no",
+        "Soft prefer-apart constraints": "no",
+        "Soft prefer-together constraints": "no",
+        "Solver telemetry/result metadata": "no",
+        "Solver tuning controls": "no",
+        "Spreadsheet CSV export": "no",
+        "Spreadsheet CSV import": "no",
+        "Storage management/cleanup": "no",
+        "Team leader / representative assignment": "no",
+        "Unique-contact optimization": "no",
+        "Visual/theme customization": "no",
+        "Weighted random entries": "no",
+        "Weighted soft constraints": "no",
+        "Zoom breakout CSV import/export": "no"
+      },
+      "pros": [
+        "No account required",
+        "Paste names",
+        "Group by size",
+        "Group by number",
+        "Multilingual site",
+        "Fast result display"
+      ],
+      "cons": [
+        "No copy/export controls",
+        "No constraints",
+        "No balancing",
+        "No repeat avoidance",
+        "Generic utility-site design"
+      ],
+      "reviewNote": "Good enough for maximum coverage as a functioning no-account random group utility.",
+      "tags": []
+    },
+    {
       "id": "paji-lots-team-grouping",
-      "rank": 136,
+      "rank": 138,
       "name": "Paji Lots Team Grouping",
       "url": "https://toolset.marco79423.net/en/random-group-generator",
       "bestFor": "Browser-side random team grouping with CSPRNG",
@@ -13911,7 +14110,7 @@
     },
     {
       "id": "pradoy-random-team-generator",
-      "rank": 137,
+      "rank": 139,
       "name": "Pradoy Random Team Generator",
       "url": "https://www.pradoy.com/random-team-generator",
       "bestFor": "Random teams with max-size mode and themed team names",
@@ -14010,7 +14209,7 @@
     },
     {
       "id": "random-group-generator-chrome-extension",
-      "rank": 138,
+      "rank": 140,
       "name": "Random Group Generator Chrome Extension",
       "url": "https://chromewebstore.google.com/detail/random-group-generator/ahdimffafoiopfpheklpnkmepibagijl",
       "bestFor": "Chrome extension for Excel/CSV random groups",
@@ -14110,7 +14309,7 @@
     },
     {
       "id": "random-team-generator-android-app",
-      "rank": 139,
+      "rank": 141,
       "name": "Random Team Generator Android App",
       "url": "https://play.google.com/store/apps/details?id=com.argonremote.randomteamgenerator&hl=en",
       "bestFor": "Android team generator with group management and manual assignment",
@@ -14210,7 +14409,7 @@
     },
     {
       "id": "randomlists-top-team-generator",
-      "rank": 140,
+      "rank": 142,
       "name": "RandomLists.top Team Generator",
       "url": "https://randomlists.top/team-generator/",
       "bestFor": "Simple large-list random teams with rename, upload, copy, and save",
@@ -14311,7 +14510,7 @@
     },
     {
       "id": "randomlyfun-random-team-generator",
-      "rank": 141,
+      "rank": 143,
       "name": "RandomlyFun Random Team Generator",
       "url": "https://randomlyfun.app/tools/random-team-generator",
       "bestFor": "Casual 2–6 team splits with reroll/copy/share",
@@ -14411,7 +14610,7 @@
     },
     {
       "id": "spinpickonline-team-picker",
-      "rank": 142,
+      "rank": 144,
       "name": "SpinPickOnline Team Picker",
       "url": "https://www.spinpickonline.com/team-picker",
       "bestFor": "Wheel-styled team generation with bulk add, regenerate, and share results",
@@ -14511,7 +14710,7 @@
     },
     {
       "id": "the-decider-team-generator",
-      "rank": 143,
+      "rank": 145,
       "name": "The Decider Team Generator",
       "url": "https://www.the-decider.com/team-generator",
       "bestFor": "Quick random teams with by-count/by-size mode, reshuffle, and copy",
@@ -14611,7 +14810,7 @@
     },
     {
       "id": "thunderbit-random-team-generator",
-      "rank": 144,
+      "rank": 146,
       "name": "Thunderbit Random Team Generator",
       "url": "https://thunderbit.com/tool/random-team-generator",
       "bestFor": "Quick random teams with CSV download if hosted processing and marketing funnel are acceptable",
@@ -14711,7 +14910,7 @@
     },
     {
       "id": "ud5-random-team-generator",
-      "rank": 145,
+      "rank": 147,
       "name": "UD5 Random Team Generator",
       "url": "https://www.ud5.com/tool/random-team-generator",
       "bestFor": "Simple local team splits with cleanup, custom prefix, history, and export menu",
@@ -14811,7 +15010,7 @@
     },
     {
       "id": "vertex42-random-group-generator-template",
-      "rank": 146,
+      "rank": 148,
       "name": "Vertex42 Random Group Generator Template",
       "url": "https://www.vertex42.com/ExcelTemplates/random-group-generator.html",
       "bestFor": "Spreadsheet users who want a downloadable Excel/Google Sheets random grouping template",
@@ -14913,7 +15112,7 @@
     },
     {
       "id": "yesnowheel-picker-random-team-generator",
-      "rank": 147,
+      "rank": 149,
       "name": "YesNoWheel Picker Random Team Generator",
       "url": "https://www.yesornowheelpicker.com/random-team-generator",
       "bestFor": "Basic browser-side random teams with bulk add and file import",
@@ -15013,7 +15212,7 @@
     },
     {
       "id": "classdojo-group-maker",
-      "rank": 148,
+      "rank": 150,
       "name": "ClassDojo Group Maker",
       "url": "https://www.classdojo.com/toolkit/groupmaker/",
       "bestFor": "Teachers already using ClassDojo who want quick classroom groups",
@@ -15115,7 +15314,7 @@
     },
     {
       "id": "codebeautify-random-team-generator",
-      "rank": 149,
+      "rank": 151,
       "name": "CodeBeautify Random Team Generator",
       "url": "https://codebeautify.org/random-team-generator",
       "bestFor": "Ad-supported quick random teams with per-team copy/download controls",
@@ -15215,7 +15414,7 @@
     },
     {
       "id": "fun-group-names-random-team-generator",
-      "rank": 150,
+      "rank": 152,
       "name": "Fun Group Names Random Team Generator",
       "url": "https://fungroupnames.com/random-team-generator/",
       "bestFor": "A content-site group randomizer if the embedded script works in your browser",
@@ -15317,7 +15516,7 @@
     },
     {
       "id": "group-assigner",
-      "rank": 151,
+      "rank": 153,
       "name": "Group Assigner",
       "url": "https://group-assigner.com/",
       "bestFor": "Quick classroom or workshop groups with random team names and focus mode",
@@ -15417,8 +15616,107 @@
       "tags": []
     },
     {
+      "id": "hypertoolbox-random-group-generator",
+      "rank": 154,
+      "name": "HyperToolbox Random Group Generator",
+      "url": "https://hypertoolbox.com/en/randomGrouping",
+      "bestFor": "Browser-side random grouping with group-count and members-per-group modes",
+      "summary": "HyperToolbox Random Group Generator accepts names, supports dividing by group count or by members per group, offers quick group-count buttons, and displays simple generated groups with a clear-result control. The surrounding site emphasizes local browser processing, but the page also loads advertising and analytics scripts. It is useful as a basic randomizer, not as a serious group planner.",
+      "pricing": "Free ad-supported web tool. No account required.",
+      "overallRating": 2.7,
+      "overallComment": "A competent basic random group splitter. Count/size modes are useful, but outputs and advanced features are weak.",
+      "ratings": {
+        "easeOfUse": 3.8,
+        "design": 3.0,
+        "features": 1.8,
+        "outputs": 1.0,
+        "privacy": 2.3,
+        "accountFriction": 5.0,
+        "resultQuality": 2.2
+      },
+      "ratingComments": {
+        "easeOfUse": "Textarea, mode selector, preset group-count buttons, Create Groups, and Clear Result are understandable.",
+        "design": "Clean enough, though navigation and ad slots add clutter.",
+        "features": "Group count and members-per-group modes only.",
+        "outputs": "Display-only results; no copy, download, CSV, or share controls.",
+        "privacy": "No account and local-processing claims, but Google ads/analytics and other third-party scripts are present.",
+        "accountFriction": "No account required.",
+        "resultQuality": "Random groups only, no constraints or balancing."
+      },
+      "features": {
+        "API/programmatic access": "no",
+        "Attribute balance constraints": "no",
+        "Attribute total/sum constraints": "no",
+        "Copy results to clipboard": "no",
+        "Custom group capacities": "partial",
+        "Deterministic seed / reproducibility": "no",
+        "Editable/random team names": "no",
+        "Embeddable results": "no",
+        "Excel export": "no",
+        "Fixed person placement": "no",
+        "Gender/label balancing": "no",
+        "Google Sheets import": "no",
+        "Hard keep-apart constraints": "no",
+        "Hard keep-together constraints": "no",
+        "Image/PDF export": "no",
+        "Minimum group sizes": "no",
+        "Multiple rounds/sessions": "no",
+        "No account required": "yes",
+        "Pair meeting count targets": "no",
+        "Pair meeting matrix": "no",
+        "Partial attendance by session": "no",
+        "Paste names": "yes",
+        "Per-session capacities": "no",
+        "Per-session constraints": "no",
+        "Person/group visit count constraints": "no",
+        "Pinned people / fixed placements": "no",
+        "Presentation/full-screen mode": "no",
+        "Repeat encounter limits": "no",
+        "Result comments": "no",
+        "Result quality diagnostics": "no",
+        "Runs in browser": "yes",
+        "Saved class roster import": "no",
+        "Saved participant/team lists": "no",
+        "Saved result history": "no",
+        "Saved scenarios/workspaces": "no",
+        "Scenario import/export bundle": "no",
+        "Self-join participant link": "no",
+        "Shareable result links": "no",
+        "Soft prefer-apart constraints": "no",
+        "Soft prefer-together constraints": "no",
+        "Solver telemetry/result metadata": "no",
+        "Solver tuning controls": "no",
+        "Spreadsheet CSV export": "no",
+        "Spreadsheet CSV import": "no",
+        "Storage management/cleanup": "no",
+        "Team leader / representative assignment": "no",
+        "Unique-contact optimization": "no",
+        "Visual/theme customization": "no",
+        "Weighted random entries": "no",
+        "Weighted soft constraints": "no",
+        "Zoom breakout CSV import/export": "no"
+      },
+      "pros": [
+        "No account required",
+        "Paste names",
+        "Group count mode",
+        "Members-per-group mode",
+        "Quick count buttons",
+        "Clear result"
+      ],
+      "cons": [
+        "No copy/export",
+        "No constraints",
+        "No balancing",
+        "No repeat avoidance",
+        "Ad and analytics scripts"
+      ],
+      "reviewNote": "The local-processing positioning is a plus, but the ad stack keeps privacy from rating highly.",
+      "tags": []
+    },
+    {
       "id": "nancy-s-hearth-random-team-generator",
-      "rank": 152,
+      "rank": 155,
       "name": "Nancy's Hearth Random Team Generator",
       "url": "https://teams.nancyshearth.com/",
       "bestFor": "Very simple random teams for virtual game nights",
@@ -15521,7 +15819,7 @@
     },
     {
       "id": "online-stopwatch-random-group-generator",
-      "rank": 153,
+      "rank": 156,
       "name": "Online Stopwatch Random Group Generator",
       "url": "https://www.online-stopwatch.com/random-group-generators/",
       "bestFor": "Classroom presentation-style random groups with animated reveals",
@@ -15625,7 +15923,7 @@
     },
     {
       "id": "randomtools-app-random-team-generator",
-      "rank": 154,
+      "rank": 157,
       "name": "RandomTools.app Random Team Generator",
       "url": "https://randomtools.app/random-team-generator/",
       "bestFor": "Simple random teams with copy output and recent-draw history",
@@ -15724,7 +16022,7 @@
     },
     {
       "id": "spin-numbers-make-random-teams",
-      "rank": 155,
+      "rank": 158,
       "name": "Spin Numbers Make Random Teams",
       "url": "https://www.spinumbers.com/make-random-teams/",
       "bestFor": "Quick local random team splits with copy-only output",
@@ -15826,7 +16124,7 @@
     },
     {
       "id": "super-teacher-tools-classroom-seating-groups",
-      "rank": 156,
+      "rank": 159,
       "name": "Super Teacher Tools Classroom Seating / Groups",
       "url": "https://www.superteachertools.us/instantclassroom/group-maker.php",
       "bestFor": "Teachers who want saved class rosters plus simple random classroom groups",
@@ -15926,7 +16224,7 @@
     },
     {
       "id": "teacher-commons-group-maker",
-      "rank": 157,
+      "rank": 160,
       "name": "Teacher Commons Group Maker",
       "url": "https://teachercommons.com/classroom-management-and-productivity-tools/group-maker",
       "bestFor": "Minimal classroom group maker from a teacher-tool site",
@@ -16026,7 +16324,7 @@
     },
     {
       "id": "ud5-team-randomizer",
-      "rank": 158,
+      "rank": 161,
       "name": "UD5 Team Randomizer",
       "url": "https://www.ud5.com/tool/team-randomizer",
       "bestFor": "Simple team randomizer with count/size modes and copy results",
@@ -16124,7 +16422,7 @@
     },
     {
       "id": "utilitykit-random-team-generator",
-      "rank": 159,
+      "rank": 162,
       "name": "UtilityKit Random Team Generator",
       "url": "https://utilitykit.tools/random-team-generator",
       "bestFor": "Simple browser-side random squads on a low-friction page",
@@ -16225,7 +16523,7 @@
     },
     {
       "id": "vibox-random-team-generator",
-      "rank": 160,
+      "rank": 163,
       "name": "Vibox Random Team Generator",
       "url": "https://vibox.app/tools/fun/team.html",
       "bestFor": "Tiny no-account random team splitting with team-count or people-per-team mode",
@@ -16327,7 +16625,7 @@
     },
     {
       "id": "visualtimer-random-group-generator",
-      "rank": 161,
+      "rank": 164,
       "name": "VisualTimer Random Group Generator",
       "url": "https://visualtimer.com/tools/random-group-generator/",
       "bestFor": "Simple classroom random groups with reveal mode",
@@ -16428,7 +16726,7 @@
     },
     {
       "id": "webby-student-group-generator",
-      "rank": 162,
+      "rank": 165,
       "name": "Webby Student Group Generator",
       "url": "https://webby.tools/student-group-generator/",
       "bestFor": "Quick classroom random groups with printable PDF output",
@@ -16526,7 +16824,7 @@
     },
     {
       "id": "wordmint-random-group-generator",
-      "rank": 163,
+      "rank": 166,
       "name": "WordMint Random Group Generator",
       "url": "https://wordmint.com/random-group-generator",
       "bestFor": "Simple classroom groups with a copy-to-clipboard button",
@@ -16625,7 +16923,7 @@
     },
     {
       "id": "euan-riggans-team-builder",
-      "rank": 164,
+      "rank": 167,
       "name": "Euan Riggans Team Builder",
       "url": "https://teambuilder.euanriggans.com/",
       "bestFor": "Tiny local random team splitting with save/load for the roster",
@@ -16728,7 +17026,7 @@
     },
     {
       "id": "fotify-speed-dating-event-planner",
-      "rank": 165,
+      "rank": 168,
       "name": "Fotify Speed Dating Event Planner",
       "url": "https://fotify.app/tools/speed-dating-event-planner/",
       "bestFor": "Quick speed-dating event timing plans",
@@ -16828,7 +17126,7 @@
     },
     {
       "id": "games4esl-random-group-generator",
-      "rank": 166,
+      "rank": 169,
       "name": "Games4esl Random Group Generator",
       "url": "https://games4esl.com/teacher-tools/random-group-generator/",
       "bestFor": "Teachers who want quick random classroom groups and a printable PDF",
@@ -16931,7 +17229,7 @@
     },
     {
       "id": "rakkotools-random-group-generator",
-      "rank": 167,
+      "rank": 170,
       "name": "RakkoTools Random Group Generator",
       "url": "https://en.rakko.tools/tools/59/",
       "bestFor": "Basic random groups with CSV export",
@@ -17032,7 +17330,7 @@
     },
     {
       "id": "randomhub-random-group-generator",
-      "rank": 168,
+      "rank": 171,
       "name": "RandomHub Random Group Generator",
       "url": "https://randomhub.io/random-group-generator",
       "bestFor": "Minimal no-account random group splits with copy output",
@@ -17130,7 +17428,7 @@
     },
     {
       "id": "randomtools-io-team-generator",
-      "rank": 169,
+      "rank": 172,
       "name": "RandomTools.io Team Generator",
       "url": "https://randomtools.io/teams-generator",
       "bestFor": "Ad-supported random team splitter with copy, print, and Excel export claims",
@@ -17229,7 +17527,7 @@
     },
     {
       "id": "spinthewheel-io-team-draw-generator",
-      "rank": 170,
+      "rank": 173,
       "name": "SpinTheWheel.io Team Draw Generator",
       "url": "https://spinthewheel.io/de/team-draw-generator",
       "bestFor": "Randomly pairing teams from two pots, not forming teams from people",
@@ -17330,7 +17628,7 @@
     },
     {
       "id": "teacher-toolset-random-group-maker",
-      "rank": 171,
+      "rank": 174,
       "name": "Teacher Toolset Random Group Maker",
       "url": "https://www.teacher-toolset.online/en/onlinetools/group-maker",
       "bestFor": "Classroom random groups when teachers can add/import a roster and export text",
@@ -17429,7 +17727,7 @@
     },
     {
       "id": "teachquill-classroom-group-generator",
-      "rank": 172,
+      "rank": 175,
       "name": "TeachQuill Classroom Group Generator",
       "url": "https://teachquill.com/classroom-group-generator",
       "bestFor": "AI-assisted classroom grouping drafts from natural-language constraints",
@@ -17529,7 +17827,7 @@
     },
     {
       "id": "toolita-team-picker",
-      "rank": 173,
+      "rank": 176,
       "name": "Toolita Team Picker",
       "url": "https://toolita.com/decision/team-picker/",
       "bestFor": "Casual random teams or fixed-size groups when ad/cookie load is acceptable",
@@ -17627,7 +17925,7 @@
     },
     {
       "id": "versakit-group-generator",
-      "rank": 174,
+      "rank": 177,
       "name": "Versakit Group Generator",
       "url": "https://versakit.net/generators/group",
       "bestFor": "Clean no-account random groups with copy/text download",
@@ -17731,7 +18029,7 @@
     },
     {
       "id": "wheel-of-decision-team-generator",
-      "rank": 175,
+      "rank": 178,
       "name": "Wheel of Decision Team Generator",
       "url": "https://wheelofdecision.com/tool/team-generator/",
       "bestFor": "Simple team generation with history/statistics and local participant state",
@@ -17830,7 +18128,7 @@
     },
     {
       "id": "agentcalc-random-team-generator",
-      "rank": 176,
+      "rank": 179,
       "name": "AgentCalc Random Team Generator",
       "url": "https://agentcalc.com/random-team-generator",
       "bestFor": "Educational simple random teams with clear algorithm explanation",
@@ -17928,7 +18226,7 @@
     },
     {
       "id": "comment-picker-random-team-generator",
-      "rank": 177,
+      "rank": 180,
       "name": "Comment Picker Random Team Generator",
       "url": "https://commentpicker.com/team-generator.php",
       "bestFor": "Basic random teams with stronger copy/print/Excel output",
@@ -18029,7 +18327,7 @@
     },
     {
       "id": "iotools-random-team-generator",
-      "rank": 178,
+      "rank": 181,
       "name": "IOTools Random Team Generator",
       "url": "https://iotools.cloud/tool/random-generator/random-team-generator/",
       "bestFor": "Basic random teams with duplicate removal, file import, copy buttons, and a client-side workflow",
@@ -18130,7 +18428,7 @@
     },
     {
       "id": "piliapp-random-team-generator",
-      "rank": 179,
+      "rank": 182,
       "name": "PiliApp Random Team Generator",
       "url": "https://pili.app/random/team/",
       "bestFor": "Localized simple team splitting with copy and saved session data",
@@ -18230,7 +18528,7 @@
     },
     {
       "id": "random-choice-generator-random-team-generator",
-      "rank": 180,
+      "rank": 183,
       "name": "Random Choice Generator Random Team Generator",
       "url": "https://randomchoicegenerator.com/random-team-generator/",
       "bestFor": "Very simple browser team splitting with shareable name-list URLs",
@@ -18332,7 +18630,7 @@
     },
     {
       "id": "random-team-generator-github-app",
-      "rank": 181,
+      "rank": 184,
       "name": "Random Team Generator GitHub App",
       "url": "https://randomteamgenerator.github.io/input.html",
       "bestFor": "Open-source, no-account random teams when privacy and simplicity matter more than features",
@@ -18435,7 +18733,7 @@
     },
     {
       "id": "randomgenerator-com-au-random-group-generator",
-      "rank": 182,
+      "rank": 185,
       "name": "RandomGenerator.com.au Random Group Generator",
       "url": "https://www.randomgenerator.com.au/random-group-generator",
       "bestFor": "Basic target-group-size grouping with copy-all output",
@@ -18536,7 +18834,7 @@
     },
     {
       "id": "randomgroupgenerator-co",
-      "rank": 183,
+      "rank": 186,
       "name": "RandomGroupGenerator.co",
       "url": "https://randomgroupgenerator.co/",
       "bestFor": "A clean, private, one-screen random split when exports do not matter",
@@ -18639,7 +18937,7 @@
     },
     {
       "id": "randotools-random-team-generator",
-      "rank": 184,
+      "rank": 187,
       "name": "RandoTools Random Team Generator",
       "url": "https://randotools.app/random-team-generator/",
       "bestFor": "Quick private-ish two-mode team splitting with per-team copy",
@@ -18739,7 +19037,7 @@
     },
     {
       "id": "spinthenamepicker-team-generator",
-      "rank": 185,
+      "rank": 188,
       "name": "SpinTheNamePicker Team Generator",
       "url": "https://spinthenamepicker.com/pages/team-generator.html",
       "bestFor": "Quick sports/classroom team splits with equal-size or random-size mode",
@@ -18837,7 +19135,7 @@
     },
     {
       "id": "the-word-finder-random-group-generator",
-      "rank": 186,
+      "rank": 189,
       "name": "The Word Finder Random Group Generator",
       "url": "https://www.thewordfinder.com/random-group-generator/",
       "bestFor": "Basic random groups with duplicate removal and custom group title fields",
@@ -18937,7 +19235,7 @@
     },
     {
       "id": "a-school-random-pair-generator",
-      "rank": 187,
+      "rank": 190,
       "name": "A School Random Pair Generator",
       "url": "https://www.aschool.us/random/random-pair.php",
       "bestFor": "Very basic classroom random groups with max-size or group-count modes",
@@ -19035,7 +19333,7 @@
     },
     {
       "id": "addressgenerator-random-team-generator",
-      "rank": 188,
+      "rank": 191,
       "name": "AddressGenerator Random Team Generator",
       "url": "https://addressgenerator.app/random-team-generator",
       "bestFor": "Basic ad-supported random team generator",
@@ -19135,7 +19433,7 @@
     },
     {
       "id": "classtools24-random-group-generator",
-      "rank": 189,
+      "rank": 192,
       "name": "ClassTools24 Random Group Generator",
       "url": "https://classtools24.com/random-group-generator/",
       "bestFor": "Simple random groups with fullscreen display and basic click-to-copy behavior",
@@ -19237,7 +19535,7 @@
     },
     {
       "id": "gigacalculator-random-team-generator",
-      "rank": 190,
+      "rank": 193,
       "name": "GIGAcalculator Random Team Generator",
       "url": "https://www.gigacalculator.com/randomizers/random-team-generator.php",
       "bestFor": "Quick random sports/team splits when per-team copy is enough",
@@ -19338,7 +19636,7 @@
     },
     {
       "id": "picker-online-wheel-team-picker",
-      "rank": 191,
+      "rank": 194,
       "name": "Picker Online Wheel Team Picker",
       "url": "https://pickeronlinewheel.com/random-team-generator/",
       "bestFor": "Simple multi-step random team wheel with custom team-name positioning",
@@ -19437,8 +19735,108 @@
       ]
     },
     {
+      "id": "random-generator-tools-random-group-generator",
+      "rank": 195,
+      "name": "Random Generator Tools Random Group Generator",
+      "url": "https://randomgeneratortools.com/random-group-generator/",
+      "bestFor": "Tiny people-per-group random splitter with paste input",
+      "summary": "Random Generator Tools Random Group Generator is a minimal page for splitting pasted names into random groups by people per group. It works and is easy to understand, but there is no group-count mode, no copy/export, no constraints, no balancing, and no result-management workflow.",
+      "pricing": "Free web tool. No account required.",
+      "overallRating": 2.4,
+      "overallComment": "A functioning but very bare random group generator. Useful only for the simplest splits.",
+      "ratings": {
+        "easeOfUse": 3.9,
+        "design": 2.6,
+        "features": 1.4,
+        "outputs": 1.0,
+        "privacy": 2.8,
+        "accountFriction": 5.0,
+        "resultQuality": 2.0
+      },
+      "ratingComments": {
+        "easeOfUse": "Paste names, enter people per group, generate.",
+        "design": "Plain WordPress-style utility page.",
+        "features": "People-per-group randomization only.",
+        "outputs": "Display-only results with no copy/download controls.",
+        "privacy": "No account and only light observed analytics, but the privacy policy is generic.",
+        "accountFriction": "No account required.",
+        "resultQuality": "Random groups by size only, no balancing or constraints."
+      },
+      "features": {
+        "API/programmatic access": "no",
+        "Attribute balance constraints": "no",
+        "Attribute total/sum constraints": "no",
+        "Copy results to clipboard": "no",
+        "Custom group capacities": "partial",
+        "Deterministic seed / reproducibility": "no",
+        "Editable/random team names": "no",
+        "Embeddable results": "no",
+        "Excel export": "no",
+        "Fixed person placement": "no",
+        "Gender/label balancing": "no",
+        "Google Sheets import": "no",
+        "Hard keep-apart constraints": "no",
+        "Hard keep-together constraints": "no",
+        "Image/PDF export": "no",
+        "Minimum group sizes": "no",
+        "Multiple rounds/sessions": "no",
+        "No account required": "yes",
+        "Pair meeting count targets": "no",
+        "Pair meeting matrix": "no",
+        "Partial attendance by session": "no",
+        "Paste names": "yes",
+        "Per-session capacities": "no",
+        "Per-session constraints": "no",
+        "Person/group visit count constraints": "no",
+        "Pinned people / fixed placements": "no",
+        "Presentation/full-screen mode": "no",
+        "Repeat encounter limits": "no",
+        "Result comments": "no",
+        "Result quality diagnostics": "no",
+        "Runs in browser": "yes",
+        "Saved class roster import": "no",
+        "Saved participant/team lists": "no",
+        "Saved result history": "no",
+        "Saved scenarios/workspaces": "no",
+        "Scenario import/export bundle": "no",
+        "Self-join participant link": "no",
+        "Shareable result links": "no",
+        "Soft prefer-apart constraints": "no",
+        "Soft prefer-together constraints": "no",
+        "Solver telemetry/result metadata": "no",
+        "Solver tuning controls": "no",
+        "Spreadsheet CSV export": "no",
+        "Spreadsheet CSV import": "no",
+        "Storage management/cleanup": "no",
+        "Team leader / representative assignment": "no",
+        "Unique-contact optimization": "no",
+        "Visual/theme customization": "no",
+        "Weighted random entries": "no",
+        "Weighted soft constraints": "no",
+        "Zoom breakout CSV import/export": "no"
+      },
+      "pros": [
+        "No account required",
+        "Paste names",
+        "People-per-group mode",
+        "Fast simple results"
+      ],
+      "cons": [
+        "No group-count mode",
+        "No copy/export",
+        "No constraints",
+        "No balancing",
+        "No repeat avoidance",
+        "Very basic UI"
+      ],
+      "reviewNote": "Include for coverage only; it is weaker than most textarea-based randomizers with copy/export.",
+      "tags": [
+        "basic-randomizer"
+      ]
+    },
+    {
       "id": "saroj-meher-random-group-generator",
-      "rank": 192,
+      "rank": 196,
       "name": "Saroj Meher Random Group Generator",
       "url": "https://www.sarojmeher.com/tools/random-group-generator/",
       "bestFor": "Decorated random group output with color and image download options",
@@ -19538,7 +19936,7 @@
     },
     {
       "id": "ta-easy-random-group",
-      "rank": 193,
+      "rank": 197,
       "name": "TA Easy Random Group",
       "url": "https://www.ta-easy.com/random-group/en",
       "bestFor": "Very simple no-account random groups when export and rules do not matter",
@@ -19636,7 +20034,7 @@
     },
     {
       "id": "toolprime-random-team-generator",
-      "rank": 194,
+      "rank": 198,
       "name": "ToolPrime Random Team Generator",
       "url": "https://toolprime.com/random-team-generator",
       "bestFor": "Basic random teams with TXT download",
@@ -19738,7 +20136,7 @@
     },
     {
       "id": "university-of-edinburgh-group-allocator",
-      "rank": 195,
+      "rank": 199,
       "name": "University of Edinburgh Group Allocator",
       "url": "https://static.sps.ed.ac.uk/groupallocator/",
       "bestFor": "Bare-bones random groups with CSV download",
@@ -19842,7 +20240,7 @@
     },
     {
       "id": "wheelzify-random-team-generator-wheel",
-      "rank": 196,
+      "rank": 200,
       "name": "Wheelzify Random Team Generator Wheel",
       "url": "https://www.wheelzify.com/random-team-generator/",
       "bestFor": "Presentation-style wheel-based team picking rather than one-click team splitting",
@@ -19940,7 +20338,7 @@
     },
     {
       "id": "commontools-random-team-generator",
-      "rank": 197,
+      "rank": 201,
       "name": "CommonTools Random Team Generator",
       "url": "https://www.commontools.org/tool/random-team-generator-124",
       "bestFor": "Basic random groups with TXT download",
@@ -20043,7 +20441,7 @@
     },
     {
       "id": "effie-random-group-generator",
-      "rank": 198,
+      "rank": 202,
       "name": "Effie Random Group Generator",
       "url": "https://www.effie.pro/free-tools/random-group-generator",
       "bestFor": "A quick no-account two-or-more group split on Effie’s site",
@@ -20144,7 +20542,7 @@
     },
     {
       "id": "flippity-random-name-picker",
-      "rank": 199,
+      "rank": 203,
       "name": "Flippity Random Name Picker",
       "url": "https://www.flippity.net/v2/RandomNamePicker.htm",
       "bestFor": "Spreadsheet-backed classroom grouping and quick random teams",
@@ -20245,7 +20643,7 @@
     },
     {
       "id": "generatormix-random-team-generator",
-      "rank": 200,
+      "rank": 204,
       "name": "GeneratorMix Random Team Generator",
       "url": "https://www.generatormix.com/random-team-generator",
       "bestFor": "Very basic random team splitter on a generator directory site",
@@ -20346,7 +20744,7 @@
     },
     {
       "id": "icebreaker-games-random-group-generator",
-      "rank": 201,
+      "rank": 205,
       "name": "Icebreaker Games Random Group Generator",
       "url": "https://icebreaker-games.org/random-group-generator",
       "bestFor": "Fast icebreaker groups when copy-only output is enough",
@@ -20443,7 +20841,7 @@
     },
     {
       "id": "openeducat-ai-group-generator",
-      "rank": 202,
+      "rank": 206,
       "name": "OpenEduCat AI Group Generator",
       "url": "https://openeducat.org/ai/tools/group-generator/",
       "bestFor": "Institutions already evaluating OpenEduCat, not quick public grouping",
@@ -20545,7 +20943,7 @@
     },
     {
       "id": "randthings-random-team-generator",
-      "rank": 203,
+      "rank": 207,
       "name": "RandThings Random Team Generator",
       "url": "https://randthings.com/team-generator/",
       "bestFor": "No-frills random teams from pasted names",
@@ -20645,7 +21043,7 @@
     },
     {
       "id": "soulatools-random-picker-team-picker",
-      "rank": 204,
+      "rank": 208,
       "name": "SoulATools Random Picker / Team Picker",
       "url": "https://soulatools.com/random-picker/",
       "bestFor": "Casual team splitting inside a broader random-picker tool",
@@ -20743,7 +21141,7 @@
     },
     {
       "id": "spinwheelnames-random-team-generator",
-      "rank": 205,
+      "rank": 209,
       "name": "SpinWheelNames Random Team Generator",
       "url": "https://spinwheelnames.com/random-team-generator",
       "bestFor": "Wheel-based visual team assignment",
@@ -20844,7 +21242,7 @@
     },
     {
       "id": "warren-institute-random-groups-generator",
-      "rank": 206,
+      "rank": 210,
       "name": "Warren Institute Random Groups Generator",
       "url": "https://warreninstitute.org/tools/random-groups-generator.html",
       "bestFor": "Bare-bones classroom/team random grouping",
@@ -20944,7 +21342,7 @@
     },
     {
       "id": "alien-fusion-generator-random-group-generator",
-      "rank": 207,
+      "rank": 211,
       "name": "Alien Fusion Generator Random Group Generator",
       "url": "https://alienfusiongenerator.com/random-group-generator/",
       "bestFor": "Basic random groups with copy/download on an ad-heavy page",
@@ -21045,7 +21443,7 @@
     },
     {
       "id": "applorium-random-group-generator",
-      "rank": 208,
+      "rank": 212,
       "name": "Applorium Random Group Generator",
       "url": "https://applorium.com/blog/random-group-generator/",
       "bestFor": "One-off random teams on a quiet, low-friction blog page",
@@ -21147,7 +21545,7 @@
     },
     {
       "id": "flexos-random-group-generator",
-      "rank": 209,
+      "rank": 213,
       "name": "FlexOS Random Group Generator",
       "url": "https://www.flexos.work/tools/random-group-generator-easy-fast-team-sorting",
       "bestFor": "Tiny comma-separated team splits on a future-of-work blog page",
@@ -21248,7 +21646,7 @@
     },
     {
       "id": "groupgenerator-top",
-      "rank": 210,
+      "rank": 214,
       "name": "GroupGenerator.top",
       "url": "https://www.groupgenerator.top/",
       "bestFor": "Trying a simple random split with experimental AI-style instructions",
@@ -21349,7 +21747,7 @@
     },
     {
       "id": "homeschool-of-1-random-team-generator",
-      "rank": 211,
+      "rank": 215,
       "name": "Homeschool of 1 Random Team Generator",
       "url": "https://www.homeschoolof1.com/random-team-generator/",
       "bestFor": "Embedded classroom/homeschool team splitter inside an ad-heavy article",
@@ -21449,7 +21847,7 @@
     },
     {
       "id": "miniwebtool-random-group-generator",
-      "rank": 212,
+      "rank": 216,
       "name": "MiniWebTool Random Group Generator",
       "url": "https://miniwebtool.com/random-group-generator/",
       "bestFor": "Fast basic web groups with arbitrary group size or team count",
@@ -21548,7 +21946,7 @@
     },
     {
       "id": "online-stopwatch-random-magic-hat-group-generator",
-      "rank": 213,
+      "rank": 217,
       "name": "Online Stopwatch Random Magic Hat Group Generator",
       "url": "https://www.online-stopwatch.com/random-group-generators/random-magic-hat-group-generator/",
       "bestFor": "Classroom display novelty when animated sorting matters more than features",
@@ -21649,7 +22047,7 @@
     },
     {
       "id": "pickja-random-group-generator",
-      "rank": 214,
+      "rank": 218,
       "name": "PickJa Random Group Generator",
       "url": "https://pickja.com/tools/random-group-generator",
       "bestFor": "Quick no-account random groups with group-count or members-per-group mode",
@@ -21747,7 +22145,7 @@
     },
     {
       "id": "quizbreaker-team-generator",
-      "rank": 215,
+      "rank": 219,
       "name": "QuizBreaker Team Generator",
       "url": "https://www.quizbreaker.com/team-generator",
       "bestFor": "Not recommended; basic space-separated random teams on a QuizBreaker marketing page",
@@ -21848,7 +22246,7 @@
     },
     {
       "id": "random-group-generator-chrome-extension-2",
-      "rank": 216,
+      "rank": 220,
       "name": "Random Group Generator Chrome Extension",
       "url": "https://chromewebstore.google.com/detail/random-group-generator/njpbladpjfebkonnclifnjapepbigmbg?hl=en",
       "bestFor": "Chrome users who want a tiny local random-group popup",
@@ -21950,7 +22348,7 @@
     },
     {
       "id": "random-group-generator-firefox-add-on",
-      "rank": 217,
+      "rank": 221,
       "name": "Random Group Generator Firefox Add-on",
       "url": "https://addons.mozilla.org/en-US/firefox/addon/random-group-generator/",
       "bestFor": "Firefox add-on for simple locally saved random groups",
@@ -22051,7 +22449,7 @@
     },
     {
       "id": "randomgenerate-io-random-team-generator",
-      "rank": 218,
+      "rank": 222,
       "name": "RandomGenerate.io Random Team Generator",
       "url": "https://randomgenerate.io/random-team-generator",
       "bestFor": "Basic random teams on a general random-generator site",
@@ -22151,7 +22549,7 @@
     },
     {
       "id": "randomlists-random-team-generator",
-      "rank": 219,
+      "rank": 223,
       "name": "RandomLists Random Team Generator",
       "url": "https://www.randomlists.com/team-generator",
       "bestFor": "Simple random teams from a pasted list",
@@ -22254,7 +22652,7 @@
     },
     {
       "id": "randomready-random-group-generator",
-      "rank": 220,
+      "rank": 224,
       "name": "RandomReady Random Group Generator",
       "url": "https://www.randomready.com/random-group-generator/",
       "bestFor": "Very simple random group splits",
@@ -22354,7 +22752,7 @@
     },
     {
       "id": "spin-the-crocodile-team-picker",
-      "rank": 221,
+      "rank": 225,
       "name": "Spin the Crocodile Team Picker",
       "url": "https://spinthecrocodile.com/team-picker",
       "bestFor": "Visual team-member picker for captains, roles, and small classroom/team selections",
@@ -22455,7 +22853,7 @@
     },
     {
       "id": "ultimatesolver-random-groups",
-      "rank": 222,
+      "rank": 226,
       "name": "UltimateSolver Random Groups",
       "url": "https://www.ultimatesolver.com/en/random-groups",
       "bestFor": "Privacy-conscious basic random groups with cryptographic server randomness",
@@ -22557,7 +22955,7 @@
     },
     {
       "id": "heyspinner",
-      "rank": 223,
+      "rank": 227,
       "name": "HeySpinner",
       "url": "https://heyspinner.com/",
       "bestFor": "Public wheel spins when you want a visual random picker, not automatic team splitting",
@@ -22659,7 +23057,7 @@
     },
     {
       "id": "ileren-groepenmaker",
-      "rank": 224,
+      "rank": 228,
       "name": "iLeren Groepenmaker",
       "url": "https://ileren.be/apps/groepenmaker/index.html",
       "bestFor": "Dutch-speaking teachers who need a tiny no-account classroom splitter",
@@ -22761,7 +23159,7 @@
     },
     {
       "id": "imagecompresser-random-team-generator",
-      "rank": 225,
+      "rank": 229,
       "name": "ImageCompresser Random Team Generator",
       "url": "https://imagecompresser.com/random-team-generator",
       "bestFor": "Basic random teams on an ad-supported utility site",
@@ -22860,7 +23258,7 @@
     },
     {
       "id": "mega-seating-plan-free-random-group-maker",
-      "rank": 226,
+      "rank": 230,
       "name": "Mega Seating Plan Free Random Group Maker",
       "url": "https://www.seatingplan.com/tools/groupmaker",
       "bestFor": "Teachers who already use Seating Plan class lists",
@@ -22958,7 +23356,7 @@
     },
     {
       "id": "microapp-team-generator",
-      "rank": 227,
+      "rank": 231,
       "name": "Microapp Team Generator",
       "url": "https://microapp.io/team-generator/",
       "bestFor": "A minimal team split if you tolerate the consent wall",
@@ -23056,7 +23454,7 @@
     },
     {
       "id": "my2lbox-random-group-generator",
-      "rank": 228,
+      "rank": 232,
       "name": "My2lbox Random Group Generator",
       "url": "https://my2lbox.com/en/random-group-generator",
       "bestFor": "Tiny random or level-weighted groups when privacy/ad-tech tradeoffs are acceptable",
@@ -23158,7 +23556,7 @@
     },
     {
       "id": "random-teams-generator-android-app",
-      "rank": 229,
+      "rank": 233,
       "name": "Random Teams Generator Android App",
       "url": "https://play.google.com/store/apps/details?id=com.dev.simonedipaolo.randomteamsgenerator&hl=en_US",
       "bestFor": "Simple Android random teams with generated names and flags",
@@ -23257,7 +23655,7 @@
     },
     {
       "id": "randomteams-net",
-      "rank": 230,
+      "rank": 234,
       "name": "RandomTeams.net",
       "url": "https://www.randomteams.net/",
       "bestFor": "Very simple team-size splitting with generated funny team names",
@@ -23358,7 +23756,7 @@
     },
     {
       "id": "repixify-random-team-generator",
-      "rank": 231,
+      "rank": 235,
       "name": "Repixify Random Team Generator",
       "url": "https://www.repixify.com/tools/random-team-generator",
       "bestFor": "Users who specifically want leader markers and custom team names and do not care about ad-tech",
@@ -23459,7 +23857,7 @@
     },
     {
       "id": "1minusbeta-name-group-generator",
-      "rank": 232,
+      "rank": 236,
       "name": "1minusbeta Name Group Generator",
       "url": "https://1minusbeta.com/name-group-generator",
       "bestFor": "Ultra-minimal name grouping",
@@ -23562,7 +23960,7 @@
     },
     {
       "id": "bestrandoms-random-team-generator",
-      "rank": 233,
+      "rank": 237,
       "name": "BestRandoms Random Team Generator",
       "url": "https://www.bestrandoms.com/random-team-generator",
       "bestFor": "Very basic ad-supported random group generation",
@@ -23661,7 +24059,7 @@
     },
     {
       "id": "breno-design-group-generator",
-      "rank": 234,
+      "rank": 238,
       "name": "Breno Design Group Generator",
       "url": "https://www.breno.design/design-tool/group-generator",
       "bestFor": "Small rosters where you want to click-select names and make quick visual groups",
@@ -23763,7 +24161,7 @@
     },
     {
       "id": "calculate-co-nz-random-team-generator",
-      "rank": 235,
+      "rank": 239,
       "name": "Calculate.co.nz Random Team Generator",
       "url": "https://www.calculate.co.nz/random-team-generator.php",
       "bestFor": "One-off random teams when page-only output is enough",
@@ -23863,7 +24261,7 @@
     },
     {
       "id": "gospinwheel-random-group-generator",
-      "rank": 236,
+      "rank": 240,
       "name": "GoSpinWheel Random Group Generator",
       "url": "https://gospinwheel.com/random-group-generator",
       "bestFor": "Live wheel-based team assignment when presentation matters more than balanced rosters",
@@ -23965,7 +24363,7 @@
     },
     {
       "id": "pincalculator-random-group-generator",
-      "rank": 237,
+      "rank": 241,
       "name": "PinCalculator Random Group Generator",
       "url": "https://www.pincalculator.com/random-group-generator",
       "bestFor": "Tiny no-account random groups when one-by-one name entry is acceptable",
@@ -24066,7 +24464,7 @@
     },
     {
       "id": "randomcount-team-generator",
-      "rank": 238,
+      "rank": 242,
       "name": "RandomCount Team Generator",
       "url": "https://randomcount.in/teamgenerator",
       "bestFor": "Tiny groups where adding names one at a time is acceptable",
@@ -24168,7 +24566,7 @@
     },
     {
       "id": "terrific-tools-random-group-generator",
-      "rank": 239,
+      "rank": 243,
       "name": "Terrific Tools Random Group Generator",
       "url": "https://terrific.tools/randomizer/random-group-generator",
       "bestFor": "People who want a small browser tool with individual member entry and simple group-size controls",
@@ -24267,7 +24665,7 @@
     },
     {
       "id": "madeintext-random-group-generator",
-      "rank": 240,
+      "rank": 244,
       "name": "MadeInText Random Group Generator",
       "url": "https://www.madeintext.com/random-group-generator/",
       "bestFor": "Very simple one-off random groups when privacy does not matter",
@@ -24368,7 +24766,7 @@
     },
     {
       "id": "puretables-random-group-generator",
-      "rank": 241,
+      "rank": 245,
       "name": "PureTables Random Group Generator",
       "url": "https://puretables.com/random-group-generator",
       "bestFor": "Very basic page-only random teams",
@@ -24468,7 +24866,7 @@
     },
     {
       "id": "sheffield-hallam-tel-e-vision-group-maker",
-      "rank": 242,
+      "rank": 246,
       "name": "Sheffield Hallam TEL-e-vision Group Maker",
       "url": "https://teaching.shu.ac.uk/hwb/hwbtel/resources/TEL-e-vision/groupmaker.html",
       "bestFor": "Very quick no-account random classroom groups",
@@ -24569,7 +24967,7 @@
     },
     {
       "id": "web0-random-team-generator",
-      "rank": 243,
+      "rank": 247,
       "name": "Web0 Random Team Generator",
       "url": "https://www.web0.it/random/team/en",
       "bestFor": "Ultra-minimal local random groups",
@@ -24671,7 +25069,7 @@
     },
     {
       "id": "classtools-random-group-generator",
-      "rank": 244,
+      "rank": 248,
       "name": "ClassTools Random Group Generator",
       "url": "https://www.classtools.net/random-group-generator/",
       "bestFor": "Very quick classroom group splits",
@@ -24775,7 +25173,7 @@
     },
     {
       "id": "musely-team-builder-generator",
-      "rank": 245,
+      "rank": 249,
       "name": "Musely Team Builder Generator",
       "url": "https://musely.ai/tools/team-builder-generator",
       "bestFor": "Not recommended unless Musely verification works for the user",
@@ -24877,7 +25275,7 @@
     },
     {
       "id": "schule-dietmannsried-gruppen-generator",
-      "rank": 246,
+      "rank": 250,
       "name": "Schule Dietmannsried Gruppen Generator",
       "url": "https://www.schule-dietmannsried.de/gruppen/",
       "bestFor": "Bare-bones German classroom group splitting",
@@ -24979,7 +25377,7 @@
     },
     {
       "id": "wheel-decide-random-team-generator",
-      "rank": 247,
+      "rank": 251,
       "name": "Wheel Decide Random Team Generator",
       "url": "https://wheel-decide.com/randomteamgenerator.php",
       "bestFor": "Manual wheel-based team selection with add/remove segments",
@@ -25079,7 +25477,7 @@
     },
     {
       "id": "wheel-of-names",
-      "rank": 248,
+      "rank": 252,
       "name": "Wheel of Names",
       "url": "https://wheelofnames.com/",
       "bestFor": "Random picking, raffles, and manual group-building workarounds",
@@ -25180,7 +25578,7 @@
     },
     {
       "id": "ahaslides-random-team-generator",
-      "rank": 249,
+      "rank": 253,
       "name": "AhaSlides Random Team Generator",
       "url": "https://ahaslides.com/features/random-team-generator/",
       "bestFor": "AhaSlides users who already want random-team generation inside an interactive presentation workflow",
@@ -25280,7 +25678,7 @@
     },
     {
       "id": "basedlabs-random-team-generator-with-conditions",
-      "rank": 250,
+      "rank": 254,
       "name": "BasedLabs Random Team Generator with Conditions",
       "url": "https://www.basedlabs.ai/tools/random-team-generator-with-conditions",
       "bestFor": "Prompt ideas for AI-assisted grouping, not a structured group generator",
@@ -25380,7 +25778,7 @@
     },
     {
       "id": "freetexttools-random-team-generator",
-      "rank": 251,
+      "rank": 255,
       "name": "FreeTextTools Random Team Generator",
       "url": "https://www.freetexttools.org/random-team-generator/",
       "bestFor": "Feature-rich-looking team generator that did not produce visible teams in testing",
@@ -25478,7 +25876,7 @@
     },
     {
       "id": "basedlabs-random-group-generator",
-      "rank": 252,
+      "rank": 256,
       "name": "BasedLabs Random Group Generator",
       "url": "https://www.basedlabs.ai/tools/random-group-generator",
       "bestFor": "Prompt examples for AI group formation, not a dependable generator",
@@ -25578,7 +25976,7 @@
     },
     {
       "id": "wordwall-random-team-generator-resource",
-      "rank": 253,
+      "rank": 257,
       "name": "Wordwall Random Team Generator Resource",
       "url": "https://wordwall.net/resource/37278876/random-team-generator",
       "bestFor": "A prebuilt Wordwall spin-wheel activity, not a real group generator",
@@ -25678,7 +26076,7 @@
     },
     {
       "id": "decisionmakertool-team-picker",
-      "rank": 254,
+      "rank": 258,
       "name": "DecisionMakerTool Team Picker",
       "url": "https://www.decisionmakertool.com/team-picker",
       "bestFor": "A visual picker page, not a real team generator",
@@ -25776,7 +26174,7 @@
     },
     {
       "id": "teach-starter-random-name-picker",
-      "rank": 255,
+      "rank": 259,
       "name": "Teach Starter Random Name Picker",
       "url": "https://www.teachstarter.com/us/widget/random-name-picker-us/",
       "bestFor": "Picking one student at a time, not generating groups",
@@ -25876,7 +26274,7 @@
     },
     {
       "id": "remagineai-random-group-generator",
-      "rank": 256,
+      "rank": 260,
       "name": "RemagineAI Random Group Generator",
       "url": "https://remagineai.com/name-generator/random-group-generator",
       "bestFor": "Not recommended as a standalone group generator",
@@ -25974,7 +26372,7 @@
     },
     {
       "id": "huqiu-random-group-generator",
-      "rank": 257,
+      "rank": 261,
       "name": "Huqiu Random Group Generator",
       "url": "https://en.huqiu.com/random/random-group-generator.html",
       "bestFor": "Not recommended; page was inaccessible during review",
