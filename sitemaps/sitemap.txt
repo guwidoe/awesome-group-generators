@@ -1,0 +1,4 @@
+https://guwidoe.github.io/awesome-group-generators/
+https://guwidoe.github.io/awesome-group-generators/METHODOLOGY.md
+https://guwidoe.github.io/awesome-group-generators/data/tools.json
+https://guwidoe.github.io/awesome-group-generators/data/tools.csv

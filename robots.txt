@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://guwidoe.github.io/awesome-group-generators/sitemaps/sitemap.xml
+Sitemap: https://guwidoe.github.io/awesome-group-generators/sitemaps/sitemap.txt
