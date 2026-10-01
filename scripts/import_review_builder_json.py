@@ -226,7 +226,7 @@ def write_csv(tools: list[dict[str, Any]]) -> None:
         "tags",
     ]
     with path.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         for tool in tools:
             row = {
@@ -304,6 +304,7 @@ This repository publishes a review dataset, scoring methodology, correction work
 - [`docs/UPDATE_PASS_2026-09-22.md`](./docs/UPDATE_PASS_2026-09-22.md) — latest reviewed corrections and market intake
 - [`docs/REPEAT_AVOIDANCE_BENCHMARK_2026-09-22.md`](./docs/REPEAT_AVOIDANCE_BENCHMARK_2026-09-22.md) — measured TeamCreator and GroupMixer repeat avoidance
 - [`docs/INTERACTION_FEATURE_AUDIT_2026-09-23.md`](./docs/INTERACTION_FEATURE_AUDIT_2026-09-23.md) — live reveal, interactive assignment, and manual editing audit
+- [`docs/MARKET_REVIEW_2026-10-01.md`](./docs/MARKET_REVIEW_2026-10-01.md) — live reviews of three new tools and the Clever Groups update
 - [`data/review-evidence/interaction-features-2026-09-23.json`](./data/review-evidence/interaction-features-2026-09-23.json) — per-tool support evidence for those three features
 
 Current export: **{meta['toolCount']} tools**, base review-builder revision **{meta.get('sourceRevisionId')}**, exported **{meta['exportedAt']}**.
