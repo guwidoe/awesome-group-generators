@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-08
+
+- Added Uniform Group Creator from issue #6 after live tests of numeric/category balancing, together/apart rules, fixed placement, strict category separation, manual editing, CSV import, CSV/Excel/PDF exports, and a JSON backup round trip.
+- Rated it 4.3 overall and documented discrepancies between its privacy policy, observed analytics requests, and the tested local import workflow.
+- Updated the 507-tool catalog, CSV, rankings, shortlists, interaction evidence, and generated website.
+
 ## 2026-09-25
 
 - Verified GroupMixer's live staged reveal and two design profiles in the current browser workflow; corrected both feature flags to `yes` and clarified how visual customization and weighted random entries are scored.

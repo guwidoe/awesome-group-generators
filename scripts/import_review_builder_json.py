@@ -50,8 +50,8 @@ USE_CASE_SHORTLISTS = [
     ),
     (
         "Constraint-aware grouping",
-        ["GroupMixer", "ChatGPT Pro Extended Reasoning", "Clever Groups"],
-        "Purpose-built constraint tools fit structured rules; AI-assisted workflows can help when requirements are too idiosyncratic for a product UI.",
+        ["GroupMixer", "Uniform Group Creator", "Clever Groups"],
+        "Compare multi-round constraints, single-session attribute balancing with pair rules, and participant-preference matching.",
     ),
     (
         "Preference/self-entry matching",
@@ -70,8 +70,8 @@ USE_CASE_SHORTLISTS = [
     ),
     (
         "Adjust groups after generation",
-        ["GroupMixer", "Clever Groups", "Classroomscreen Group Maker"],
-        "Use these when a generated draft needs organizer changes before the groups are used.",
+        ["GroupMixer", "Uniform Group Creator", "Clever Groups"],
+        "Use these when a generated draft needs organizer changes; Uniform Group Creator warns about conflicts and lets an override remove affected rules.",
     ),
     (
         "Polished simple random splitters",
@@ -305,6 +305,8 @@ This repository publishes a review dataset, scoring methodology, correction work
 - [`docs/REPEAT_AVOIDANCE_BENCHMARK_2026-09-22.md`](./docs/REPEAT_AVOIDANCE_BENCHMARK_2026-09-22.md) — measured TeamCreator and GroupMixer repeat avoidance
 - [`docs/INTERACTION_FEATURE_AUDIT_2026-09-23.md`](./docs/INTERACTION_FEATURE_AUDIT_2026-09-23.md) — live reveal, interactive assignment, and manual editing audit
 - [`docs/MARKET_REVIEW_2026-10-01.md`](./docs/MARKET_REVIEW_2026-10-01.md) — live reviews of three new tools and the Clever Groups update
+- [`docs/UNIFORM_GROUP_CREATOR_REVIEW_2026-10-08.md`](./docs/UNIFORM_GROUP_CREATOR_REVIEW_2026-10-08.md) — tested balancing, constraints, exports, and privacy discrepancies for issue #6
+- [`data/review-evidence/uniform-group-creator-2026-10-08.json`](./data/review-evidence/uniform-group-creator-2026-10-08.json) — reproducible cases and results for that review
 - [`data/review-evidence/interaction-features-2026-09-23.json`](./data/review-evidence/interaction-features-2026-09-23.json) — per-tool support evidence for those three features
 
 Current export: **{meta['toolCount']} tools**, base review-builder revision **{meta.get('sourceRevisionId')}**, exported **{meta['exportedAt']}**.

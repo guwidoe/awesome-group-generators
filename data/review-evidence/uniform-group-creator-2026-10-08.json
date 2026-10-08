@@ -1,0 +1,351 @@
+{
+  "date": "2026-10-08",
+  "toolId": "uniform-group-creator",
+  "url": "https://uniformgroupcreator.com/",
+  "issue": "https://github.com/guwidoe/awesome-group-generators/issues/6",
+  "method": "Live Chromium review in an isolated, accountless Local Sandbox with synthetic participant data; inspected downloaded files and observed browser network requests.",
+  "roster": [
+    {
+      "name": "Ava",
+      "skill": 9,
+      "role": "Red"
+    },
+    {
+      "name": "Ben",
+      "skill": 8,
+      "role": "Blue"
+    },
+    {
+      "name": "Cora",
+      "skill": 7,
+      "role": "Red"
+    },
+    {
+      "name": "Dan",
+      "skill": 6,
+      "role": "Blue"
+    },
+    {
+      "name": "Ella",
+      "skill": 5,
+      "role": "Red"
+    },
+    {
+      "name": "Finn",
+      "skill": 4,
+      "role": "Blue"
+    },
+    {
+      "name": "Gia",
+      "skill": 3,
+      "role": "Red"
+    },
+    {
+      "name": "Hugo",
+      "skill": 2,
+      "role": "Blue"
+    }
+  ],
+  "cases": [
+    {
+      "name": "Numeric/category balancing with pair rules and a pin",
+      "inputMode": "Pasted tab-separated table with headers",
+      "settings": {
+        "groupCount": 2,
+        "Skill": {
+          "strategy": "Balance",
+          "operation": "Sum"
+        },
+        "Role": {
+          "strategy": "Balance"
+        },
+        "keepTogether": [
+          [
+            "Ava",
+            "Hugo"
+          ]
+        ],
+        "keepApart": [
+          [
+            "Ben",
+            "Cora"
+          ]
+        ],
+        "pins": {
+          "Ava": "Group 1"
+        }
+      },
+      "groups": [
+        {
+          "group": "Group 1",
+          "members": [
+            "Ava",
+            "Hugo",
+            "Ben",
+            "Gia"
+          ],
+          "size": 4,
+          "skillSum": 22,
+          "labelCounts": {
+            "Red": 2,
+            "Blue": 2
+          }
+        },
+        {
+          "group": "Group 2",
+          "members": [
+            "Cora",
+            "Ella",
+            "Dan",
+            "Finn"
+          ],
+          "size": 4,
+          "skillSum": 22,
+          "labelCounts": {
+            "Red": 2,
+            "Blue": 2
+          }
+        }
+      ],
+      "checked": {
+        "allMembersOnce": true,
+        "equalSizes": true,
+        "equalSkillSums": true,
+        "labelBalance": true,
+        "togetherRule": true,
+        "apartRule": true,
+        "fixedPlacement": true
+      }
+    },
+    {
+      "name": "Conflicting manual move canceled",
+      "action": "Dragged Ben toward Cora in Group 2",
+      "observed": "Apart-rule conflict dialog; Cancel Move preserved assignment. The dialog says Move Anyway removes conflicting rules.",
+      "overrideExecuted": false
+    },
+    {
+      "name": "Manual move persists",
+      "action": "Dragged Finn from Group 2 into Group 1",
+      "groups": [
+        {
+          "group": "Group 1",
+          "members": [
+            "Ava",
+            "Hugo",
+            "Ben",
+            "Gia",
+            "Finn"
+          ],
+          "size": 5,
+          "skillSum": 26,
+          "labelCounts": {
+            "Red": 2,
+            "Blue": 3
+          }
+        },
+        {
+          "group": "Group 2",
+          "members": [
+            "Cora",
+            "Ella",
+            "Dan"
+          ],
+          "size": 3,
+          "skillSum": 18,
+          "labelCounts": {
+            "Red": 2,
+            "Blue": 1
+          }
+        }
+      ],
+      "observed": "Manually modified state, changed metrics, warning, and Reset control; edited groups survived reload and re-entering Sandbox."
+    },
+    {
+      "name": "Strict category separation",
+      "inputMode": "CSV file upload of the same roster",
+      "settings": {
+        "groupCount": 2,
+        "Skill": {
+          "strategy": "Balance",
+          "operation": "Average"
+        },
+        "Role": {
+          "strategy": "Strict Separation"
+        }
+      },
+      "groups": [
+        {
+          "group": "Group 1",
+          "members": [
+            "Ava",
+            "Cora",
+            "Ella",
+            "Gia"
+          ],
+          "size": 4,
+          "skillAverage": 6,
+          "role": "Red"
+        },
+        {
+          "group": "Group 2",
+          "members": [
+            "Ben",
+            "Dan",
+            "Finn",
+            "Hugo"
+          ],
+          "size": 4,
+          "skillAverage": 5,
+          "role": "Blue"
+        }
+      ],
+      "observed": "Categories isolated successfully; an uneven-size warning appeared despite equal group sizes."
+    },
+    {
+      "name": "Local JSON backup round trip",
+      "action": "Downloaded full project backup and restored through Restore Project Backup (.json), then proceeded to the group visualizer",
+      "groups": [
+        {
+          "group": "Group 1",
+          "members": [
+            "Ava",
+            "Hugo",
+            "Ben",
+            "Gia",
+            "Finn"
+          ],
+          "size": 5,
+          "skillSum": 26,
+          "labelCounts": {
+            "Red": 2,
+            "Blue": 3
+          }
+        },
+        {
+          "group": "Group 2",
+          "members": [
+            "Cora",
+            "Ella",
+            "Dan"
+          ],
+          "size": 3,
+          "skillSum": 18,
+          "labelCounts": {
+            "Red": 2,
+            "Blue": 1
+          }
+        }
+      ],
+      "checked": {
+        "criteriaPreserved": true,
+        "allMembersPreserved": true,
+        "pairRulesAndPinPreserved": true,
+        "editedGroupsPreserved": true,
+        "originalGroupsInBackup": true
+      }
+    }
+  ],
+  "exports": {
+    "CSV": {
+      "downloaded": true,
+      "inspected": true,
+      "rows": 8,
+      "columns": [
+        "Group",
+        "Name",
+        "Skill",
+        "Role"
+      ],
+      "editedAssignmentPreserved": true
+    },
+    "Excel": {
+      "downloaded": true,
+      "inspected": true,
+      "sheets": [
+        "Dashboard",
+        "Consolidated List",
+        "Group 1",
+        "Group 2"
+      ],
+      "editedAssignmentPreserved": true
+    },
+    "PDF": {
+      "downloaded": true,
+      "inspected": true,
+      "pages": 3,
+      "allParticipantNamesPresent": true,
+      "skillSums": [
+        26,
+        18
+      ],
+      "groupSizes": [
+        5,
+        3
+      ]
+    },
+    "JSON": {
+      "downloaded": true,
+      "inspected": true,
+      "restored": true,
+      "contents": [
+        "criteria",
+        "people",
+        "memberConstraints",
+        "formedGroups",
+        "originalFormedGroups",
+        "exportLayout"
+      ]
+    },
+    "otherVisibleControls": [
+      "Word Document (.docx)",
+      "Plain Text Roster (.txt)",
+      "Copy to Clipboard",
+      "Google Doc (Cloud)",
+      "Google Sheet (Cloud)"
+    ]
+  },
+  "pricing": {
+    "checkedOn": "2026-10-08",
+    "freeActiveProjects": 3,
+    "freeCustomAttributes": 3,
+    "demoAttributes": 5,
+    "advertisedLifetimePriceUSD": 29,
+    "paidActiveProjects": "unlimited",
+    "paidAttributes": 12,
+    "accountRequiredForTestedWorkflow": false
+  },
+  "privacy": {
+    "groupingWorkerObserved": true,
+    "workerUrl": "https://uniformgroupcreator.com/assets/groupingWorker-CySRxc1B.js",
+    "localProjectStorageObserved": true,
+    "rosterUploadObservedInTestedPasteAndCSVWorkflows": false,
+    "requestsDuringFirstGeneration": [
+      "GET /assets/groupingWorker-CySRxc1B.js"
+    ],
+    "observedTrackingEndpoints": [
+      "https://www.googletagmanager.com/gtag/js",
+      "https://region1.analytics.google.com/g/collect",
+      "https://stats.g.doubleclick.net/g/collect",
+      "https://www.google.at/ads/ga-audiences"
+    ],
+    "rosterNamesObservedInTrackingRequests": false,
+    "policyDiscrepancies": [
+      "Policy disclaims analytics tracking despite observed Google Analytics and audience requests.",
+      "Policy describes backend/Google Gemini document parsing, including CSV, while tested CSV import appeared local."
+    ],
+    "qualification": "No observed upload is limited to the synthetic tested flows. Other document imports, cloud sync, and Google exports can have different destinations."
+  },
+  "uiCaveats": [
+    "Overall score briefly displayed 0% on entering the visualizer before updating.",
+    "Strict Separation displayed an uneven-size warning for a 4/4 result.",
+    "Manual moves can unbalance assignments; a conflicting override can remove rules according to its dialog."
+  ],
+  "limits": [
+    "Small positive cases only; no proof of global optimality or large-roster performance.",
+    "No multi-round or repeat-pairing scheduler visible.",
+    "Regroup and Info Only controls observed, not separately benchmarked.",
+    "Word/text/clipboard and Google exports not exercised.",
+    "Other document import modes, paid entitlement, cloud sync, and AI-retention assurances not verified.",
+    "Synthetic local projects only; no account created and no purchase or cloud write performed."
+  ]
+}
