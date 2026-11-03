@@ -1,6 +1,6 @@
 {
   "date": "2026-09-23",
-  "description": "Full 503-tool review of live group interaction and manual result editing; see docs/INTERACTION_FEATURE_AUDIT_2026-09-23.md Three 2026-10-01 market additions were subsequently reviewed and added with rank updates. Uniform Group Creator was live-reviewed and added on 2026-10-08 with rank updates.",
+  "description": "Full 503-tool review of live group interaction and manual result editing; see docs/INTERACTION_FEATURE_AUDIT_2026-09-23.md Three 2026-10-01 market additions were subsequently reviewed and added with rank updates. Uniform Group Creator was live-reviewed and added on 2026-10-08 with rank updates. Visora, Pick & Shuffle, and Peabody Teach were live-reviewed and incorporated on 2026-11-03, with rank updates.",
   "fields": [
     "Progressive group reveal",
     "Interactive assignment process",
@@ -629,8 +629,35 @@
       "confidence": "high"
     },
     {
-      "id": "pickteams-net",
+      "id": "pick-shuffle-no-repeat-group-generator",
       "rank": 24,
+      "features": {
+        "Progressive group reveal": "no",
+        "Interactive assignment process": "no",
+        "Manual post-generation editing": "no"
+      },
+      "evidence": {
+        "Progressive group reveal": {
+          "basis": "no-visible-support",
+          "url": "https://picknshuffle.com/no-repeat-group-generator/",
+          "note": "Live review 2026-11-03: Candidate groups appeared together; full-screen display did not expose a staged assignment reveal."
+        },
+        "Interactive assignment process": {
+          "basis": "no-visible-support",
+          "url": "https://picknshuffle.com/no-repeat-group-generator/",
+          "note": "Live review 2026-11-03: Generate next candidate produces a complete assignment. Confirm this round records that assignment as history rather than placing members interactively."
+        },
+        "Manual post-generation editing": {
+          "basis": "no-visible-support",
+          "url": "https://picknshuffle.com/no-repeat-group-generator/",
+          "note": "Live review 2026-11-03: Candidate and history controls permit confirmation, copying, and export; no member move or swap control appeared."
+        }
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "pickteams-net",
+      "rank": 25,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -657,7 +684,7 @@
     },
     {
       "id": "quizquestions-org-team-generator",
-      "rank": 25,
+      "rank": 26,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -684,7 +711,7 @@
     },
     {
       "id": "random-wheel-tools-multi-round-group-generator",
-      "rank": 26,
+      "rank": 27,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -711,7 +738,7 @@
     },
     {
       "id": "randomteamgenerator-io",
-      "rank": 27,
+      "rank": 28,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -738,7 +765,7 @@
     },
     {
       "id": "shuffly",
-      "rank": 28,
+      "rank": 29,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -765,7 +792,7 @@
     },
     {
       "id": "team-shake",
-      "rank": 29,
+      "rank": 30,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -792,7 +819,7 @@
     },
     {
       "id": "teammaker-app",
-      "rank": 30,
+      "rank": 31,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -818,8 +845,35 @@
       "confidence": "high"
     },
     {
+      "id": "visora-random-group-generator",
+      "rank": 32,
+      "features": {
+        "Progressive group reveal": "no",
+        "Interactive assignment process": "no",
+        "Manual post-generation editing": "no"
+      },
+      "evidence": {
+        "Progressive group reveal": {
+          "basis": "no-visible-support",
+          "url": "https://tools.visoraapp.com/random-group-generator/",
+          "note": "Live review 2026-11-03: Generated assignments appeared together. The full-screen presentation showed the complete existing assignment; no staged reveal control appeared."
+        },
+        "Interactive assignment process": {
+          "basis": "no-visible-support",
+          "url": "https://tools.visoraapp.com/random-group-generator/",
+          "note": "Live review 2026-11-03: Make groups and Shuffle again create complete assignments in one action. Saving a round records history rather than assigning members through repeated visible actions."
+        },
+        "Manual post-generation editing": {
+          "basis": "no-visible-support",
+          "url": "https://tools.visoraapp.com/random-group-generator/",
+          "note": "Live review 2026-11-03: Result cards exposed copy, print, save, and presentation controls; no member move or swap control appeared."
+        }
+      },
+      "confidence": "high"
+    },
+    {
       "id": "instructron-group-generator",
-      "rank": 31,
+      "rank": 33,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -846,7 +900,7 @@
     },
     {
       "id": "jay-project-team-picker",
-      "rank": 32,
+      "rank": 34,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -872,8 +926,35 @@
       "confidence": "high"
     },
     {
+      "id": "peabody-teach-random-group-maker",
+      "rank": 35,
+      "features": {
+        "Progressive group reveal": "no",
+        "Interactive assignment process": "no",
+        "Manual post-generation editing": "no"
+      },
+      "evidence": {
+        "Progressive group reveal": {
+          "basis": "no-visible-support",
+          "url": "https://teach.peabody.kids/groups",
+          "note": "Live review 2026-11-03: Generated groups appeared together. Full-screen controls and themes did not expose a staged reveal."
+        },
+        "Interactive assignment process": {
+          "basis": "no-visible-support",
+          "url": "https://teach.peabody.kids/groups",
+          "note": "Live review 2026-11-03: Make new groups creates the complete assignment in one action; role assignment does not introduce repeated visible member placement."
+        },
+        "Manual post-generation editing": {
+          "basis": "no-visible-support",
+          "url": "https://teach.peabody.kids/groups",
+          "note": "Live review 2026-11-03: The reviewed result exposed copy/print and class-settings controls; no member move or swap control appeared."
+        }
+      },
+      "confidence": "high"
+    },
+    {
       "id": "peerceptiv-group-formation",
-      "rank": 33,
+      "rank": 36,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -900,7 +981,7 @@
     },
     {
       "id": "readygroupgo",
-      "rank": 34,
+      "rank": 37,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -927,7 +1008,7 @@
     },
     {
       "id": "wheeltoss-team-generator",
-      "rank": 35,
+      "rank": 38,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -954,7 +1035,7 @@
     },
     {
       "id": "buddymatcher",
-      "rank": 36,
+      "rank": 39,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -981,7 +1062,7 @@
     },
     {
       "id": "calcbe-team-generator",
-      "rank": 37,
+      "rank": 40,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1008,7 +1089,7 @@
     },
     {
       "id": "cogitans-g-n-rateur-d-quipes",
-      "rank": 38,
+      "rank": 41,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1035,7 +1116,7 @@
     },
     {
       "id": "montatime",
-      "rank": 39,
+      "rank": 42,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1062,7 +1143,7 @@
     },
     {
       "id": "pickspin-team-generator",
-      "rank": 40,
+      "rank": 43,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1089,7 +1170,7 @@
     },
     {
       "id": "playrez-tennis-round-robin-generator",
-      "rank": 41,
+      "rank": 44,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1116,7 +1197,7 @@
     },
     {
       "id": "random-group-picker",
-      "rank": 42,
+      "rank": 45,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1143,7 +1224,7 @@
     },
     {
       "id": "random-roster",
-      "rank": 43,
+      "rank": 46,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1170,7 +1251,7 @@
     },
     {
       "id": "randomify-team-generator",
-      "rank": 44,
+      "rank": 47,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1197,7 +1278,7 @@
     },
     {
       "id": "randompicker-random-team-generator",
-      "rank": 45,
+      "rank": 48,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1224,7 +1305,7 @@
     },
     {
       "id": "sabura-student-group-maker",
-      "rank": 46,
+      "rank": 49,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1251,7 +1332,7 @@
     },
     {
       "id": "smart-group-maker",
-      "rank": 47,
+      "rank": 50,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1278,7 +1359,7 @@
     },
     {
       "id": "spinzoro-team-picker-for-classrooms",
-      "rank": 48,
+      "rank": 51,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1305,7 +1386,7 @@
     },
     {
       "id": "teach-arcade-group-maker",
-      "rank": 49,
+      "rank": 52,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1332,7 +1413,7 @@
     },
     {
       "id": "team-balancer-pro",
-      "rank": 50,
+      "rank": 53,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1359,7 +1440,7 @@
     },
     {
       "id": "team-randomizer-classroom-generator",
-      "rank": 51,
+      "rank": 54,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1386,7 +1467,7 @@
     },
     {
       "id": "teammixer",
-      "rank": 52,
+      "rank": 55,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1413,7 +1494,7 @@
     },
     {
       "id": "webtoolnexus-random-team-generator",
-      "rank": 53,
+      "rank": 56,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1440,7 +1521,7 @@
     },
     {
       "id": "bracketmaker-app-round-robin",
-      "rank": 54,
+      "rank": 57,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1467,7 +1548,7 @@
     },
     {
       "id": "cedarwater-visibly-random",
-      "rank": 55,
+      "rank": 58,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1494,7 +1575,7 @@
     },
     {
       "id": "classroomscreen-group-maker",
-      "rank": 56,
+      "rank": 59,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1521,7 +1602,7 @@
     },
     {
       "id": "digtools-team-generator",
-      "rank": 57,
+      "rank": 60,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1548,7 +1629,7 @@
     },
     {
       "id": "futscore-sorteio-de-times",
-      "rank": 58,
+      "rank": 61,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1575,7 +1656,7 @@
     },
     {
       "id": "game-on-field-team-picker",
-      "rank": 59,
+      "rank": 62,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1602,7 +1683,7 @@
     },
     {
       "id": "klasindeling-be-groepjesmaker",
-      "rank": 60,
+      "rank": 63,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1629,7 +1710,7 @@
     },
     {
       "id": "minibreaks-squad-shuffle",
-      "rank": 61,
+      "rank": 64,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1656,7 +1737,7 @@
     },
     {
       "id": "peon-inc-random-team-generator",
-      "rank": 62,
+      "rank": 65,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1683,7 +1764,7 @@
     },
     {
       "id": "pickleheads-round-robin",
-      "rank": 63,
+      "rank": 66,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1710,7 +1791,7 @@
     },
     {
       "id": "randomizer-uk-create-groups",
-      "rank": 64,
+      "rank": 67,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1737,7 +1818,7 @@
     },
     {
       "id": "randomselect-group-maker",
-      "rank": 65,
+      "rank": 68,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1764,7 +1845,7 @@
     },
     {
       "id": "randraw-asia-constitute-team",
-      "rank": 66,
+      "rank": 69,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1791,7 +1872,7 @@
     },
     {
       "id": "randraw-multicriteria-team",
-      "rank": 67,
+      "rank": 70,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1818,7 +1899,7 @@
     },
     {
       "id": "shuffly-eu",
-      "rank": 68,
+      "rank": 71,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1845,7 +1926,7 @@
     },
     {
       "id": "spin-with-the-wheel-group-maker",
-      "rank": 69,
+      "rank": 72,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1872,7 +1953,7 @@
     },
     {
       "id": "spinitwheel-team-generator",
-      "rank": 70,
+      "rank": 73,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1899,7 +1980,7 @@
     },
     {
       "id": "spinvibe-teachers",
-      "rank": 71,
+      "rank": 74,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1926,7 +2007,7 @@
     },
     {
       "id": "sptoolbox-random-group-generator",
-      "rank": 72,
+      "rank": 75,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1953,7 +2034,7 @@
     },
     {
       "id": "team-balancer-balanceteams",
-      "rank": 73,
+      "rank": 76,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -1980,7 +2061,7 @@
     },
     {
       "id": "teamshuffler",
-      "rank": 74,
+      "rank": 77,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2007,7 +2088,7 @@
     },
     {
       "id": "teamsplit",
-      "rank": 75,
+      "rank": 78,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2034,7 +2115,7 @@
     },
     {
       "id": "tirage-au-sort-net-constituer-une-quipe",
-      "rank": 76,
+      "rank": 79,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2061,7 +2142,7 @@
     },
     {
       "id": "utilokit-random-team-generator",
-      "rank": 77,
+      "rank": 80,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2088,7 +2169,7 @@
     },
     {
       "id": "vmaths-g-n-rateur-groupes-al-atoires-l-ves",
-      "rank": 78,
+      "rank": 81,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2115,7 +2196,7 @@
     },
     {
       "id": "zapadisk-team-generator",
-      "rank": 79,
+      "rank": 82,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2142,7 +2223,7 @@
     },
     {
       "id": "zufallsgenerator-gruppen-bilden",
-      "rank": 80,
+      "rank": 83,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2169,7 +2250,7 @@
     },
     {
       "id": "batch-group-generator",
-      "rank": 81,
+      "rank": 84,
       "features": {
         "Progressive group reveal": "yes",
         "Interactive assignment process": "no",
@@ -2196,7 +2277,7 @@
     },
     {
       "id": "draftastic",
-      "rank": 82,
+      "rank": 85,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "yes",
@@ -2223,7 +2304,7 @@
     },
     {
       "id": "ferramentasj-sorteador-de-times",
-      "rank": 83,
+      "rank": 86,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2250,7 +2331,7 @@
     },
     {
       "id": "freerandomtools-random-team-generator",
-      "rank": 84,
+      "rank": 87,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2277,7 +2358,7 @@
     },
     {
       "id": "fussfreetools-random-group-generator",
-      "rank": 85,
+      "rank": 88,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2304,7 +2385,7 @@
     },
     {
       "id": "genvalo-random-group-generator",
-      "rank": 86,
+      "rank": 89,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2331,7 +2412,7 @@
     },
     {
       "id": "groupeng",
-      "rank": 87,
+      "rank": 90,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2358,7 +2439,7 @@
     },
     {
       "id": "instagroups",
-      "rank": 88,
+      "rank": 91,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2385,7 +2466,7 @@
     },
     {
       "id": "lazy-cat-tools-random-team-generator",
-      "rank": 89,
+      "rank": 92,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2412,7 +2493,7 @@
     },
     {
       "id": "leaguelobster-round-robin-generator",
-      "rank": 90,
+      "rank": 93,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2439,7 +2520,7 @@
     },
     {
       "id": "livereacting-random-team-generator",
-      "rank": 91,
+      "rank": 94,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2466,7 +2547,7 @@
     },
     {
       "id": "picker-wheel-team-picker",
-      "rank": 92,
+      "rank": 95,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "yes",
@@ -2493,7 +2574,7 @@
     },
     {
       "id": "prompt2tool-team-grouping-tool",
-      "rank": 93,
+      "rank": 96,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2520,7 +2601,7 @@
     },
     {
       "id": "rise-random-team-generator",
-      "rank": 94,
+      "rank": 97,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2547,7 +2628,7 @@
     },
     {
       "id": "r-particlasse",
-      "rank": 95,
+      "rank": 98,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2574,7 +2655,7 @@
     },
     {
       "id": "snappywords-random-group-generator",
-      "rank": 96,
+      "rank": 99,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2601,7 +2682,7 @@
     },
     {
       "id": "sorteador-de-times",
-      "rank": 97,
+      "rank": 100,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2628,7 +2709,7 @@
     },
     {
       "id": "team-maker",
-      "rank": 98,
+      "rank": 101,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2655,7 +2736,7 @@
     },
     {
       "id": "toolgami-random-team-generator",
-      "rank": 99,
+      "rank": 102,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2682,7 +2763,7 @@
     },
     {
       "id": "toolv-team-generator",
-      "rank": 100,
+      "rank": 103,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2709,7 +2790,7 @@
     },
     {
       "id": "akousa-random-team-generator",
-      "rank": 101,
+      "rank": 104,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2736,7 +2817,7 @@
     },
     {
       "id": "attentionflow-random-group-generator",
-      "rank": 102,
+      "rank": 105,
       "features": {
         "Progressive group reveal": "yes",
         "Interactive assignment process": "no",
@@ -2763,7 +2844,7 @@
     },
     {
       "id": "basicfreetools-random-student-group-generator",
-      "rank": 103,
+      "rank": 106,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2790,7 +2871,7 @@
     },
     {
       "id": "bestrandom-random-team-generator",
-      "rank": 104,
+      "rank": 107,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2817,7 +2898,7 @@
     },
     {
       "id": "eenie-meenie-random-team-generator",
-      "rank": 105,
+      "rank": 108,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2844,7 +2925,7 @@
     },
     {
       "id": "everyrandom-team-generator",
-      "rank": 106,
+      "rank": 109,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2871,7 +2952,7 @@
     },
     {
       "id": "flameai-random-team-generator",
-      "rank": 107,
+      "rank": 110,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2898,7 +2979,7 @@
     },
     {
       "id": "fly63-random-group-tool",
-      "rank": 108,
+      "rank": 111,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2925,7 +3006,7 @@
     },
     {
       "id": "groupmixes",
-      "rank": 109,
+      "rank": 112,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2952,7 +3033,7 @@
     },
     {
       "id": "livecloud-groepjesmaker",
-      "rank": 110,
+      "rank": 113,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -2979,7 +3060,7 @@
     },
     {
       "id": "onlineraddraaien-groepjesmaker",
-      "rank": 111,
+      "rank": 114,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3006,7 +3087,7 @@
     },
     {
       "id": "pickerspin-team-generator",
-      "rank": 112,
+      "rank": 115,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3033,7 +3114,7 @@
     },
     {
       "id": "playpass-golf-schedule-maker",
-      "rank": 113,
+      "rank": 116,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3060,7 +3141,7 @@
     },
     {
       "id": "randofox-random-team-generator",
-      "rank": 114,
+      "rank": 117,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3087,7 +3168,7 @@
     },
     {
       "id": "randomly-pick-team-generator",
-      "rank": 115,
+      "rank": 118,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3114,7 +3195,7 @@
     },
     {
       "id": "randomlyfun-random-pair-generator",
-      "rank": 116,
+      "rank": 119,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3141,7 +3222,7 @@
     },
     {
       "id": "randomteammaker-click",
-      "rank": 117,
+      "rank": 120,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3168,7 +3249,7 @@
     },
     {
       "id": "robindraw",
-      "rank": 118,
+      "rank": 121,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3195,7 +3276,7 @@
     },
     {
       "id": "thetoolapp-team-generator",
-      "rank": 119,
+      "rank": 122,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3222,7 +3303,7 @@
     },
     {
       "id": "toolszone-random-team-generator",
-      "rank": 120,
+      "rank": 123,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3249,7 +3330,7 @@
     },
     {
       "id": "writing-in-the-stream-smart-group-generator",
-      "rank": 121,
+      "rank": 124,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3276,7 +3357,7 @@
     },
     {
       "id": "alhazapp-group-generator",
-      "rank": 122,
+      "rank": 125,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3303,7 +3384,7 @@
     },
     {
       "id": "classroom-toolkit-group-generator",
-      "rank": 123,
+      "rank": 126,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3330,7 +3411,7 @@
     },
     {
       "id": "decidable-team-divider",
-      "rank": 124,
+      "rank": 127,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3357,7 +3438,7 @@
     },
     {
       "id": "getrandomnumber-random-team-generator",
-      "rank": 125,
+      "rank": 128,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3384,7 +3465,7 @@
     },
     {
       "id": "golfsoftware-play-all-schedule-generator",
-      "rank": 126,
+      "rank": 129,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3411,7 +3492,7 @@
     },
     {
       "id": "groupformer",
-      "rank": 127,
+      "rank": 130,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3438,7 +3519,7 @@
     },
     {
       "id": "groupguru-online",
-      "rank": 128,
+      "rank": 131,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3465,7 +3546,7 @@
     },
     {
       "id": "kuakua-random-group-generator",
-      "rank": 129,
+      "rank": 132,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3492,7 +3573,7 @@
     },
     {
       "id": "loco-disc-golf-team-generator",
-      "rank": 130,
+      "rank": 133,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3519,7 +3600,7 @@
     },
     {
       "id": "multipicker-team-picker",
-      "rank": 131,
+      "rank": 134,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3546,7 +3627,7 @@
     },
     {
       "id": "randomara-classroom-group-generator",
-      "rank": 132,
+      "rank": 135,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3573,7 +3654,7 @@
     },
     {
       "id": "randomgroupgenerator-net",
-      "rank": 133,
+      "rank": 136,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3600,7 +3681,7 @@
     },
     {
       "id": "sorteio-random-team-generator",
-      "rank": 134,
+      "rank": 137,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3627,7 +3708,7 @@
     },
     {
       "id": "spacebarcount-team-generator",
-      "rank": 135,
+      "rank": 138,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3654,7 +3735,7 @@
     },
     {
       "id": "spinrandomtool-team-generator",
-      "rank": 136,
+      "rank": 139,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3681,7 +3762,7 @@
     },
     {
       "id": "strategic-group-maker",
-      "rank": 137,
+      "rank": 140,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3708,7 +3789,7 @@
     },
     {
       "id": "teamgenerator-net-team-generator",
-      "rank": 138,
+      "rank": 141,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3735,7 +3816,7 @@
     },
     {
       "id": "timetiki-group-generator",
-      "rank": 139,
+      "rank": 142,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3762,7 +3843,7 @@
     },
     {
       "id": "toolora-team-generator",
-      "rank": 140,
+      "rank": 143,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3789,7 +3870,7 @@
     },
     {
       "id": "txtoolbox-smart-team-splitter",
-      "rank": 141,
+      "rank": 144,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3816,7 +3897,7 @@
     },
     {
       "id": "vmaths-g-n-rateur-d-quipes-al-atoires",
-      "rank": 142,
+      "rank": 145,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3843,7 +3924,7 @@
     },
     {
       "id": "ai225-team-generator",
-      "rank": 143,
+      "rank": 146,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3870,7 +3951,7 @@
     },
     {
       "id": "calculation-support-random-group-generator",
-      "rank": 144,
+      "rank": 147,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3897,7 +3978,7 @@
     },
     {
       "id": "classinteractives-formgroup-creator",
-      "rank": 145,
+      "rank": 148,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3924,7 +4005,7 @@
     },
     {
       "id": "clock-buddies-generator",
-      "rank": 146,
+      "rank": 149,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3951,7 +4032,7 @@
     },
     {
       "id": "coderstool-random-group-generator",
-      "rank": 147,
+      "rank": 150,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -3978,7 +4059,7 @@
     },
     {
       "id": "daterounds",
-      "rank": 148,
+      "rank": 151,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4005,7 +4086,7 @@
     },
     {
       "id": "draw-lots-team-generator",
-      "rank": 149,
+      "rank": 152,
       "features": {
         "Progressive group reveal": "yes",
         "Interactive assignment process": "no",
@@ -4032,7 +4113,7 @@
     },
     {
       "id": "freeclassroomtools-group-generator",
-      "rank": 150,
+      "rank": 153,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4059,7 +4140,7 @@
     },
     {
       "id": "freetoolly-random-group-picker",
-      "rank": 151,
+      "rank": 154,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4086,7 +4167,7 @@
     },
     {
       "id": "lembog-random-group-generator",
-      "rank": 152,
+      "rank": 155,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4113,7 +4194,7 @@
     },
     {
       "id": "matchbalancer-volleyball-team-generator",
-      "rank": 153,
+      "rank": 156,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4140,7 +4221,7 @@
     },
     {
       "id": "pickwinner-random-team-generator",
-      "rank": 154,
+      "rank": 157,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4167,7 +4248,7 @@
     },
     {
       "id": "quickrandomizer-random-team-generator",
-      "rank": 155,
+      "rank": 158,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4194,7 +4275,7 @@
     },
     {
       "id": "randanimal-random-group-generator",
-      "rank": 156,
+      "rank": 159,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4221,7 +4302,7 @@
     },
     {
       "id": "random-media-hub-random-team-generator",
-      "rank": 157,
+      "rank": 160,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4248,7 +4329,7 @@
     },
     {
       "id": "random-group-generator-com",
-      "rank": 158,
+      "rank": 161,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4275,7 +4356,7 @@
     },
     {
       "id": "random-gg-team-generator",
-      "rank": 159,
+      "rank": 162,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4302,7 +4383,7 @@
     },
     {
       "id": "randommer-random-team-generator",
-      "rank": 160,
+      "rank": 163,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4329,7 +4410,7 @@
     },
     {
       "id": "randomos-group-generator",
-      "rank": 161,
+      "rank": 164,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4356,7 +4437,7 @@
     },
     {
       "id": "spin-of-wheel-team-generator",
-      "rank": 162,
+      "rank": 165,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4383,7 +4464,7 @@
     },
     {
       "id": "sport-scheduler-pro-free-schedule-generator",
-      "rank": 163,
+      "rank": 166,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4410,7 +4491,7 @@
     },
     {
       "id": "the-teaching-couple-classroom-toolkit",
-      "rank": 164,
+      "rank": 167,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4437,7 +4518,7 @@
     },
     {
       "id": "tirage-au-sort-com-cr-ateur-d-quipes",
-      "rank": 165,
+      "rank": 168,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4464,7 +4545,7 @@
     },
     {
       "id": "webrandom-random-team-generator",
-      "rank": 166,
+      "rank": 169,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4491,7 +4572,7 @@
     },
     {
       "id": "wooclap-team-picker",
-      "rank": 167,
+      "rank": 170,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4518,7 +4599,7 @@
     },
     {
       "id": "yuesha-random-group-tool",
-      "rank": 168,
+      "rank": 171,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4545,7 +4626,7 @@
     },
     {
       "id": "any-one-will-do",
-      "rank": 169,
+      "rank": 172,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4572,7 +4653,7 @@
     },
     {
       "id": "anyonlinetool-group-generator-tool",
-      "rank": 170,
+      "rank": 173,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4599,7 +4680,7 @@
     },
     {
       "id": "classroomtools-app-group-maker",
-      "rank": 171,
+      "rank": 174,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4626,7 +4707,7 @@
     },
     {
       "id": "classseats",
-      "rank": 172,
+      "rank": 175,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4653,7 +4734,7 @@
     },
     {
       "id": "decisionflip-random-team-generator",
-      "rank": 173,
+      "rank": 176,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4680,7 +4761,7 @@
     },
     {
       "id": "der-zufallsgenerator-gruppen-zufall",
-      "rank": 174,
+      "rank": 177,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4707,7 +4788,7 @@
     },
     {
       "id": "digitaletools-groepjesmaker",
-      "rank": 175,
+      "rank": 178,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4734,7 +4815,7 @@
     },
     {
       "id": "fastrounds",
-      "rank": 176,
+      "rank": 179,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4761,7 +4842,7 @@
     },
     {
       "id": "flipiffy-random-group-generator",
-      "rank": 177,
+      "rank": 180,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4788,7 +4869,7 @@
     },
     {
       "id": "grouperapp-net",
-      "rank": 178,
+      "rank": 181,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4815,7 +4896,7 @@
     },
     {
       "id": "groupify-it",
-      "rank": 179,
+      "rank": 182,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4842,7 +4923,7 @@
     },
     {
       "id": "keamk",
-      "rank": 180,
+      "rank": 183,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4869,7 +4950,7 @@
     },
     {
       "id": "parteeof18-randomizer",
-      "rank": 181,
+      "rank": 184,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4896,7 +4977,7 @@
     },
     {
       "id": "preppanel-classroom-group-generator",
-      "rank": 182,
+      "rank": 185,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4923,7 +5004,7 @@
     },
     {
       "id": "printyourbrackets-round-robin-generator",
-      "rank": 183,
+      "rank": 186,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4950,7 +5031,7 @@
     },
     {
       "id": "pudone-random-grouper",
-      "rank": 184,
+      "rank": 187,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -4977,7 +5058,7 @@
     },
     {
       "id": "randompickertool-team-generator",
-      "rank": 185,
+      "rank": 188,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5004,7 +5085,7 @@
     },
     {
       "id": "randomteambuilder-com",
-      "rank": 186,
+      "rank": 189,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5031,7 +5112,7 @@
     },
     {
       "id": "randoteams",
-      "rank": 187,
+      "rank": 190,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5058,7 +5139,7 @@
     },
     {
       "id": "raugen-random-team-generator",
-      "rank": 188,
+      "rank": 191,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5085,7 +5166,7 @@
     },
     {
       "id": "scorekeeperco-random-team-generator",
-      "rank": 189,
+      "rank": 192,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5112,7 +5193,7 @@
     },
     {
       "id": "slack-meetups",
-      "rank": 190,
+      "rank": 193,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5139,7 +5220,7 @@
     },
     {
       "id": "slumpgenerator-random-team-generator",
-      "rank": 191,
+      "rank": 194,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5166,7 +5247,7 @@
     },
     {
       "id": "sorteador-de-bingo-sorteador-de-times",
-      "rank": 192,
+      "rank": 195,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5193,7 +5274,7 @@
     },
     {
       "id": "speed-friending-and-dating-matcher",
-      "rank": 193,
+      "rank": 196,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5220,7 +5301,7 @@
     },
     {
       "id": "stilest-random-team-generator",
-      "rank": 194,
+      "rank": 197,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5247,7 +5328,7 @@
     },
     {
       "id": "teachtools-team-generator",
-      "rank": 195,
+      "rank": 198,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5274,7 +5355,7 @@
     },
     {
       "id": "teamcreator-united-we-transform",
-      "rank": 196,
+      "rank": 199,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5301,7 +5382,7 @@
     },
     {
       "id": "tekscape-random-group-generator",
-      "rank": 197,
+      "rank": 200,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5328,7 +5409,7 @@
     },
     {
       "id": "textground-random-group-generator",
-      "rank": 198,
+      "rank": 201,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5355,7 +5436,7 @@
     },
     {
       "id": "tienichhay-random-group-generator",
-      "rank": 199,
+      "rank": 202,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5382,7 +5463,7 @@
     },
     {
       "id": "wordstopia-team-picker",
-      "rank": 200,
+      "rank": 203,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5409,7 +5490,7 @@
     },
     {
       "id": "ytool-random-group-generator",
-      "rank": 201,
+      "rank": 204,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5436,7 +5517,7 @@
     },
     {
       "id": "afreetools-smart-team-generator",
-      "rank": 202,
+      "rank": 205,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5463,7 +5544,7 @@
     },
     {
       "id": "appsorteos-random-teams-generator",
-      "rank": 203,
+      "rank": 206,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5490,7 +5571,7 @@
     },
     {
       "id": "buchstaben-com-zufallsgruppen-generator",
-      "rank": 204,
+      "rank": 207,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5517,7 +5598,7 @@
     },
     {
       "id": "calculop-random-class-group-generator",
-      "rank": 205,
+      "rank": 208,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5544,7 +5625,7 @@
     },
     {
       "id": "drawrilla-random-team-generator",
-      "rank": 206,
+      "rank": 209,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5571,7 +5652,7 @@
     },
     {
       "id": "elysia-tools-random-group-generator",
-      "rank": 207,
+      "rank": 210,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5598,7 +5679,7 @@
     },
     {
       "id": "fatefactory-team-splitter",
-      "rank": 208,
+      "rank": 211,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5625,7 +5706,7 @@
     },
     {
       "id": "flipacoinonline-random-team-generator",
-      "rank": 209,
+      "rank": 212,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5652,7 +5733,7 @@
     },
     {
       "id": "genkit-random-group-generator",
-      "rank": 210,
+      "rank": 213,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5679,7 +5760,7 @@
     },
     {
       "id": "group-generator-project",
-      "rank": 211,
+      "rank": 214,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5706,7 +5787,7 @@
     },
     {
       "id": "kalkulator-random-group-generator",
-      "rank": 212,
+      "rank": 215,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5733,7 +5814,7 @@
     },
     {
       "id": "lottonames-team-generator",
-      "rank": 213,
+      "rank": 216,
       "features": {
         "Progressive group reveal": "yes",
         "Interactive assignment process": "no",
@@ -5760,7 +5841,7 @@
     },
     {
       "id": "mate-tools-random-team-generator",
-      "rank": 214,
+      "rank": 217,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5787,7 +5868,7 @@
     },
     {
       "id": "pickerkit-team-picker",
-      "rank": 215,
+      "rank": 218,
       "features": {
         "Progressive group reveal": "yes",
         "Interactive assignment process": "no",
@@ -5814,7 +5895,7 @@
     },
     {
       "id": "randgenerator-random-group-generator",
-      "rank": 216,
+      "rank": 219,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5841,7 +5922,7 @@
     },
     {
       "id": "randomly-random-group-generator",
-      "rank": 217,
+      "rank": 220,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5868,7 +5949,7 @@
     },
     {
       "id": "randtools-random-team-generator",
-      "rank": 218,
+      "rank": 221,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5895,7 +5976,7 @@
     },
     {
       "id": "shibutz-random-group-generator",
-      "rank": 219,
+      "rank": 222,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5922,7 +6003,7 @@
     },
     {
       "id": "simplewoody-team-generator",
-      "rank": 220,
+      "rank": 223,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5949,7 +6030,7 @@
     },
     {
       "id": "team-balancer-generic-team-balance",
-      "rank": 221,
+      "rank": 224,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -5976,7 +6057,7 @@
     },
     {
       "id": "toolnest-random-team-generator",
-      "rank": 222,
+      "rank": 225,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6003,7 +6084,7 @@
     },
     {
       "id": "turbotoolkit-split-list-into-groups",
-      "rank": 223,
+      "rank": 226,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6030,7 +6111,7 @@
     },
     {
       "id": "utils-fun-random-grouping",
-      "rank": 224,
+      "rank": 227,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6057,7 +6138,7 @@
     },
     {
       "id": "uu-online-random-group-tool",
-      "rank": 225,
+      "rank": 228,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6084,7 +6165,7 @@
     },
     {
       "id": "wheelofnames-net-team-picker",
-      "rank": 226,
+      "rank": 229,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6111,7 +6192,7 @@
     },
     {
       "id": "a-fitz-group-generator",
-      "rank": 227,
+      "rank": 230,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6138,7 +6219,7 @@
     },
     {
       "id": "abcdtools-team-generator",
-      "rank": 228,
+      "rank": 231,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6165,7 +6246,7 @@
     },
     {
       "id": "ai-random-generator-team-generator",
-      "rank": 229,
+      "rank": 232,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6192,7 +6273,7 @@
     },
     {
       "id": "animyjob-cr-ateur-de-badges-quipes",
-      "rank": 230,
+      "rank": 233,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6219,7 +6300,7 @@
     },
     {
       "id": "begoodtool-smart-grouping-tool",
-      "rank": 231,
+      "rank": 234,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6246,7 +6327,7 @@
     },
     {
       "id": "betext-random-team-generator",
-      "rank": 232,
+      "rank": 235,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6273,7 +6354,7 @@
     },
     {
       "id": "camp-chieflings-teamgen-360",
-      "rank": 233,
+      "rank": 236,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6300,7 +6381,7 @@
     },
     {
       "id": "chatgpt-free-version",
-      "rank": 234,
+      "rank": 237,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6327,7 +6408,7 @@
     },
     {
       "id": "chirag-mehta-team-maker",
-      "rank": 235,
+      "rank": 238,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6354,7 +6435,7 @@
     },
     {
       "id": "cindergpt-random-team-generator",
-      "rank": 236,
+      "rank": 239,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6381,7 +6462,7 @@
     },
     {
       "id": "coda-random-team-generator-template",
-      "rank": 237,
+      "rank": 240,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6408,7 +6489,7 @@
     },
     {
       "id": "converterpanda-random-group-generator",
-      "rank": 238,
+      "rank": 241,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6435,7 +6516,7 @@
     },
     {
       "id": "decodeit-random-team-generator",
-      "rank": 239,
+      "rank": 242,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6462,7 +6543,7 @@
     },
     {
       "id": "diceflipper-team-generator",
-      "rank": 240,
+      "rank": 243,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6489,7 +6570,7 @@
     },
     {
       "id": "diverse-group-generation",
-      "rank": 241,
+      "rank": 244,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6516,7 +6597,7 @@
     },
     {
       "id": "djplaner-groupgenerator",
-      "rank": 242,
+      "rank": 245,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6543,7 +6624,7 @@
     },
     {
       "id": "edu4-random-group-generator",
-      "rank": 243,
+      "rank": 246,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6570,7 +6651,7 @@
     },
     {
       "id": "eliteai-tools-random-team-generator",
-      "rank": 244,
+      "rank": 247,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6597,7 +6678,7 @@
     },
     {
       "id": "emfls-random-team-generator",
-      "rank": 245,
+      "rank": 248,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6624,7 +6705,7 @@
     },
     {
       "id": "fatewheel-team-generator",
-      "rank": 246,
+      "rank": 249,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6651,7 +6732,7 @@
     },
     {
       "id": "generatorliczb-losowanie-z-listy",
-      "rank": 247,
+      "rank": 250,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6678,7 +6759,7 @@
     },
     {
       "id": "glima-ai-random-pair-generator",
-      "rank": 248,
+      "rank": 251,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6705,7 +6786,7 @@
     },
     {
       "id": "golf-captains",
-      "rank": 249,
+      "rank": 252,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6732,7 +6813,7 @@
     },
     {
       "id": "ice-breaker-game-group-generator",
-      "rank": 250,
+      "rank": 253,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6759,7 +6840,7 @@
     },
     {
       "id": "inyourleague-secret-santa-team-generator",
-      "rank": 251,
+      "rank": 254,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6786,7 +6867,7 @@
     },
     {
       "id": "jarvisbox-team-picker",
-      "rank": 252,
+      "rank": 255,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6813,7 +6894,7 @@
     },
     {
       "id": "lekktura-random-name-picker-group-maker",
-      "rank": 253,
+      "rank": 256,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6840,7 +6921,7 @@
     },
     {
       "id": "letsrandomize-random-team-generator",
-      "rank": 254,
+      "rank": 257,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6867,7 +6948,7 @@
     },
     {
       "id": "maak-groepjes",
-      "rank": 255,
+      "rank": 258,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6894,7 +6975,7 @@
     },
     {
       "id": "myaiutility-team-generator",
-      "rank": 256,
+      "rank": 259,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6921,7 +7002,7 @@
     },
     {
       "id": "nacho-caballero-random-group-generator",
-      "rank": 257,
+      "rank": 260,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6948,7 +7029,7 @@
     },
     {
       "id": "notchtools-team-maker",
-      "rank": 258,
+      "rank": 261,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -6975,7 +7056,7 @@
     },
     {
       "id": "pandos-team-generator",
-      "rank": 259,
+      "rank": 262,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7002,7 +7083,7 @@
     },
     {
       "id": "partyplay-team-generator",
-      "rank": 260,
+      "rank": 263,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7029,7 +7110,7 @@
     },
     {
       "id": "penguin-tools-team-generator",
-      "rank": 261,
+      "rank": 264,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7056,7 +7137,7 @@
     },
     {
       "id": "pickrandom-online-random-team-generator",
-      "rank": 262,
+      "rank": 265,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7083,7 +7164,7 @@
     },
     {
       "id": "pyslackrandomcoffee",
-      "rank": 263,
+      "rank": 266,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7110,7 +7191,7 @@
     },
     {
       "id": "quick-pick-team-generator",
-      "rank": 264,
+      "rank": 267,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7137,7 +7218,7 @@
     },
     {
       "id": "randly-group-generator",
-      "rank": 265,
+      "rank": 268,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7164,7 +7245,7 @@
     },
     {
       "id": "random-peak-cr-ation-de-groupes",
-      "rank": 266,
+      "rank": 269,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7191,7 +7272,7 @@
     },
     {
       "id": "randomgenerator-one-random-generator-pairs",
-      "rank": 267,
+      "rank": 270,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7218,7 +7299,7 @@
     },
     {
       "id": "roulette-rush-team-generator",
-      "rank": 268,
+      "rank": 271,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7245,7 +7326,7 @@
     },
     {
       "id": "ruletaa-random-team-generator",
-      "rank": 269,
+      "rank": 272,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7272,7 +7353,7 @@
     },
     {
       "id": "simple-toolz-random-group-generator",
-      "rank": 270,
+      "rank": 273,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7299,7 +7380,7 @@
     },
     {
       "id": "spinnchoose-random-team-generator",
-      "rank": 271,
+      "rank": 274,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7326,7 +7407,7 @@
     },
     {
       "id": "spinofluck-team-picker-wheel",
-      "rank": 272,
+      "rank": 275,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7353,7 +7434,7 @@
     },
     {
       "id": "spreadsheetplanet-random-group-generator",
-      "rank": 273,
+      "rank": 276,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7380,7 +7461,7 @@
     },
     {
       "id": "steven-mi-group-generator",
-      "rank": 274,
+      "rank": 277,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7407,7 +7488,7 @@
     },
     {
       "id": "teacherworksheetgenerator-student-group-generator",
-      "rank": 275,
+      "rank": 278,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7434,7 +7515,7 @@
     },
     {
       "id": "top-teacher-group-maker-digi-tool",
-      "rank": 276,
+      "rank": 279,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7461,7 +7542,7 @@
     },
     {
       "id": "utility-tools-random-team-generator",
-      "rank": 277,
+      "rank": 280,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7488,7 +7569,7 @@
     },
     {
       "id": "utilitynestai-team-generator",
-      "rank": 278,
+      "rank": 281,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7515,7 +7596,7 @@
     },
     {
       "id": "wheelplay-team-picker-wheel",
-      "rank": 279,
+      "rank": 282,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7542,7 +7623,7 @@
     },
     {
       "id": "wtools-random-team-generator",
-      "rank": 280,
+      "rank": 283,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7569,7 +7650,7 @@
     },
     {
       "id": "alltools-dev-random-team-generator",
-      "rank": 281,
+      "rank": 284,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7596,7 +7677,7 @@
     },
     {
       "id": "classroom-group-online-group-generator",
-      "rank": 282,
+      "rank": 285,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7623,7 +7704,7 @@
     },
     {
       "id": "decidehub-team-generator",
-      "rank": 283,
+      "rank": 286,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7650,7 +7731,7 @@
     },
     {
       "id": "decisionflip-team-picker",
-      "rank": 284,
+      "rank": 287,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7677,7 +7758,7 @@
     },
     {
       "id": "findutils-random-picker-team-mode",
-      "rank": 285,
+      "rank": 288,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7704,7 +7785,7 @@
     },
     {
       "id": "funrandompickers-random-team-generator",
-      "rank": 286,
+      "rank": 289,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7731,7 +7812,7 @@
     },
     {
       "id": "funtospin-team-generator",
-      "rank": 287,
+      "rank": 290,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7758,7 +7839,7 @@
     },
     {
       "id": "lddgo-random-group-generator",
-      "rank": 288,
+      "rank": 291,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7785,7 +7866,7 @@
     },
     {
       "id": "linkorama-zufallsgenerator-gruppen-bilden",
-      "rank": 289,
+      "rank": 292,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7812,7 +7893,7 @@
     },
     {
       "id": "microsoft-excel",
-      "rank": 290,
+      "rank": 293,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7839,7 +7920,7 @@
     },
     {
       "id": "onlinetool-me-random-team-generator",
-      "rank": 291,
+      "rank": 294,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7866,7 +7947,7 @@
     },
     {
       "id": "pickerbot-team-generator",
-      "rank": 292,
+      "rank": 295,
       "features": {
         "Progressive group reveal": "yes",
         "Interactive assignment process": "no",
@@ -7893,7 +7974,7 @@
     },
     {
       "id": "quickwheelspin-team-picker",
-      "rank": 293,
+      "rank": 296,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7920,7 +8001,7 @@
     },
     {
       "id": "random-letter-generator-group-generator",
-      "rank": 294,
+      "rank": 297,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7947,7 +8028,7 @@
     },
     {
       "id": "randomgenerator-one-random-generator-group",
-      "rank": 295,
+      "rank": 298,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -7974,7 +8055,7 @@
     },
     {
       "id": "randomgroup-online",
-      "rank": 296,
+      "rank": 299,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8001,7 +8082,7 @@
     },
     {
       "id": "randomgroup-org-random-group-generator",
-      "rank": 297,
+      "rank": 300,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8028,7 +8109,7 @@
     },
     {
       "id": "randomizerkits-random-group-generator",
-      "rank": 298,
+      "rank": 301,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8055,7 +8136,7 @@
     },
     {
       "id": "randompickerwheel-team-generator",
-      "rank": 299,
+      "rank": 302,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8082,7 +8163,7 @@
     },
     {
       "id": "rapidwebapp-random-team-generator",
-      "rank": 300,
+      "rank": 303,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8109,7 +8190,7 @@
     },
     {
       "id": "spinwheely-random-team-generator",
-      "rank": 301,
+      "rank": 304,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8136,7 +8217,7 @@
     },
     {
       "id": "teamshufflr",
-      "rank": 302,
+      "rank": 305,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8163,7 +8244,7 @@
     },
     {
       "id": "trumpexcel-random-team-generator",
-      "rank": 303,
+      "rank": 306,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8190,7 +8271,7 @@
     },
     {
       "id": "wanglitou-list-randomizer-with-teams",
-      "rank": 304,
+      "rank": 307,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8217,7 +8298,7 @@
     },
     {
       "id": "wheelpick-team-generator",
-      "rank": 305,
+      "rank": 308,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8244,7 +8325,7 @@
     },
     {
       "id": "zoom-breakout-room-assignment",
-      "rank": 306,
+      "rank": 309,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "yes",
@@ -8271,7 +8352,7 @@
     },
     {
       "id": "a-lot-of-tools-team-generator",
-      "rank": 307,
+      "rank": 310,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8298,7 +8379,7 @@
     },
     {
       "id": "aionetools-random-team-generator",
-      "rank": 308,
+      "rank": 311,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8325,7 +8406,7 @@
     },
     {
       "id": "bcalculator-random-team-generator",
-      "rank": 309,
+      "rank": 312,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8352,7 +8433,7 @@
     },
     {
       "id": "calctools-online-random-team-generator",
-      "rank": 310,
+      "rank": 313,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8379,7 +8460,7 @@
     },
     {
       "id": "calculationclub-random-team-generator",
-      "rank": 311,
+      "rank": 314,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8406,7 +8487,7 @@
     },
     {
       "id": "cojoro-team-generator",
-      "rank": 312,
+      "rank": 315,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8433,7 +8514,7 @@
     },
     {
       "id": "dicegamehub-list-randomizer-team-generator",
-      "rank": 313,
+      "rank": 316,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8460,7 +8541,7 @@
     },
     {
       "id": "easyedutools-group-maker",
-      "rank": 314,
+      "rank": 317,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8487,7 +8568,7 @@
     },
     {
       "id": "games-by-marco-team-generator",
-      "rank": 315,
+      "rank": 318,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8514,7 +8595,7 @@
     },
     {
       "id": "generate-random-org-random-team-generator",
-      "rank": 316,
+      "rank": 319,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8541,7 +8622,7 @@
     },
     {
       "id": "generatorhub-random-team-generator",
-      "rank": 317,
+      "rank": 320,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8568,7 +8649,7 @@
     },
     {
       "id": "generatorsuite-random-team-generator",
-      "rank": 318,
+      "rank": 321,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8595,7 +8676,7 @@
     },
     {
       "id": "getrandomtools-random-grouping",
-      "rank": 319,
+      "rank": 322,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8622,7 +8703,7 @@
     },
     {
       "id": "google-sheets",
-      "rank": 320,
+      "rank": 323,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8649,7 +8730,7 @@
     },
     {
       "id": "goonlinetools-random-group-generator",
-      "rank": 321,
+      "rank": 324,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8676,7 +8757,7 @@
     },
     {
       "id": "groupify",
-      "rank": 322,
+      "rank": 325,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8703,7 +8784,7 @@
     },
     {
       "id": "gynzy-group-maker",
-      "rank": 323,
+      "rank": 326,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8730,7 +8811,7 @@
     },
     {
       "id": "inkpx-random-group-generator",
-      "rank": 324,
+      "rank": 327,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8757,7 +8838,7 @@
     },
     {
       "id": "iwoithe-random-group-generator",
-      "rank": 325,
+      "rank": 328,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8784,7 +8865,7 @@
     },
     {
       "id": "james-baum-team-generator",
-      "rank": 326,
+      "rank": 329,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8811,7 +8892,7 @@
     },
     {
       "id": "kody-tools-random-team-generator",
-      "rank": 327,
+      "rank": 330,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8838,7 +8919,7 @@
     },
     {
       "id": "kordu-team-randomizer",
-      "rank": 328,
+      "rank": 331,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8865,7 +8946,7 @@
     },
     {
       "id": "lettre-al-atoire-g-n-rateur-d-quipes",
-      "rank": 329,
+      "rank": 332,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8892,7 +8973,7 @@
     },
     {
       "id": "online-calculator-org-random-team-generator",
-      "rank": 330,
+      "rank": 333,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8919,7 +9000,7 @@
     },
     {
       "id": "onltools-random-group-generator",
-      "rank": 331,
+      "rank": 334,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8946,7 +9027,7 @@
     },
     {
       "id": "paji-lots-team-grouping",
-      "rank": 332,
+      "rank": 335,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -8973,7 +9054,7 @@
     },
     {
       "id": "pradoy-random-team-generator",
-      "rank": 333,
+      "rank": 336,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9000,7 +9081,7 @@
     },
     {
       "id": "random-group-generator-chrome-extension",
-      "rank": 334,
+      "rank": 337,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9027,7 +9108,7 @@
     },
     {
       "id": "random-question-maker-random-team-generator",
-      "rank": 335,
+      "rank": 338,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9054,7 +9135,7 @@
     },
     {
       "id": "random-team-generator-android-app",
-      "rank": 336,
+      "rank": 339,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9081,7 +9162,7 @@
     },
     {
       "id": "randomdo-random-group-generator",
-      "rank": 337,
+      "rank": 340,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9108,7 +9189,7 @@
     },
     {
       "id": "randomgenerator-org-random-team-generator",
-      "rank": 338,
+      "rank": 341,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9135,7 +9216,7 @@
     },
     {
       "id": "randomlists-top-team-generator",
-      "rank": 339,
+      "rank": 342,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9162,7 +9243,7 @@
     },
     {
       "id": "randomlyfun-random-team-generator",
-      "rank": 340,
+      "rank": 343,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9189,7 +9270,7 @@
     },
     {
       "id": "spin-name-picker-team-generator",
-      "rank": 341,
+      "rank": 344,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9216,7 +9297,7 @@
     },
     {
       "id": "spinnee",
-      "rank": 342,
+      "rank": 345,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9243,7 +9324,7 @@
     },
     {
       "id": "spinpickonline-team-picker",
-      "rank": 343,
+      "rank": 346,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9270,7 +9351,7 @@
     },
     {
       "id": "spinthewheel-dev-team-picker-wheel",
-      "rank": 344,
+      "rank": 347,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "yes",
@@ -9297,7 +9378,7 @@
     },
     {
       "id": "teamx",
-      "rank": 345,
+      "rank": 348,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9324,7 +9405,7 @@
     },
     {
       "id": "the-decider-team-generator",
-      "rank": 346,
+      "rank": 349,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9351,7 +9432,7 @@
     },
     {
       "id": "thunderbit-random-team-generator",
-      "rank": 347,
+      "rank": 350,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9378,7 +9459,7 @@
     },
     {
       "id": "toolhane-tak-m-olu-turucu",
-      "rank": 348,
+      "rank": 351,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9405,7 +9486,7 @@
     },
     {
       "id": "toolsjam-group-generator",
-      "rank": 349,
+      "rank": 352,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9432,7 +9513,7 @@
     },
     {
       "id": "tpt-small-group-generator",
-      "rank": 350,
+      "rank": 353,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9459,7 +9540,7 @@
     },
     {
       "id": "ubikami-random-team-generator",
-      "rank": 351,
+      "rank": 354,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9486,7 +9567,7 @@
     },
     {
       "id": "ud5-random-team-generator",
-      "rank": 352,
+      "rank": 355,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9513,7 +9594,7 @@
     },
     {
       "id": "utilizor-random-team-generator",
-      "rank": 353,
+      "rank": 356,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9540,7 +9621,7 @@
     },
     {
       "id": "vertex42-random-group-generator-template",
-      "rank": 354,
+      "rank": 357,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9567,7 +9648,7 @@
     },
     {
       "id": "virtualescaperooms-random-group-generator",
-      "rank": 355,
+      "rank": 358,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9594,7 +9675,7 @@
     },
     {
       "id": "whatdo-team-splitter",
-      "rank": 356,
+      "rank": 359,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9621,7 +9702,7 @@
     },
     {
       "id": "yesnowheel-picker-random-team-generator",
-      "rank": 357,
+      "rank": 360,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9648,7 +9729,7 @@
     },
     {
       "id": "be-youthful-random-team-maker",
-      "rank": 358,
+      "rank": 361,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9675,7 +9756,7 @@
     },
     {
       "id": "classdojo-group-maker",
-      "rank": 359,
+      "rank": 362,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9702,7 +9783,7 @@
     },
     {
       "id": "codebeautify-random-team-generator",
-      "rank": 360,
+      "rank": 363,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9729,7 +9810,7 @@
     },
     {
       "id": "fun-group-names-random-team-generator",
-      "rank": 361,
+      "rank": 364,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9756,7 +9837,7 @@
     },
     {
       "id": "group-assigner",
-      "rank": 362,
+      "rank": 365,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9783,7 +9864,7 @@
     },
     {
       "id": "hypertoolbox-random-group-generator",
-      "rank": 363,
+      "rank": 366,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9810,7 +9891,7 @@
     },
     {
       "id": "madelife-team-splitter",
-      "rank": 364,
+      "rank": 367,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9837,7 +9918,7 @@
     },
     {
       "id": "nancy-s-hearth-random-team-generator",
-      "rank": 365,
+      "rank": 368,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9864,7 +9945,7 @@
     },
     {
       "id": "online-stopwatch-random-group-generator",
-      "rank": 366,
+      "rank": 369,
       "features": {
         "Progressive group reveal": "yes",
         "Interactive assignment process": "no",
@@ -9891,7 +9972,7 @@
     },
     {
       "id": "orgise-random-group-generator",
-      "rank": 367,
+      "rank": 370,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9918,7 +9999,7 @@
     },
     {
       "id": "randomtools-app-random-team-generator",
-      "rank": 368,
+      "rank": 371,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9945,7 +10026,7 @@
     },
     {
       "id": "spin-numbers-make-random-teams",
-      "rank": 369,
+      "rank": 372,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9972,7 +10053,7 @@
     },
     {
       "id": "spindrop-groepjesmaker",
-      "rank": 370,
+      "rank": 373,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -9999,7 +10080,7 @@
     },
     {
       "id": "suijidaquan-random-grouping-generator",
-      "rank": 371,
+      "rank": 374,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10026,7 +10107,7 @@
     },
     {
       "id": "super-teacher-tools-classroom-seating-groups",
-      "rank": 372,
+      "rank": 375,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10053,7 +10134,7 @@
     },
     {
       "id": "teacher-commons-group-maker",
-      "rank": 373,
+      "rank": 376,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10080,7 +10161,7 @@
     },
     {
       "id": "transum-random-student-generator",
-      "rank": 374,
+      "rank": 377,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10107,7 +10188,7 @@
     },
     {
       "id": "ud5-team-randomizer",
-      "rank": 375,
+      "rank": 378,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10134,7 +10215,7 @@
     },
     {
       "id": "utilitykit-random-team-generator",
-      "rank": 376,
+      "rank": 379,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10161,7 +10242,7 @@
     },
     {
       "id": "vibox-random-team-generator",
-      "rank": 377,
+      "rank": 380,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10188,7 +10269,7 @@
     },
     {
       "id": "visualtimer-random-group-generator",
-      "rank": 378,
+      "rank": 381,
       "features": {
         "Progressive group reveal": "yes",
         "Interactive assignment process": "no",
@@ -10215,7 +10296,7 @@
     },
     {
       "id": "waytolearnx-random-team-generator",
-      "rank": 379,
+      "rank": 382,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10242,7 +10323,7 @@
     },
     {
       "id": "webby-student-group-generator",
-      "rank": 380,
+      "rank": 383,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10269,7 +10350,7 @@
     },
     {
       "id": "webcatalog-random-group-generator-app",
-      "rank": 381,
+      "rank": 384,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10296,7 +10377,7 @@
     },
     {
       "id": "wheelofnamespicker-team-generator",
-      "rank": 382,
+      "rank": 385,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10323,7 +10404,7 @@
     },
     {
       "id": "wordmint-random-group-generator",
-      "rank": 383,
+      "rank": 386,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10350,7 +10431,7 @@
     },
     {
       "id": "ahsan-kamal-group-formation-tool",
-      "rank": 384,
+      "rank": 387,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10377,7 +10458,7 @@
     },
     {
       "id": "anytexteditor-random-team-generator",
-      "rank": 385,
+      "rank": 388,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10404,7 +10485,7 @@
     },
     {
       "id": "calculatinghub-random-team-generator",
-      "rank": 386,
+      "rank": 389,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10431,7 +10512,7 @@
     },
     {
       "id": "cbc-tools-random-groups",
-      "rank": 387,
+      "rank": 390,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10458,7 +10539,7 @@
     },
     {
       "id": "euan-riggans-team-builder",
-      "rank": 388,
+      "rank": 391,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10485,7 +10566,7 @@
     },
     {
       "id": "fotify-speed-dating-event-planner",
-      "rank": 389,
+      "rank": 392,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10512,7 +10593,7 @@
     },
     {
       "id": "games4esl-random-group-generator",
-      "rank": 390,
+      "rank": 393,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10539,7 +10620,7 @@
     },
     {
       "id": "juicy-tools-group-maker",
-      "rank": 391,
+      "rank": 394,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10566,7 +10647,7 @@
     },
     {
       "id": "litetools-team-picker-wheel",
-      "rank": 392,
+      "rank": 395,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10593,7 +10674,7 @@
     },
     {
       "id": "lommeregnere-random-team-generator",
-      "rank": 393,
+      "rank": 396,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10620,7 +10701,7 @@
     },
     {
       "id": "rakkotools-random-group-generator",
-      "rank": 394,
+      "rank": 397,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10647,7 +10728,7 @@
     },
     {
       "id": "random-number-lab-groups-generator",
-      "rank": 395,
+      "rank": 398,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10674,7 +10755,7 @@
     },
     {
       "id": "randomhub-random-group-generator",
-      "rank": 396,
+      "rank": 399,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10701,7 +10782,7 @@
     },
     {
       "id": "randomtools-io-team-generator",
-      "rank": 397,
+      "rank": 400,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10728,7 +10809,7 @@
     },
     {
       "id": "smartfreetools-team-generator",
-      "rank": 398,
+      "rank": 401,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10755,7 +10836,7 @@
     },
     {
       "id": "spinthewheel-io-team-draw-generator",
-      "rank": 399,
+      "rank": 402,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10782,7 +10863,7 @@
     },
     {
       "id": "teacher-toolset-random-group-maker",
-      "rank": 400,
+      "rank": 403,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10809,7 +10890,7 @@
     },
     {
       "id": "teachquill-classroom-group-generator",
-      "rank": 401,
+      "rank": 404,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10836,7 +10917,7 @@
     },
     {
       "id": "toolita-team-picker",
-      "rank": 402,
+      "rank": 405,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10863,7 +10944,7 @@
     },
     {
       "id": "versakit-group-generator",
-      "rank": 403,
+      "rank": 406,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10890,7 +10971,7 @@
     },
     {
       "id": "wheel-of-decision-team-generator",
-      "rank": 404,
+      "rank": 407,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10917,7 +10998,7 @@
     },
     {
       "id": "agentcalc-random-team-generator",
-      "rank": 405,
+      "rank": 408,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10944,7 +11025,7 @@
     },
     {
       "id": "comment-picker-random-team-generator",
-      "rank": 406,
+      "rank": 409,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10971,7 +11052,7 @@
     },
     {
       "id": "graphpad-quickcalcs-random-assignment",
-      "rank": 407,
+      "rank": 410,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -10998,7 +11079,7 @@
     },
     {
       "id": "iotools-random-team-generator",
-      "rank": 408,
+      "rank": 411,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11025,7 +11106,7 @@
     },
     {
       "id": "mainfacts-random-team-generator",
-      "rank": 409,
+      "rank": 412,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11052,7 +11133,7 @@
     },
     {
       "id": "namegenhub-name-group-generator",
-      "rank": 410,
+      "rank": 413,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11079,7 +11160,7 @@
     },
     {
       "id": "piliapp-random-team-generator",
-      "rank": 411,
+      "rank": 414,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11106,7 +11187,7 @@
     },
     {
       "id": "random-choice-generator-random-team-generator",
-      "rank": 412,
+      "rank": 415,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11133,7 +11214,7 @@
     },
     {
       "id": "random-team-generator-github-app",
-      "rank": 413,
+      "rank": 416,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11160,7 +11241,7 @@
     },
     {
       "id": "randomgenerator-com-au-random-group-generator",
-      "rank": 414,
+      "rank": 417,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11187,7 +11268,7 @@
     },
     {
       "id": "randomgroupgenerator-co",
-      "rank": 415,
+      "rank": 418,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11214,7 +11295,7 @@
     },
     {
       "id": "randomteamgenerator-discord-app",
-      "rank": 416,
+      "rank": 419,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11241,7 +11322,7 @@
     },
     {
       "id": "randotools-random-team-generator",
-      "rank": 417,
+      "rank": 420,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11268,7 +11349,7 @@
     },
     {
       "id": "randzy-team-generator",
-      "rank": 418,
+      "rank": 421,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11295,7 +11376,7 @@
     },
     {
       "id": "spinthenamepicker-team-generator",
-      "rank": 419,
+      "rank": 422,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11322,7 +11403,7 @@
     },
     {
       "id": "spinyourpick-team-splitter",
-      "rank": 420,
+      "rank": 423,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11349,7 +11430,7 @@
     },
     {
       "id": "the-word-finder-random-group-generator",
-      "rank": 421,
+      "rank": 424,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11376,7 +11457,7 @@
     },
     {
       "id": "togarci-groupgenerator",
-      "rank": 422,
+      "rank": 425,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11403,7 +11484,7 @@
     },
     {
       "id": "utekar-random-team-generator",
-      "rank": 423,
+      "rank": 426,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11430,7 +11511,7 @@
     },
     {
       "id": "virtual-science-teachers-random-group-generator",
-      "rank": 424,
+      "rank": 427,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11457,7 +11538,7 @@
     },
     {
       "id": "a-school-random-pair-generator",
-      "rank": 425,
+      "rank": 428,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11484,7 +11565,7 @@
     },
     {
       "id": "addressgenerator-random-team-generator",
-      "rank": 426,
+      "rank": 429,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11511,7 +11592,7 @@
     },
     {
       "id": "chooserandom-groups",
-      "rank": 427,
+      "rank": 430,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11538,7 +11619,7 @@
     },
     {
       "id": "classtools24-random-group-generator",
-      "rank": 428,
+      "rank": 431,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11565,7 +11646,7 @@
     },
     {
       "id": "gigacalculator-random-team-generator",
-      "rank": 429,
+      "rank": 432,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11592,7 +11673,7 @@
     },
     {
       "id": "groupgen",
-      "rank": 430,
+      "rank": 433,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11619,7 +11700,7 @@
     },
     {
       "id": "matthew-bickell-random-group-generator",
-      "rank": 431,
+      "rank": 434,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11646,7 +11727,7 @@
     },
     {
       "id": "picker-online-wheel-team-picker",
-      "rank": 432,
+      "rank": 435,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11673,7 +11754,7 @@
     },
     {
       "id": "random-generator-tools-random-group-generator",
-      "rank": 433,
+      "rank": 436,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11700,7 +11781,7 @@
     },
     {
       "id": "saiful-islam-groupmaker",
-      "rank": 434,
+      "rank": 437,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11727,7 +11808,7 @@
     },
     {
       "id": "saroj-meher-random-group-generator",
-      "rank": 435,
+      "rank": 438,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11754,7 +11835,7 @@
     },
     {
       "id": "semantic-pen-random-team-generator",
-      "rank": 436,
+      "rank": 439,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11781,7 +11862,7 @@
     },
     {
       "id": "ta-easy-random-group",
-      "rank": 437,
+      "rank": 440,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11808,7 +11889,7 @@
     },
     {
       "id": "toolprime-random-team-generator",
-      "rank": 438,
+      "rank": 441,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11835,7 +11916,7 @@
     },
     {
       "id": "university-of-edinburgh-group-allocator",
-      "rank": 439,
+      "rank": 442,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11862,7 +11943,7 @@
     },
     {
       "id": "wheelzify-random-team-generator-wheel",
-      "rank": 440,
+      "rank": 443,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "partial",
@@ -11889,7 +11970,7 @@
     },
     {
       "id": "aslin-joel-team-randomizer",
-      "rank": 441,
+      "rank": 444,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11916,7 +11997,7 @@
     },
     {
       "id": "commontools-random-team-generator",
-      "rank": 442,
+      "rank": 445,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11943,7 +12024,7 @@
     },
     {
       "id": "effie-random-group-generator",
-      "rank": 443,
+      "rank": 446,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11970,7 +12051,7 @@
     },
     {
       "id": "flippity-random-name-picker",
-      "rank": 444,
+      "rank": 447,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -11997,7 +12078,7 @@
     },
     {
       "id": "generatormix-random-team-generator",
-      "rank": 445,
+      "rank": 448,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12024,7 +12105,7 @@
     },
     {
       "id": "group-m4ker",
-      "rank": 446,
+      "rank": 449,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12051,7 +12132,7 @@
     },
     {
       "id": "icebreaker-games-random-group-generator",
-      "rank": 447,
+      "rank": 450,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12078,7 +12159,7 @@
     },
     {
       "id": "openeducat-ai-group-generator",
-      "rank": 448,
+      "rank": 451,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12105,7 +12186,7 @@
     },
     {
       "id": "random-name-picker-team-generator",
-      "rank": 449,
+      "rank": 452,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12132,7 +12213,7 @@
     },
     {
       "id": "randthings-random-team-generator",
-      "rank": 450,
+      "rank": 453,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12159,7 +12240,7 @@
     },
     {
       "id": "research-randomizer",
-      "rank": 451,
+      "rank": 454,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12186,7 +12267,7 @@
     },
     {
       "id": "soulatools-random-picker-team-picker",
-      "rank": 452,
+      "rank": 455,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12213,7 +12294,7 @@
     },
     {
       "id": "spinwheelnames-random-team-generator",
-      "rank": 453,
+      "rank": 456,
       "features": {
         "Progressive group reveal": "yes",
         "Interactive assignment process": "yes",
@@ -12240,7 +12321,7 @@
     },
     {
       "id": "warren-institute-random-groups-generator",
-      "rank": 454,
+      "rank": 457,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12267,7 +12348,7 @@
     },
     {
       "id": "alien-fusion-generator-random-group-generator",
-      "rank": 455,
+      "rank": 458,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12294,7 +12375,7 @@
     },
     {
       "id": "applorium-random-group-generator",
-      "rank": 456,
+      "rank": 459,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12321,7 +12402,7 @@
     },
     {
       "id": "flexos-random-group-generator",
-      "rank": 457,
+      "rank": 460,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12348,7 +12429,7 @@
     },
     {
       "id": "groupgenerator-top",
-      "rank": 458,
+      "rank": 461,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12375,7 +12456,7 @@
     },
     {
       "id": "homeschool-of-1-random-team-generator",
-      "rank": 459,
+      "rank": 462,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12402,7 +12483,7 @@
     },
     {
       "id": "miniwebtool-random-group-generator",
-      "rank": 460,
+      "rank": 463,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12429,7 +12510,7 @@
     },
     {
       "id": "online-stopwatch-random-magic-hat-group-generator",
-      "rank": 461,
+      "rank": 464,
       "features": {
         "Progressive group reveal": "yes",
         "Interactive assignment process": "no",
@@ -12456,7 +12537,7 @@
     },
     {
       "id": "peliah-randomgenerator",
-      "rank": 462,
+      "rank": 465,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12483,7 +12564,7 @@
     },
     {
       "id": "pickja-random-group-generator",
-      "rank": 463,
+      "rank": 466,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12510,7 +12591,7 @@
     },
     {
       "id": "quizbreaker-team-generator",
-      "rank": 464,
+      "rank": 467,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12537,7 +12618,7 @@
     },
     {
       "id": "random-group-generator-chrome-extension-2",
-      "rank": 465,
+      "rank": 468,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12564,7 +12645,7 @@
     },
     {
       "id": "random-group-generator-firefox-add-on",
-      "rank": 466,
+      "rank": 469,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12591,7 +12672,7 @@
     },
     {
       "id": "randomgenerate-io-random-team-generator",
-      "rank": 467,
+      "rank": 470,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12618,7 +12699,7 @@
     },
     {
       "id": "randomlists-random-team-generator",
-      "rank": 468,
+      "rank": 471,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12645,7 +12726,7 @@
     },
     {
       "id": "randomready-random-group-generator",
-      "rank": 469,
+      "rank": 472,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12672,7 +12753,7 @@
     },
     {
       "id": "spin-the-crocodile-team-picker",
-      "rank": 470,
+      "rank": 473,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "partial",
@@ -12699,7 +12780,7 @@
     },
     {
       "id": "ultimatesolver-random-groups",
-      "rank": 471,
+      "rank": 474,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12726,7 +12807,7 @@
     },
     {
       "id": "group-randomizer-vercel-app",
-      "rank": 472,
+      "rank": 475,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12753,7 +12834,7 @@
     },
     {
       "id": "heyspinner",
-      "rank": 473,
+      "rank": 476,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "partial",
@@ -12780,7 +12861,7 @@
     },
     {
       "id": "ileren-groepenmaker",
-      "rank": 474,
+      "rank": 477,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12807,7 +12888,7 @@
     },
     {
       "id": "imagecompresser-random-team-generator",
-      "rank": 475,
+      "rank": 478,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12834,7 +12915,7 @@
     },
     {
       "id": "mega-seating-plan-free-random-group-maker",
-      "rank": 476,
+      "rank": 479,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12861,7 +12942,7 @@
     },
     {
       "id": "microapp-team-generator",
-      "rank": 477,
+      "rank": 480,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12888,7 +12969,7 @@
     },
     {
       "id": "my2lbox-random-group-generator",
-      "rank": 478,
+      "rank": 481,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12915,7 +12996,7 @@
     },
     {
       "id": "random-teams-generator-android-app",
-      "rank": 479,
+      "rank": 482,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12942,7 +13023,7 @@
     },
     {
       "id": "randomteams-net",
-      "rank": 480,
+      "rank": 483,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12969,7 +13050,7 @@
     },
     {
       "id": "repixify-random-team-generator",
-      "rank": 481,
+      "rank": 484,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -12996,7 +13077,7 @@
     },
     {
       "id": "1minusbeta-name-group-generator",
-      "rank": 482,
+      "rank": 485,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -13023,7 +13104,7 @@
     },
     {
       "id": "bestrandoms-random-team-generator",
-      "rank": 483,
+      "rank": 486,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -13050,7 +13131,7 @@
     },
     {
       "id": "breno-design-group-generator",
-      "rank": 484,
+      "rank": 487,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -13077,7 +13158,7 @@
     },
     {
       "id": "calculate-co-nz-random-team-generator",
-      "rank": 485,
+      "rank": 488,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -13104,7 +13185,7 @@
     },
     {
       "id": "gospinwheel-random-group-generator",
-      "rank": 486,
+      "rank": 489,
       "features": {
         "Progressive group reveal": "yes",
         "Interactive assignment process": "yes",
@@ -13131,7 +13212,7 @@
     },
     {
       "id": "pincalculator-random-group-generator",
-      "rank": 487,
+      "rank": 490,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -13158,7 +13239,7 @@
     },
     {
       "id": "randomcount-team-generator",
-      "rank": 488,
+      "rank": 491,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -13185,7 +13266,7 @@
     },
     {
       "id": "terrific-tools-random-group-generator",
-      "rank": 489,
+      "rank": 492,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -13212,7 +13293,7 @@
     },
     {
       "id": "madeintext-random-group-generator",
-      "rank": 490,
+      "rank": 493,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -13239,7 +13320,7 @@
     },
     {
       "id": "puretables-random-group-generator",
-      "rank": 491,
+      "rank": 494,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -13266,7 +13347,7 @@
     },
     {
       "id": "sheffield-hallam-tel-e-vision-group-maker",
-      "rank": 492,
+      "rank": 495,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -13293,7 +13374,7 @@
     },
     {
       "id": "web0-random-team-generator",
-      "rank": 493,
+      "rank": 496,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -13320,7 +13401,7 @@
     },
     {
       "id": "classtools-random-group-generator",
-      "rank": 494,
+      "rank": 497,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -13347,7 +13428,7 @@
     },
     {
       "id": "musely-team-builder-generator",
-      "rank": 495,
+      "rank": 498,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -13374,7 +13455,7 @@
     },
     {
       "id": "schule-dietmannsried-gruppen-generator",
-      "rank": 496,
+      "rank": 499,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -13401,7 +13482,7 @@
     },
     {
       "id": "wheel-decide-random-team-generator",
-      "rank": 497,
+      "rank": 500,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "partial",
@@ -13428,7 +13509,7 @@
     },
     {
       "id": "wheel-of-names",
-      "rank": 498,
+      "rank": 501,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "partial",
@@ -13455,7 +13536,7 @@
     },
     {
       "id": "ahaslides-random-team-generator",
-      "rank": 499,
+      "rank": 502,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -13482,7 +13563,7 @@
     },
     {
       "id": "basedlabs-random-team-generator-with-conditions",
-      "rank": 500,
+      "rank": 503,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -13509,7 +13590,7 @@
     },
     {
       "id": "freetexttools-random-team-generator",
-      "rank": 501,
+      "rank": 504,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -13536,7 +13617,7 @@
     },
     {
       "id": "basedlabs-random-group-generator",
-      "rank": 502,
+      "rank": 505,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -13563,7 +13644,7 @@
     },
     {
       "id": "wordwall-random-team-generator-resource",
-      "rank": 503,
+      "rank": 506,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "partial",
@@ -13590,7 +13671,7 @@
     },
     {
       "id": "decisionmakertool-team-picker",
-      "rank": 504,
+      "rank": 507,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -13617,7 +13698,7 @@
     },
     {
       "id": "teach-starter-random-name-picker",
-      "rank": 505,
+      "rank": 508,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "partial",
@@ -13644,7 +13725,7 @@
     },
     {
       "id": "remagineai-random-group-generator",
-      "rank": 506,
+      "rank": 509,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",
@@ -13671,7 +13752,7 @@
     },
     {
       "id": "huqiu-random-group-generator",
-      "rank": 507,
+      "rank": 510,
       "features": {
         "Progressive group reveal": "no",
         "Interactive assignment process": "no",

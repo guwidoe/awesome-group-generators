@@ -1,10 +1,10 @@
 # Market review: Visora, Pick & Shuffle, Peabody, and Social Golfer (2026-11-03)
 
-Three candidates meet the ranked-list scope rules after live review. The recommended scores and projected ranks below are **proposals**, recorded separately from the current 507-tool catalog. Applying them would produce a 510-tool catalog. Existing tools retain their relative order; the top ten would be unchanged.
+Three tools were added after live review, bringing the ranked catalog to **510 tools**. The scores and ranks below are incorporated in the public dataset. Existing tools retain their relative order; the top ten are unchanged.
 
-The [structured evidence](../data/review-evidence/market-review-2026-11-03.json) includes full proposed catalog records, observed assignments, independently calculated pair counts, output checks, and limitations. Scores follow [METHODOLOGY.md](../METHODOLOGY.md).
+The [structured evidence](../data/review-evidence/market-review-2026-11-03.json) includes full catalog records, observed assignments, independently calculated pair counts, output checks, and limitations. Scores follow [METHODOLOGY.md](../METHODOLOGY.md).
 
-| Proposed addition | Projected rank | Overall | Ease | Design | Features | Outputs | Privacy | Account | Results |
+| Tool | Rank | Overall | Ease | Design | Features | Outputs | Privacy | Account | Results |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | [Pick & Shuffle No-Repeat Group Generator](https://picknshuffle.com/no-repeat-group-generator/) | 24 | 4.0 | 3.8 | 4.0 | 3.9 | 4.2 | 4.3 | 5.0 | 4.0 |
 | [Visora Random Group Generator](https://tools.visoraapp.com/random-group-generator/) | 32 | 4.0 | 4.3 | 3.8 | 4.0 | 3.1 | 4.7 | 5.0 | 4.0 |
@@ -38,7 +38,7 @@ The main limitations are a stable roster requirement, explicit saving, and a nex
 
 ### Peabody Teach
 
-The feasible eight-person case honored Ava/Ben together and Cora/Dan apart, while assigning Reader, Recorder, Materials manager, and Timekeeper roles. Contradictory pair rules produced a best-effort assignment and a warning that the together rule could not be met. Pair rules should therefore be marked partial rather than treated as guaranteed feasibility constraints. Ten participants with a maximum size of four produced 4/3/3.
+The feasible eight-person case honored Ava/Ben together and Cora/Dan apart, while assigning Reader, Recorder, Materials manager, and Timekeeper roles. Contradictory pair rules produced a best-effort assignment and a warning that the together rule could not be met. Pair rules are therefore marked partial. Ten participants with a maximum size of four produced 4/3/3.
 
 Its useful classroom controls include configurable roles, the last five rounds of partner history, text copying, print, full-screen controls, and Paper/Night/Chalk design profiles. A class/settings link shares inputs; it is not a saved result link. No CSV, Excel, JSON bundle, or manual member editor appeared.
 
@@ -46,12 +46,12 @@ Although the site says class lists stay in the browser and there are no ads, the
 
 ## Social Golfer Online: corrections supported, numeric rerating deferred
 
-The [current official site](https://socialgolfer.online/) describes supported combinatorial constructions plus optimization, with available browser, mobile, or server engines. The catalog's older genetic/local-search wording should be replaced with this attributed description.
+The [current official site](https://socialgolfer.online/) describes supported combinatorial constructions plus optimization, with available browser, mobile, or server engines. The catalog's older genetic/local-search wording was replaced with this attributed description.
 
-The site now advertises Recompute All Sessions as an online action that plans eligible unlocked golf sessions together while preserving locked and non-golf sessions. It also advertises PDF reports and beta limits of three events, 120 members per event, 52 sessions, and 30 groups per session. Its separation documentation supports changing keep-apart from no to partial, pending an enforcement test.
+The site now advertises Recompute All Sessions as an online action that plans eligible unlocked golf sessions together while preserving locked and non-golf sessions. It also advertises PDF reports and beta limits of three events, 120 members per event, 52 sessions, and 30 groups per session. These notes were incorporated, and keep-apart support changed from no to partial based on the separation documentation, pending an enforcement test.
 
-Live navigation reached the organizer login. Guest access required an existing share code. The new optimizer and PDF exports could therefore not be exercised in this review. Retain the existing **4.3 overall, rank 3, and category scores**, retain partial PDF support, and identify the advertised additions as unverified in the current review. A logged-in optimizer/export run is needed before increasing ratings.
+Live navigation reached the organizer login. Guest access required an existing share code. The new optimizer and PDF exports could therefore not be exercised in this review. The existing **4.3 overall, rank 3, and category scores** are retained, with partial PDF support and the advertised additions identified as unverified in the current review. A logged-in optimizer/export run is needed before increasing ratings.
 
 ## Interaction fields
 
-All three new candidates showed complete assignments together. No repeated visible placement process or final member move/swap control appeared. Recommended values are no for staged reveal, interactive assignment, and manual post-generation editing. Full-screen presentation, candidate confirmation, configurable roles, and input/settings sharing are recorded separately.
+All three additions showed complete assignments together. No repeated visible placement process or final member move/swap control appeared. Recorded values are no for staged reveal, interactive assignment, and manual post-generation editing. Full-screen presentation, candidate confirmation, configurable roles, and input/settings sharing are recorded separately.

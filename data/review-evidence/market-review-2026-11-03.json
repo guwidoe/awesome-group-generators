@@ -1,10 +1,11 @@
 {
   "date": "2026-11-03",
-  "status": "reviewed recommendations; not applied to ranked catalog",
+  "status": "incorporated into the ranked catalog on 2026-11-03",
   "catalogBaseCommit": "7524695",
   "catalogBaseToolCount": 507,
+  "catalogToolCount": 510,
   "method": "Live public workflows in isolated browser sessions, using fictional rosters. Pair metrics independently recomputed from visible assignments. Small cases establish these observations, not general solver optimality.",
-  "recommendedCatalogAdditions": [
+  "catalogAdditions": [
     {
       "id": "visora-random-group-generator",
       "rank": 32,
@@ -980,15 +981,15 @@
     "currentOverallRating": 4.3,
     "currentRank": 3,
     "status": "Official documentation and login/guest entry reviewed; authenticated generation unavailable in the isolated session.",
-    "recommendedUpdates": [
-      "Replace the obsolete genetic/local-search description with the vendor's current description: supported combinatorial constructions plus optimization, with browser/mobile/server engines.",
-      "Document Recompute All Sessions as an online joint-planning action for eligible unlocked golf sessions.",
-      "Document current advertised beta limits: 120 members/event, 52 sessions, 30 groups/session, 3 events.",
-      "Mention current advertised PDF reports and retain partial export support until organizer access and export availability are tested.",
-      "Change keep-apart support from no to partial based on official separation documentation, pending live enforcement testing."
-    ],
-    "ratingDecision": "Retain 4.3 and existing category scores; no numeric uplift supported by this limited re-review.",
+    "ratingDecision": "Retained 4.3, rank 3, and existing category scores; no numeric uplift supported by this limited re-review.",
     "loginObservation": "Organizer flow required email/password or Apple/Google. Continue as Guest required an existing share code.",
-    "sourceClaimLimit": "The advertised new optimizer and PDF behavior were not executed; no ranking increase is proposed."
+    "sourceClaimLimit": "The advertised new optimizer and PDF behavior were not executed; no ranking increase is proposed.",
+    "appliedUpdates": [
+      "Replaced the obsolete genetic/local-search description with the vendor's current description: supported combinatorial constructions plus optimization, with browser/mobile/server engines.",
+      "Documented Recompute All Sessions as an advertised online joint-planning action for eligible unlocked golf sessions.",
+      "Documented current advertised beta limits: 120 members/event, 52 sessions, 30 groups/session, 3 events.",
+      "Updated advertised PDF report notes while retaining partial export support pending authenticated tests.",
+      "Changed keep-apart support from no to partial based on official separation documentation, pending live enforcement testing."
+    ]
   }
 }

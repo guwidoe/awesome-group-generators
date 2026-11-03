@@ -6,11 +6,11 @@ This pass reviews every ranked tool for three ways people use a grouping result:
 
 | Feature | Yes | Partial | No |
 |---|---:|---:|---:|
-| Progressive group reveal | 12 | 0 | 494 |
-| Interactive assignment process | 7 | 7 | 492 |
-| Manual post-generation editing | 28 | 2 | 476 |
+| Progressive group reveal | 12 | 0 | 498 |
+| Interactive assignment process | 7 | 7 | 496 |
+| Manual post-generation editing | 29 | 2 | 479 |
 
-The initial 2026-09-23 review covered 503 tools. With the three live-reviewed additions on 2026-10-01, the evidence covers 506 tools and 1,518 field decisions. Evidence confidence is high for 429 tools, medium for 21, and low for 56. Low-confidence entries generally have gated, blocked, or unavailable workflows; their `no` values mean support was not visible in the reviewed material. The evidence file retains this confidence per tool.
+The initial 2026-09-23 review covered 503 tools. With later additions through 2026-11-03, the evidence covers 510 tools and 1,530 field decisions. Evidence confidence is high for 433 tools, medium for 21, and low for 56. Low-confidence entries generally have gated, blocked, or unavailable workflows; their `no` values mean support was not visible in the reviewed material. The evidence file retains this confidence per tool.
 
 ## What the fields mean
 
@@ -32,4 +32,8 @@ This pass exposed stale product descriptions beyond the three new fields. SpinOf
 
 **2026-10-01 additions:** WheelToss, Team Balancer (balanceteams.com), and UtiloKit were live-reviewed and added to the catalog. WheelToss supports manual member moves after generation. Team Balancer has pre-generation locks, and UtiloKit permits team-name edits; neither qualifies for manual post-generation editing. All three reveal their complete assignment in one action. Their per-tool evidence and shifted catalog ranks are recorded in the evidence file; existing tools were not re-reviewed for these fields.
 
-The 2026-09-23 audit recorded feature support without recalculating existing tools' ratings. The three 2026-10-01 additions have separate full reviews and ratings. Animation and presentation can make the grouping experience more useful, while assignment quality continues to describe the groups produced.
+**2026-10-08 addition:** Uniform Group Creator supports manual member edits with conflict warnings. It does not provide staged reveal or interactive assignment in the reviewed workflow. Its evidence was added with the original review; the totals above now include it.
+
+**2026-11-03 additions:** Visora, Pick & Shuffle, and Peabody Teach were live-reviewed and added. All three show complete assignments together and provide no observed member move/swap controls. Their staged reveal, interactive assignment, and manual editing values are no; full-screen presentation is recorded separately.
+
+The 2026-09-23 audit recorded feature support without recalculating existing tools' ratings. Subsequent additions have separate full reviews and ratings. Animation and presentation can make the grouping experience more useful, while assignment quality continues to describe the groups produced.
