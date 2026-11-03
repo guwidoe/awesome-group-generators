@@ -1,0 +1,994 @@
+{
+  "date": "2026-11-03",
+  "status": "reviewed recommendations; not applied to ranked catalog",
+  "catalogBaseCommit": "7524695",
+  "catalogBaseToolCount": 507,
+  "method": "Live public workflows in isolated browser sessions, using fictional rosters. Pair metrics independently recomputed from visible assignments. Small cases establish these observations, not general solver optimality.",
+  "recommendedCatalogAdditions": [
+    {
+      "id": "visora-random-group-generator",
+      "rank": 32,
+      "name": "Visora Random Group Generator",
+      "url": "https://tools.visoraapp.com/random-group-generator/",
+      "bestFor": "Classroom groups with pair rules, label balance, and recent-round repeat avoidance",
+      "summary": "Visora combines pasted names, group count or size, together/apart rules, tag balance, local saved-round history, conflict messages, and full-screen presentation. Live tests verified both pair rules and even tag counts, four rounds of nine people without repeated partners, and a warning when repeats became unavoidable.",
+      "pricing": "Free public browser workflow with no account required; reviewed 2026-11-03.",
+      "overallRating": 4,
+      "overallComment": "A useful classroom grouping workflow with tested constraints and repeat avoidance. Its export surface is limited to copy and browser printing, and it plans each next round against saved history.",
+      "ratings": {
+        "easeOfUse": 4.3,
+        "design": 3.8,
+        "features": 4,
+        "outputs": 3.1,
+        "privacy": 4.7,
+        "accountFriction": 5,
+        "resultQuality": 4
+      },
+      "ratingComments": {
+        "easeOfUse": "The roster and split controls are direct; optional rules and explicit Save as a round make the history model understandable.",
+        "design": "Readable cards and practical full-screen output. An invalid setup can leave a previous assignment available, so the error and result need careful attention.",
+        "features": "Live-tested pair rules, tag balance, recent-round avoidance, saved rounds, custom group names, and full-screen output. No member moves, numeric score balancing, or joint future-schedule planner was found.",
+        "outputs": "Copy and print controls plus a working full-screen view. No CSV, Excel, or dedicated image/PDF download appeared; browser print-to-PDF is a workaround.",
+        "privacy": "The tool says rosters and history stay in the browser. Only same-origin resources were observed in this session; that observation does not establish a full privacy audit.",
+        "accountFriction": "All tested cases worked without signup or payment.",
+        "resultQuality": "The positive case satisfied together/apart and label balance. Nine people in three trios completed four rounds with all 36 distinct pairs, then correctly reported nine unavoidable repeats in round five. Contradictory rules were rejected. These small cases do not establish performance on larger or harder instances."
+      },
+      "features": {
+        "API/programmatic access": "no",
+        "Attribute balance constraints": "yes",
+        "Attribute total/sum constraints": "no",
+        "Copy results to clipboard": "yes",
+        "Custom group capacities": "no",
+        "Deterministic seed / reproducibility": "no",
+        "Editable/random team names": "yes",
+        "Embeddable results": "no",
+        "Excel export": "no",
+        "Fixed person placement": "no",
+        "Gender/label balancing": "yes",
+        "Google Sheets import": "no",
+        "Hard keep-apart constraints": "yes",
+        "Hard keep-together constraints": "yes",
+        "Image/PDF export": "partial",
+        "Interactive assignment process": "no",
+        "Manual post-generation editing": "no",
+        "Minimum group sizes": "no",
+        "Multiple rounds/sessions": "yes",
+        "No account required": "yes",
+        "Pair meeting count targets": "no",
+        "Pair meeting matrix": "no",
+        "Partial attendance by session": "no",
+        "Paste names": "yes",
+        "Per-session capacities": "no",
+        "Per-session constraints": "no",
+        "Person/group visit count constraints": "no",
+        "Pinned people / fixed placements": "no",
+        "Presentation/full-screen mode": "yes",
+        "Progressive group reveal": "no",
+        "Repeat encounter limits": "partial",
+        "Result comments": "no",
+        "Result quality diagnostics": "yes",
+        "Runs in browser": "yes",
+        "Saved class roster import": "no",
+        "Saved participant/team lists": "partial",
+        "Saved result history": "yes",
+        "Saved scenarios/workspaces": "no",
+        "Scenario import/export bundle": "no",
+        "Self-join participant link": "no",
+        "Shareable result links": "no",
+        "Soft prefer-apart constraints": "no",
+        "Soft prefer-together constraints": "no",
+        "Solver telemetry/result metadata": "no",
+        "Solver tuning controls": "no",
+        "Spreadsheet CSV export": "no",
+        "Spreadsheet CSV import": "no",
+        "Storage management/cleanup": "yes",
+        "Team leader / representative assignment": "no",
+        "Unique-contact optimization": "yes",
+        "Visual/theme customization": "no",
+        "Weighted random entries": "no",
+        "Weighted soft constraints": "no",
+        "Zoom breakout CSV import/export": "no"
+      },
+      "pros": [
+        "Pair rules and label balance verified together",
+        "Recent-round repeat avoidance with saved history",
+        "Conflict diagnostics",
+        "Full-screen presentation, copy, and print",
+        "No account required"
+      ],
+      "cons": [
+        "No structured spreadsheet or image export found",
+        "No manual editing of generated memberships found",
+        "Plans a next round against history rather than a whole future schedule",
+        "Previous assignments remain available after an invalid setup"
+      ],
+      "reviewNote": "Reviewed live on 2026-11-03. See the dated market report and raw case evidence. Keep recent-round avoidance distinct from a hard pair-meeting cap or a joint multi-round solver.",
+      "tags": [
+        "multi-round",
+        "constraints",
+        "privacy-friendly"
+      ]
+    },
+    {
+      "id": "pick-shuffle-no-repeat-group-generator",
+      "rank": 24,
+      "name": "Pick & Shuffle No-Repeat Group Generator",
+      "url": "https://picknshuffle.com/no-repeat-group-generator/",
+      "bestFor": "Recurring groups with confirmed contact history, visible repeat counts, and portable backups",
+      "summary": "Pick & Shuffle maintains confirmed group history, searches a next-round candidate, and exposes repeated-pair counts and a simple lower bound. Live tests verified a repeat-free four-round nine-person rotation, a correctly reported unavoidable fifth round, CSV history export, JSON backup/import, and saved-state reload.",
+      "pricing": "Free browser workflow without signup; documented limits of 2–80 participants, 2–20 groups, and 50 confirmed rounds. Reviewed 2026-11-03.",
+      "overallRating": 4,
+      "overallComment": "A focused repeat-aware grouping tool with useful diagnostics and tested history exports. It optimizes the next round against fixed history and requires stable roster identities.",
+      "ratings": {
+        "easeOfUse": 3.8,
+        "design": 4,
+        "features": 3.9,
+        "outputs": 4.2,
+        "privacy": 4.3,
+        "accountFriction": 5,
+        "resultQuality": 4
+      },
+      "ratingComments": {
+        "easeOfUse": "Candidate, confirm, and save are separate actions. This avoids recording unused previews, but users must learn the distinction and save again after adding rounds.",
+        "design": "Clear candidate/history panels and accessible member lists, with useful repeat explanations. The settings and instructional content make the page long.",
+        "features": "Confirmed history, past-round entry, explicit local snapshots, JSON backup/import, CSV history, pair-count details, and full-screen mode. No skill balance, pair rules, partial attendance, or manual member editor appeared.",
+        "outputs": "A downloaded five-round CSV contained 45 member rows, and JSON backup/import and saved-history reload worked. Copy and full-screen controls are available. No dedicated PDF/image export was found.",
+        "privacy": "Roster/history processing is local according to the tool. A request to app.pageview.app was observed; local storage and exported files still expose names to anyone with access to them.",
+        "accountFriction": "No account or installation was required.",
+        "resultQuality": "All 36 pairs appeared exactly once across four three-trio rounds. Round five reported nine repeated pairs and a matching lower bound, independently confirmed from the output. The documented bounded next-round search does not certify global optimality for general schedules."
+      },
+      "features": {
+        "API/programmatic access": "no",
+        "Attribute balance constraints": "no",
+        "Attribute total/sum constraints": "no",
+        "Copy results to clipboard": "yes",
+        "Custom group capacities": "no",
+        "Deterministic seed / reproducibility": "no",
+        "Editable/random team names": "no",
+        "Embeddable results": "no",
+        "Excel export": "no",
+        "Fixed person placement": "no",
+        "Gender/label balancing": "no",
+        "Google Sheets import": "no",
+        "Hard keep-apart constraints": "no",
+        "Hard keep-together constraints": "no",
+        "Image/PDF export": "no",
+        "Interactive assignment process": "no",
+        "Manual post-generation editing": "no",
+        "Minimum group sizes": "no",
+        "Multiple rounds/sessions": "yes",
+        "No account required": "yes",
+        "Pair meeting count targets": "no",
+        "Pair meeting matrix": "partial",
+        "Partial attendance by session": "no",
+        "Paste names": "yes",
+        "Per-session capacities": "no",
+        "Per-session constraints": "no",
+        "Person/group visit count constraints": "no",
+        "Pinned people / fixed placements": "no",
+        "Presentation/full-screen mode": "yes",
+        "Progressive group reveal": "no",
+        "Repeat encounter limits": "partial",
+        "Result comments": "no",
+        "Result quality diagnostics": "yes",
+        "Runs in browser": "yes",
+        "Saved class roster import": "no",
+        "Saved participant/team lists": "yes",
+        "Saved result history": "yes",
+        "Saved scenarios/workspaces": "partial",
+        "Scenario import/export bundle": "yes",
+        "Self-join participant link": "no",
+        "Shareable result links": "no",
+        "Soft prefer-apart constraints": "no",
+        "Soft prefer-together constraints": "no",
+        "Solver telemetry/result metadata": "yes",
+        "Solver tuning controls": "no",
+        "Spreadsheet CSV export": "yes",
+        "Spreadsheet CSV import": "no",
+        "Storage management/cleanup": "yes",
+        "Team leader / representative assignment": "no",
+        "Unique-contact optimization": "yes",
+        "Visual/theme customization": "partial",
+        "Weighted random entries": "no",
+        "Weighted soft constraints": "no",
+        "Zoom breakout CSV import/export": "no"
+      },
+      "pros": [
+        "Repeat metrics and a simple necessary-repeat lower bound",
+        "Explicit confirmation keeps rejected previews out of history",
+        "CSV history export and verified JSON backup/import",
+        "Local snapshot restored after reload",
+        "No signup required"
+      ],
+      "cons": [
+        "Only the next round is optimized against fixed history",
+        "Applying a changed roster clears history",
+        "No pair rules, skill balance, or partial attendance",
+        "No post-generation membership editor found",
+        "Local snapshots require explicit saving"
+      ],
+      "reviewNote": "Reviewed live on 2026-11-03. Final five-round test used UI actions with waits for committed state between Confirm and Generate. Raw rounds and independent pair counts are in the dated evidence. The numeric pair-count list is not a matrix.",
+      "tags": [
+        "multi-round",
+        "privacy-friendly",
+        "strong-exports"
+      ]
+    },
+    {
+      "id": "peabody-teach-random-group-maker",
+      "rank": 35,
+      "name": "Peabody Teach Random Group Maker",
+      "url": "https://teach.peabody.kids/groups",
+      "bestFor": "Classroom groups with assigned roles, pair preferences, and recent partner avoidance",
+      "summary": "Peabody Teach provides equal-size groups, together/apart rules, configurable classroom roles, five-round partner history, print/copy, a class-settings link, full-screen mode, and Paper/Night/Chalk themes. Live tests verified pair handling, assigned roles, a repeat-free four-round nine-person rotation, and warnings when rules or repeat avoidance could not all hold.",
+      "pricing": "Free public tool with no signup or payment in the reviewed workflow; site says it has no ads. Reviewed 2026-11-03.",
+      "overallRating": 3.9,
+      "overallComment": "A practical classroom group maker with roles, presentation, and tested recent-repeat avoidance. Pair rules are best-effort with warnings, and outputs lack structured file exports.",
+      "ratings": {
+        "easeOfUse": 4.4,
+        "design": 4.2,
+        "features": 3.8,
+        "outputs": 3.2,
+        "privacy": 4,
+        "accountFriction": 5,
+        "resultQuality": 3.8
+      },
+      "ratingComments": {
+        "easeOfUse": "Paste names, choose count or size, optionally add pairs and roles, then generate. The main controls and warnings are easy to read.",
+        "design": "Readable group cards, a classroom-oriented layout, keyboard shortcuts, and distinct Paper/Night/Chalk profiles. Full-screen controls are available.",
+        "features": "Roles, best-effort pair rules, recent-five-round avoidance, local saved class state, shareable class/settings links, and presentation. No numeric balancing, joint future-schedule planning, or manual membership editor appeared.",
+        "outputs": "Copy, print, full-screen, and a class/settings link are available. That link does not represent a saved generated result. No CSV, Excel, JSON bundle, or dedicated PDF/image download appeared.",
+        "privacy": "The site says class data is processed/stored locally and there are no ads. Google Tag Manager/Analytics and DoubleClick-related resources were nevertheless observed. A class-settings link exposes its contents to recipients.",
+        "accountFriction": "All reviewed cases ran without signup.",
+        "resultQuality": "Both requested pair rules held in a feasible case and roles were assigned. Four rounds of nine people in trios covered all 36 pairs without repeats; a fifth correctly warned about nine repeats. Contradictory pair rules produced a best-effort result with a warning, rather than a strictly feasible-only result."
+      },
+      "features": {
+        "API/programmatic access": "no",
+        "Attribute balance constraints": "no",
+        "Attribute total/sum constraints": "no",
+        "Copy results to clipboard": "yes",
+        "Custom group capacities": "no",
+        "Deterministic seed / reproducibility": "no",
+        "Editable/random team names": "no",
+        "Embeddable results": "no",
+        "Excel export": "no",
+        "Fixed person placement": "no",
+        "Gender/label balancing": "no",
+        "Google Sheets import": "no",
+        "Hard keep-apart constraints": "partial",
+        "Hard keep-together constraints": "partial",
+        "Image/PDF export": "partial",
+        "Interactive assignment process": "no",
+        "Manual post-generation editing": "no",
+        "Minimum group sizes": "no",
+        "Multiple rounds/sessions": "yes",
+        "No account required": "yes",
+        "Pair meeting count targets": "no",
+        "Pair meeting matrix": "no",
+        "Partial attendance by session": "no",
+        "Paste names": "yes",
+        "Per-session capacities": "no",
+        "Per-session constraints": "no",
+        "Person/group visit count constraints": "no",
+        "Pinned people / fixed placements": "no",
+        "Presentation/full-screen mode": "yes",
+        "Progressive group reveal": "no",
+        "Repeat encounter limits": "partial",
+        "Result comments": "no",
+        "Result quality diagnostics": "yes",
+        "Runs in browser": "yes",
+        "Saved class roster import": "no",
+        "Saved participant/team lists": "yes",
+        "Saved result history": "partial",
+        "Saved scenarios/workspaces": "no",
+        "Scenario import/export bundle": "no",
+        "Self-join participant link": "no",
+        "Shareable result links": "no",
+        "Soft prefer-apart constraints": "no",
+        "Soft prefer-together constraints": "no",
+        "Solver telemetry/result metadata": "no",
+        "Solver tuning controls": "no",
+        "Spreadsheet CSV export": "no",
+        "Spreadsheet CSV import": "no",
+        "Storage management/cleanup": "yes",
+        "Team leader / representative assignment": "partial",
+        "Unique-contact optimization": "yes",
+        "Visual/theme customization": "yes",
+        "Weighted random entries": "no",
+        "Weighted soft constraints": "no",
+        "Zoom breakout CSV import/export": "no"
+      },
+      "pros": [
+        "Configurable classroom roles",
+        "Tested pair preferences and recent-repeat avoidance",
+        "Readable conflict and repeat warnings",
+        "Local class state and input/settings sharing",
+        "Distinct themes and full-screen presentation"
+      ],
+      "cons": [
+        "Pair rules can be broken with a warning",
+        "Only the last five rounds inform repeat avoidance",
+        "No structured result export or manual member moves found",
+        "Analytics resources load despite local roster processing"
+      ],
+      "reviewNote": "Reviewed live on 2026-11-03. A contradictory Ava/Ben together-and-apart setup produced separate pairs and warned that together could not be met. The initial feasible pair/role case and four-round coverage case passed. Full-screen and theme controls were observed; Chalk was switched on and visually inspected.",
+      "tags": [
+        "multi-round",
+        "constraints",
+        "privacy-friendly"
+      ]
+    }
+  ],
+  "cases": {
+    "visora": {
+      "ninePeopleFiveRounds": [
+        {
+          "groups": [
+            [
+              "Blair",
+              "Emery",
+              "Gray"
+            ],
+            [
+              "Harper",
+              "Finley",
+              "Alex"
+            ],
+            [
+              "Devon",
+              "Indigo",
+              "Casey"
+            ]
+          ],
+          "message": "\n9 people in 3 groups. No saved rounds yet, so nothing to avoid.\n\nShuffle again\nSave as a round\nPresent full screen\nPrint\nCopy\nGroup 1\n3\nBlair\nEmery\nGray\nGroup 2\n3\nHarper\nFinley\nAlex\nGroup 3\n3\nDevon\nIndigo\nCasey\n",
+          "independentCheck": {
+            "round": 1,
+            "groupSizes": [
+              3,
+              3,
+              3
+            ],
+            "uniquePeople": 9,
+            "repeatedPairs": 0,
+            "priorMeetings": 0,
+            "distinctPairsSoFar": 9
+          }
+        },
+        {
+          "groups": [
+            [
+              "Harper",
+              "Blair",
+              "Casey"
+            ],
+            [
+              "Emery",
+              "Indigo",
+              "Alex"
+            ],
+            [
+              "Devon",
+              "Finley",
+              "Gray"
+            ]
+          ],
+          "message": "\n9 people in 3 groups. No one is with a partner from the last 1 saved round.\n\nShuffle again\nSave as a round\nPresent full screen\nPrint\nCopy\nGroup 1\n3\nHarper\nBlair\nCasey\nGroup 2\n3\nEmery\nIndigo\nAlex\nGroup 3\n3\nDevon\nFinley\nGray\n",
+          "independentCheck": {
+            "round": 2,
+            "groupSizes": [
+              3,
+              3,
+              3
+            ],
+            "uniquePeople": 9,
+            "repeatedPairs": 0,
+            "priorMeetings": 0,
+            "distinctPairsSoFar": 18
+          }
+        },
+        {
+          "groups": [
+            [
+              "Harper",
+              "Gray",
+              "Indigo"
+            ],
+            [
+              "Finley",
+              "Casey",
+              "Emery"
+            ],
+            [
+              "Devon",
+              "Alex",
+              "Blair"
+            ]
+          ],
+          "message": "\n9 people in 3 groups. No one is with a partner from the last 2 saved rounds.\n\nShuffle again\nSave as a round\nPresent full screen\nPrint\nCopy\nGroup 1\n3\nHarper\nGray\nIndigo\nGroup 2\n3\nFinley\nCasey\nEmery\nGroup 3\n3\nDevon\nAlex\nBlair\n",
+          "independentCheck": {
+            "round": 3,
+            "groupSizes": [
+              3,
+              3,
+              3
+            ],
+            "uniquePeople": 9,
+            "repeatedPairs": 0,
+            "priorMeetings": 0,
+            "distinctPairsSoFar": 27
+          }
+        },
+        {
+          "groups": [
+            [
+              "Indigo",
+              "Finley",
+              "Blair"
+            ],
+            [
+              "Devon",
+              "Emery",
+              "Harper"
+            ],
+            [
+              "Alex",
+              "Casey",
+              "Gray"
+            ]
+          ],
+          "message": "\n9 people in 3 groups. No one is with a partner from the last 3 saved rounds.\n\nShuffle again\nSave as a round\nPresent full screen\nPrint\nCopy\nGroup 1\n3\nIndigo\nFinley\nBlair\nGroup 2\n3\nDevon\nEmery\nHarper\nGroup 3\n3\nAlex\nCasey\nGray\n",
+          "independentCheck": {
+            "round": 4,
+            "groupSizes": [
+              3,
+              3,
+              3
+            ],
+            "uniquePeople": 9,
+            "repeatedPairs": 0,
+            "priorMeetings": 0,
+            "distinctPairsSoFar": 36
+          }
+        },
+        {
+          "groups": [
+            [
+              "Devon",
+              "Blair",
+              "Casey"
+            ],
+            [
+              "Emery",
+              "Alex",
+              "Gray"
+            ],
+            [
+              "Finley",
+              "Indigo",
+              "Harper"
+            ]
+          ],
+          "message": "s\n4 saved rounds on this device.\nClear history\nGroup names (optional, one per line)\nMake groups\n\n9 people in 3 groups. 9 repeated pairings couldn't be avoided.\n\nShuffle again\nSave as a round\nPresent full screen\nPrint\nCopy\nGroup 1\n3\nDevon\nBlair\nCasey\nGroup 2\n3\nEmery\nAlex\nGray\nGroup 3\n3\nFinley\nIndigo\nHarper\nHow to Make Random Groups\nStep by step\nPaste your names, one per line. Add tags after a comma if you want to balance groups, like \"Ava, girl\" or \"Sam, 6th grade\".\nChoose how to split: a number of groups, or a number of people per group.\nAdd rules if you need them: who must be kept apart, who must stay together, balance by tag, or avoid partners from recent rounds.\nClick Make groups. Shuffle again until you like them, then save the round so the next one avoids the same partners.\nShow the groups full screen on the projector, print them, or copy them into a message.\nIs this random group generator free?\n\nYes. It's free with no sign-up and no limit on names or groups. Everything runs in your browser, and your class list is never uploaded. See our Privacy Policy.\n\nHow do I keep two students apart?\n\nType their names on one line in Keep apart, like \"Jake, Tyler\". Put three or more names o",
+          "independentCheck": {
+            "round": 5,
+            "groupSizes": [
+              3,
+              3,
+              3
+            ],
+            "uniquePeople": 9,
+            "repeatedPairs": 9,
+            "priorMeetings": 9,
+            "distinctPairsSoFar": 36
+          }
+        }
+      ],
+      "tenPeopleMaximumSizeFour": [
+        [
+          "Gia",
+          "Ben",
+          "Cora",
+          "Dan"
+        ],
+        [
+          "Hugo",
+          "Ava",
+          "Finn"
+        ],
+        [
+          "Jude",
+          "Ivy",
+          "Ella"
+        ]
+      ]
+    },
+    "pickshuffle": {
+      "ninePeopleFiveRounds": [
+        {
+          "groups": [
+            [
+              "8",
+              "2",
+              "1"
+            ],
+            [
+              "6",
+              "4",
+              "7"
+            ],
+            [
+              "9",
+              "3",
+              "5"
+            ]
+          ],
+          "message": "Unconfirmed candidate groups\n\nRepeated pairs: 0; previous meetings: 0; candidates compared: 1.\n\nVerified zero repeated pairs against the current history. Confirm to record this round.\n\nGroup 1 (3)\nHarper\nEntry 8\nBlair\nEntry 2\nAlex\nEntry 1\nGroup 2 (3)\nFinley\nEntry 6\nDevon\nEntry 4\nGray\nEntry 7\nGroup 3 (3)\nIndigo\nEntry 9\nCasey\nEntry 3\nEmery\nEntry 5\nConfirm this round\nCopy candidate groups",
+          "independentCheck": {
+            "round": 1,
+            "groupSizes": [
+              3,
+              3,
+              3
+            ],
+            "uniquePeople": 9,
+            "repeatedPairs": 0,
+            "priorMeetings": 0,
+            "distinctPairsSoFar": 9
+          }
+        },
+        {
+          "groups": [
+            [
+              "4",
+              "8",
+              "3"
+            ],
+            [
+              "7",
+              "5",
+              "2"
+            ],
+            [
+              "6",
+              "1",
+              "9"
+            ]
+          ],
+          "message": "Unconfirmed candidate groups\n\nRepeated pairs: 0; previous meetings: 0; candidates compared: 1.\n\nVerified zero repeated pairs against the current history. Confirm to record this round.\n\nGroup 1 (3)\nDevon\nEntry 4\nHarper\nEntry 8\nCasey\nEntry 3\nGroup 2 (3)\nGray\nEntry 7\nEmery\nEntry 5\nBlair\nEntry 2\nGroup 3 (3)\nFinley\nEntry 6\nAlex\nEntry 1\nIndigo\nEntry 9\nConfirm this round\nCopy candidate groups",
+          "independentCheck": {
+            "round": 2,
+            "groupSizes": [
+              3,
+              3,
+              3
+            ],
+            "uniquePeople": 9,
+            "repeatedPairs": 0,
+            "priorMeetings": 0,
+            "distinctPairsSoFar": 18
+          }
+        },
+        {
+          "groups": [
+            [
+              "5",
+              "1",
+              "4"
+            ],
+            [
+              "9",
+              "8",
+              "7"
+            ],
+            [
+              "3",
+              "6",
+              "2"
+            ]
+          ],
+          "message": "Unconfirmed candidate groups\n\nRepeated pairs: 0; previous meetings: 0; candidates compared: 1.\n\nVerified zero repeated pairs against the current history. Confirm to record this round.\n\nGroup 1 (3)\nEmery\nEntry 5\nAlex\nEntry 1\nDevon\nEntry 4\nGroup 2 (3)\nIndigo\nEntry 9\nHarper\nEntry 8\nGray\nEntry 7\nGroup 3 (3)\nCasey\nEntry 3\nFinley\nEntry 6\nBlair\nEntry 2\nConfirm this round\nCopy candidate groups",
+          "independentCheck": {
+            "round": 3,
+            "groupSizes": [
+              3,
+              3,
+              3
+            ],
+            "uniquePeople": 9,
+            "repeatedPairs": 0,
+            "priorMeetings": 0,
+            "distinctPairsSoFar": 27
+          }
+        },
+        {
+          "groups": [
+            [
+              "2",
+              "4",
+              "9"
+            ],
+            [
+              "1",
+              "7",
+              "3"
+            ],
+            [
+              "6",
+              "5",
+              "8"
+            ]
+          ],
+          "message": "Unconfirmed candidate groups\n\nRepeated pairs: 0; previous meetings: 0; candidates compared: 1.\n\nVerified zero repeated pairs against the current history. Confirm to record this round.\n\nGroup 1 (3)\nBlair\nEntry 2\nDevon\nEntry 4\nIndigo\nEntry 9\nGroup 2 (3)\nAlex\nEntry 1\nGray\nEntry 7\nCasey\nEntry 3\nGroup 3 (3)\nFinley\nEntry 6\nEmery\nEntry 5\nHarper\nEntry 8\nConfirm this round\nCopy candidate groups",
+          "independentCheck": {
+            "round": 4,
+            "groupSizes": [
+              3,
+              3,
+              3
+            ],
+            "uniquePeople": 9,
+            "repeatedPairs": 0,
+            "priorMeetings": 0,
+            "distinctPairsSoFar": 36
+          }
+        },
+        {
+          "groups": [
+            [
+              "8",
+              "4",
+              "2"
+            ],
+            [
+              "9",
+              "7",
+              "5"
+            ],
+            [
+              "3",
+              "1",
+              "6"
+            ]
+          ],
+          "message": "Unconfirmed candidate groups\n\nRepeated pairs: 9; previous meetings: 9; candidates compared: 32.\n\nUnseen-pair counting proves at least 9 repeated pairs are necessary this round. This is the result found, without a global optimality guarantee.\n\nGroup 1 (3)\nHarper\nEntry 8\nDevon\nEntry 4\nBlair\nEntry 2\nGroup 2 (3)\nIndigo\nEntry 9\nGray\nEntry 7\nEmery\nEntry 5\nGroup 3 (3)\nCasey\nEntry 3\nAlex\nEntry 1\nFinley\nEntry 6\nConfirm this round\nCopy candidate groups",
+          "independentCheck": {
+            "round": 5,
+            "groupSizes": [
+              3,
+              3,
+              3
+            ],
+            "uniquePeople": 9,
+            "repeatedPairs": 9,
+            "priorMeetings": 9,
+            "distinctPairsSoFar": 36
+          }
+        }
+      ]
+    },
+    "peabody": {
+      "ninePeopleFiveRounds": [
+        {
+          "groups": [
+            [
+              "Harper",
+              "Alex",
+              "Finley"
+            ],
+            [
+              "Emery",
+              "Gray",
+              "Casey"
+            ],
+            [
+              "Indigo",
+              "Devon",
+              "Blair"
+            ]
+          ],
+          "message": "Make new groups\nCopy as text\n9 people\nMade 3 groups.\n3 groups of 3\nGroup 1\nHarper\nAlex\nFinley\nGroup 2\nEmery\nGray\nCasey\nGroup 3\nIndigo\nDevon\nBlair\nNames (one per line)\n\n9 people\n\nMake groups\nof this many people\nthis many groups\nPeople\n\nGroups are always balanced: no group is more than one person bigger than another, and none is bigger than you asked for.\n\nKeep apart (one pair per line, like Ana + Ben)\nKeep together (one pair per line)\n\n1 keep-apart and 1 keep-together rules understood. Names must match the list.\n\nGive each person a role\nAvoid putting people together again (last 1 round)\nForget past groups\nPrint groups\nCopy a link to this class and settings\n\nThe contents travel inside the link after the # sign, which browsers never send to an",
+          "independentCheck": {
+            "round": 1,
+            "groupSizes": [
+              3,
+              3,
+              3
+            ],
+            "uniquePeople": 9,
+            "repeatedPairs": 0,
+            "priorMeetings": 0,
+            "distinctPairsSoFar": 9
+          }
+        },
+        {
+          "groups": [
+            [
+              "Indigo",
+              "Finley",
+              "Casey"
+            ],
+            [
+              "Emery",
+              "Alex",
+              "Blair"
+            ],
+            [
+              "Harper",
+              "Gray",
+              "Devon"
+            ]
+          ],
+          "message": "Make new groups\nCopy as text\n9 people\nMade 3 groups.\n3 groups of 3\nGroup 1\nIndigo\nFinley\nCasey\nGroup 2\nEmery\nAlex\nBlair\nGroup 3\nHarper\nGray\nDevon\nNames (one per line)\n\n9 people\n\nMake groups\nof this many people\nthis many groups\nPeople\n\nGroups are always balanced: no group is more than one person bigger than another, and none is bigger than you asked for.\n\nKeep apart (one pair per line, like Ana + Ben)\nKeep together (one pair per line)\n\n1 keep-apart and 1 keep-together rules understood. Names must match the list.\n\nGive each person a role\nAvoid putting people together again (last 2 rounds)\nForget past groups\nPrint groups\nCopy a link to this class and settings\n\nThe contents travel inside the link after the # sign, which browsers never send to a",
+          "independentCheck": {
+            "round": 2,
+            "groupSizes": [
+              3,
+              3,
+              3
+            ],
+            "uniquePeople": 9,
+            "repeatedPairs": 0,
+            "priorMeetings": 0,
+            "distinctPairsSoFar": 18
+          }
+        },
+        {
+          "groups": [
+            [
+              "Gray",
+              "Alex",
+              "Indigo"
+            ],
+            [
+              "Casey",
+              "Harper",
+              "Blair"
+            ],
+            [
+              "Devon",
+              "Emery",
+              "Finley"
+            ]
+          ],
+          "message": "Make new groups\nCopy as text\n9 people\nMade 3 groups.\n3 groups of 3\nGroup 1\nGray\nAlex\nIndigo\nGroup 2\nCasey\nHarper\nBlair\nGroup 3\nDevon\nEmery\nFinley\nNames (one per line)\n\n9 people\n\nMake groups\nof this many people\nthis many groups\nPeople\n\nGroups are always balanced: no group is more than one person bigger than another, and none is bigger than you asked for.\n\nKeep apart (one pair per line, like Ana + Ben)\nKeep together (one pair per line)\n\n1 keep-apart and 1 keep-together rules understood. Names must match the list.\n\nGive each person a role\nAvoid putting people together again (last 3 rounds)\nForget past groups\nPrint groups\nCopy a link to this class and settings\n\nThe contents travel inside the link after the # sign, which browsers never send to a",
+          "independentCheck": {
+            "round": 3,
+            "groupSizes": [
+              3,
+              3,
+              3
+            ],
+            "uniquePeople": 9,
+            "repeatedPairs": 0,
+            "priorMeetings": 0,
+            "distinctPairsSoFar": 27
+          }
+        },
+        {
+          "groups": [
+            [
+              "Indigo",
+              "Harper",
+              "Emery"
+            ],
+            [
+              "Blair",
+              "Finley",
+              "Gray"
+            ],
+            [
+              "Casey",
+              "Devon",
+              "Alex"
+            ]
+          ],
+          "message": "Make new groups\nCopy as text\n9 people\nMade 3 groups.\n3 groups of 3\nGroup 1\nIndigo\nHarper\nEmery\nGroup 2\nBlair\nFinley\nGray\nGroup 3\nCasey\nDevon\nAlex\nNames (one per line)\n\n9 people\n\nMake groups\nof this many people\nthis many groups\nPeople\n\nGroups are always balanced: no group is more than one person bigger than another, and none is bigger than you asked for.\n\nKeep apart (one pair per line, like Ana + Ben)\nKeep together (one pair per line)\n\n1 keep-apart and 1 keep-together rules understood. Names must match the list.\n\nGive each person a role\nAvoid putting people together again (last 4 rounds)\nForget past groups\nPrint groups\nCopy a link to this class and settings\n\nThe contents travel inside the link after the # sign, which browsers never send to a",
+          "independentCheck": {
+            "round": 4,
+            "groupSizes": [
+              3,
+              3,
+              3
+            ],
+            "uniquePeople": 9,
+            "repeatedPairs": 0,
+            "priorMeetings": 0,
+            "distinctPairsSoFar": 36
+          }
+        },
+        {
+          "groups": [
+            [
+              "Alex",
+              "Harper",
+              "Finley"
+            ],
+            [
+              "Blair",
+              "Devon",
+              "Indigo"
+            ],
+            [
+              "Emery",
+              "Casey",
+              "Gray"
+            ]
+          ],
+          "message": "Make new groups\nCopy as text\n9 people\nMade 3 groups.\n3 groups of 3\n9 pairs could not avoid sharing a group again.\nGroup 1\nAlex\nHarper\nFinley\nGroup 2\nBlair\nDevon\nIndigo\nGroup 3\nEmery\nCasey\nGray\nNames (one per line)\n\n9 people\n\nMake groups\nof this many people\nthis many groups\nPeople\n\nGroups are always balanced: no group is more than one person bigger than another, and none is bigger than you asked for.\n\nKeep apart (one pair per line, like Ana + Ben)\nKeep together (one pair per line)\n\n1 keep-apart and 1 keep-together rules understood. Names must match the list.\n\nGive each person a role\nAvoid putting people together again (last 5 rounds)\nForget past groups\nPrint groups\nCopy a link to this class and settings\n\nThe contents travel inside the link after the # sign, which browsers never send to any server. Anyone you give the link to can read them.\n\nSpace make groups · F full screen · Esc leave it",
+          "independentCheck": {
+            "round": 5,
+            "groupSizes": [
+              3,
+              3,
+              3
+            ],
+            "uniquePeople": 9,
+            "repeatedPairs": 9,
+            "priorMeetings": 9,
+            "distinctPairsSoFar": 36
+          }
+        }
+      ],
+      "tenPeopleMaximumSizeFour": [
+        [
+          "Ella",
+          "Ava",
+          "Finn",
+          "Cora"
+        ],
+        [
+          "Hugo",
+          "Ben",
+          "Gia"
+        ],
+        [
+          "Dan",
+          "Jude",
+          "Ivy"
+        ]
+      ]
+    }
+  },
+  "constraintCases": {
+    "visora": {
+      "input": [
+        "Ava, A",
+        "Ben, B",
+        "Cora, A",
+        "Dan, B",
+        "Ella, A",
+        "Finn, B",
+        "Gia, A",
+        "Hugo, B"
+      ],
+      "groups": [
+        [
+          "Gia",
+          "Ella",
+          "Dan",
+          "Hugo"
+        ],
+        [
+          "Ben",
+          "Cora",
+          "Ava",
+          "Finn"
+        ]
+      ],
+      "together": [
+        "Ava",
+        "Ben"
+      ],
+      "apart": [
+        "Cora",
+        "Dan"
+      ],
+      "tagCountsPerGroup": {
+        "a": 2,
+        "b": 2
+      },
+      "contradiction": "Ava and Ben in both together and apart was rejected with an explicit conflict message; previous result remained available."
+    },
+    "peabody": {
+      "input": [
+        "Ava",
+        "Ben",
+        "Cora",
+        "Dan",
+        "Ella",
+        "Finn",
+        "Gia",
+        "Hugo"
+      ],
+      "groups": [
+        [
+          "Finn",
+          "Gia",
+          "Ella",
+          "Dan"
+        ],
+        [
+          "Cora",
+          "Hugo",
+          "Ava",
+          "Ben"
+        ]
+      ],
+      "together": [
+        "Ava",
+        "Ben"
+      ],
+      "apart": [
+        "Cora",
+        "Dan"
+      ],
+      "roles": [
+        "Reader",
+        "Recorder",
+        "Materials manager",
+        "Timekeeper"
+      ],
+      "contradictionMessage": "Make new groups\nCopy as text\n4 people\nMade 2 groups.\n2 groups of 2\n\nCould not keep these together: Ava and Ben. Try bigger groups.\n\nGroup 1\nCora\nBen\nGroup 2\nAva\nDan\nNames (one per line)\n\n4 people\n\nMake groups\nof this many people\nthis many groups\nPeople\n\nGroups are always balanced: no group is more than one person bigger than another, and none is bigger than you asked for.\n\nKeep apart (one pair per line, like Ana + Ben)\nKeep together (one pair per line)\n\n1 keep-apart and 1 keep-together rules understood. Names must match the list.\n\nGive each person a role\nAvoid putting people together again (last 5 rounds)\nForget past groups\nPrint groups\nCopy a link to this class and settings\n\nThe contents travel inside the link after the # sign, which browsers never send to any server. Anyone you give the link to can read them.\n\nSpace make groups · F full screen · Esc leave it\n\nThe starting names are examples. Your class list and the last five rounds are saved in this browser only, and never sent anywhere.\n\nFull screen (F)\nPaper\nNight\nChalk\nShare\nPrint\nPin to desk"
+    }
+  },
+  "exports": {
+    "pickshuffle": {
+      "jsonBackup": {
+        "version": 1,
+        "people": 9,
+        "confirmedRounds": 5,
+        "roundTrip": "Cleared the session, imported downloaded JSON, saved, reloaded, and observed 9 people / 5 restored rounds."
+      },
+      "csv": {
+        "header": [
+          "Round",
+          "Group",
+          "Entry",
+          "Name"
+        ],
+        "memberRows": 45,
+        "encoding": "UTF-8 with BOM"
+      }
+    }
+  },
+  "observedResourceOrigins": {
+    "visora": [
+      "https://tools.visoraapp.com"
+    ],
+    "peabody": [
+      "https://teach.peabody.kids",
+      "https://www.googletagmanager.com",
+      "https://region1.analytics.google.com",
+      "https://stats.g.doubleclick.net",
+      "https://www.google.at"
+    ],
+    "pickshuffle": [
+      "https://picknshuffle.com",
+      "https://app.pageview.app"
+    ]
+  },
+  "interactionFeatures": {
+    "allThree": {
+      "progressiveGroupReveal": "no",
+      "interactiveAssignmentProcess": "no",
+      "manualPostGenerationEditing": "no"
+    },
+    "note": "Generated groups appeared together and no post-generation member move/swap controls appeared. Regenerate and candidate confirmation do not qualify as interactive placement."
+  },
+  "socialGolferOnline": {
+    "url": "https://socialgolfer.online/",
+    "currentOverallRating": 4.3,
+    "currentRank": 3,
+    "status": "Official documentation and login/guest entry reviewed; authenticated generation unavailable in the isolated session.",
+    "recommendedUpdates": [
+      "Replace the obsolete genetic/local-search description with the vendor's current description: supported combinatorial constructions plus optimization, with browser/mobile/server engines.",
+      "Document Recompute All Sessions as an online joint-planning action for eligible unlocked golf sessions.",
+      "Document current advertised beta limits: 120 members/event, 52 sessions, 30 groups/session, 3 events.",
+      "Mention current advertised PDF reports and retain partial export support until organizer access and export availability are tested.",
+      "Change keep-apart support from no to partial based on official separation documentation, pending live enforcement testing."
+    ],
+    "ratingDecision": "Retain 4.3 and existing category scores; no numeric uplift supported by this limited re-review.",
+    "loginObservation": "Organizer flow required email/password or Apple/Google. Continue as Guest required an existing share code.",
+    "sourceClaimLimit": "The advertised new optimizer and PDF behavior were not executed; no ranking increase is proposed."
+  }
+}
